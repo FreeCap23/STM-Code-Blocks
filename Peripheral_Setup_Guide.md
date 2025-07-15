@@ -1,0 +1,87 @@
+@page Peripheral_Setup_Guide Peripheral Setup Guide
+
+This guide explains how to configure basic I/O and peripheral functionality on STM32 microcontrollers using STM32CubeIDE.
+
+## Digital Input / Output
+
+1. Open your `.ioc` file in STM32CubeIDE.
+2. In the **Pinout & Configuration** tab, click on a GPIO pin.
+3. Set it as:
+   - **GPIO_Output** for output (e.g., driving an LED)
+   - **GPIO_Input** for input (e.g., reading a button)
+4. Go to **Configuration > GPIO** to verify settings like pull-up/pull-down.
+5. In code, use HAL functions:
+```c
+// Output
+HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+
+// Input
+GPIO_PinState state = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13);
+
+// If you set a label on the pin earlier, for example BLUE_LED, you can write this:
+HAL_GPIO_WritePin(BLUE_LED_GPIO_Port, BLUE_LED_Pin, GPIO_PIN_SET);
+// These definitions are stored in main.h
+```
+
+## Analog Input
+
+1. Enable **ADC peripheral** under **Analog**.
+2. Pick the **Channel** you want. Note that you cannot reassign the pins of the Channels.
+3. Configure ADC settings (resolution, alignment, etc.)
+4. Generate code.
+5. In your code:
+
+a. For a single channel:
+```c
+uint32_t adc_val = 0;
+HAL_ADC_Start(&hadc1);
+HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+adc_val = HAL_ADC_GetValue(&hadc1);
+HAL_ADC_Stop(&hadc1);
+```
+b. For multiple channels:
+
+First, make sure **Number of Conversion** in **Configuration > Parameter Settings > ADC_Regular_ConversionMode** matches the number of channels you want to convert. Then, for each **Rank**, assign a Channel.
+
+For example, if Rank 1 is Channel 1 and Rank 2 is Channel 2:
+```c
+uint32_t adc_val_channel1 = 0;
+uint32_t adc_val_channel2 = 0;
+HAL_ADC_Start(&hadc1);
+// Once polling starts, you don't need to call PollForConversion if you set the ADC to run in Continuous mode. If it is in Single mode, then you need to PollForConversion every time you need new values.
+HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+adc_val_channel1 = HAL_ADC_GetValue(&hadc1);
+adc_val_channel2 = HAL_ADC_GetValue(&hadc1);
+HAL_ADC_Stop(&hadc1);
+```
+
+## PWM Output
+To generate **PWM signals**, we need to use **Timers**. Pick a timer and configure it:
+- Clock Source: Choose your clock source. If you don't know what to pick, choose Internal Clock.
+- Channel`x`: **PWM Generation `CHx`**. `CHxN` means the same output as `CHx` but inversed. You can both `CHx` and `CHxN` to generate synchronised, opposite PWM signals by simply choosing **PWM Generation CHx CHxN**.
+- Under **Configuration > Parameter Settings** use [this site](https://deepbluembedded.com/stm32-pwm-calculator/) to get the values you need. **Make sure to enable auto-reload preload!**
+    - For **clock frequency**, you need to see which `APBx` your timer uses. This can be found in your MCU's data sheet, in the **Block Diagram**.
+
+To change the PWM's duty cycle programatically:
+```c
+TIMx->CCRy = duty_cycle;
+```
+Where `x` is your Timer's number and `y` is the number of the Channel whose Duty Cycle you want to update.
+
+## Triggering an interrupt on an arbitrary pin
+- Pick the pin you want to generate interrupts on. Note that not all pins have the ability to generate external interrupts.
+- Configure the pin as `GPIO_EXTIx`
+- Under **GPIO > Configuration > Pxx** you can configure your interrupt to generate on falling, rising, or both edges. Choose **No pull-up and no pull-down**.
+- Under **NVIC > Configuration** make sure **EXTI line interrupts** is enabled.
+- Generate the code.
+
+In your `main.c` you need to add the **ISR** (**I**nterrupt **S**ervice **R**outine):
+```c
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+    if(GPIO_Pin == GPIO_PIN_9) // If The INT Source Is EXTI Line9 we set up earlier
+    {
+        // Do whatever you need to do
+    }
+}
+```
