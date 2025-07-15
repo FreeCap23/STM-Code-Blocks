@@ -24,4 +24,4 @@ jobs:
         with:
           name: doxygen-docs
           path: |
-            ./Docs/  # Adjust path if OUTPUT_DIRECTORY in Doxyfile is different
+            ./Docs/
