@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "STM Code Blocks", "index.html", [
+    [ "Peripheral Setup Guide", "Peripheral_Setup_Guide.html", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
@@ -37,7 +38,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"dir_b596f468b52957496e4f78b80e029268.html"
+"Peripheral_Setup_Guide.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
