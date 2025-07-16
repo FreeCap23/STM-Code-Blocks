@@ -26,6 +26,7 @@ var NAVTREE =
 [
   [ "STM Code Blocks", "index.html", [
     [ "Peripheral Setup Guide", "Peripheral_Setup_Guide.html", null ],
+    [ "Timer Clock Guide", "Timer_Clock_Guide.html", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
