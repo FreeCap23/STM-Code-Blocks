@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['digital_20input_20output_0',['Digital Input / Output',['../Peripheral_Setup_Guide.html#autotoc_md0',1,'']]]
+  ['digital_20input_20output_0',['Digital Input / Output',['../Peripheral_Setup_Guide.html#autotoc_md1',1,'']]]
 ];
