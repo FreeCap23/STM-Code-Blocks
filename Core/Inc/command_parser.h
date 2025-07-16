@@ -45,7 +45,7 @@
  *          - 2 = Name and int parsed
  *          - 3 = Name, int, and float parsed
  */
-static int ParseCommand(const char *command, char *name, int *arg_int, float *arg_float) {
+int ParseCommand(const char *command, char *name, int *arg_int, float *arg_float) {
     // Validate required inputs
     if (!command || !name) return 0;
 
