@@ -85,3 +85,46 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     }
 }
 ```
+
+## UART Communication
+To talk with a computer, we can use one of the USART modules on our MCU. For this example we'll use a USART module that can create a Virtual Com Port on our USB Connector. On the NUCLEO-H7A3ZI, this is USART3.
+
+> ℹ️ Some boards (Like the F411E Discovery) do not support VCP (**V**irtual **C**OM **P**ort), meaning you cannot use the ST-Link USB port as a serial communication port. If that is the case, you need to use the RX/TX pins themselves and use a USB to Serial converter to talk to the PC.
+
+Under **Connectivity > USART3**
+- Mode: Asynchronous
+
+Now, under **Configuration > Parameter Settings**
+- Baud Rate: Set it to whatever you want.
+
+> **⚠️ Setting this too high may result in lost bytes when receiving data in bulk without DMA**
+- Word Length: Leave this to 8 bits (including parity)
+- Parity: I've had some issues with parity so I recommend you just leave this to Disabled unless absolutely necessary.
+
+Under **Configuration > NVIC Settings**, enable USART3 global interrupt.
+
+Now we're ready for the code:
+### Transmitting
+```c
+// Transmitting a simple message
+uint8_t *message = "Hello world.\r\n"; // \r\n is for new line and carriage return.
+HAL_UART_Transmit(&huart3, message, strlen(message) * sizeof(uint8_t), 10);
+```
+Let's go over the arguments to this function.
+- `&huart3`: Reference to the handle of the uart module to transmit the message on
+- `message`: the message...
+- `strlen(message) * sizeof(uint8_t)`: The size of the message, in bytes.
+- `10`: Timeout. How much time (in ms) can pass until it stops trying to send the message.
+
+### Receiving
+```c
+// Receiving a message
+#define BUFFER_SIZE 64
+uint8_t buffer[BUFFER_SIZE]; // We need to allocate memory to store the message in
+HAL_UART_Receive(&huart3, buffer, BUFFER_SIZE, 10);
+```
+Let's go over the arguments to this function.
+- `&huart3`: Reference to the handle of the uart module
+- `buffer`: The buffer where the message will be stored
+- `BUFFER_SIZE`: How many bytes to receive
+- `10`: Timeout. How much time (in ms) can pass until it stops trying to receive a message.
