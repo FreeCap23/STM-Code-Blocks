@@ -170,47 +170,16 @@ Triggering an interrupt on an arbitrary pin</h2>
 <div class="line">}</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
 UART Communication</h2>
-<p>To talk with a computer, we can use one of the USART modules on our MCU. For this example we'll use a USART module that can create a Virtual Com Port on our USB Connector. On the NUCLEO-H7A3ZI, this is USART3.</p>
+<p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART</a></p>
 <blockquote class="doxtable">
 <p>&zwj;ℹ️ Some boards (Like the F411E Discovery) do not support VCP (**V**irtual **C**OM **P**ort), meaning you cannot use the ST-Link USB port as a serial communication port. If that is the case, you need to use the RX/TX pins themselves and use a USB to Serial converter to talk to the PC. </p>
 </blockquote>
-<p>Under <b>Connectivity &gt; USART3</b></p><ul>
-<li>Mode: Asynchronous</li>
-</ul>
-<p>Now, under <b>Configuration &gt; Parameter Settings</b></p><ul>
-<li>Baud Rate: Set it to whatever you want.</li>
-</ul>
 <blockquote class="doxtable">
-<p>&zwj;<b>⚠️ Setting this too high may result in lost bytes when receiving data in bulk without DMA</b> </p>
+<p>&zwj;⚠️ Setting baud rate too high may result in lost bytes when receiving data in bulk without DMA </p>
 </blockquote>
-<p>- Word Length: Leave this to 8 bits (including parity)</p><ul>
-<li>Parity: I've had some issues with parity so I recommend you just leave this to Disabled unless absolutely necessary.</li>
-</ul>
-<p>Under <b>Configuration &gt; NVIC Settings</b>, enable USART3 global interrupt.</p>
-<p>Now we're ready for the code: </p>
-<h3><a class="anchor" id="autotoc_md5"></a>
-Transmitting</h3>
-<div class="fragment"><div class="line"><span class="comment">// Transmitting a simple message</span></div>
-<div class="line">uint8_t *message = <span class="stringliteral">&quot;Hello world.\r\n&quot;</span>; <span class="comment">// \r\n is for new line and carriage return.</span></div>
-<div class="line">HAL_UART_Transmit(&amp;huart3, message, strlen(message) * <span class="keyword">sizeof</span>(uint8_t), 10);</div>
-</div><!-- fragment --><p> Let's go over the arguments to this function.</p><ul>
-<li><code>&amp;huart3</code>: Reference to the handle of the uart module to transmit the message on</li>
-<li><code>message</code>: the message...</li>
-<li><code>strlen(message) * sizeof(uint8_t)</code>: The size of the message, in bytes.</li>
-<li><code>10</code>: Timeout. How much time (in ms) can pass until it stops trying to send the message.</li>
-</ul>
-<h3><a class="anchor" id="autotoc_md6"></a>
-Receiving</h3>
-<div class="fragment"><div class="line"><span class="comment">// Receiving a message</span></div>
-<div class="line"><span class="preprocessor">#define BUFFER_SIZE 64</span></div>
-<div class="line">uint8_t buffer[BUFFER_SIZE]; <span class="comment">// We need to allocate memory to store the message in</span></div>
-<div class="line">HAL_UART_Receive(&amp;huart3, buffer, BUFFER_SIZE, 10);</div>
-</div><!-- fragment --><p> Let's go over the arguments to this function.</p><ul>
-<li><code>&amp;huart3</code>: Reference to the handle of the uart module</li>
-<li><code>buffer</code>: The buffer where the message will be stored</li>
-<li><code>BUFFER_SIZE</code>: How many bytes to receive</li>
-<li><code>10</code>: Timeout. How much time (in ms) can pass until it stops trying to receive a message. </li>
-</ul>
+<h2><a class="anchor" id="autotoc_md5"></a>
+SPI Communication</h2>
+<p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_SPI">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_SPI</a> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
