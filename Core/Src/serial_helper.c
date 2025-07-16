@@ -8,13 +8,16 @@
  * @author Dionisie Stratulat
  */
 
-#include "stdio.h"
-#include "stdarg.h"
+#include <stdio.h>
+#include <stdint.h>
+#include <stdarg.h>
+#include "stm32h7xx_hal.h"
 
 uint8_t SerialPrint(UART_HandleTypeDef *huart, const char *format, ...) {
 	if (huart == NULL)
 		return 1;
 
+	const uint8_t USB_PRINT_BUFFER_SIZE = 64;
 	char buffer[USB_PRINT_BUFFER_SIZE];
 	if (buffer == NULL)
 		return 1;
@@ -33,13 +36,14 @@ uint8_t SerialPrint(UART_HandleTypeDef *huart, const char *format, ...) {
 
 	// Now we send the message over the USB wire using UART.
 	// We tell it where the message is (buffer), how long it is, and how long to wait (10 ticks).
-	return HAL_UART_Transmit(uart, (uint8_t *)buffer, strlen(buffer), 10);
+	return HAL_UART_Transmit(huart, (uint8_t *)buffer, strlen(buffer), 10);
 }
 
 uint8_t SerialPrintLn(UART_HandleTypeDef *huart, const char *format, ...) {
 	if (huart == NULL)
 			return 1;
 
+	const uint8_t USB_PRINT_BUFFER_SIZE = 64;
 	char buffer[USB_PRINT_BUFFER_SIZE];
 	if (buffer == NULL)
 		return 1;
@@ -58,10 +62,10 @@ uint8_t SerialPrintLn(UART_HandleTypeDef *huart, const char *format, ...) {
 
 	// Now we send the message over the USB wire using UART.
 	// We tell it where the message is (buffer), how long it is, and how long to wait (10 ticks).
-    if (HAL_UART_Transmit(uart, (uint8_t *)buffer, strlen(buffer), 10) != HAL_OK)
+    if (HAL_UART_Transmit(huart, (uint8_t *)buffer, strlen(buffer), 10) != HAL_OK)
     	return 1;
 
     // Send a special "new line" message — this moves the cursor to the next line.
-    if (HAL_UART_Transmit(uart, (uint8_t *)"\r\n", 2, 10) != HAL_OK)
+    if (HAL_UART_Transmit(huart, (uint8_t *)"\r\n", 2, 10) != HAL_OK)
     	return 1;
 }
