@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['error_5fhandler_0',['error_handler',['../main_8h.html#a1730ffe1e560465665eb47d9264826f9',1,'Error_Handler(void):&#160;main.c'],['../main_8c.html#a1730ffe1e560465665eb47d9264826f9',1,'Error_Handler(void):&#160;main.c']]]
+  ['analogwrite_0',['analogWrite',['../pwm__helper_8h.html#af1dae7be96dd1f02d2bbdd6caa495ade',1,'pwm_helper.h']]],
+  ['analogwritepercent_1',['analogWritePercent',['../pwm__helper_8h.html#a6f8cb0886f2512a418b26cd41cd2dfe6',1,'pwm_helper.h']]]
 ];

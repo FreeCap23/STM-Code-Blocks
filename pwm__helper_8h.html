@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>STM Code Blocks: Core/Src/serial_helper.c File Reference</title>
+<title>STM Code Blocks: Core/Inc/pwm_helper.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('serial__helper_8c.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('pwm__helper_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -92,27 +92,24 @@ $(document).ready(function(){initNavTree('serial__helper_8c.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">serial_helper.c File Reference</div></div>
+  <div class="headertitle"><div class="title">pwm_helper.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>TODO: Write a brief description of this file.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;stdarg.h&gt;</code><br />
-<code>#include &quot;stm32h7xx_hal.h&quot;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 </div>
-<p><a href="serial__helper_8c_source.html">Go to the source code of this file.</a></p>
+<p><a href="pwm__helper_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a126c9b4716b7253d5187778b23b84284" id="r_a126c9b4716b7253d5187778b23b84284"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__helper_8c.html#a126c9b4716b7253d5187778b23b84284">SerialPrint</a> (UART_HandleTypeDef *huart, const char *format,...)</td></tr>
-<tr class="memdesc:a126c9b4716b7253d5187778b23b84284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a formatted message over USART (e.g., USB-to-Serial).  <br /></td></tr>
-<tr class="separator:a126c9b4716b7253d5187778b23b84284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fc9820bc2a74c73e056baa14285b3dc" id="r_a5fc9820bc2a74c73e056baa14285b3dc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__helper_8c.html#a5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a> (UART_HandleTypeDef *huart, const char *format,...)</td></tr>
-<tr class="memdesc:a5fc9820bc2a74c73e056baa14285b3dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a formatted message over USART (e.g., USB-to-Serial), appending a new line and carriage return.  <br /></td></tr>
-<tr class="separator:a5fc9820bc2a74c73e056baa14285b3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1dae7be96dd1f02d2bbdd6caa495ade" id="r_af1dae7be96dd1f02d2bbdd6caa495ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pwm__helper_8h.html#af1dae7be96dd1f02d2bbdd6caa495ade">analogWrite</a> (TIM_HandleTypeDef *htim, uint32_t channel, uint16_t compare_value)</td></tr>
+<tr class="memdesc:af1dae7be96dd1f02d2bbdd6caa495ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a raw PWM compare value to the selected timer channel.  <br /></td></tr>
+<tr class="separator:af1dae7be96dd1f02d2bbdd6caa495ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8cb0886f2512a418b26cd41cd2dfe6" id="r_a6f8cb0886f2512a418b26cd41cd2dfe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pwm__helper_8h.html#a6f8cb0886f2512a418b26cd41cd2dfe6">analogWritePercent</a> (TIM_HandleTypeDef *htim, uint32_t channel, uint8_t duty_cycle)</td></tr>
+<tr class="memdesc:a6f8cb0886f2512a418b26cd41cd2dfe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a PWM duty cycle percentage to the selected timer channel.  <br /></td></tr>
+<tr class="separator:a6f8cb0886f2512a418b26cd41cd2dfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TODO: Write a brief description of this file. </p>
@@ -120,31 +117,34 @@ Functions</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>Created on: Jul 16, 2025 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Dionisie Stratulat </dd></dl>
 
-<p class="definition">Definition in file <a class="el" href="serial__helper_8c_source.html">serial_helper.c</a>.</p>
+<p class="definition">Definition in file <a class="el" href="pwm__helper_8h_source.html">pwm_helper.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a126c9b4716b7253d5187778b23b84284" name="a126c9b4716b7253d5187778b23b84284"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a126c9b4716b7253d5187778b23b84284">&#9670;&#160;</a></span>SerialPrint()</h2>
+<a id="af1dae7be96dd1f02d2bbdd6caa495ade" name="af1dae7be96dd1f02d2bbdd6caa495ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1dae7be96dd1f02d2bbdd6caa495ade">&#9670;&#160;</a></span>analogWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t SerialPrint </td>
+          <td class="memname">void analogWrite </td>
           <td>(</td>
-          <td class="paramtype">UART_HandleTypeDef *&#160;</td>
-          <td class="paramname"><em>huart</em>, </td>
+          <td class="paramtype">TIM_HandleTypeDef *&#160;</td>
+          <td class="paramname"><em>htim</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>compare_value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -152,48 +152,54 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Sends a formatted message over USART (e.g., USB-to-Serial). </p>
-<p>This function behaves like <code>printf</code> and supports format specifiers such as <code>s</code>, <code>d</code>, etc. The formatted string is transmitted in blocking mode using <code>HAL_UART_Transmit</code> via the given huart handle.</p>
+<p>Writes a raw PWM compare value to the selected timer channel. </p>
+<p>This function limits the compare value to the auto-reload register (ARR) value and writes it to the appropriate CCR register to control the PWM duty cycle.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">huart</td><td>Handle to the UART/USART module to use. </td></tr>
-    <tr><td class="paramname">format</td><td>Format string, similar to printf. </td></tr>
-    <tr><td class="paramname">...</td><td>Additional arguments to format into the string.</td></tr>
+    <tr><td class="paramname">htim</td><td>Pointer to a TIM_HandleTypeDef structure. </td></tr>
+    <tr><td class="paramname">channel</td><td>Timer channel identifier (e.g., TIM_CHANNEL_1). </td></tr>
+    <tr><td class="paramname">compare_value</td><td>Raw PWM compare value (clipped to ARR). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, 1 on error.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Ensure that <code>huart</code> is initialized before calling this function. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="serial__helper_8c_source.html#l00016">16</a> of file <a class="el" href="serial__helper_8c_source.html">serial_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pwm__helper_8h_source.html#l00051">51</a> of file <a class="el" href="pwm__helper_8h_source.html">pwm_helper.h</a>.</p>
 
 </div>
 </div>
-<a id="a5fc9820bc2a74c73e056baa14285b3dc" name="a5fc9820bc2a74c73e056baa14285b3dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fc9820bc2a74c73e056baa14285b3dc">&#9670;&#160;</a></span>SerialPrintLn()</h2>
+<a id="a6f8cb0886f2512a418b26cd41cd2dfe6" name="a6f8cb0886f2512a418b26cd41cd2dfe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8cb0886f2512a418b26cd41cd2dfe6">&#9670;&#160;</a></span>analogWritePercent()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t SerialPrintLn </td>
+          <td class="memname">void analogWritePercent </td>
           <td>(</td>
-          <td class="paramtype">UART_HandleTypeDef *&#160;</td>
-          <td class="paramname"><em>huart</em>, </td>
+          <td class="paramtype">TIM_HandleTypeDef *&#160;</td>
+          <td class="paramname"><em>htim</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>duty_cycle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -201,22 +207,25 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Sends a formatted message over USART (e.g., USB-to-Serial), appending a new line and carriage return. </p>
-<p>This function behaves like <code>printf</code> and supports format specifiers such as <code>s</code>, <code>d</code>, etc. The formatted string is transmitted in blocking mode using <code>HAL_UART_Transmit</code> via the given huart handle.</p>
+<p>Writes a PWM duty cycle percentage to the selected timer channel. </p>
+<p>Converts a percentage value (0–100%) into a raw compare value based on the current auto-reload register (ARR) and writes it to the corresponding CCR register.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">huart</td><td>Handle to the UART/USART module to use. </td></tr>
-    <tr><td class="paramname">format</td><td>Format string, similar to printf. </td></tr>
-    <tr><td class="paramname">...</td><td>Additional arguments to format into the string.</td></tr>
+    <tr><td class="paramname">htim</td><td>Pointer to a TIM_HandleTypeDef structure. </td></tr>
+    <tr><td class="paramname">channel</td><td>Timer channel identifier (e.g., TIM_CHANNEL_1). </td></tr>
+    <tr><td class="paramname">duty_cycle</td><td>Duty cycle in percent (0–100); values above 100 are clamped to 100. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, 1 on error.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Ensure that <code>huart</code> is initialized before calling this function. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="serial__helper_8c_source.html#l00042">42</a> of file <a class="el" href="serial__helper_8c_source.html">serial_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pwm__helper_8h_source.html#l00069">69</a> of file <a class="el" href="pwm__helper_8h_source.html">pwm_helper.h</a>.</p>
 
 </div>
 </div>
@@ -225,7 +234,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_b596f468b52957496e4f78b80e029268.html">Src</a></li><li class="navelem"><a class="el" href="serial__helper_8c.html">serial_helper.c</a></li>
+    <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_e2489e887f17afa3cbc07a4ec152cdd2.html">Inc</a></li><li class="navelem"><a class="el" href="pwm__helper_8h.html">pwm_helper.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

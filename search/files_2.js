@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['serial_5fhelper_2ec_0',['serial_helper.c',['../serial__helper_8c.html',1,'']]],
-  ['serial_5fhelper_2eh_1',['serial_helper.h',['../serial__helper_8h.html',1,'']]]
+  ['pwm_5fhelper_2eh_0',['pwm_helper.h',['../pwm__helper_8h.html',1,'']]]
 ];
