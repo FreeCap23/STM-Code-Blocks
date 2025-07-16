@@ -128,3 +128,6 @@ Let's go over the arguments to this function.
 - `buffer`: The buffer where the message will be stored
 - `BUFFER_SIZE`: How many bytes to receive
 - `10`: Timeout. How much time (in ms) can pass until it stops trying to receive a message.
+
+## SPI Communication
+https://wiki.st.com/stm32mcu/wiki/Getting_started_with_SPI
