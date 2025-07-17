@@ -6,11 +6,11 @@
 ```c
 enum ADC_DMA_CHANNELS {
     VBATT,
-	COM_VOLTAGE,
+    COM_VOLTAGE,
     TEMPERATURE,
     PRESSURE,
 
-	ADC_DMA_CHANNEL_COUNT  // Total number of ADC DMA Channels
+    ADC_DMA_CHANNEL_COUNT  // Total number of ADC DMA Channels
 };
 
 extern uint16_t adc_values[ADC_DMA_CHANNEL_COUNT];
