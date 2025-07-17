@@ -34,9 +34,9 @@ Example of how the content of `globals.c` content should look like:
 ```c
 /* === globals.c === */
 #include "global_variables.h"
-int globalVariableName1 = 0;  // Declaration of a 1st variable
-extern int globalVariableName2;  // Declaration of a 2nd variable
-extern int globalVariableName3;  // Declaration of a 3rd variable
+int globalVariableName1 = 0;  // Definition of the 1st variable
+int globalVariableName2 = 0;  // Definition of the 2nd variable
+int globalVariableName1 = 0;  // Definition of the 1st variable
 ```
 
 
