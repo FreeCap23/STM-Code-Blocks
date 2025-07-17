@@ -103,10 +103,10 @@ Where to Add Global Variables</h1>
 <li>in the "New Header File" dialog window write "globals.h" in the "Header file:" field and choose "Default C header template" in "Template" field.</li>
 </ul>
 <p>Example </p><div class="fragment"><div class="line"><span class="comment">/* === globals.h === */</span></div>
-<div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName;  <span class="comment">// Declaration</span></div>
+<div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> myGlobalVar;  <span class="comment">// Declaration</span></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="comment">/* === globals.c === */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
-<div class="line"><span class="keywordtype">int</span> globalvariableName = 0;     <span class="comment">// Definition</span></div>
+<div class="line"><span class="keywordtype">int</span> myGlobalVar = 0;     <span class="comment">// Definition</span></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="comment">/* === main.c === */</span></div>
 <div class="line"><span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="main_8h.html">main.h</a>&quot;</span></div>
@@ -115,11 +115,11 @@ Where to Add Global Variables</h1>
 <div class="line"><span class="comment">/* USER CODE BEGIN Includes */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span>    <span class="comment">// &lt;- add your includes in this section</span></div>
 <div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
-<div class="line"><span class="comment">// Now you can use globalVariableName in your main.c file</span></div>
+<div class="line"><span class="comment">// Now you can use myGlobalVar in your main.c file</span></div>
 <div class="ttc" id="amain_8h_html"><div class="ttname"><a href="main_8h.html">main.h</a></div><div class="ttdoc">: Header for main.c file. This file contains the common defines of the application.</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="comment">/* === anywhere else.c === */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
-<div class="line"><span class="keywordtype">int</span> localVariableName = globalVariableName;</div>
+<div class="line"><span class="keywordtype">int</span> myLocalVar = myGlobalVar;</div>
 </div><!-- fragment --><blockquote class="doxtable">
 <p>&zwj;⚠️ Only define a global variable once, in the <code>globals.c</code> file. If you define it multiple times, you will get a compilation error. </p>
 </blockquote>
