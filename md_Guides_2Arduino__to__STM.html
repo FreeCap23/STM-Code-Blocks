@@ -104,7 +104,16 @@ Global Variables</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">/* === globals.c === */</span></div>
 <div class="line"><span class="keywordtype">int</span> myGlobalVar = 0;     <span class="comment">// Definition</span></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
+<div class="line"> </div>
+<div class="line"><span class="comment">/* === anywhere else === */</span></div>
+<div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
+<div class="line"><span class="keywordflow">if</span> (myGlobalVar &lt; 2) {   <span class="comment">// Using the variable</span></div>
+<div class="line">  <span class="comment">// Do something</span></div>
+<div class="line">}</div>
+</div><!-- fragment --> <blockquote class="doxtable">
+<p>&zwj;⚠️ Only define a global variable once, in the <code>globals.c</code> file. If you define it multiple times, you will get a compilation error. </p>
+</blockquote>
+<h2><a class="anchor" id="autotoc_md4"></a>
 Libraries Required Based on Variable Types</h2>
 <p>STM32 uses standard C types and headers. You often need to include standard headers manually for specific types. </p><table class="markdownTable">
 <tr class="markdownTableHead">
