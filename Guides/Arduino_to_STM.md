@@ -14,7 +14,11 @@ In STM32CubeMX-generated code, global variables should be declared in a new file
 Example of how the content of `globals.h` content should look like:
 ```c
 /* === globals.h === */
+#ifndef GLOBALS_H_
+#define GLOBALS_H_
+
 extern int globalVariableName;  // Declaration
+#endif /* GLOBALS_H_ */
 ```
 ```c
 /* === globals.c === */
