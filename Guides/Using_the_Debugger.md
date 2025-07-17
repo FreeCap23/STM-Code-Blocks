@@ -1,4 +1,4 @@
-# 🔍 STM32CubeIDE Debugging Guide
+# STM32CubeIDE Debugging Guide
 
 STM32CubeIDE offers powerful debugging features like breakpoints, variable inspection, memory watch, and step-by-step execution. Here's how to get started.
 

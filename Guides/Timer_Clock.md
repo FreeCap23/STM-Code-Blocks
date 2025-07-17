@@ -1,4 +1,4 @@
-@page Timer_Clock_Guide Timer Clock Guide
+# Timer Clock Guide
 
 This guide explains some things that may be unclear when configuring the clocks for different timers.
 

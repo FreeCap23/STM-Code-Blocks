@@ -1,4 +1,4 @@
-@page Peripheral_Setup_Guide Peripheral Setup Guide
+# Peripheral Setup Guide
 
 This guide explains how to configure basic I/O and peripheral functionality on STM32 microcontrollers using STM32CubeIDE.
 
@@ -75,7 +75,7 @@ Where `x` is your Timer's number and `y` is the number of the Channel whose Duty
 - Under **NVIC > Configuration** make sure **EXTI line interrupts** is enabled.
 - Generate the code.
 
-In your `main.c` you need to add the **ISR** (**I**nterrupt **S**ervice **R**outine):
+In your `main.c` you need to add the **ISR** (Interrupt Service Routine):
 ```c
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
@@ -89,7 +89,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 ## UART Communication
 https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART
 
-> ℹ️ Some boards (Like the F411E Discovery) do not support VCP (**V**irtual **C**OM **P**ort), meaning you cannot use the ST-Link USB port as a serial communication port. If that is the case, you need to use the RX/TX pins themselves and use a USB to Serial converter to talk to the PC.
+> ℹ️ Some boards (Like the F411E Discovery) do not support VCP (Virtual COM Port), meaning you cannot use the ST-Link USB port as a serial communication port. If that is the case, you need to use the RX/TX pins themselves and use a USB to Serial converter to talk to the PC.
 
 > ⚠️ Setting baud rate too high may result in lost bytes when receiving data in bulk without DMA
 
