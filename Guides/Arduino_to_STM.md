@@ -4,7 +4,7 @@ If you're used to programming in Arduino (where everything is typically in one .
 
 ## Where to Add Global Variables
 
-In STM32CubeMX-generated code, global variables should be declared in a `globals.h` file following these steps:
+A. In STM32CubeMX-generated code, global variables should be declared in a `globals.h` file following these steps:
 - navigate to "Project Explorer / YourProject / Core / Inc";
 - right-click on "Inc" folder;
 - choose "New / Header file";
@@ -26,7 +26,7 @@ extern int globalVariableName3;  // Declaration of a 3rd variable
 
 #endif /* GLOBALS_H_ */
 ```
-The global variables you declared in `globals.h` must be also defined (assigned default values) into a `globals.c` file following these steps:
+B. The global variables you declared in `globals.h` must be also defined (assigned default values) into a `globals.c` file following these steps:
 - navigate to "Project Explorer / YourProject / Core / Src";
 - right-click on "Src" folder;
 - choose "New / Source file";
@@ -43,7 +43,7 @@ int globalVariableName3 = 0;  // Definition of the 3rd variable
 ```
 
 
-
+C. TBD
 ```c
 /* === main.c === */
 /* Includes ------------------------------------------------------------------*/
