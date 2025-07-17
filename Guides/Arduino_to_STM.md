@@ -45,17 +45,14 @@ int globalVariableName3 = 0;  // Definition of the 3rd variable
 
 C. To make you global variables available to the main code, the `globals.h` file must be included into `main.c` file following these steps:
 - navigate to "Project Explorer / YourProject / Core / Src" and open the `main.c` file;
-- double 
+- search for the 'Private includes' section and include your 'global.h' file as shown in the example below.
 ```c
 /* === main.c === */
-/* Includes ------------------------------------------------------------------*/
-#include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "globals.h"    // <- add your includes in this section
+#include "globals.h"
 /* USER CODE END Includes */
-// Now you can use globalVariableName in your main.c file
 ```
 ```c
 /* === anywhere else.c === */
