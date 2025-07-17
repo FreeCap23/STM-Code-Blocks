@@ -33,11 +33,11 @@ HAL_GPIO_WritePin(BLUE_LED_GPIO_Port, BLUE_LED_Pin, GPIO_PIN_SET);
 
 a. For a single channel:
 ```c
-uint32_t adc_val = 0;
-HAL_ADC_Start(&hadc1);
-HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+uint32_t adc_val = 0; 
+HAL_ADC_Start(&hadc1);  // This line needs to be before the while loop
+HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY); // Wait for conversion to be completed
 adc_val = HAL_ADC_GetValue(&hadc1);
-HAL_ADC_Stop(&hadc1);
+HAL_ADC_Stop(&hadc1); // Stop conversion
 ```
 b. For multiple channels:
 
