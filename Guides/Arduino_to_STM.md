@@ -12,12 +12,12 @@ Example
 extern int myGlobalVar;  // Declaration
 
 /* === globals.c === */
+#include "globals.h"
 int myGlobalVar = 0;     // Definition
 
-/* === anywhere else === */
+/* === anywhere else.c === */
 #include "globals.h"
-if (myGlobalVar < 2) {   // Using the variable
-  // Do something
+int myLocalVar = myGlobalVar;
 }
 ```
 > ⚠️ Only define a global variable once, in the `globals.c` file. If you define it multiple times, you will get a compilation error.
