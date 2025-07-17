@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('md_Guides_2Arduino__to__STM.html','');
 <div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> If you're used to programming in Arduino (where everything is typically in one .ino file with <code>setup()</code> and <code>loop()</code>), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Where to Add Global Variables</h1>
-<p>In STM32CubeMX-generated code, global variables should be declared in a <code>globals.h</code> file following these steps:</p><ul>
+<p>A. In STM32CubeMX-generated code, global variables should be declared in a <code>globals.h</code> file following these steps:</p><ul>
 <li>navigate to "Project Explorer / YourProject / Core / Inc";</li>
 <li>right-click on "Inc" folder;</li>
 <li>choose "New / Header file";</li>
@@ -115,7 +115,7 @@ Where to Add Global Variables</h1>
 <div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName3;  <span class="comment">// Declaration of a 3rd variable</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#endif </span><span class="comment">/* GLOBALS_H_ */</span><span class="preprocessor"></span></div>
-</div><!-- fragment --><p> The global variables you declared in <code>globals.h</code> must be also defined (assigned default values) into a <code>globals.c</code> file following these steps:</p><ul>
+</div><!-- fragment --><p> B. The global variables you declared in <code>globals.h</code> must be also defined (assigned default values) into a <code>globals.c</code> file following these steps:</p><ul>
 <li>navigate to "Project Explorer / YourProject / Core / Src";</li>
 <li>right-click on "Src" folder;</li>
 <li>choose "New / Source file";</li>
@@ -127,10 +127,7 @@ Where to Add Global Variables</h1>
 <div class="line"><span class="keywordtype">int</span> globalVariableName1 = 0;  <span class="comment">// Definition of the 1st variable</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName2 = 0;  <span class="comment">// Definition of the 2nd variable</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName3 = 0;  <span class="comment">// Definition of the 3rd variable</span></div>
-</div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">/* === globals.c === */</span></div>
-<div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
-<div class="line"><span class="keywordtype">int</span> globalvariableName = 0;     <span class="comment">// Definition</span></div>
-</div><!-- fragment --> <div class="fragment"><div class="line"><span class="comment">/* === main.c === */</span></div>
+</div><!-- fragment --><p>C. TBD </p><div class="fragment"><div class="line"><span class="comment">/* === main.c === */</span></div>
 <div class="line"><span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="main_8h.html">main.h</a>&quot;</span></div>
 <div class="line"> </div>
