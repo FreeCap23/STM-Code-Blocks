@@ -14,7 +14,14 @@ extern int myGlobalVar;  // Declaration
 
 /* === globals.c === */
 int myGlobalVar = 0;     // Definition
+
+/* === anywhere else === */
+#include "globals.h"
+if (myGlobalVar < 2) {   // Using the variable
+  // Do something
+}
 ```
+> ⚠️ Only define a global variable once, in the `globals.c` file. If you define it multiple times, you will get a compilation error.
 
 ### Libraries Required Based on Variable Types
 
