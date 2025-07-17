@@ -1,6 +1,6 @@
 # STM32 HAL Project Structure for Arduino Users
 
-If you're used to programming in Arduino (where everything is typically in one .ino file with setup() and loop()), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:
+If you're used to programming in Arduino (where everything is typically in one .ino file with `setup()` and `loop()`), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:
 
 ## Where to Add Global and Local Variables
 ### Global Variables
@@ -23,7 +23,7 @@ if (myGlobalVar < 2) {   // Using the variable
 ```
 > ⚠️ Only define a global variable once, in the `globals.c` file. If you define it multiple times, you will get a compilation error.
 
-### Libraries Required Based on Variable Types
+## Libraries Required Based on Variable Types
 
 STM32 uses standard C types and headers. You often need to include standard headers manually for specific types.
 | Variable Type              | Header File Required    | Notes                        |
@@ -43,7 +43,7 @@ uint8_t myByte = 0;
 bool isReady = false;
 ```
 
-### What Is the Equivalent of setup() and loop()?
+## What Is the Equivalent of setup() and loop()?
 | Arduino   | STM32 (CubeMX/HAL)                                                         | Notes                         |
 | --------- | -------------------------------------------------------------------------- | ----------------------------- |
 | `setup()` | Code inside `int main(void)` after `HAL_Init()` and `SystemClock_Config()` | Initialization code goes here |
@@ -73,6 +73,6 @@ int main(void)
   }
 }
 ```
-> ℹ️ **Important**: Only write your own code in sections marked with comments like `/* USER CODE BEGIN x */` and `/* USER CODE END x */`. \
+> ℹ️ **Important**: Only write your own code in sections marked with comments like `/* USER CODE BEGIN x */` and `/* USER CODE END x */`.
 These regions are preserved when you regenerate code with STM32CubeMX.
 Anything outside these blocks may be deleted or overwritten.
