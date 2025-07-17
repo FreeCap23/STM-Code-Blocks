@@ -9,7 +9,7 @@ In STM32CubeMX-generated code, global variables should be declared in a new file
 - right-click on "Inc" folder;
 - choose "New / Header file";
 - in the "New Header File" dialog window write "globals.h" in the "Header file:" field and choose "Default C header template" in "Template" field. Click "Finish".
-- `globals.h` file opens automatically with some predefined code in it. Place your global variables just before the `endif '/* GLOBALS_H_ */` line.
+- `globals.h` file opens automatically with some predefined code in it. Place your global variables just before the `endif /* GLOBALS_H_ */` line.
 
 Example
 ```c
