@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['timer_20clock_20guide_0',['Timer Clock Guide',['../md_Guides_2Timer__Clock.html',1,'']]]
+  ['mode_20effectively_0',['Using the ADC in DMA mode effectively',['../md_Guides_2Using__the__ADC__with__DMA.html',1,'']]]
 ];
