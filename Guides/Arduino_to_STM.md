@@ -28,9 +28,16 @@ The global variables you declared in `globals.h` must be also defined (assigned 
 - right-click on "Src" folder;
 - choose "New / Source file";
 - in the "New Source File" dialog window write "globals.c" in the "Source file:" field and choose "Default C header template" in "Template" field. Click "Finish".
-- `globals.c` file opens automatically with some predefined code in it. Place your global variables just before the `endif /* GLOBALS_H_ */` line.
+- `globals.c` file opens automatically. Add the '#include "global_variables.h"' line and set the type and the default value of each of your global variables.
 
-
+Example of how the content of `globals.c` content should look like:
+```c
+/* === globals.c === */
+#include "global_variables.h"
+int globalVariableName1 = 0;  // Declaration of a 1st variable
+extern int globalVariableName2;  // Declaration of a 2nd variable
+extern int globalVariableName3;  // Declaration of a 3rd variable
+```
 
 
 
