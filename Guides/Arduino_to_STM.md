@@ -13,7 +13,7 @@ In STM32CubeMX-generated code, global variables should be declared in a new file
 Example
 ```c
 /* === globals.h === */
-extern int globalvariableName;  // Declaration
+extern int globalVariableName;  // Declaration
 ```
 ```c
 /* === globals.c === */
