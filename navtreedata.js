@@ -44,7 +44,7 @@ var NAVTREE =
     ] ],
     [ "Using the ADC in DMA mode effectively", "md_Guides_2Using__the__ADC__with__DMA.html", [
       [ "Setup", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md16", null ],
-      [ "Example usage:", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md17", null ]
+      [ "Example usage", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md17", null ]
     ] ],
     [ "STM32CubeIDE Debugging Guide", "md_Guides_2Using__the__Debugger.html", [
       [ "Build and Flash the Project", "md_Guides_2Using__the__Debugger.html#autotoc_md20", null ],
