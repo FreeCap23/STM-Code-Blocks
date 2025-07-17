@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['input_0',['Analog Input',['../Peripheral_Setup_Guide.html#autotoc_md2',1,'']]],
-  ['input_20output_1',['Digital Input / Output',['../Peripheral_Setup_Guide.html#autotoc_md1',1,'']]],
-  ['interrupt_2',['Setting a timer interrupt',['../Peripheral_Setup_Guide.html#autotoc_md7',1,'']]],
-  ['interrupt_20on_20an_20arbitrary_20pin_3',['Triggering an interrupt on an arbitrary pin',['../Peripheral_Setup_Guide.html#autotoc_md4',1,'']]]
+  ['global_20and_20local_20variables_0',['Where to Add Global and Local Variables',['../md_Guides_2Arduino__to__STM.html#autotoc_md2',1,'']]],
+  ['global_20variables_1',['Global Variables',['../md_Guides_2Arduino__to__STM.html#autotoc_md3',1,'']]],
+  ['guide_2',['guide',['../Peripheral_Setup_Guide.html',1,'Peripheral Setup Guide'],['../Timer_Clock_Guide.html',1,'Timer Clock Guide']]]
 ];

@@ -25,6 +25,13 @@
 var NAVTREE =
 [
   [ "STM Code Blocks", "index.html", [
+    [ "STM32 HAL Project Structure for Arduino Users", "md_Guides_2Arduino__to__STM.html", [
+      [ "Where to Add Global and Local Variables", "md_Guides_2Arduino__to__STM.html#autotoc_md2", [
+        [ "Global Variables", "md_Guides_2Arduino__to__STM.html#autotoc_md3", null ],
+        [ "Libraries Required Based on Variable Types", "md_Guides_2Arduino__to__STM.html#autotoc_md4", null ],
+        [ "What Is the Equivalent of setup() and loop()?", "md_Guides_2Arduino__to__STM.html#autotoc_md5", null ]
+      ] ]
+    ] ],
     [ "Peripheral Setup Guide", "Peripheral_Setup_Guide.html", null ],
     [ "Timer Clock Guide", "Timer_Clock_Guide.html", null ],
     [ "Files", "files.html", [

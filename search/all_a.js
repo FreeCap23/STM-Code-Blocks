@@ -1,12 +1,6 @@
 var searchData=
 [
-  ['serial_5fhelper_2ec_0',['serial_helper.c',['../serial__helper_8c.html',1,'']]],
-  ['serial_5fhelper_2eh_1',['serial_helper.h',['../serial__helper_8h.html',1,'']]],
-  ['serialprint_2',['serialprint',['../serial__helper_8h.html#a126c9b4716b7253d5187778b23b84284',1,'SerialPrint(UART_HandleTypeDef *huart, const char *format,...):&#160;serial_helper.c'],['../serial__helper_8c.html#a126c9b4716b7253d5187778b23b84284',1,'SerialPrint(UART_HandleTypeDef *huart, const char *format,...):&#160;serial_helper.c']]],
-  ['serialprintln_3',['serialprintln',['../serial__helper_8h.html#a5fc9820bc2a74c73e056baa14285b3dc',1,'SerialPrintLn(UART_HandleTypeDef *huart, const char *format,...):&#160;serial_helper.c'],['../serial__helper_8c.html#a5fc9820bc2a74c73e056baa14285b3dc',1,'SerialPrintLn(UART_HandleTypeDef *huart, const char *format,...):&#160;serial_helper.c']]],
-  ['setting_20a_20timer_20interrupt_4',['Setting a timer interrupt',['../Peripheral_Setup_Guide.html#autotoc_md7',1,'']]],
-  ['setup_20guide_5',['Peripheral Setup Guide',['../Peripheral_Setup_Guide.html',1,'']]],
-  ['spi_20communication_6',['SPI Communication',['../Peripheral_Setup_Guide.html#autotoc_md6',1,'']]],
-  ['stm_20code_20blocks_7',['STM Code Blocks',['../index.html',1,'']]],
-  ['systemclock_5fconfig_8',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
+  ['main_0',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]],
+  ['main_2ec_1',['main.c',['../main_8c.html',1,'']]],
+  ['main_2eh_2',['main.h',['../main_8h.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['peripheral_20setup_20guide_0',['Peripheral Setup Guide',['../Peripheral_Setup_Guide.html',1,'']]]
+  ['for_20arduino_20users_0',['STM32 HAL Project Structure for Arduino Users',['../md_Guides_2Arduino__to__STM.html',1,'']]]
 ];

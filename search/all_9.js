@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['parsecommand_0',['ParseCommand',['../command__parser_8h.html#aeb06d139d2067118b03b3f2972fc67ef',1,'command_parser.h']]],
-  ['peripheral_20clocks_1',['APBx Peripheral Clocks',['../Timer_Clock_Guide.html#autotoc_md8',1,'']]],
-  ['peripheral_20setup_20guide_2',['Peripheral Setup Guide',['../Peripheral_Setup_Guide.html',1,'']]],
-  ['pin_3',['Triggering an interrupt on an arbitrary pin',['../Peripheral_Setup_Guide.html#autotoc_md4',1,'']]],
-  ['pwm_20output_4',['PWM Output',['../Peripheral_Setup_Guide.html#autotoc_md3',1,'']]],
-  ['pwm_5fhelper_2eh_5',['pwm_helper.h',['../pwm__helper_8h.html',1,'']]]
+  ['libraries_20required_20based_20on_20variable_20types_0',['Libraries Required Based on Variable Types',['../md_Guides_2Arduino__to__STM.html#autotoc_md4',1,'']]],
+  ['local_20variables_1',['Where to Add Global and Local Variables',['../md_Guides_2Arduino__to__STM.html#autotoc_md2',1,'']]],
+  ['loop_2',['What Is the Equivalent of setup() and loop()?',['../md_Guides_2Arduino__to__STM.html#autotoc_md5',1,'']]]
 ];
