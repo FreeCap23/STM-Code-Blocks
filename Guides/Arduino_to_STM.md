@@ -24,6 +24,14 @@ extern int globalVariableName3;  // Declaration of a 3rd variable
 #endif /* GLOBALS_H_ */
 ```
 The global variables you declared in `globals.h` must be also defined (assigned default values) into a `globals.c` file following these steps:
+- navigate to "Project Explorer / YourProject / Core / Src";
+- right-click on "Src" folder;
+- choose "New / Source file";
+- in the "New Source File" dialog window write "globals.c" in the "Source file:" field and choose "Default C header template" in "Template" field. Click "Finish".
+- `globals.c` file opens automatically with some predefined code in it. Place your global variables just before the `endif /* GLOBALS_H_ */` line.
+
+
+
 
 
 ```c
