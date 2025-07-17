@@ -117,9 +117,14 @@ Where to Add Global Variables</h1>
 <li>right-click on "Src" folder;</li>
 <li>choose "New / Source file";</li>
 <li>in the "New Source File" dialog window write "globals.c" in the "Source file:" field and choose "Default C header template" in "Template" field. Click "Finish".</li>
-<li><code>globals.c</code> file opens automatically with some predefined code in it. Place your global variables just before the <code>endif /* GLOBALS_H_ */</code> line.</li>
+<li><code>globals.c</code> file opens automatically. Add the '#include "global_variables.h"' line and set the type and the default value of each of your global variables.</li>
 </ul>
-<div class="fragment"><div class="line"><span class="comment">/* === globals.c === */</span></div>
+<p>Example of how the content of <code>globals.c</code> content should look like: </p><div class="fragment"><div class="line"><span class="comment">/* === globals.c === */</span></div>
+<div class="line"><span class="preprocessor">#include &quot;global_variables.h&quot;</span></div>
+<div class="line"><span class="keywordtype">int</span> globalVariableName1 = 0;  <span class="comment">// Declaration of a 1st variable</span></div>
+<div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName2;  <span class="comment">// Declaration of a 2nd variable</span></div>
+<div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName3;  <span class="comment">// Declaration of a 3rd variable</span></div>
+</div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">/* === globals.c === */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
 <div class="line"><span class="keywordtype">int</span> globalvariableName = 0;     <span class="comment">// Definition</span></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="comment">/* === main.c === */</span></div>
