@@ -10,16 +10,29 @@ Example
 ```c
 /* === globals.h === */
 extern int myGlobalVar;  // Declaration
-
+```
+```c
 /* === globals.c === */
 #include "globals.h"
 int myGlobalVar = 0;     // Definition
+```
+```c
+/* === main.c === */
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
 
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+#include "globals.h"    // <- add your includes in this section
+/* USER CODE END Includes */
+// Now you can use myGlobalVar in your main.c file
+```
+```c
 /* === anywhere else.c === */
 #include "globals.h"
 int myLocalVar = myGlobalVar;
-}
 ```
+
 > ⚠️ Only define a global variable once, in the `globals.c` file. If you define it multiple times, you will get a compilation error.
 
 ## Libraries Required Based on Variable Types
