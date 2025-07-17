@@ -10,12 +10,15 @@ In STM32CubeMX-generated code, global variables should be declared in a `globals
 - choose "New / Header file";
 - in the "New Header File" dialog window write "globals.h" in the "Header file:" field and choose "Default C header template" in "Template" field. Click "Finish".
 - `globals.h` file opens automatically with some predefined code in it. Place your global variables just before the `endif /* GLOBALS_H_ */` line.
+- include also the stdbool.h and stdint.h libraries (to make the code able to use boolean and int type variables).
 
 Example of how the content of `globals.h` content should look like:
 ```c
 /* === globals.h === */
 #ifndef GLOBALS_H_
 #define GLOBALS_H_
+#include <stdbool.h>
+#include <stdint.h>
 
 extern int globalVariableName1;  // Declaration of a 1st variable
 extern int globalVariableName2;  // Declaration of a 2nd variable
@@ -36,7 +39,7 @@ Example of how the content of `globals.c` content should look like:
 #include "global_variables.h"
 int globalVariableName1 = 0;  // Definition of the 1st variable
 int globalVariableName2 = 0;  // Definition of the 2nd variable
-int globalVariableName1 = 0;  // Definition of the 1st variable
+int globalVariableName3 = 0;  // Definition of the 3rd variable
 ```
 
 
