@@ -93,15 +93,18 @@ $(document).ready(function(){initNavTree('md_Guides_2Using__the__ADC__with__DMA.
   <div class="headertitle"><div class="title">Using the ADC in DMA mode effectively</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md15"></a></p><ul>
+<div class="textblock"><p><a class="anchor" id="autotoc_md15"></a> </p>
+<h1><a class="anchor" id="autotoc_md16"></a>
+Setup</h1>
+<ul>
 <li>Make sure your ADC is configured to work with DMA in Circular mode. This can be done in the ADC Configuration in CubeMX.</li>
 <li>Define an enum and a buffer in your <code>globals.h</code> file: <div class="fragment"><div class="line"><span class="keyword">enum</span> ADC_DMA_CHANNELS {</div>
 <div class="line">    VBATT,</div>
-<div class="line">  COM_VOLTAGE,</div>
+<div class="line">    COM_VOLTAGE,</div>
 <div class="line">    TEMPERATURE,</div>
 <div class="line">    PRESSURE,</div>
 <div class="line"> </div>
-<div class="line">  ADC_DMA_CHANNEL_COUNT  <span class="comment">// Total number of ADC DMA Channels</span></div>
+<div class="line">    ADC_DMA_CHANNEL_COUNT  <span class="comment">// Total number of ADC DMA Channels</span></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">extern</span> uint16_t adc_values[ADC_DMA_CHANNEL_COUNT];</div>
@@ -130,7 +133,9 @@ $(document).ready(function(){initNavTree('md_Guides_2Using__the__ADC__with__DMA.
 <div class="ttc" id="amain_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdoc">The application entry point.</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00068">main.c:68</a></div></div>
 </div><!-- fragment --></li>
 </ul>
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;adc_channels.h&quot;</span></div>
+<h1><a class="anchor" id="autotoc_md17"></a>
+Example usage:</h1>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> process_adc_data(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
