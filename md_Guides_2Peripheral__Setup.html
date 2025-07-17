@@ -64,7 +64,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('Peripheral_Setup_Guide.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md_Guides_2Peripheral__Setup.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -93,9 +93,9 @@ $(document).ready(function(){initNavTree('Peripheral_Setup_Guide.html',''); init
   <div class="headertitle"><div class="title">Peripheral Setup Guide</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This guide explains how to configure basic I/O and peripheral functionality on STM32 microcontrollers using STM32CubeIDE.</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
-Digital Input / Output</h2>
+<div class="textblock"><p><a class="anchor" id="autotoc_md6"></a> This guide explains how to configure basic I/O and peripheral functionality on STM32 microcontrollers using STM32CubeIDE.</p>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Digital Input / Output</h1>
 <ol type="1">
 <li>Open your <code>.ioc</code> file in STM32CubeIDE.</li>
 <li>In the <b>Pinout &amp; Configuration</b> tab, click on a GPIO pin.</li>
@@ -116,8 +116,8 @@ Digital Input / Output</h2>
 <div class="line"><span class="comment">// These definitions are stored in main.h</span></div>
 </div><!-- fragment --></li>
 </ol>
-<h2><a class="anchor" id="autotoc_md7"></a>
-Analog Input</h2>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Analog Input</h1>
 <ol type="1">
 <li>Enable <b>ADC peripheral</b> under <b>Analog</b>.</li>
 <li>Pick the <b>Channel</b> you want. Note that you cannot reassign the pins of the Channels.</li>
@@ -140,8 +140,8 @@ Analog Input</h2>
 <div class="line">adc_val_channel1 = HAL_ADC_GetValue(&amp;hadc1);</div>
 <div class="line">adc_val_channel2 = HAL_ADC_GetValue(&amp;hadc1);</div>
 <div class="line">HAL_ADC_Stop(&amp;hadc1);</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
-PWM Output</h2>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
+PWM Output</h1>
 <p>To generate <b>PWM signals</b>, we need to use <b>Timers</b>. Pick a timer and configure it:</p><ul>
 <li>Clock Source: Choose your clock source. If you don't know what to pick, choose Internal Clock.</li>
 <li>Channel<code>x</code>: <b>PWM Generation <code>CHx</code></b>. <code>CHxN</code> means the same output as <code>CHx</code> but inversed. You can both <code>CHx</code> and <code>CHxN</code> to generate synchronised, opposite PWM signals by simply choosing <b>PWM Generation CHx CHxN</b>.</li>
@@ -152,8 +152,8 @@ PWM Output</h2>
 </ul>
 <p>To change the PWM's duty cycle programatically: </p><div class="fragment"><div class="line">TIMx-&gt;CCRy = duty_cycle;</div>
 </div><!-- fragment --><p> Where <code>x</code> is your Timer's number and <code>y</code> is the number of the Channel whose Duty Cycle you want to update.</p>
-<h2><a class="anchor" id="autotoc_md9"></a>
-Triggering an interrupt on an arbitrary pin</h2>
+<h1><a class="anchor" id="autotoc_md10"></a>
+Triggering an interrupt on an arbitrary pin</h1>
 <ul>
 <li>Pick the pin you want to generate interrupts on. Note that not all pins have the ability to generate external interrupts.</li>
 <li>Configure the pin as <code>GPIO_EXTIx</code></li>
@@ -161,27 +161,27 @@ Triggering an interrupt on an arbitrary pin</h2>
 <li>Under <b>NVIC &gt; Configuration</b> make sure <b>EXTI line interrupts</b> is enabled.</li>
 <li>Generate the code.</li>
 </ul>
-<p>In your <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> you need to add the <b>ISR</b> (**I**nterrupt **S**ervice **R**outine): </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)</div>
+<p>In your <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> you need to add the <b>ISR</b> (Interrupt Service Routine): </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">if</span>(GPIO_Pin == GPIO_PIN_9) <span class="comment">// If The INT Source Is EXTI Line9 we set up earlier</span></div>
 <div class="line">    {</div>
 <div class="line">        <span class="comment">// Do whatever you need to do</span></div>
 <div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md10"></a>
-UART Communication</h2>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md11"></a>
+UART Communication</h1>
 <p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART</a></p>
 <blockquote class="doxtable">
-<p>&zwj;ℹ️ Some boards (Like the F411E Discovery) do not support VCP (**V**irtual **C**OM **P**ort), meaning you cannot use the ST-Link USB port as a serial communication port. If that is the case, you need to use the RX/TX pins themselves and use a USB to Serial converter to talk to the PC. </p>
+<p>&zwj;ℹ️ Some boards (Like the F411E Discovery) do not support VCP (Virtual COM Port), meaning you cannot use the ST-Link USB port as a serial communication port. If that is the case, you need to use the RX/TX pins themselves and use a USB to Serial converter to talk to the PC. </p>
 </blockquote>
 <blockquote class="doxtable">
 <p>&zwj;⚠️ Setting baud rate too high may result in lost bytes when receiving data in bulk without DMA </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md11"></a>
-SPI Communication</h2>
+<h1><a class="anchor" id="autotoc_md12"></a>
+SPI Communication</h1>
 <p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_SPI">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_SPI</a></p>
-<h2><a class="anchor" id="autotoc_md12"></a>
-Setting a timer interrupt</h2>
+<h1><a class="anchor" id="autotoc_md13"></a>
+Setting a timer interrupt</h1>
 <p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_TIM#TIM_with_interrupt">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_TIM#TIM_with_interrupt</a> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

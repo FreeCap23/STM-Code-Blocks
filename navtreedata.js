@@ -32,15 +32,25 @@ var NAVTREE =
       [ "Libraries Required Based on Variable Types", "md_Guides_2Arduino__to__STM.html#autotoc_md4", null ],
       [ "What Is the Equivalent of setup() and loop()?", "md_Guides_2Arduino__to__STM.html#autotoc_md5", null ]
     ] ],
-    [ "Peripheral Setup Guide", "Peripheral_Setup_Guide.html", null ],
-    [ "Timer Clock Guide", "Timer_Clock_Guide.html", null ],
-    [ "🔍 STM32CubeIDE Debugging Guide", "md_Guides_2Using__the__Debugger.html", [
-      [ "Build and Flash the Project", "md_Guides_2Using__the__Debugger.html#autotoc_md16", null ],
-      [ "Set Breakpoints", "md_Guides_2Using__the__Debugger.html#autotoc_md17", null ],
-      [ "Step Through Code", "md_Guides_2Using__the__Debugger.html#autotoc_md18", null ],
-      [ "Inspect Variables", "md_Guides_2Using__the__Debugger.html#autotoc_md20", null ],
-      [ "Memory and Registers", "md_Guides_2Using__the__Debugger.html#autotoc_md22", null ],
-      [ "Exit Debug Mode", "md_Guides_2Using__the__Debugger.html#autotoc_md24", null ]
+    [ "Peripheral Setup Guide", "md_Guides_2Peripheral__Setup.html", [
+      [ "Digital Input / Output", "md_Guides_2Peripheral__Setup.html#autotoc_md7", null ],
+      [ "Analog Input", "md_Guides_2Peripheral__Setup.html#autotoc_md8", null ],
+      [ "PWM Output", "md_Guides_2Peripheral__Setup.html#autotoc_md9", null ],
+      [ "Triggering an interrupt on an arbitrary pin", "md_Guides_2Peripheral__Setup.html#autotoc_md10", null ],
+      [ "UART Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md11", null ],
+      [ "SPI Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md12", null ],
+      [ "Setting a timer interrupt", "md_Guides_2Peripheral__Setup.html#autotoc_md13", null ]
+    ] ],
+    [ "Timer Clock Guide", "md_Guides_2Timer__Clock.html", [
+      [ "APBx Peripheral Clocks", "md_Guides_2Timer__Clock.html#autotoc_md15", null ]
+    ] ],
+    [ "STM32CubeIDE Debugging Guide", "md_Guides_2Using__the__Debugger.html", [
+      [ "Build and Flash the Project", "md_Guides_2Using__the__Debugger.html#autotoc_md18", null ],
+      [ "Set Breakpoints", "md_Guides_2Using__the__Debugger.html#autotoc_md19", null ],
+      [ "Step Through Code", "md_Guides_2Using__the__Debugger.html#autotoc_md20", null ],
+      [ "Inspect Variables", "md_Guides_2Using__the__Debugger.html#autotoc_md22", null ],
+      [ "Memory and Registers", "md_Guides_2Using__the__Debugger.html#autotoc_md24", null ],
+      [ "Exit Debug Mode", "md_Guides_2Using__the__Debugger.html#autotoc_md26", null ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
@@ -54,7 +64,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"Peripheral_Setup_Guide.html"
+"command__parser_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
