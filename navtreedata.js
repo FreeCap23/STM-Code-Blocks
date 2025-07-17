@@ -34,6 +34,14 @@ var NAVTREE =
     ] ],
     [ "Peripheral Setup Guide", "Peripheral_Setup_Guide.html", null ],
     [ "Timer Clock Guide", "Timer_Clock_Guide.html", null ],
+    [ "🔍 STM32CubeIDE Debugging Guide", "md_Guides_2Using__the__Debugger.html", [
+      [ "Build and Flash the Project", "md_Guides_2Using__the__Debugger.html#autotoc_md16", null ],
+      [ "Set Breakpoints", "md_Guides_2Using__the__Debugger.html#autotoc_md17", null ],
+      [ "Step Through Code", "md_Guides_2Using__the__Debugger.html#autotoc_md18", null ],
+      [ "Inspect Variables", "md_Guides_2Using__the__Debugger.html#autotoc_md20", null ],
+      [ "Memory and Registers", "md_Guides_2Using__the__Debugger.html#autotoc_md22", null ],
+      [ "Exit Debug Mode", "md_Guides_2Using__the__Debugger.html#autotoc_md24", null ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
