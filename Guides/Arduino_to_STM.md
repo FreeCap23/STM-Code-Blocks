@@ -17,7 +17,10 @@ Example of how the content of `globals.h` content should look like:
 #ifndef GLOBALS_H_
 #define GLOBALS_H_
 
-extern int globalVariableName;  // Declaration
+extern int globalVariableName1;  // Declaration
+extern int globalVariableName2;  // Declaration
+extern int globalVariableName3;  // Declaration
+
 #endif /* GLOBALS_H_ */
 ```
 ```c
