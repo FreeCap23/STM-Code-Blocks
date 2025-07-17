@@ -43,7 +43,7 @@ int main(void) {
 /* ------->8 -------- */
 ```
 
-## Example usage:
+## Example usage
 ```c
 #include "globals.h"
 
