@@ -96,7 +96,12 @@ $(document).ready(function(){initNavTree('md_Guides_2Arduino__to__STM.html','');
 <div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> If you're used to programming in Arduino (where everything is typically in one .ino file with <code>setup()</code> and <code>loop()</code>), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Where to Add Global Variables</h1>
-<p>In STM32CubeMX-generated code, global variables should be declared in a new file <code>globals.h</code>.</p>
+<p>In STM32CubeMX-generated code, global variables should be declared in a new file <code>globals.h</code>. Steps to create the "globals.h" file:</p><ul>
+<li>navigate to "Project Explorer / YourProject / Core / Inc";</li>
+<li>right-click on "Inc" folder;</li>
+<li>choose "New / Header file";</li>
+<li>in the "New Header File" dialog window write "globals.h" in the "Header file:" field and choose "Default C header template" in "Template" field.</li>
+</ul>
 <p>Example </p><div class="fragment"><div class="line"><span class="comment">/* === globals.h === */</span></div>
 <div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> myGlobalVar;  <span class="comment">// Declaration</span></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="comment">/* === globals.c === */</span></div>
