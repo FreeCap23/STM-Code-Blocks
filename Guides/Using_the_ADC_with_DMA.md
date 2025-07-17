@@ -1,0 +1,65 @@
+# Using the ADC in DMA mode effectively
+
+- Make sure your ADC is configured to work with DMA in Circular mode. This can be done in the ADC Configuration in CubeMX.
+
+- Define an enum and a buffer in your `globals.h` file:
+```c
+enum ADC_DMA_CHANNELS {
+    VBATT,
+	COM_VOLTAGE,
+    TEMPERATURE,
+    PRESSURE,
+
+	ADC_DMA_CHANNEL_COUNT  // Total number of ADC DMA Channels
+};
+
+extern uint16_t adc_values[ADC_DMA_CHANNEL_COUNT];
+```
+> ⚠️ Make sure the order of the enum elements matches the order of the channels' ranks in your `.ioc`
+
+- Next, in `globals.c`, define and initialize the buffer:
+```c
+#include "globals.h"
+uint16_t adc_values[ADC_DMA_CHANNEL_COUNT] = {0};
+```
+
+- In `main.c`, configure ADC + DMA
+```c
+/* ------->8 -------- */
+/* USER CODE BEGIN Includes */
+#include "globals.h"
+/* USER CODE END Includes */
+/* ------->8 -------- */
+int main(void) {
+/* ------->8 -------- */
+    /* Initialize all configured peripherals */
+    MX_GPIO_Init();
+    MX_DMA_Init();
+    MX_ADC1_Init();
+    /* USER CODE BEGIN 2 */
+    HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adc_values, ADC_DMA_CHANNEL_COUNT);
+    /* USER CODE END 2 */
+/* ------->8 -------- */
+```
+
+Example usage:
+```c
+#include "adc_channels.h"
+
+void process_adc_data(void)
+{
+    // Example: Get battery voltage
+    uint16_t vbatt_raw = adc_values[VBATT];
+
+    // Convert to voltage (assuming 12-bit ADC and 3.3V ref)
+    float voltage = (vbatt_raw / 4095.0f) * 3.3f;
+
+    // Example: Get pressure from sensor
+    uint16_t pressure_raw = adc_values[PRESSURE];
+
+    // Process or log
+    if (voltage < 3.0f) {
+        // Handle low voltage
+    }
+}
+```
