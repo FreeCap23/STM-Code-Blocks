@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('md_Guides_2Arduino__to__STM.html','');
   <div class="headertitle"><div class="title">STM32 HAL Project Structure for Arduino Users</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> If you're used to programming in Arduino (where everything is typically in one .ino file with setup() and loop()), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> If you're used to programming in Arduino (where everything is typically in one .ino file with <code>setup()</code> and <code>loop()</code>), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Where to Add Global and Local Variables</h1>
 <h2><a class="anchor" id="autotoc_md3"></a>
@@ -113,8 +113,8 @@ Global Variables</h2>
 </div><!-- fragment --> <blockquote class="doxtable">
 <p>&zwj;⚠️ Only define a global variable once, in the <code>globals.c</code> file. If you define it multiple times, you will get a compilation error. </p>
 </blockquote>
-<h2><a class="anchor" id="autotoc_md4"></a>
-Libraries Required Based on Variable Types</h2>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Libraries Required Based on Variable Types</h1>
 <p>STM32 uses standard C types and headers. You often need to include standard headers manually for specific types. </p><table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Variable Type   </th><th class="markdownTableHeadNone">Header File Required   </th><th class="markdownTableHeadNone">Notes    </th></tr>
@@ -131,8 +131,8 @@ Libraries Required Based on Variable Types</h2>
 <div class="line"> </div>
 <div class="line">uint8_t myByte = 0;</div>
 <div class="line"><span class="keywordtype">bool</span> isReady = <span class="keyword">false</span>;</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
-What Is the Equivalent of setup() and loop()?</h2>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+What Is the Equivalent of setup() and loop()?</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Arduino   </th><th class="markdownTableHeadNone">STM32 (CubeMX/HAL)   </th><th class="markdownTableHeadNone">Notes    </th></tr>
@@ -164,7 +164,7 @@ What Is the Equivalent of setup() and loop()?</h2>
 <div class="ttc" id="amain_8c_html_a70af21c671abfcc773614a9a4f63d920"><div class="ttname"><a href="main_8c.html#a70af21c671abfcc773614a9a4f63d920">SystemClock_Config</a></div><div class="ttdeci">void SystemClock_Config(void)</div><div class="ttdoc">System Clock Configuration.</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00116">main.c:116</a></div></div>
 <div class="ttc" id="amain_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdoc">The application entry point.</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00068">main.c:68</a></div></div>
 </div><!-- fragment --> <blockquote class="doxtable">
-<p>&zwj;ℹ️ <b>Important</b>: Only write your own code in sections marked with comments like <code>/* USER CODE BEGIN x */</code> and <code>/* USER CODE END x */</code>. \ </p>
+<p>&zwj;ℹ️ <b>Important</b>: Only write your own code in sections marked with comments like <code>/* USER CODE BEGIN x */</code> and <code>/* USER CODE END x */</code>. </p>
 </blockquote>
 <p>These regions are preserved when you regenerate code with STM32CubeMX. Anything outside these blocks may be deleted or overwritten. </p>
 </div></div><!-- contents -->
