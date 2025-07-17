@@ -1,5 +1,6 @@
 # Using the ADC in DMA mode effectively
 
+## Setup
 - Make sure your ADC is configured to work with DMA in Circular mode. This can be done in the ADC Configuration in CubeMX.
 
 - Define an enum and a buffer in your `globals.h` file:
@@ -42,9 +43,9 @@ int main(void) {
 /* ------->8 -------- */
 ```
 
-Example usage:
+## Example usage:
 ```c
-#include "adc_channels.h"
+#include "globals.h"
 
 void process_adc_data(void)
 {
