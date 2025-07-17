@@ -102,10 +102,13 @@ Where to Add Global Variables</h1>
 <li>choose "New / Header file";</li>
 <li>in the "New Header File" dialog window write "globals.h" in the "Header file:" field and choose "Default C header template" in "Template" field. Click "Finish".</li>
 <li><code>globals.h</code> file opens automatically with some predefined code in it. Place your global variables just before the <code>endif /* GLOBALS_H_ */</code> line.</li>
+<li>include also the stdbool.h and stdint.h libraries (to make the code able to use boolean and int type variables).</li>
 </ul>
 <p>Example of how the content of <code>globals.h</code> content should look like: </p><div class="fragment"><div class="line"><span class="comment">/* === globals.h === */</span></div>
 <div class="line"><span class="preprocessor">#ifndef GLOBALS_H_</span></div>
 <div class="line"><span class="preprocessor">#define GLOBALS_H_</span></div>
+<div class="line"><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName1;  <span class="comment">// Declaration of a 1st variable</span></div>
 <div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName2;  <span class="comment">// Declaration of a 2nd variable</span></div>
@@ -123,7 +126,7 @@ Where to Add Global Variables</h1>
 <div class="line"><span class="preprocessor">#include &quot;global_variables.h&quot;</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName1 = 0;  <span class="comment">// Definition of the 1st variable</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName2 = 0;  <span class="comment">// Definition of the 2nd variable</span></div>
-<div class="line"><span class="keywordtype">int</span> globalVariableName1 = 0;  <span class="comment">// Definition of the 1st variable</span></div>
+<div class="line"><span class="keywordtype">int</span> globalVariableName3 = 0;  <span class="comment">// Definition of the 3rd variable</span></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">/* === globals.c === */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
 <div class="line"><span class="keywordtype">int</span> globalvariableName = 0;     <span class="comment">// Definition</span></div>
