@@ -45,11 +45,6 @@ int globalVariableName3 = 0;  // Definition of the 3rd variable
 
 
 ```c
-/* === globals.c === */
-#include "globals.h"
-int globalvariableName = 0;     // Definition
-```
-```c
 /* === main.c === */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
