@@ -4,33 +4,60 @@ If you're used to programming in Arduino (where everything is typically in one .
 
 ## Where to Add Global Variables
 
-In STM32CubeMX-generated code, global variables should be declared in a new file `globals.h`.
+A. In STM32CubeMX-generated code, global variables should be declared in a `globals.h` file following these steps:
+- navigate to "Project Explorer / YourProject / Core / Inc";
+- right-click on "Inc" folder;
+- choose "New / Header file";
+- in the "New Header File" dialog window write "globals.h" in the "Header file:" field and choose "Default C header template" in "Template" field. Click "Finish".
+- `globals.h` file opens automatically with some predefined code in it. Place your global variables just before the `endif /* GLOBALS_H_ */` line.
+- include also the stdbool.h and stdint.h libraries (to make the code able to use boolean and int type variables).
 
-Example
+Example of how the content of `globals.h` content should look like:
 ```c
 /* === globals.h === */
-extern int myGlobalVar;  // Declaration
+#ifndef GLOBALS_H_
+#define GLOBALS_H_
+#include <stdbool.h>
+#include <stdint.h>
+
+extern int globalVariableName1;  // Declaration of a 1st variable
+extern int globalVariableName2;  // Declaration of a 2nd variable
+extern int globalVariableName3;  // Declaration of a 3rd variable
+
+#endif /* GLOBALS_H_ */
 ```
+B. The global variables you declared in `globals.h` must be also defined (assigned default values) into a `globals.c` file following these steps:
+- navigate to "Project Explorer / YourProject / Core / Src";
+- right-click on "Src" folder;
+- choose "New / Source file";
+- in the "New Source File" dialog window write "globals.c" in the "Source file:" field and choose "Default C header template" in "Template" field. Click "Finish".
+- `globals.c` file opens automatically. Add the '#include "global_variables.h"' line and set the type and the default value of each of your global variables.
+
+Example of how the content of `globals.c` content should look like:
 ```c
 /* === globals.c === */
-#include "globals.h"
-int myGlobalVar = 0;     // Definition
+#include "global_variables.h"
+int globalVariableName1 = 0;  // Definition of the 1st variable
+int globalVariableName2 = 0;  // Definition of the 2nd variable
+int globalVariableName3 = 0;  // Definition of the 3rd variable
 ```
+
+
+C. To make you global variables available to the main code, the `globals.h` file must be included into `main.c` file following these steps:
+- navigate to "Project Explorer / YourProject / Core / Src" and open the `main.c` file;
+- search for the `'Private includes'` section and include your `globals.h` file as shown in the example below.
 ```c
 /* === main.c === */
-/* Includes ------------------------------------------------------------------*/
-#include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "globals.h"    // <- add your includes in this section
+#include "globals.h"
 /* USER CODE END Includes */
-// Now you can use myGlobalVar in your main.c file
 ```
 ```c
 /* === anywhere else.c === */
 #include "globals.h"
-int myLocalVar = myGlobalVar;
+int localVariableName = globalVariableName;
 ```
 
 > ⚠️ Only define a global variable once, in the `globals.c` file. If you define it multiple times, you will get a compilation error.
