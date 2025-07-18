@@ -30,7 +30,7 @@ var NAVTREE =
         [ "Global variables should be declared in a <tt>globals.h</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md3", null ],
         [ "The global variables you declared in <tt>globals.h</tt> must be also defined (assigned default values) into a <tt>globals.c</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md4", null ],
         [ "To make your global variables available to the main code, the <tt>globals.h</tt> file must be included into <tt>main.c</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md5", null ],
-        [ "To make your global variables available to other source code files, the <tt>globals.h</tt> file must be included into <tt>main.c</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md6", null ]
+        [ "To make your global variables available to other source code files, the <tt>globals.h</tt> file must be included into that souce code file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md6", null ]
       ] ],
       [ "Libraries Required Based on Variable Types", "md_Guides_2Arduino__to__STM.html#autotoc_md7", null ],
       [ "What Is the Equivalent of setup() and loop()?", "md_Guides_2Arduino__to__STM.html#autotoc_md8", null ]

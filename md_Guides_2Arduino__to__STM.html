@@ -144,12 +144,12 @@ To make your global variables available to the main code, the &lt;tt&gt;globals.
 </div><!-- fragment --></li>
 </ul>
 <h2><a class="anchor" id="autotoc_md6"></a>
-To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:</h2>
-<div class="fragment"><div class="line"><span class="comment">/* === anywhere else.c === */</span></div>
+To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:</h2>
+<div class="fragment"><div class="line"><span class="comment">/* === OtherThanGlobals.c === */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
 <div class="line"><span class="keywordtype">int</span> localVariableName = globalVariableName;</div>
 </div><!-- fragment --><blockquote class="doxtable">
-<p>&zwj;⚠️ Only define a global variable once, in the <code>globals.c</code> file. If you define it multiple times, you will get a compilation error. </p>
+<p>&zwj;⚠️ A global variable must always be defines only once, in the <code>globals.c</code> file. Otherwise you will get a compilation error. </p>
 </blockquote>
 <h1><a class="anchor" id="autotoc_md7"></a>
 Libraries Required Based on Variable Types</h1>
