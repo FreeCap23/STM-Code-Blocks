@@ -1,5 +1,5 @@
 /**
- * @file DRV8705.h
+ * @file spi_helper.h
  * @brief SPI helper module for register-based communication over SPI with configurable R/W bit.
  *
  * This module provides basic read and write access to SPI-based devices
