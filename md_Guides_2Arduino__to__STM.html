@@ -106,6 +106,9 @@ Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file fol
 <li><code>globals.h</code> file opens automatically with some predefined code in it. Place your global variables just before the <code>endif /* GLOBALS_H_ */</code> line.</li>
 <li>include also the stdbool.h and stdint.h libraries (to make the code able to use boolean and int type variables).</li>
 </ul>
+<blockquote class="doxtable">
+<p>&zwj;Examples of supported variables: <code>int</code>, <code>char</code>, <code>float</code>, <code>bool</code>, <code>uint8_t</code>, <code>int16_t</code> </p>
+</blockquote>
 <p>Example of how the content of <code>globals.h</code> content should look like: </p><div class="fragment"><div class="line"><span class="comment">/* === globals.h === */</span></div>
 <div class="line"><span class="preprocessor">#ifndef GLOBALS_H_</span></div>
 <div class="line"><span class="preprocessor">#define GLOBALS_H_</span></div>
@@ -153,23 +156,9 @@ To make your global variables available to other source code files, the &lt;tt&g
 </blockquote>
 <h1><a class="anchor" id="autotoc_md7"></a>
 Libraries Required Based on Variable Types</h1>
-<p>STM32 uses standard C types and headers. You often need to include standard headers manually for specific types. </p><table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Variable Type   </th><th class="markdownTableHeadNone">Header File Required   </th><th class="markdownTableHeadNone">Notes    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>int</code>, <code>char</code>, <code>float</code>   </td><td class="markdownTableBodyNone">No extra headers needed   </td><td class="markdownTableBodyNone">Built-in types in C    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>bool</code>   </td><td class="markdownTableBodyNone"><code>#include &lt;stdbool.h&gt;</code>   </td><td class="markdownTableBodyNone"><code>true</code> and <code>false</code> constants    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>uint8_t</code>, <code>int16_t</code>, etc.   </td><td class="markdownTableBodyNone"><code>#include &lt;stdint.h&gt;</code>   </td><td class="markdownTableBodyNone">Fixed-width integer types   </td></tr>
-</table>
-<p>Examples:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stdint.h&gt;</span>   <span class="comment">// for uint8_t, int32_t, etc.</span></div>
-<div class="line"><span class="preprocessor">#include &lt;stdbool.h&gt;</span>  <span class="comment">// for bool, true, false</span></div>
-<div class="line"> </div>
-<div class="line">uint8_t myByte = 0;</div>
-<div class="line"><span class="keywordtype">bool</span> isReady = <span class="keyword">false</span>;</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
+B. Functions - Declaration, definition and inclusion in the main source code</h1>
+<h1><a class="anchor" id="autotoc_md9"></a>
 What Is the Equivalent of setup() and loop()?</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">

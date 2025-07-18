@@ -33,31 +33,32 @@ var NAVTREE =
         [ "To make your global variables available to other source code files, the <tt>globals.h</tt> file must be included into that souce code file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md6", null ]
       ] ],
       [ "Libraries Required Based on Variable Types", "md_Guides_2Arduino__to__STM.html#autotoc_md7", null ],
-      [ "What Is the Equivalent of setup() and loop()?", "md_Guides_2Arduino__to__STM.html#autotoc_md8", null ]
+      [ "B. Functions - Declaration, definition and inclusion in the main source code", "md_Guides_2Arduino__to__STM.html#autotoc_md8", null ],
+      [ "What Is the Equivalent of setup() and loop()?", "md_Guides_2Arduino__to__STM.html#autotoc_md9", null ]
     ] ],
     [ "Peripheral Setup Guide", "md_Guides_2Peripheral__Setup.html", [
-      [ "Digital Input / Output", "md_Guides_2Peripheral__Setup.html#autotoc_md10", null ],
-      [ "Analog Input", "md_Guides_2Peripheral__Setup.html#autotoc_md11", null ],
-      [ "PWM Output", "md_Guides_2Peripheral__Setup.html#autotoc_md12", null ],
-      [ "Triggering an interrupt on an arbitrary pin", "md_Guides_2Peripheral__Setup.html#autotoc_md13", null ],
-      [ "UART Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md14", null ],
-      [ "SPI Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md15", null ],
-      [ "Setting a timer interrupt", "md_Guides_2Peripheral__Setup.html#autotoc_md16", null ]
+      [ "Digital Input / Output", "md_Guides_2Peripheral__Setup.html#autotoc_md11", null ],
+      [ "Analog Input", "md_Guides_2Peripheral__Setup.html#autotoc_md12", null ],
+      [ "PWM Output", "md_Guides_2Peripheral__Setup.html#autotoc_md13", null ],
+      [ "Triggering an interrupt on an arbitrary pin", "md_Guides_2Peripheral__Setup.html#autotoc_md14", null ],
+      [ "UART Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md15", null ],
+      [ "SPI Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md16", null ],
+      [ "Setting a timer interrupt", "md_Guides_2Peripheral__Setup.html#autotoc_md17", null ]
     ] ],
     [ "Timer Clock Guide", "md_Guides_2Timer__Clock.html", [
-      [ "APBx Peripheral Clocks", "md_Guides_2Timer__Clock.html#autotoc_md18", null ]
+      [ "APBx Peripheral Clocks", "md_Guides_2Timer__Clock.html#autotoc_md19", null ]
     ] ],
     [ "Using the ADC in DMA mode effectively", "md_Guides_2Using__the__ADC__with__DMA.html", [
-      [ "Setup", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md20", null ],
-      [ "Example usage", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md21", null ]
+      [ "Setup", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md21", null ],
+      [ "Example usage", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md22", null ]
     ] ],
     [ "STM32CubeIDE Debugging Guide", "md_Guides_2Using__the__Debugger.html", [
-      [ "Build and Flash the Project", "md_Guides_2Using__the__Debugger.html#autotoc_md24", null ],
-      [ "Set Breakpoints", "md_Guides_2Using__the__Debugger.html#autotoc_md25", null ],
-      [ "Step Through Code", "md_Guides_2Using__the__Debugger.html#autotoc_md26", null ],
-      [ "Inspect Variables", "md_Guides_2Using__the__Debugger.html#autotoc_md28", null ],
-      [ "Memory and Registers", "md_Guides_2Using__the__Debugger.html#autotoc_md30", null ],
-      [ "Exit Debug Mode", "md_Guides_2Using__the__Debugger.html#autotoc_md32", null ]
+      [ "Build and Flash the Project", "md_Guides_2Using__the__Debugger.html#autotoc_md25", null ],
+      [ "Set Breakpoints", "md_Guides_2Using__the__Debugger.html#autotoc_md26", null ],
+      [ "Step Through Code", "md_Guides_2Using__the__Debugger.html#autotoc_md27", null ],
+      [ "Inspect Variables", "md_Guides_2Using__the__Debugger.html#autotoc_md29", null ],
+      [ "Memory and Registers", "md_Guides_2Using__the__Debugger.html#autotoc_md31", null ],
+      [ "Exit Debug Mode", "md_Guides_2Using__the__Debugger.html#autotoc_md33", null ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
