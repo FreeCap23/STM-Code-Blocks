@@ -2,9 +2,9 @@
 
 If you're used to programming in Arduino (where everything is typically in one .ino file with `setup()` and `loop()`), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:
 
-## Global Variables - Declaration and definition
+## A. Global Variables - Declaration and definition
 
-### A. In STM32CubeMX-generated code, global variables should be declared in a `globals.h` file following these steps:
+### A1 Global variables should be declared in a `globals.h` file following these steps:
 - navigate to "Project Explorer / YourProject / Core / Inc";
 - right-click on "Inc" folder;
 - choose "New / Header file";
