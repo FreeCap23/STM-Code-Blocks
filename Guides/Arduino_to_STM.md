@@ -68,9 +68,8 @@ int localVariableName = globalVariableName;
 > ⚠️ A global variable must always be defines only once, in the `globals.c` file. Otherwise you will get a compilation error.
 
 
-## B. Functions - Declaration, definition and inclusion in the main source code
+## B. What Is the Equivalent of setup() and loop() functions found in Arduine IDE?
 
-## What Is the Equivalent of setup() and loop()?
 | Arduino   | STM32 (CubeMX/HAL)                                                         | Notes                         |
 | --------- | -------------------------------------------------------------------------- | ----------------------------- |
 | `setup()` | Code inside `int main(void)` after `HAL_Init()` and `SystemClock_Config()` | Initialization code goes here |
