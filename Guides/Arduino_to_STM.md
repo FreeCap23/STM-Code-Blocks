@@ -4,7 +4,7 @@ If you're used to programming in Arduino (where everything is typically in one .
 
 ## A. Global Variables - Declaration and definition
 
-### A1 Global variables should be declared in a `globals.h` file following these steps:
+### Global variables should be declared in a `globals.h` file following these steps:
 - navigate to "Project Explorer / YourProject / Core / Inc";
 - right-click on "Inc" folder;
 - choose "New / Header file";
