@@ -27,7 +27,7 @@ var NAVTREE =
   [ "STM Code Blocks", "index.html", [
     [ "STM32 HAL Project Structure for Arduino Users", "md_Guides_2Arduino__to__STM.html", [
       [ "A. Global Variables - Declaration and definition", "md_Guides_2Arduino__to__STM.html#autotoc_md2", [
-        [ "A1 Global variables should be declared in a <tt>globals.h</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md3", null ]
+        [ "Global variables should be declared in a <tt>globals.h</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md3", null ]
       ] ],
       [ "Libraries Required Based on Variable Types", "md_Guides_2Arduino__to__STM.html#autotoc_md4", null ],
       [ "What Is the Equivalent of setup() and loop()?", "md_Guides_2Arduino__to__STM.html#autotoc_md5", null ]
