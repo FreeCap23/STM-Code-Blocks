@@ -2,15 +2,17 @@
 
 If you're used to programming in Arduino (where everything is typically in one .ino file with `setup()` and `loop()`), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:
 
-## Where to Add Global Variables
+## A. Global Variables - Declaration, definition and inclusion in the main source code
 
-A. In STM32CubeMX-generated code, global variables should be declared in a `globals.h` file following these steps:
+### Global variables should be declared in a `globals.h` file following these steps:
 - navigate to "Project Explorer / YourProject / Core / Inc";
 - right-click on "Inc" folder;
 - choose "New / Header file";
 - in the "New Header File" dialog window write "globals.h" in the "Header file:" field and choose "Default C header template" in "Template" field. Click "Finish".
 - `globals.h` file opens automatically with some predefined code in it. Place your global variables just before the `endif /* GLOBALS_H_ */` line.
 - include also the stdbool.h and stdint.h libraries (to make the code able to use boolean and int type variables).
+
+> Examples of supported variables: `int`, `char`, `float`, `bool`, `uint8_t`, `int16_t`
 
 Example of how the content of `globals.h` content should look like:
 ```c
@@ -26,7 +28,7 @@ extern int globalVariableName3;  // Declaration of a 3rd variable
 
 #endif /* GLOBALS_H_ */
 ```
-B. The global variables you declared in `globals.h` must be also defined (assigned default values) into a `globals.c` file following these steps:
+### The global variables you declared in `globals.h` must be also defined (assigned default values) into a `globals.c` file following these steps:
 - navigate to "Project Explorer / YourProject / Core / Src";
 - right-click on "Src" folder;
 - choose "New / Source file";
@@ -43,7 +45,7 @@ int globalVariableName3 = 0;  // Definition of the 3rd variable
 ```
 
 
-C. To make you global variables available to the main code, the `globals.h` file must be included into `main.c` file following these steps:
+### To make your global variables available to the main code, the `globals.h` file must be included into `main.c` file following these steps:
 - navigate to "Project Explorer / YourProject / Core / Src" and open the `main.c` file;
 - search for the `'Private includes'` section and include your `globals.h` file as shown in the example below.
 ```c
@@ -54,56 +56,30 @@ C. To make you global variables available to the main code, the `globals.h` file
 #include "globals.h"
 /* USER CODE END Includes */
 ```
+
+
+### To make your global variables available to other source code files, the `globals.h` file must be included into that souce code file following these steps:
 ```c
-/* === anywhere else.c === */
+/* === OtherThanGlobals.c === */
 #include "globals.h"
 int localVariableName = globalVariableName;
 ```
 
-> ⚠️ Only define a global variable once, in the `globals.c` file. If you define it multiple times, you will get a compilation error.
-
-## Libraries Required Based on Variable Types
-
-STM32 uses standard C types and headers. You often need to include standard headers manually for specific types.
-| Variable Type              | Header File Required    | Notes                        |
-| -------------------------- | ----------------------- | ---------------------------- |
-| `int`, `char`, `float`     | No extra headers needed | Built-in types in C          |
-| `bool`                     | `#include <stdbool.h>`  | `true` and `false` constants |
-| `uint8_t`, `int16_t`, etc. | `#include <stdint.h>`   | Fixed-width integer types    |
+> ⚠️ A global variable must always be defines only once, in the `globals.c` file. Otherwise you will get a compilation error.
 
 
-Examples:
+## B. What Is the Equivalent of setup() and loop() functions found in Arduine IDE?
 
-```c
-#include <stdint.h>   // for uint8_t, int32_t, etc.
-#include <stdbool.h>  // for bool, true, false
-
-uint8_t myByte = 0;
-bool isReady = false;
-```
-
-## What Is the Equivalent of setup() and loop()?
-| Arduino   | STM32 (CubeMX/HAL)                                                         | Notes                         |
-| --------- | -------------------------------------------------------------------------- | ----------------------------- |
-| `setup()` | Code inside `int main(void)` after `HAL_Init()` and `SystemClock_Config()` | Initialization code goes here |
-| `loop()`  | Manual infinite loop: `while (1)`                                          | Put your repetitive code here |
-
+| Arduino   | STM32 (CubeMX/HAL)                                                                               | Notes                         |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------------- |
+| `setup()` | Code between `/* USER CODE BEGIN 2 */` and `/* USER CODE END 2 */` comments inside `main.c` file | Initialization code goes here |
+| `loop()`  | Code between `/* USER CODE BEGIN 3 */` and `/* USER CODE END 2 */` comments inside `main.c` file | Put your repetitive code here |
 
 Example in `main.c`:
 ```c
 int main(void)
-{
-  /* USER CODE BEGIN 1 */    // ← Initialization code before HAL and peripherals get initialised
-  /* USER CODE END 1 */
-
-  HAL_Init();                // HAL initialization
-  SystemClock_Config();      // Clock setup
-
-  MX_GPIO_Init();            // Peripherals
-  MX_USART3_UART_Init();
-
-  /* USER CODE BEGIN 2 */     // ← Initialization code here (like Arduino's setup())
-  /* USER CODE END 2 */
+{  /* USER CODE BEGIN 2 */     // ← Initialization code here (like Arduino's setup())
+   /* USER CODE END 2 */
 
   while (1)
   {
@@ -112,6 +88,6 @@ int main(void)
   }
 }
 ```
-> ℹ️ **Important**: Only write your own code in sections marked with comments like `/* USER CODE BEGIN x */` and `/* USER CODE END x */`.
+> ℹ️ **Important**: Write your own code ONLY inside sections marked with comments like `/* USER CODE BEGIN x */` and `/* USER CODE END x */`.
 These regions are preserved when you regenerate code with STM32CubeMX.
 Anything outside these blocks may be deleted or overwritten.
