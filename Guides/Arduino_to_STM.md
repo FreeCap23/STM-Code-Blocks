@@ -67,12 +67,6 @@ int localVariableName = globalVariableName;
 
 > ⚠️ A global variable must always be defines only once, in the `globals.c` file. Otherwise you will get a compilation error.
 
-## Libraries Required Based on Variable Types
-
-
-
-
-
 
 ## B. Functions - Declaration, definition and inclusion in the main source code
 
