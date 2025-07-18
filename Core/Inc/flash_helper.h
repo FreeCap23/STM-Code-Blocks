@@ -4,7 +4,7 @@
  *
  * This module provides helper functions for flash memory operations on STM32 devices.
  *
- * @note Before using this module, define either FLASH_TYPE_PAGE or FLASH_TYPE_SECTOR in your project settings.
+ * @note Before using this module, define either FLASH_TYPE_PAGE or FLASH_TYPE_SECTOR in your project settings. Project > Properties > C/C++ Build > Settings > Tool Settings > MCU/MPU GCC Compiler > Preprocessor
  *
  * Example usage for STM32H7:
  * @code

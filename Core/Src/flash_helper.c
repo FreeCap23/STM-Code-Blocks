@@ -37,7 +37,9 @@ HAL_StatusTypeDef FLASH_HELPER_EraseSector(uint32_t sector) {
     erase_init.TypeErase = FLASH_TYPEERASE_SECTORS;
 	erase_init.Sector = sector;
 	erase_init.NbSectors = 1;
-    erase_init.VoltageRange = VOLTAGE_RANGE_3;
+#ifndef STM32H7
+    erase_init.VoltageRange = VOLTAGE_RANGE_2;
+#endif
     return HAL_FLASHEx_Erase(&erase_init, &sector_error);
 }
 #endif
