@@ -117,7 +117,9 @@ Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file fol
 <div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName3;  <span class="comment">// Declaration of a 3rd variable</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#endif </span><span class="comment">/* GLOBALS_H_ */</span><span class="preprocessor"></span></div>
-</div><!-- fragment --><p> B. The global variables you declared in <code>globals.h</code> must be also defined (assigned default values) into a <code>globals.c</code> file following these steps:</p><ul>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md4"></a>
+The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:</h2>
+<ul>
 <li>navigate to "Project Explorer / YourProject / Core / Src";</li>
 <li>right-click on "Src" folder;</li>
 <li>choose "New / Source file";</li>
@@ -145,7 +147,7 @@ Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file fol
 <blockquote class="doxtable">
 <p>&zwj;⚠️ Only define a global variable once, in the <code>globals.c</code> file. If you define it multiple times, you will get a compilation error. </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md5"></a>
 Libraries Required Based on Variable Types</h1>
 <p>STM32 uses standard C types and headers. You often need to include standard headers manually for specific types. </p><table class="markdownTable">
 <tr class="markdownTableHead">
@@ -163,7 +165,7 @@ Libraries Required Based on Variable Types</h1>
 <div class="line"> </div>
 <div class="line">uint8_t myByte = 0;</div>
 <div class="line"><span class="keywordtype">bool</span> isReady = <span class="keyword">false</span>;</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
 What Is the Equivalent of setup() and loop()?</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
