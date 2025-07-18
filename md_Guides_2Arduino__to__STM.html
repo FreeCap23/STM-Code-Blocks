@@ -168,7 +168,7 @@ B. What Is the Equivalent of setup() and loop() functions found in Arduine IDE?<
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Arduino   </th><th class="markdownTableHeadNone">STM32 (CubeMX/HAL)   </th><th class="markdownTableHeadNone">Notes    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>setup()</code>   </td><td class="markdownTableBodyNone">Code between /* USER CODE BEGIN 2 */ and inside <code>int <a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point.">main(void)</a></code> after <code>/* USER CODE END 2 */</code> and <code><a class="el" href="main_8c.html#a70af21c671abfcc773614a9a4f63d920" title="System Clock Configuration.">SystemClock_Config()</a></code>   </td><td class="markdownTableBodyNone">Initialization code goes here    </td></tr>
+<td class="markdownTableBodyNone"><code>setup()</code>   </td><td class="markdownTableBodyNone">Code between <code>/* USER CODE BEGIN 2 */</code> and <code>/* USER CODE END 2 */</code> comments inside <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> file   </td><td class="markdownTableBodyNone">Initialization code goes here    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><code>loop()</code>   </td><td class="markdownTableBodyNone">Manual infinite loop: <code>while (1)</code>   </td><td class="markdownTableBodyNone">Put your repetitive code here   </td></tr>
 </table>
