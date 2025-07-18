@@ -76,6 +76,11 @@ int localVariableName = globalVariableName;
 | `loop()`  | Manual infinite loop: `while (1)`                                          | Put your repetitive code here |
 
 
+| Arduino   | STM32 (CubeMX/HAL)                                                         | Notes                         |
+| --------- | -------------------------------------------------------------------------- | ----------------------------- |
+| `setup()` | Code between /* USER CODE BEGIN 2 */ and inside `int main(void)` after `/* USER CODE END 2 */` and `SystemClock_Config()` | Initialization code goes here |
+| `loop()`  | Manual infinite loop: `while (1)`                                          | Put your repetitive code here |
+
 Example in `main.c`:
 ```c
 int main(void)
