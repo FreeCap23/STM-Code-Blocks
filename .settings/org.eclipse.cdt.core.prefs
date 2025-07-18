@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+environment/project/com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.801095859/append=true
+environment/project/com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.801095859/appendContributed=true
+environment/project/com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1291255821/FLASH_TYPE_SECTOR/delimiter=;
+environment/project/com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1291255821/FLASH_TYPE_SECTOR/operation=append
+environment/project/com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1291255821/FLASH_TYPE_SECTOR/value=
+environment/project/com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1291255821/append=true
+environment/project/com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1291255821/appendContributed=true
