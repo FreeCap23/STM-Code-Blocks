@@ -12,6 +12,8 @@ If you're used to programming in Arduino (where everything is typically in one .
 - `globals.h` file opens automatically with some predefined code in it. Place your global variables just before the `endif /* GLOBALS_H_ */` line.
 - include also the stdbool.h and stdint.h libraries (to make the code able to use boolean and int type variables).
 
+> Examples of supported variables: `int`, `char`, `float`, `bool`, `uint8_t`, `int16_t`
+
 Example of how the content of `globals.h` content should look like:
 ```c
 /* === globals.h === */
@@ -67,23 +69,12 @@ int localVariableName = globalVariableName;
 
 ## Libraries Required Based on Variable Types
 
-STM32 uses standard C types and headers. You often need to include standard headers manually for specific types.
-| Variable Type              | Header File Required    | Notes                        |
-| -------------------------- | ----------------------- | ---------------------------- |
-| `int`, `char`, `float`     | No extra headers needed | Built-in types in C          |
-| `bool`                     | `#include <stdbool.h>`  | `true` and `false` constants |
-| `uint8_t`, `int16_t`, etc. | `#include <stdint.h>`   | Fixed-width integer types    |
 
 
-Examples:
 
-```c
-#include <stdint.h>   // for uint8_t, int32_t, etc.
-#include <stdbool.h>  // for bool, true, false
 
-uint8_t myByte = 0;
-bool isReady = false;
-```
+
+## B. Functions - Declaration, definition and inclusion in the main source code
 
 ## What Is the Equivalent of setup() and loop()?
 | Arduino   | STM32 (CubeMX/HAL)                                                         | Notes                         |
