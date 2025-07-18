@@ -56,14 +56,14 @@ int globalVariableName3 = 0;  // Definition of the 3rd variable
 ```
 
 
-### To make your global variables available to other source code files, the `globals.h` file must be included into `main.c` file following these steps:
+### To make your global variables available to other source code files, the `globals.h` file must be included into that souce code file following these steps:
 ```c
-/* === anywhere else.c === */
+/* === OtherThanGlobals.c === */
 #include "globals.h"
 int localVariableName = globalVariableName;
 ```
 
-> ⚠️ Only define a global variable once, in the `globals.c` file. If you define it multiple times, you will get a compilation error.
+> ⚠️ A global variable must always be defines only once, in the `globals.c` file. Otherwise you will get a compilation error.
 
 ## Libraries Required Based on Variable Types
 
