@@ -58,6 +58,14 @@ var NAVTREE =
       [ "Memory and Registers", "md_Guides_2Using__the__Debugger.html#autotoc_md29", null ],
       [ "Exit Debug Mode", "md_Guides_2Using__the__Debugger.html#autotoc_md31", null ]
     ] ],
+    [ "Data Structures", "annotated.html", [
+      [ "Data Structures", "annotated.html", "annotated_dup" ],
+      [ "Data Structure Index", "classes.html", null ],
+      [ "Data Fields", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
@@ -70,7 +78,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"command__parser_8h.html"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

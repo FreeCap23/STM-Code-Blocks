@@ -8,5 +8,7 @@ var searchData=
   ['code_20files_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20that_20souce_20code_20file_20following_20these_20steps_3a_5',['To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:',['../md_Guides_2Arduino__to__STM.html#autotoc_md6',1,'']]],
   ['code_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_6',['To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:',['../md_Guides_2Arduino__to__STM.html#autotoc_md5',1,'']]],
   ['command_5fparser_2eh_7',['command_parser.h',['../command__parser_8h.html',1,'']]],
-  ['communication_8',['communication',['../md_Guides_2Peripheral__Setup.html#autotoc_md14',1,'SPI Communication'],['../md_Guides_2Peripheral__Setup.html#autotoc_md13',1,'UART Communication']]]
+  ['communication_8',['communication',['../md_Guides_2Peripheral__Setup.html#autotoc_md14',1,'SPI Communication'],['../md_Guides_2Peripheral__Setup.html#autotoc_md13',1,'UART Communication']]],
+  ['cs_5fpin_9',['CS_Pin',['../structSPI__Helper__t.html#a5cfa2757595b28a6e06b1e9c962d99b9',1,'SPI_Helper_t']]],
+  ['cs_5fport_10',['CS_Port',['../structSPI__Helper__t.html#a91aa4580c0dd324965e10fb12e2b147a',1,'SPI_Helper_t']]]
 ];

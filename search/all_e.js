@@ -14,11 +14,16 @@ var searchData=
   ['source_20code_11',['A. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_2Arduino__to__STM.html#autotoc_md2',1,'']]],
   ['source_20code_20files_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20that_20souce_20code_20file_20following_20these_20steps_3a_12',['To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:',['../md_Guides_2Arduino__to__STM.html#autotoc_md6',1,'']]],
   ['spi_20communication_13',['SPI Communication',['../md_Guides_2Peripheral__Setup.html#autotoc_md14',1,'']]],
-  ['step_20through_20code_14',['Step Through Code',['../md_Guides_2Using__the__Debugger.html#autotoc_md25',1,'']]],
-  ['steps_3a_15',['steps:',['../md_Guides_2Arduino__to__STM.html#autotoc_md3',1,'Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:'],['../md_Guides_2Arduino__to__STM.html#autotoc_md4',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:'],['../md_Guides_2Arduino__to__STM.html#autotoc_md6',1,'To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:'],['../md_Guides_2Arduino__to__STM.html#autotoc_md5',1,'To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:']]],
-  ['stm_20code_20blocks_16',['STM Code Blocks',['../index.html',1,'']]],
-  ['stm32_20hal_20project_20structure_20for_20arduino_20users_17',['STM32 HAL Project Structure for Arduino Users',['../md_Guides_2Arduino__to__STM.html',1,'']]],
-  ['stm32cubeide_20debugging_20guide_18',['STM32CubeIDE Debugging Guide',['../md_Guides_2Using__the__Debugger.html',1,'']]],
-  ['structure_20for_20arduino_20users_19',['STM32 HAL Project Structure for Arduino Users',['../md_Guides_2Arduino__to__STM.html',1,'']]],
-  ['systemclock_5fconfig_20',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
+  ['spi_5fhelper_2ec_14',['spi_helper.c',['../spi__helper_8c.html',1,'']]],
+  ['spi_5fhelper_5finit_15',['spi_helper_init',['../spi__helper_8c.html#a664446571d582c55d7834badf85cd2ba',1,'spi_helper.c']]],
+  ['spi_5fhelper_5fread_5fregister_16',['spi_helper_read_register',['../spi__helper_8c.html#a97a98e84e7b2e760406210a147a245f6',1,'spi_helper.c']]],
+  ['spi_5fhelper_5ft_17',['SPI_Helper_t',['../structSPI__Helper__t.html',1,'']]],
+  ['spi_5fhelper_5fwrite_5fregister_18',['spi_helper_write_register',['../spi__helper_8c.html#a05ca47f4375ae9a7648860ace3ebefae',1,'spi_helper.c']]],
+  ['step_20through_20code_19',['Step Through Code',['../md_Guides_2Using__the__Debugger.html#autotoc_md25',1,'']]],
+  ['steps_3a_20',['steps:',['../md_Guides_2Arduino__to__STM.html#autotoc_md3',1,'Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:'],['../md_Guides_2Arduino__to__STM.html#autotoc_md4',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:'],['../md_Guides_2Arduino__to__STM.html#autotoc_md6',1,'To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:'],['../md_Guides_2Arduino__to__STM.html#autotoc_md5',1,'To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:']]],
+  ['stm_20code_20blocks_21',['STM Code Blocks',['../index.html',1,'']]],
+  ['stm32_20hal_20project_20structure_20for_20arduino_20users_22',['STM32 HAL Project Structure for Arduino Users',['../md_Guides_2Arduino__to__STM.html',1,'']]],
+  ['stm32cubeide_20debugging_20guide_23',['STM32CubeIDE Debugging Guide',['../md_Guides_2Using__the__Debugger.html',1,'']]],
+  ['structure_20for_20arduino_20users_24',['STM32 HAL Project Structure for Arduino Users',['../md_Guides_2Arduino__to__STM.html',1,'']]],
+  ['systemclock_5fconfig_25',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
 ];
