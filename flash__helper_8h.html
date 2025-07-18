@@ -128,7 +128,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Flash memory helper for STM32 family. </p>
 <p>This module provides helper functions for flash memory operations on STM32 devices.</p>
-<dl class="section note"><dt>Note</dt><dd>Before using this module, define either FLASH_TYPE_PAGE or FLASH_TYPE_SECTOR in your project settings.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Before using this module, define either FLASH_TYPE_PAGE or FLASH_TYPE_SECTOR in your project settings. Project &gt; Properties &gt; C/C++ Build &gt; Settings &gt; Tool Settings &gt; MCU/MPU GCC Compiler &gt; Preprocessor</dd></dl>
 <p>Example usage for STM32H7: </p><div class="fragment"><div class="line"><span class="comment">// Initialize flash helper</span></div>
 <div class="line"><a class="code hl_function" href="flash__helper_8h.html#a73314abee595387a029d15c1dba774b7">FLASH_HELPER_Init</a>();</div>
 <div class="line"> </div>
@@ -149,10 +149,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="keywordflow">if</span>(<a class="code hl_function" href="flash__helper_8h.html#a6069a3c879e01f19fefe2a6bf9af2a42">FLASH_HELPER_IsEmpty</a>(0x08080000, 32)) {</div>
 <div class="line">    <span class="comment">// Flash region is empty (all 0xFF)</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aflash__helper_8h_html_a2aff6fe4439f84a61704f2ade4ac1054"><div class="ttname"><a href="flash__helper_8h.html#a2aff6fe4439f84a61704f2ade4ac1054">FLASH_HELPER_Read</a></div><div class="ttdeci">HAL_StatusTypeDef FLASH_HELPER_Read(uint32_t address, uint8_t *data, uint32_t size)</div><div class="ttdoc">Reads data from flash memory.</div><div class="ttdef"><b>Definition</b> <a href="flash__helper_8c_source.html#l00082">flash_helper.c:82</a></div></div>
-<div class="ttc" id="aflash__helper_8h_html_a6069a3c879e01f19fefe2a6bf9af2a42"><div class="ttname"><a href="flash__helper_8h.html#a6069a3c879e01f19fefe2a6bf9af2a42">FLASH_HELPER_IsEmpty</a></div><div class="ttdeci">bool FLASH_HELPER_IsEmpty(uint32_t address, uint32_t size)</div><div class="ttdoc">Verifies if flash memory is empty (all bytes = 0xFF)</div><div class="ttdef"><b>Definition</b> <a href="flash__helper_8c_source.html#l00087">flash_helper.c:87</a></div></div>
+<div class="ttc" id="aflash__helper_8h_html_a2aff6fe4439f84a61704f2ade4ac1054"><div class="ttname"><a href="flash__helper_8h.html#a2aff6fe4439f84a61704f2ade4ac1054">FLASH_HELPER_Read</a></div><div class="ttdeci">HAL_StatusTypeDef FLASH_HELPER_Read(uint32_t address, uint8_t *data, uint32_t size)</div><div class="ttdoc">Reads data from flash memory.</div><div class="ttdef"><b>Definition</b> <a href="flash__helper_8c_source.html#l00084">flash_helper.c:84</a></div></div>
+<div class="ttc" id="aflash__helper_8h_html_a6069a3c879e01f19fefe2a6bf9af2a42"><div class="ttname"><a href="flash__helper_8h.html#a6069a3c879e01f19fefe2a6bf9af2a42">FLASH_HELPER_IsEmpty</a></div><div class="ttdeci">bool FLASH_HELPER_IsEmpty(uint32_t address, uint32_t size)</div><div class="ttdoc">Verifies if flash memory is empty (all bytes = 0xFF)</div><div class="ttdef"><b>Definition</b> <a href="flash__helper_8c_source.html#l00089">flash_helper.c:89</a></div></div>
 <div class="ttc" id="aflash__helper_8h_html_a73314abee595387a029d15c1dba774b7"><div class="ttname"><a href="flash__helper_8h.html#a73314abee595387a029d15c1dba774b7">FLASH_HELPER_Init</a></div><div class="ttdeci">HAL_StatusTypeDef FLASH_HELPER_Init(void)</div><div class="ttdoc">Initializes the flash helper module.</div><div class="ttdef"><b>Definition</b> <a href="flash__helper_8c_source.html#l00016">flash_helper.c:16</a></div></div>
-<div class="ttc" id="aflash__helper_8h_html_a89417c2fa237ff4d7dd952aaf0f033cd"><div class="ttname"><a href="flash__helper_8h.html#a89417c2fa237ff4d7dd952aaf0f033cd">FLASH_HELPER_Write</a></div><div class="ttdeci">HAL_StatusTypeDef FLASH_HELPER_Write(uint32_t address, uint8_t *data, uint32_t size)</div><div class="ttdoc">Writes data to flash memory.</div><div class="ttdef"><b>Definition</b> <a href="flash__helper_8c_source.html#l00045">flash_helper.c:45</a></div></div>
+<div class="ttc" id="aflash__helper_8h_html_a89417c2fa237ff4d7dd952aaf0f033cd"><div class="ttname"><a href="flash__helper_8h.html#a89417c2fa237ff4d7dd952aaf0f033cd">FLASH_HELPER_Write</a></div><div class="ttdeci">HAL_StatusTypeDef FLASH_HELPER_Write(uint32_t address, uint8_t *data, uint32_t size)</div><div class="ttdoc">Writes data to flash memory.</div><div class="ttdef"><b>Definition</b> <a href="flash__helper_8c_source.html#l00047">flash_helper.c:47</a></div></div>
 </div><!-- fragment --><dl class="section date"><dt>Date</dt><dd>Created on: Jul 17, 2025 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Dionisie Stratulat </dd></dl>
 
@@ -295,7 +295,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="flash__helper_8c_source.html#l00087">87</a> of file <a class="el" href="flash__helper_8c_source.html">flash_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flash__helper_8c_source.html#l00089">89</a> of file <a class="el" href="flash__helper_8c_source.html">flash_helper.c</a>.</p>
 
 </div>
 </div>
@@ -347,7 +347,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="flash__helper_8c_source.html#l00082">82</a> of file <a class="el" href="flash__helper_8c_source.html">flash_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flash__helper_8c_source.html#l00084">84</a> of file <a class="el" href="flash__helper_8c_source.html">flash_helper.c</a>.</p>
 
 </div>
 </div>
@@ -402,7 +402,7 @@ Functions</h2></td></tr>
 <dd>
 Flash must be erased before writing </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="flash__helper_8c_source.html#l00045">45</a> of file <a class="el" href="flash__helper_8c_source.html">flash_helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="flash__helper_8c_source.html#l00047">47</a> of file <a class="el" href="flash__helper_8c_source.html">flash_helper.c</a>.</p>
 
 </div>
 </div>
