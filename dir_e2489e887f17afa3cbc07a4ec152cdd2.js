@@ -5,5 +5,5 @@ var dir_e2489e887f17afa3cbc07a4ec152cdd2 =
     [ "main.h", "main_8h.html", "main_8h" ],
     [ "pwm_helper.h", "pwm__helper_8h.html", "pwm__helper_8h" ],
     [ "serial_helper.h", "serial__helper_8h.html", "serial__helper_8h" ],
-    [ "spi_helper.h", "spi__helper_8h_source.html", null ]
+    [ "spi_helper.h", "spi__helper_8h.html", "spi__helper_8h" ]
 ];
