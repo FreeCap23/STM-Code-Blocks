@@ -70,32 +70,16 @@ int localVariableName = globalVariableName;
 
 ## B. What Is the Equivalent of setup() and loop() functions found in Arduine IDE?
 
-| Arduino   | STM32 (CubeMX/HAL)                                                         | Notes                         |
-| --------- | -------------------------------------------------------------------------- | ----------------------------- |
-| `setup()` | Code inside `int main(void)` after `HAL_Init()` and `SystemClock_Config()` | Initialization code goes here |
-| `loop()`  | Manual infinite loop: `while (1)`                                          | Put your repetitive code here |
-
-
-| Arduino   | STM32 (CubeMX/HAL)                                                         | Notes                         |
-| --------- | -------------------------------------------------------------------------- | ----------------------------- |
+| Arduino   | STM32 (CubeMX/HAL)                                                                               | Notes                         |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------------- |
 | `setup()` | Code between `/* USER CODE BEGIN 2 */` and `/* USER CODE END 2 */` comments inside `main.c` file | Initialization code goes here |
-| `loop()`  | Manual infinite loop: `while (1)`                                          | Put your repetitive code here |
+| `loop()`  | Code between `/* USER CODE BEGIN 3 */` and `/* USER CODE END 2 */` comments inside `main.c` file | Put your repetitive code here |
 
 Example in `main.c`:
 ```c
 int main(void)
-{
-  /* USER CODE BEGIN 1 */    // ← Initialization code before HAL and peripherals get initialised
-  /* USER CODE END 1 */
-
-  HAL_Init();                // HAL initialization
-  SystemClock_Config();      // Clock setup
-
-  MX_GPIO_Init();            // Peripherals
-  MX_USART3_UART_Init();
-
-  /* USER CODE BEGIN 2 */     // ← Initialization code here (like Arduino's setup())
-  /* USER CODE END 2 */
+{  /* USER CODE BEGIN 2 */     // ← Initialization code here (like Arduino's setup())
+   /* USER CODE END 2 */
 
   while (1)
   {
@@ -104,6 +88,6 @@ int main(void)
   }
 }
 ```
-> ℹ️ **Important**: Only write your own code in sections marked with comments like `/* USER CODE BEGIN x */` and `/* USER CODE END x */`.
+> ℹ️ **Important**: Write your own code ONLY inside sections marked with comments like `/* USER CODE BEGIN x */` and `/* USER CODE END x */`.
 These regions are preserved when you regenerate code with STM32CubeMX.
 Anything outside these blocks may be deleted or overwritten.
