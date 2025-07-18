@@ -26,33 +26,35 @@ var NAVTREE =
 [
   [ "STM Code Blocks", "index.html", [
     [ "STM32 HAL Project Structure for Arduino Users", "md_Guides_2Arduino__to__STM.html", [
-      [ "Global Variables - Declaration and definition", "md_Guides_2Arduino__to__STM.html#autotoc_md2", null ],
-      [ "Libraries Required Based on Variable Types", "md_Guides_2Arduino__to__STM.html#autotoc_md3", null ],
-      [ "What Is the Equivalent of setup() and loop()?", "md_Guides_2Arduino__to__STM.html#autotoc_md4", null ]
+      [ "Global Variables - Declaration and definition", "md_Guides_2Arduino__to__STM.html#autotoc_md2", [
+        [ "A. In STM32CubeMX-generated code, global variables should be declared in a <tt>globals.h</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md3", null ]
+      ] ],
+      [ "Libraries Required Based on Variable Types", "md_Guides_2Arduino__to__STM.html#autotoc_md4", null ],
+      [ "What Is the Equivalent of setup() and loop()?", "md_Guides_2Arduino__to__STM.html#autotoc_md5", null ]
     ] ],
     [ "Peripheral Setup Guide", "md_Guides_2Peripheral__Setup.html", [
-      [ "Digital Input / Output", "md_Guides_2Peripheral__Setup.html#autotoc_md6", null ],
-      [ "Analog Input", "md_Guides_2Peripheral__Setup.html#autotoc_md7", null ],
-      [ "PWM Output", "md_Guides_2Peripheral__Setup.html#autotoc_md8", null ],
-      [ "Triggering an interrupt on an arbitrary pin", "md_Guides_2Peripheral__Setup.html#autotoc_md9", null ],
-      [ "UART Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md10", null ],
-      [ "SPI Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md11", null ],
-      [ "Setting a timer interrupt", "md_Guides_2Peripheral__Setup.html#autotoc_md12", null ]
+      [ "Digital Input / Output", "md_Guides_2Peripheral__Setup.html#autotoc_md7", null ],
+      [ "Analog Input", "md_Guides_2Peripheral__Setup.html#autotoc_md8", null ],
+      [ "PWM Output", "md_Guides_2Peripheral__Setup.html#autotoc_md9", null ],
+      [ "Triggering an interrupt on an arbitrary pin", "md_Guides_2Peripheral__Setup.html#autotoc_md10", null ],
+      [ "UART Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md11", null ],
+      [ "SPI Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md12", null ],
+      [ "Setting a timer interrupt", "md_Guides_2Peripheral__Setup.html#autotoc_md13", null ]
     ] ],
     [ "Timer Clock Guide", "md_Guides_2Timer__Clock.html", [
-      [ "APBx Peripheral Clocks", "md_Guides_2Timer__Clock.html#autotoc_md14", null ]
+      [ "APBx Peripheral Clocks", "md_Guides_2Timer__Clock.html#autotoc_md15", null ]
     ] ],
     [ "Using the ADC in DMA mode effectively", "md_Guides_2Using__the__ADC__with__DMA.html", [
-      [ "Setup", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md16", null ],
-      [ "Example usage", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md17", null ]
+      [ "Setup", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md17", null ],
+      [ "Example usage", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md18", null ]
     ] ],
     [ "STM32CubeIDE Debugging Guide", "md_Guides_2Using__the__Debugger.html", [
-      [ "Build and Flash the Project", "md_Guides_2Using__the__Debugger.html#autotoc_md20", null ],
-      [ "Set Breakpoints", "md_Guides_2Using__the__Debugger.html#autotoc_md21", null ],
-      [ "Step Through Code", "md_Guides_2Using__the__Debugger.html#autotoc_md22", null ],
-      [ "Inspect Variables", "md_Guides_2Using__the__Debugger.html#autotoc_md24", null ],
-      [ "Memory and Registers", "md_Guides_2Using__the__Debugger.html#autotoc_md26", null ],
-      [ "Exit Debug Mode", "md_Guides_2Using__the__Debugger.html#autotoc_md28", null ]
+      [ "Build and Flash the Project", "md_Guides_2Using__the__Debugger.html#autotoc_md21", null ],
+      [ "Set Breakpoints", "md_Guides_2Using__the__Debugger.html#autotoc_md22", null ],
+      [ "Step Through Code", "md_Guides_2Using__the__Debugger.html#autotoc_md23", null ],
+      [ "Inspect Variables", "md_Guides_2Using__the__Debugger.html#autotoc_md25", null ],
+      [ "Memory and Registers", "md_Guides_2Using__the__Debugger.html#autotoc_md27", null ],
+      [ "Exit Debug Mode", "md_Guides_2Using__the__Debugger.html#autotoc_md29", null ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],

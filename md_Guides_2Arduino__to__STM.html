@@ -96,7 +96,9 @@ $(document).ready(function(){initNavTree('md_Guides_2Arduino__to__STM.html','');
 <div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> If you're used to programming in Arduino (where everything is typically in one .ino file with <code>setup()</code> and <code>loop()</code>), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Global Variables - Declaration and definition</h1>
-<p>A. In STM32CubeMX-generated code, global variables should be declared in a <code>globals.h</code> file following these steps:</p><ul>
+<h2><a class="anchor" id="autotoc_md3"></a>
+A. In STM32CubeMX-generated code, global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:</h2>
+<ul>
 <li>navigate to "Project Explorer / YourProject / Core / Inc";</li>
 <li>right-click on "Inc" folder;</li>
 <li>choose "New / Header file";</li>
@@ -143,7 +145,7 @@ Global Variables - Declaration and definition</h1>
 <blockquote class="doxtable">
 <p>&zwj;⚠️ Only define a global variable once, in the <code>globals.c</code> file. If you define it multiple times, you will get a compilation error. </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Libraries Required Based on Variable Types</h1>
 <p>STM32 uses standard C types and headers. You often need to include standard headers manually for specific types. </p><table class="markdownTable">
 <tr class="markdownTableHead">
@@ -161,7 +163,7 @@ Libraries Required Based on Variable Types</h1>
 <div class="line"> </div>
 <div class="line">uint8_t myByte = 0;</div>
 <div class="line"><span class="keywordtype">bool</span> isReady = <span class="keyword">false</span>;</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
 What Is the Equivalent of setup() and loop()?</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
