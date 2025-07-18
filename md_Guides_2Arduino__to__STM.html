@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('md_Guides_2Arduino__to__STM.html','');
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> If you're used to programming in Arduino (where everything is typically in one .ino file with <code>setup()</code> and <code>loop()</code>), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
-A. Global Variables - Declaration and definition</h1>
+A. Global Variables - Declaration, definition and inclusion in the main source code</h1>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:</h2>
 <ul>
@@ -131,7 +131,9 @@ The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also
 <div class="line"><span class="keywordtype">int</span> globalVariableName1 = 0;  <span class="comment">// Definition of the 1st variable</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName2 = 0;  <span class="comment">// Definition of the 2nd variable</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName3 = 0;  <span class="comment">// Definition of the 3rd variable</span></div>
-</div><!-- fragment --><p>C. To make you global variables available to the main code, the <code>globals.h</code> file must be included into <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> file following these steps:</p><ul>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
+To make you global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:</h2>
+<ul>
 <li>navigate to "Project Explorer / YourProject / Core / Src" and open the <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> file;</li>
 <li>search for the &lsquo;'Private includes&rsquo;<code>section and include your</code>globals.h` file as shown in the example below. <div class="fragment"><div class="line"><span class="comment">/* === main.c === */</span></div>
 <div class="line"> </div>
@@ -147,7 +149,7 @@ The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also
 <blockquote class="doxtable">
 <p>&zwj;⚠️ Only define a global variable once, in the <code>globals.c</code> file. If you define it multiple times, you will get a compilation error. </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 Libraries Required Based on Variable Types</h1>
 <p>STM32 uses standard C types and headers. You often need to include standard headers manually for specific types. </p><table class="markdownTable">
 <tr class="markdownTableHead">
@@ -165,7 +167,7 @@ Libraries Required Based on Variable Types</h1>
 <div class="line"> </div>
 <div class="line">uint8_t myByte = 0;</div>
 <div class="line"><span class="keywordtype">bool</span> isReady = <span class="keyword">false</span>;</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md7"></a>
 What Is the Equivalent of setup() and loop()?</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
