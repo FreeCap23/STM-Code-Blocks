@@ -93,7 +93,10 @@ $(document).ready(function(){initNavTree('md_Guides_201_8_01STM32__Code__Structu
   <div class="headertitle"><div class="title">A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> </p><table class="markdownTable">
+<div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> </p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE</h1>
+<table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Arduino   </th><th class="markdownTableHeadNone">STM32 (CubeMX/HAL)   </th><th class="markdownTableHeadNone">Notes    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -116,9 +119,9 @@ $(document).ready(function(){initNavTree('md_Guides_201_8_01STM32__Code__Structu
 <p>&zwj;ℹ️ <b>Important</b>: Write your own code ONLY inside sections marked with comments like <code>/* USER CODE BEGIN x */</code> and <code>/* USER CODE END x */</code>. </p>
 </blockquote>
 <p>These regions are preserved when you regenerate code with STM32CubeMX. Anything outside these blocks may be deleted or overwritten.</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md3"></a>
 B. Global Variables - Declaration, definition and inclusion in the main source code</h1>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md4"></a>
 Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Inc";</li>
@@ -144,7 +147,7 @@ Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file fol
 <div class="line"><span class="comment">//END of declaring your variables</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#endif </span><span class="comment">/* GLOBALS_H_ */</span><span class="preprocessor"></span></div>
-</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md4"></a>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md5"></a>
 The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Src";</li>
@@ -161,7 +164,7 @@ The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also
 <div class="line"><span class="keywordtype">int</span> globalVariableName2 = 0;  <span class="comment">// Definition of the 2nd variable</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName3 = 0;  <span class="comment">// Definition of the 3rd variable</span></div>
 <div class="line"><span class="comment">//START of declaring your variables</span></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
 To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Src" and open the <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> file;</li>
@@ -173,7 +176,7 @@ To make your global variables available to the main code, the &lt;tt&gt;globals.
 <div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
 </div><!-- fragment --></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:</h2>
 <div class="fragment"><div class="line"><span class="comment">/* === OtherThanGlobals.c === */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>

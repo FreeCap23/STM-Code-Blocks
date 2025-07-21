@@ -93,8 +93,8 @@ $(document).ready(function(){initNavTree('md_Guides_2Peripheral__Setup.html','')
   <div class="headertitle"><div class="title">Peripheral Setup Guide</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md7"></a> This guide explains how to configure basic I/O and peripheral functionality on STM32 microcontrollers using STM32CubeIDE.</p>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md8"></a> This guide explains how to configure basic I/O and peripheral functionality on STM32 microcontrollers using STM32CubeIDE.</p>
+<h1><a class="anchor" id="autotoc_md9"></a>
 Digital Input / Output</h1>
 <ol type="1">
 <li>Open your <code>.ioc</code> file in STM32CubeIDE.</li>
@@ -116,7 +116,7 @@ Digital Input / Output</h1>
 <div class="line"><span class="comment">// These definitions are stored in main.h</span></div>
 </div><!-- fragment --></li>
 </ol>
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 Analog Input</h1>
 <ol type="1">
 <li>Enable <b>ADC peripheral</b> under <b>Analog</b>.</li>
@@ -140,7 +140,7 @@ Analog Input</h1>
 <div class="line">adc_val_channel1 = HAL_ADC_GetValue(&amp;hadc1);</div>
 <div class="line">adc_val_channel2 = HAL_ADC_GetValue(&amp;hadc1);</div>
 <div class="line">HAL_ADC_Stop(&amp;hadc1);</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md10"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md11"></a>
 PWM Output</h1>
 <p>To generate <b>PWM signals</b>, we need to use <b>Timers</b>. Pick a timer and configure it:</p><ul>
 <li>Clock Source: Choose your clock source. If you don't know what to pick, choose Internal Clock.</li>
@@ -152,7 +152,7 @@ PWM Output</h1>
 </ul>
 <p>To change the PWM's duty cycle programatically: </p><div class="fragment"><div class="line">TIMx-&gt;CCRy = duty_cycle;</div>
 </div><!-- fragment --><p> Where <code>x</code> is your Timer's number and <code>y</code> is the number of the Channel whose Duty Cycle you want to update.</p>
-<h1><a class="anchor" id="autotoc_md11"></a>
+<h1><a class="anchor" id="autotoc_md12"></a>
 Triggering an interrupt on an arbitrary pin</h1>
 <ul>
 <li>Pick the pin you want to generate interrupts on. Note that not all pins have the ability to generate external interrupts.</li>
@@ -168,7 +168,7 @@ Triggering an interrupt on an arbitrary pin</h1>
 <div class="line">        <span class="comment">// Do whatever you need to do</span></div>
 <div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md12"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md13"></a>
 UART Communication</h1>
 <p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART</a></p>
 <blockquote class="doxtable">
@@ -177,13 +177,13 @@ UART Communication</h1>
 <blockquote class="doxtable">
 <p>&zwj;⚠️ Setting baud rate too high may result in lost bytes when receiving data in bulk without DMA </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md14"></a>
 SPI Communication</h1>
 <p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_SPI">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_SPI</a></p>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 I2C Communication</h1>
 <p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_I2C">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_I2C</a></p>
-<h1><a class="anchor" id="autotoc_md15"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Setting a timer interrupt</h1>
 <p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_TIM#TIM_with_interrupt">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_TIM#TIM_with_interrupt</a> </p>
 </div></div><!-- contents -->
