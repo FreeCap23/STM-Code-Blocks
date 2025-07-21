@@ -96,5 +96,8 @@ https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART
 ## SPI Communication
 https://wiki.st.com/stm32mcu/wiki/Getting_started_with_SPI
 
+## I2C Communication
+https://wiki.st.com/stm32mcu/wiki/Getting_started_with_I2C
+
 ## Setting a timer interrupt
 https://wiki.st.com/stm32mcu/wiki/Getting_started_with_TIM#TIM_with_interrupt
