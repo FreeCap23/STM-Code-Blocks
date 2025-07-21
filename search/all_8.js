@@ -1,9 +1,9 @@
 var searchData=
 [
   ['i2c_20communication_0',['I2C Communication',['../md_Guides_2Peripheral__Setup.html#autotoc_md15',1,'']]],
-  ['ide_1',['ide',['../md_Guides_201_8_01STM32__Code__Structure.html',1,'A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE'],['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md2',1,'A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE']]],
+  ['ide_1',['A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md2',1,'']]],
   ['in_20a_20tt_20globals_20h_20tt_20file_20following_20these_20steps_3a_2',['Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md4',1,'']]],
-  ['in_20arduine_20ide_3',['in arduine ide',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md2',1,'A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE'],['../md_Guides_201_8_01STM32__Code__Structure.html',1,'A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE']]],
+  ['in_20arduine_20ide_3',['A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md2',1,'']]],
   ['in_20dma_20mode_20effectively_4',['Using the ADC in DMA mode effectively',['../md_Guides_2Using__the__ADC__with__DMA.html',1,'']]],
   ['in_20the_20main_20source_20code_5',['B. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md3',1,'']]],
   ['in_20tt_20globals_20h_20tt_20must_20be_20also_20defined_20assigned_20default_20values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_6',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md5',1,'']]],

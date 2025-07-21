@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "STM Code Blocks", "index.html", [
-    [ "A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE", "md_Guides_201_8_01STM32__Code__Structure.html", [
+    [ "The STM32 Code Strucrure", "md_Guides_201_8_01STM32__Code__Structure.html", [
       [ "A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md2", null ],
       [ "B. Global Variables - Declaration, definition and inclusion in the main source code", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md3", [
         [ "Global variables should be declared in a <tt>globals.h</tt> file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md4", null ],
