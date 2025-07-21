@@ -95,7 +95,12 @@ $(document).ready(function(){initNavTree('md_Guides_201_8_01STM32__Code__Structu
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> </p>
 <h1><a class="anchor" id="autotoc_md2"></a>
-A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE</h1>
+A. General info</h1>
+<p>A project created with STM32Cube MX is composed of the next files:</p><ul>
+<li></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Arduino   </th><th class="markdownTableHeadNone">STM32 (CubeMX/HAL)   </th><th class="markdownTableHeadNone">Notes    </th></tr>
@@ -119,9 +124,9 @@ A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE</h1
 <p>&zwj;ℹ️ <b>Important</b>: Write your own code ONLY inside sections marked with comments like <code>/* USER CODE BEGIN x */</code> and <code>/* USER CODE END x */</code>. </p>
 </blockquote>
 <p>These regions are preserved when you regenerate code with STM32CubeMX. Anything outside these blocks may be deleted or overwritten.</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
-B. Global Variables - Declaration, definition and inclusion in the main source code</h1>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
+C. Global Variables - Declaration, definition and inclusion in the main source code</h1>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Inc";</li>
@@ -147,7 +152,7 @@ Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file fol
 <div class="line"><span class="comment">//END of declaring your variables</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#endif </span><span class="comment">/* GLOBALS_H_ */</span><span class="preprocessor"></span></div>
-</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md5"></a>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md6"></a>
 The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Src";</li>
@@ -164,7 +169,7 @@ The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also
 <div class="line"><span class="keywordtype">int</span> globalVariableName2 = 0;  <span class="comment">// Definition of the 2nd variable</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName3 = 0;  <span class="comment">// Definition of the 3rd variable</span></div>
 <div class="line"><span class="comment">//START of declaring your variables</span></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
 To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Src" and open the <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> file;</li>
@@ -176,7 +181,64 @@ To make your global variables available to the main code, the &lt;tt&gt;globals.
 <div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
 </div><!-- fragment --></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
+D. Creating software module and its local variables</h1>
+<h2><a class="anchor" id="autotoc_md9"></a>
+Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:</h2>
+<ul>
+<li>navigate to "Project Explorer / YourProject / Core / Inc";</li>
+<li>right-click on "Inc" folder;</li>
+<li>choose "New / Header file";</li>
+<li>in the "New Header File" dialog window write "globals.h" in the "Header file:" field and choose "Default C header template" in "Template" field. Click "Finish".</li>
+<li><code>globals.h</code> file opens automatically with some predefined code in it. Place your global variables just before the <code>endif /* GLOBALS_H_ */</code> line.</li>
+<li>include also the stdbool.h and stdint.h libraries (to make the code able to use boolean and int type variables).</li>
+</ul>
+<blockquote class="doxtable">
+<p>&zwj;Examples of supported variables: <code>int</code>, <code>char</code>, <code>float</code>, <code>bool</code>, <code>uint8_t</code>, <code>int16_t</code> </p>
+</blockquote>
+<p>Example of how the content of <code>globals.h</code> content should look like: </p><div class="fragment"><div class="line"><span class="comment">/* === globals.h === */</span></div>
+<div class="line"><span class="preprocessor">#ifndef GLOBALS_H_</span></div>
+<div class="line"><span class="preprocessor">#define GLOBALS_H_</span></div>
+<div class="line"><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//START of declaring your variables</span></div>
+<div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName1;  <span class="comment">// Declaration of a 1st variable</span></div>
+<div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName2;  <span class="comment">// Declaration of a 2nd variable</span></div>
+<div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName3;  <span class="comment">// Declaration of a 3rd variable</span></div>
+<div class="line"><span class="comment">//END of declaring your variables</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#endif </span><span class="comment">/* GLOBALS_H_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md10"></a>
+The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:</h2>
+<ul>
+<li>navigate to "Project Explorer / YourProject / Core / Src";</li>
+<li>right-click on "Src" folder;</li>
+<li>choose "New / Source file";</li>
+<li>in the "New Source File" dialog window write "globals.c" in the "Source file:" field and choose "Default C header template" in "Template" field. Click "Finish".</li>
+<li><code>globals.c</code> file opens automatically. Add the '#include "global_variables.h"' line and set the type and the default value of each of your global variables.</li>
+</ul>
+<p>Example of how the content of <code>globals.c</code> content should look like: </p><div class="fragment"><div class="line"><span class="comment">/* === globals.c === */</span></div>
+<div class="line"><span class="preprocessor">#include &quot;global_variables.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//START of declaring your variables</span></div>
+<div class="line"><span class="keywordtype">int</span> globalVariableName1 = 0;  <span class="comment">// Definition of the 1st variable</span></div>
+<div class="line"><span class="keywordtype">int</span> globalVariableName2 = 0;  <span class="comment">// Definition of the 2nd variable</span></div>
+<div class="line"><span class="keywordtype">int</span> globalVariableName3 = 0;  <span class="comment">// Definition of the 3rd variable</span></div>
+<div class="line"><span class="comment">//START of declaring your variables</span></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md11"></a>
+To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:</h2>
+<ul>
+<li>navigate to "Project Explorer / YourProject / Core / Src" and open the <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> file;</li>
+<li>search for the &lsquo;'Private includes&rsquo;<code>section and include your</code>globals.h` file as shown in the example below. <div class="fragment"><div class="line"><span class="comment">/* === main.c === */</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/* Private includes ----------------------------------------------------------*/</span></div>
+<div class="line"><span class="comment">/* USER CODE BEGIN Includes */</span></div>
+<div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
+<div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
+</div><!-- fragment --></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md12"></a>
 To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:</h2>
 <div class="fragment"><div class="line"><span class="comment">/* === OtherThanGlobals.c === */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
