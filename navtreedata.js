@@ -26,13 +26,13 @@ var NAVTREE =
 [
   [ "STM Code Blocks", "index.html", [
     [ "STM32 HAL Project Structure for Arduino Users", "md_Guides_2Arduino__to__STM.html", [
-      [ "A. Global Variables - Declaration, definition and inclusion in the main source code", "md_Guides_2Arduino__to__STM.html#autotoc_md2", [
-        [ "Global variables should be declared in a <tt>globals.h</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md3", null ],
-        [ "The global variables you declared in <tt>globals.h</tt> must be also defined (assigned default values) into a <tt>globals.c</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md4", null ],
-        [ "To make your global variables available to the main code, the <tt>globals.h</tt> file must be included into <tt>main.c</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md5", null ],
-        [ "To make your global variables available to other source code files, the <tt>globals.h</tt> file must be included into that souce code file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md6", null ]
-      ] ],
-      [ "B. What Is the Equivalent of setup() and loop() functions found in Arduine IDE?", "md_Guides_2Arduino__to__STM.html#autotoc_md7", null ]
+      [ "A. What Is the Equivalent of setup() and loop() functions found in Arduine IDE?", "md_Guides_2Arduino__to__STM.html#autotoc_md2", null ],
+      [ "B. Global Variables - Declaration, definition and inclusion in the main source code", "md_Guides_2Arduino__to__STM.html#autotoc_md3", [
+        [ "Global variables should be declared in a <tt>globals.h</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md4", null ],
+        [ "The global variables you declared in <tt>globals.h</tt> must be also defined (assigned default values) into a <tt>globals.c</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md5", null ],
+        [ "To make your global variables available to the main code, the <tt>globals.h</tt> file must be included into <tt>main.c</tt> file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md6", null ],
+        [ "To make your global variables available to other source code files, the <tt>globals.h</tt> file must be included into that souce code file following these steps:", "md_Guides_2Arduino__to__STM.html#autotoc_md7", null ]
+      ] ]
     ] ],
     [ "Peripheral Setup Guide", "md_Guides_2Peripheral__Setup.html", [
       [ "Digital Input / Output", "md_Guides_2Peripheral__Setup.html#autotoc_md9", null ],

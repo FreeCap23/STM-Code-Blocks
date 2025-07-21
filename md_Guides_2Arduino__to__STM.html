@@ -93,10 +93,36 @@ $(document).ready(function(){initNavTree('md_Guides_2Arduino__to__STM.html','');
   <div class="headertitle"><div class="title">STM32 HAL Project Structure for Arduino Users</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> If you're used to programming in Arduino (where everything is typically in one .ino file with <code>setup()</code> and <code>loop()</code>), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md1"></a></p>
+<p>If you're used to programming in Arduino (where everything is typically in one .ino file with <code>setup()</code> and <code>loop()</code>), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
-A. Global Variables - Declaration, definition and inclusion in the main source code</h1>
-<h2><a class="anchor" id="autotoc_md3"></a>
+A. What Is the Equivalent of setup() and loop() functions found in Arduine IDE?</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Arduino   </th><th class="markdownTableHeadNone">STM32 (CubeMX/HAL)   </th><th class="markdownTableHeadNone">Notes    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>setup()</code>   </td><td class="markdownTableBodyNone">Code between <code>/* USER CODE BEGIN 2 */</code> and <code>/* USER CODE END 2 */</code> comments inside <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> file   </td><td class="markdownTableBodyNone">Initialization code goes here    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>loop()</code>   </td><td class="markdownTableBodyNone">Code between <code>/* USER CODE BEGIN 3 */</code> and <code>/* USER CODE END 2 */</code> comments inside <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> file   </td><td class="markdownTableBodyNone">Put your repetitive code here   </td></tr>
+</table>
+<p>Example in <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code>: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">void</span>)</div>
+<div class="line">{  <span class="comment">/* USER CODE BEGIN 2 */</span>     <span class="comment">// ← Initialization code here (like Arduino&#39;s setup())</span></div>
+<div class="line">   <span class="comment">/* USER CODE END 2 */</span></div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">while</span> (1)</div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">/* USER CODE BEGIN 3 */</span>   <span class="comment">// ← Repeating code here (like Arduino&#39;s loop())</span></div>
+<div class="line">    <span class="comment">/* USER CODE END 3 */</span></div>
+<div class="line">  }</div>
+<div class="line">}</div>
+<div class="ttc" id="amain_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdoc">The application entry point.</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00070">main.c:70</a></div></div>
+</div><!-- fragment --> <blockquote class="doxtable">
+<p>&zwj;ℹ️ <b>Important</b>: Write your own code ONLY inside sections marked with comments like <code>/* USER CODE BEGIN x */</code> and <code>/* USER CODE END x */</code>. </p>
+</blockquote>
+<p>These regions are preserved when you regenerate code with STM32CubeMX. Anything outside these blocks may be deleted or overwritten.</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+B. Global Variables - Declaration, definition and inclusion in the main source code</h1>
+<h2><a class="anchor" id="autotoc_md4"></a>
 Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Inc";</li>
@@ -120,7 +146,7 @@ Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file fol
 <div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName3;  <span class="comment">// Declaration of a 3rd variable</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#endif </span><span class="comment">/* GLOBALS_H_ */</span><span class="preprocessor"></span></div>
-</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md4"></a>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md5"></a>
 The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Src";</li>
@@ -134,7 +160,7 @@ The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also
 <div class="line"><span class="keywordtype">int</span> globalVariableName1 = 0;  <span class="comment">// Definition of the 1st variable</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName2 = 0;  <span class="comment">// Definition of the 2nd variable</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName3 = 0;  <span class="comment">// Definition of the 3rd variable</span></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
 To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Src" and open the <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> file;</li>
@@ -146,7 +172,7 @@ To make your global variables available to the main code, the &lt;tt&gt;globals.
 <div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
 </div><!-- fragment --></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:</h2>
 <div class="fragment"><div class="line"><span class="comment">/* === OtherThanGlobals.c === */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
@@ -154,31 +180,6 @@ To make your global variables available to other source code files, the &lt;tt&g
 </div><!-- fragment --><blockquote class="doxtable">
 <p>&zwj;⚠️ A global variable must always be defines only once, in the <code>globals.c</code> file. Otherwise you will get a compilation error. </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md7"></a>
-B. What Is the Equivalent of setup() and loop() functions found in Arduine IDE?</h1>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Arduino   </th><th class="markdownTableHeadNone">STM32 (CubeMX/HAL)   </th><th class="markdownTableHeadNone">Notes    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>setup()</code>   </td><td class="markdownTableBodyNone">Code between <code>/* USER CODE BEGIN 2 */</code> and <code>/* USER CODE END 2 */</code> comments inside <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> file   </td><td class="markdownTableBodyNone">Initialization code goes here    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>loop()</code>   </td><td class="markdownTableBodyNone">Code between <code>/* USER CODE BEGIN 3 */</code> and <code>/* USER CODE END 2 */</code> comments inside <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> file   </td><td class="markdownTableBodyNone">Put your repetitive code here   </td></tr>
-</table>
-<p>Example in <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code>: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">void</span>)</div>
-<div class="line">{  <span class="comment">/* USER CODE BEGIN 2 */</span>     <span class="comment">// ← Initialization code here (like Arduino&#39;s setup())</span></div>
-<div class="line">   <span class="comment">/* USER CODE END 2 */</span></div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">while</span> (1)</div>
-<div class="line">  {</div>
-<div class="line">    <span class="comment">/* USER CODE BEGIN 3 */</span>   <span class="comment">// ← Repeating code here (like Arduino&#39;s loop())</span></div>
-<div class="line">    <span class="comment">/* USER CODE END 3 */</span></div>
-<div class="line">  }</div>
-<div class="line">}</div>
-<div class="ttc" id="amain_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdoc">The application entry point.</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00070">main.c:70</a></div></div>
-</div><!-- fragment --> <blockquote class="doxtable">
-<p>&zwj;ℹ️ <b>Important</b>: Write your own code ONLY inside sections marked with comments like <code>/* USER CODE BEGIN x */</code> and <code>/* USER CODE END x */</code>. </p>
-</blockquote>
-<p>These regions are preserved when you regenerate code with STM32CubeMX. Anything outside these blocks may be deleted or overwritten. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
