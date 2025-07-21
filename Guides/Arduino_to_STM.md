@@ -1,8 +1,39 @@
 # STM32 HAL Project Structure for Arduino Users
 
+
+
 If you're used to programming in Arduino (where everything is typically in one .ino file with `setup()` and `loop()`), STM32 projects generated with STM32CubeMX are more structured and split across multiple files. Here's how to map the concepts:
 
-## A. Global Variables - Declaration, definition and inclusion in the main source code
+
+## A. What Is the Equivalent of setup() and loop() functions found in Arduine IDE?
+
+| Arduino   | STM32 (CubeMX/HAL)                                                                               | Notes                         |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------------- |
+| `setup()` | Code between `/* USER CODE BEGIN 2 */` and `/* USER CODE END 2 */` comments inside `main.c` file | Initialization code goes here |
+| `loop()`  | Code between `/* USER CODE BEGIN 3 */` and `/* USER CODE END 2 */` comments inside `main.c` file | Put your repetitive code here |
+
+Example in `main.c`:
+```c
+int main(void)
+{  /* USER CODE BEGIN 2 */     // ← Initialization code here (like Arduino's setup())
+   /* USER CODE END 2 */
+
+  while (1)
+  {
+    /* USER CODE BEGIN 3 */   // ← Repeating code here (like Arduino's loop())
+    /* USER CODE END 3 */
+  }
+}
+```
+> ℹ️ **Important**: Write your own code ONLY inside sections marked with comments like `/* USER CODE BEGIN x */` and `/* USER CODE END x */`.
+These regions are preserved when you regenerate code with STM32CubeMX.
+Anything outside these blocks may be deleted or overwritten.
+
+
+
+
+
+## B. Global Variables - Declaration, definition and inclusion in the main source code
 
 ### Global variables should be declared in a `globals.h` file following these steps:
 - navigate to "Project Explorer / YourProject / Core / Inc";
@@ -68,26 +99,4 @@ int localVariableName = globalVariableName;
 > ⚠️ A global variable must always be defines only once, in the `globals.c` file. Otherwise you will get a compilation error.
 
 
-## B. What Is the Equivalent of setup() and loop() functions found in Arduine IDE?
 
-| Arduino   | STM32 (CubeMX/HAL)                                                                               | Notes                         |
-| --------- | ------------------------------------------------------------------------------------------------ | ----------------------------- |
-| `setup()` | Code between `/* USER CODE BEGIN 2 */` and `/* USER CODE END 2 */` comments inside `main.c` file | Initialization code goes here |
-| `loop()`  | Code between `/* USER CODE BEGIN 3 */` and `/* USER CODE END 2 */` comments inside `main.c` file | Put your repetitive code here |
-
-Example in `main.c`:
-```c
-int main(void)
-{  /* USER CODE BEGIN 2 */     // ← Initialization code here (like Arduino's setup())
-   /* USER CODE END 2 */
-
-  while (1)
-  {
-    /* USER CODE BEGIN 3 */   // ← Repeating code here (like Arduino's loop())
-    /* USER CODE END 3 */
-  }
-}
-```
-> ℹ️ **Important**: Write your own code ONLY inside sections marked with comments like `/* USER CODE BEGIN x */` and `/* USER CODE END x */`.
-These regions are preserved when you regenerate code with STM32CubeMX.
-Anything outside these blocks may be deleted or overwritten.
