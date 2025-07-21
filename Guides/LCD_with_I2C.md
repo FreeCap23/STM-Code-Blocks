@@ -1,4 +1,4 @@
-# LCD With I<sup>2</sup>C
+# LCD With I2C
 
 [This library](https://github.com/alixahedi/I2C-LCD-STM32) allows us to easily use an LCD through I<sup>2</sup>C. It supports displays with sizes **16x2, 16x4, 20x2, 20x4**.
 
