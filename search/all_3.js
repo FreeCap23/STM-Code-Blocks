@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['debug_20mode_0',['Exit Debug Mode',['../md_Guides_2Using__the__Debugger.html#autotoc_md31',1,'']]],
+  ['debug_20mode_0',['Exit Debug Mode',['../md_Guides_2Using__the__Debugger.html#autotoc_md32',1,'']]],
   ['debugging_20guide_1',['STM32CubeIDE Debugging Guide',['../md_Guides_2Using__the__Debugger.html',1,'']]],
   ['declaration_20definition_20and_20inclusion_20in_20the_20main_20source_20code_2',['A. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_2Arduino__to__STM.html#autotoc_md2',1,'']]],
   ['declared_20in_20a_20tt_20globals_20h_20tt_20file_20following_20these_20steps_3a_3',['Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:',['../md_Guides_2Arduino__to__STM.html#autotoc_md3',1,'']]],

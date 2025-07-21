@@ -1,7 +1,7 @@
 var searchData=
 [
   ['a_20global_20variables_20declaration_20definition_20and_20inclusion_20in_20the_20main_20source_20code_0',['A. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_2Arduino__to__STM.html#autotoc_md2',1,'']]],
-  ['a_20timer_20interrupt_1',['Setting a timer interrupt',['../md_Guides_2Peripheral__Setup.html#autotoc_md15',1,'']]],
+  ['a_20timer_20interrupt_1',['Setting a timer interrupt',['../md_Guides_2Peripheral__Setup.html#autotoc_md16',1,'']]],
   ['a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_2',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_2Arduino__to__STM.html#autotoc_md4',1,'']]],
   ['a_20tt_20globals_20h_20tt_20file_20following_20these_20steps_3a_3',['Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:',['../md_Guides_2Arduino__to__STM.html#autotoc_md3',1,'']]],
   ['adc_20in_20dma_20mode_20effectively_4',['Using the ADC in DMA mode effectively',['../md_Guides_2Using__the__ADC__with__DMA.html',1,'']]],
@@ -10,11 +10,11 @@ var searchData=
   ['analog_20input_7',['Analog Input',['../md_Guides_2Peripheral__Setup.html#autotoc_md10',1,'']]],
   ['analogwrite_8',['analogWrite',['../pwm__helper_8h.html#af1dae7be96dd1f02d2bbdd6caa495ade',1,'pwm_helper.h']]],
   ['analogwritepercent_9',['analogWritePercent',['../pwm__helper_8h.html#a6f8cb0886f2512a418b26cd41cd2dfe6',1,'pwm_helper.h']]],
-  ['and_20flash_20the_20project_10',['Build and Flash the Project',['../md_Guides_2Using__the__Debugger.html#autotoc_md23',1,'']]],
+  ['and_20flash_20the_20project_10',['Build and Flash the Project',['../md_Guides_2Using__the__Debugger.html#autotoc_md24',1,'']]],
   ['and_20inclusion_20in_20the_20main_20source_20code_11',['A. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_2Arduino__to__STM.html#autotoc_md2',1,'']]],
   ['and_20loop_20functions_20found_20in_20arduine_20ide_12',['B. What Is the Equivalent of setup() and loop() functions found in Arduine IDE?',['../md_Guides_2Arduino__to__STM.html#autotoc_md7',1,'']]],
-  ['and_20registers_13',['Memory and Registers',['../md_Guides_2Using__the__Debugger.html#autotoc_md29',1,'']]],
-  ['apbx_20peripheral_20clocks_14',['APBx Peripheral Clocks',['../md_Guides_2Timer__Clock.html#autotoc_md17',1,'']]],
+  ['and_20registers_13',['Memory and Registers',['../md_Guides_2Using__the__Debugger.html#autotoc_md30',1,'']]],
+  ['apbx_20peripheral_20clocks_14',['APBx Peripheral Clocks',['../md_Guides_2Timer__Clock.html#autotoc_md18',1,'']]],
   ['arbitrary_20pin_15',['Triggering an interrupt on an arbitrary pin',['../md_Guides_2Peripheral__Setup.html#autotoc_md12',1,'']]],
   ['arduine_20ide_16',['B. What Is the Equivalent of setup() and loop() functions found in Arduine IDE?',['../md_Guides_2Arduino__to__STM.html#autotoc_md7',1,'']]],
   ['arduino_20users_17',['STM32 HAL Project Structure for Arduino Users',['../md_Guides_2Arduino__to__STM.html',1,'']]],
