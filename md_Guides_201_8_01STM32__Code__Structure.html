@@ -155,9 +155,12 @@ The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also
 </ul>
 <p>Example of how the content of <code>globals.c</code> content should look like: </p><div class="fragment"><div class="line"><span class="comment">/* === globals.c === */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;global_variables.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//START of declaring your variables</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName1 = 0;  <span class="comment">// Definition of the 1st variable</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName2 = 0;  <span class="comment">// Definition of the 2nd variable</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName3 = 0;  <span class="comment">// Definition of the 3rd variable</span></div>
+<div class="line"><span class="comment">//START of declaring your variables</span></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
 To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:</h2>
 <ul>
