@@ -103,7 +103,7 @@ A. General info</h1>
 </ul>
 <p>A header file mult always be paired with a source file having the same name. The diference between them is that:</p><ul>
 <li>a header file contains only a list of variables and functions</li>
-<li>a source file contains also the values of the variables and the code of the functions.</li>
+<li>a source file contains also the values of the variables and the code of the functions mentioned in the header file with the same name. To link the content of the source file with the content of the header file, the header file must be included into the source file with the line <code>#include &lt;headerFileName.h&gt;</code></li>
 </ul>
 <h1><a class="anchor" id="autotoc_md3"></a>
 B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE</h1>
