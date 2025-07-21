@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['parsecommand_0',['ParseCommand',['../command__parser_8h.html#aeb06d139d2067118b03b3f2972fc67ef',1,'command_parser.h']]],
-  ['peripheral_20clocks_1',['APBx Peripheral Clocks',['../md_Guides_2Timer__Clock.html#autotoc_md23',1,'']]],
-  ['peripheral_20setup_20guide_2',['Peripheral Setup Guide',['../md_Guides_2Peripheral__Setup.html',1,'']]],
-  ['pin_3',['Triggering an interrupt on an arbitrary pin',['../md_Guides_2Peripheral__Setup.html#autotoc_md17',1,'']]],
-  ['project_4',['Build and Flash the Project',['../md_Guides_2Using__the__Debugger.html#autotoc_md29',1,'']]],
-  ['pwm_20output_5',['PWM Output',['../md_Guides_2Peripheral__Setup.html#autotoc_md16',1,'']]],
-  ['pwm_5fhelper_2eh_6',['pwm_helper.h',['../pwm__helper_8h.html',1,'']]]
+  ['of_20setup_20and_20loop_20functions_20found_20in_20arduine_20ide_0',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md3',1,'']]],
+  ['on_20an_20arbitrary_20pin_1',['Triggering an interrupt on an arbitrary pin',['../md_Guides_2Peripheral__Setup.html#autotoc_md21',1,'']]],
+  ['other_20source_20code_20files_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20that_20souce_20code_20file_20following_20these_20steps_3a_2',['To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md12',1,'']]],
+  ['output_3',['output',['../md_Guides_2Peripheral__Setup.html#autotoc_md18',1,'Digital Input / Output'],['../md_Guides_2Peripheral__Setup.html#autotoc_md20',1,'PWM Output']]]
 ];
