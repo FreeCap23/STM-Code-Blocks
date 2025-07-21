@@ -97,7 +97,13 @@ $(document).ready(function(){initNavTree('md_Guides_201_8_01STM32__Code__Structu
 <h1><a class="anchor" id="autotoc_md2"></a>
 A. General info</h1>
 <p>A project created with STM32Cube MX is composed of the next files:</p><ul>
-<li></li>
+<li>ProjectName.ioc . This file contains the device (MCU/Development Board) settings (pin mapping/custom labeling, clock settings for different blocks), settings for ADC, Timers, DMA etc). When opened, this file triggers a graphicall windows where user can update device settings. After saving those settings, they are automatically included/updated into proper regions of the ProjectName/Core/src/main.c file</li>
+<li>a collection of "header ".h" files" that contains lists of variable and functions of different software modules (files containing code for a specific functionality). This folder is ProjectName/Core/Inc.</li>
+<li>a collection of "source ".c" files" that contains lists of variable and functions of different software modules, together with their values and associated code. This folder is ProjectName/Core.Src.</li>
+</ul>
+<p>A header file mult always be paired with a source file having the same name. The diference between them is that:</p><ul>
+<li>a header file contains only a list of variables and functions</li>
+<li>a source file contains also the values of the variables and the code of the functions.</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md3"></a>
 B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE</h1>
