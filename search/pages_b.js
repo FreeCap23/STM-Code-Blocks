@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['setup_20guide_0',['Peripheral Setup Guide',['../md_Guides_2Peripheral__Setup.html',1,'']]],
-  ['stm_20code_20blocks_1',['STM Code Blocks',['../index.html',1,'']]],
-  ['stm32_20code_20strucrure_2',['The STM32 Code Strucrure',['../md_Guides_201_8_01STM32__Code__Structure.html',1,'']]],
-  ['stm32cubeide_20debugging_20guide_3',['STM32CubeIDE Debugging Guide',['../md_Guides_2Using__the__Debugger.html',1,'']]],
-  ['strucrure_4',['The STM32 Code Strucrure',['../md_Guides_201_8_01STM32__Code__Structure.html',1,'']]],
-  ['sup_202_20sup_20c_5',['LCD With I&lt;sup&gt;2&lt;/sup&gt;C',['../md_Guides_2LCD__with__I2C.html',1,'']]]
+  ['the_20adc_20in_20dma_20mode_20effectively_0',['Using the ADC in DMA mode effectively',['../md_Guides_2Using__the__ADC__with__DMA.html',1,'']]],
+  ['the_20stm32_20code_20strucrure_1',['The STM32 Code Strucrure',['../md_Guides_201_8_01STM32__Code__Structure.html',1,'']]],
+  ['timer_20clock_20guide_2',['Timer Clock Guide',['../md_Guides_2Timer__Clock.html',1,'']]]
 ];

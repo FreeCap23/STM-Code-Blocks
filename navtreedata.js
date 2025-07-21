@@ -40,7 +40,7 @@ var NAVTREE =
         [ "To make your global variables available to other source code files, the <tt>globals.h</tt> file must be included into that souce code file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md12", null ]
       ] ]
     ] ],
-    [ "LCD With I<sup>2</sup>C", "md_Guides_2LCD__with__I2C.html", [
+    [ "LCD With I2C", "md_Guides_2LCD__with__I2C.html", [
       [ "Installation", "md_Guides_2LCD__with__I2C.html#autotoc_md14", null ],
       [ "Displaying a formatted string", "md_Guides_2LCD__with__I2C.html#autotoc_md15", null ],
       [ "How do I find the address??", "md_Guides_2LCD__with__I2C.html#autotoc_md16", null ]
