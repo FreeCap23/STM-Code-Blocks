@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['peripheral_20setup_20guide_0',['Peripheral Setup Guide',['../md_Guides_2Peripheral__Setup.html',1,'']]],
-  ['project_20structure_20for_20arduino_20users_1',['STM32 HAL Project Structure for Arduino Users',['../md_Guides_201_8_01STM32__Code__Structure.html',1,'']]]
+  ['of_20setup_20and_20loop_20functions_20found_20in_20arduine_20ide_0',['A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8_01STM32__Code__Structure.html',1,'']]]
 ];

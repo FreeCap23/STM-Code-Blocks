@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['for_20arduino_20users_0',['STM32 HAL Project Structure for Arduino Users',['../md_Guides_201_8_01STM32__Code__Structure.html',1,'']]]
+  ['found_20in_20arduine_20ide_0',['A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8_01STM32__Code__Structure.html',1,'']]],
+  ['functions_20found_20in_20arduine_20ide_1',['A. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8_01STM32__Code__Structure.html',1,'']]]
 ];
