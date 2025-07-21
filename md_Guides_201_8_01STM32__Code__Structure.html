@@ -105,6 +105,7 @@ A. General info</h1>
 <li>a header file contains only a list of variables and functions</li>
 <li>a source file contains also the values of the variables and the code of the functions mentioned in the header file with the same name. To link the content of the source file with the content of the header file, the header file must be included into the source file with the line <code>#include &lt;headerFileName.h&gt;</code></li>
 </ul>
+<p>As mentioned before, in STM32CubeIDE the device configuration (pin mapping, peripheral and clock settings etc.) are done graphically and included/updated into proper regions of the ProjectName/Core/src/main.c file. As for the rest of the code, it is highly recommended to split it in modules designed for specific functionalities (e.g. analog sensing, background tasks, import/export to non-volatile memory etc.). Subsequently, these modules are to be linked together into ProjectName/Core/src/main.c file. into the region shown in the next chapter.</p>
 <h1><a class="anchor" id="autotoc_md3"></a>
 B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE</h1>
 <table class="markdownTable">
