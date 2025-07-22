@@ -23,8 +23,11 @@
 /* USER CODE BEGIN Includes */
 #include "i2c_lcd.h"
 #include "flash_helper_h7a3.h"
+#include "rotary_encoder.h"
+#include "serial_helper.h"
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -106,22 +109,9 @@ int main(void)
   MX_USART3_UART_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  const char message[] = "Hello from FLASH memory";
-  uint8_t read_buffer[sizeof(message)] = {0};
-  uint32_t flash_address = 0x08020000; // Must be 16-byte aligned and in valid flash region
-
-  // Erase the sector before writing
-  if (Flash_Erase(flash_address) == HAL_OK) {
-      // Prepare a 16-byte aligned buffer (padded if needed)
-      uint8_t write_buffer[((sizeof(message) + 15) / 16) * 16] = {0xFF};
-      memcpy(write_buffer, message, sizeof(message));
-
-      // Write to Flash (length in bytes)
-      if (Flash_Write(flash_address, (uint64_t*)write_buffer, sizeof(write_buffer)) == HAL_OK) {
-          // Read back the data
-          Flash_Read(flash_address, read_buffer, sizeof(read_buffer));
-      }
-  }
+  SerialPrintLn(&huart3, "Ready.");
+  // Read the initial state of CLK
+  CLK_LastState = HAL_GPIO_ReadPin(RotaryEncoder_CLK_GPIO_Port, RotaryEncoder_CLK_Pin);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -357,11 +347,25 @@ static void MX_GPIO_Init(void)
   /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+  __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(DRV8705_CS_GPIO_Port, DRV8705_CS_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : RotaryEncoder_CLK_Pin */
+  GPIO_InitStruct.Pin = RotaryEncoder_CLK_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(RotaryEncoder_CLK_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : RotaryEncoder_DT_Pin */
+  GPIO_InitStruct.Pin = RotaryEncoder_DT_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(RotaryEncoder_DT_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : DRV8705_CS_Pin */
   GPIO_InitStruct.Pin = DRV8705_CS_Pin;
@@ -370,12 +374,47 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(DRV8705_CS_GPIO_Port, &GPIO_InitStruct);
 
-  /* USER CODE BEGIN MX_GPIO_Init_2 */
+  /*Configure GPIO pin : RotaryEncoder_SW_Pin */
+  GPIO_InitStruct.Pin = RotaryEncoder_SW_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(RotaryEncoder_SW_GPIO_Port, &GPIO_InitStruct);
 
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(RotaryEncoder_SW_EXTI_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(RotaryEncoder_SW_EXTI_IRQn);
+
+  HAL_NVIC_SetPriority(RotaryEncoder_CLK_EXTI_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(RotaryEncoder_CLK_EXTI_IRQn);
+
+  /* USER CODE BEGIN MX_GPIO_Init_2 */
   /* USER CODE END MX_GPIO_Init_2 */
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+	static int counter;
+	bool direction = 0; // False = CCW; True = CW
+	if(GPIO_Pin == RotaryEncoder_CLK_Pin) {
+	  bool currentState = HAL_GPIO_ReadPin(RotaryEncoder_CLK_GPIO_Port, RotaryEncoder_CLK_Pin);
+	  if (currentState != CLK_LastState) {
+		  // If the DT State is different than the CLK state then the encoder is rotating CCW
+		  if (HAL_GPIO_ReadPin(RotaryEncoder_DT_GPIO_Port, RotaryEncoder_DT_Pin) != currentState) {
+			  // Do what you need to do on a counter clockwise rotation of the encoder
+			  direction = false;
+			  counter++;
+		  } else {
+			  // Do what you need to do on a clockwise rotation of the encoder
+			  direction = true;
+			  counter--;
+		  }
+	  }
+	  CLK_LastState = currentState;
+	  SerialPrintLn(&huart3, "Counter: %+.3d; Direction: %s", counter, direction ? " CW" : "CCW");
+	} else if (GPIO_Pin == RotaryEncoder_SW_Pin) {
+	  // Do what you need to do on an encoder press
+	}
+}
 /* USER CODE END 4 */
 
  /* MPU Configuration */
