@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('md_Guides_202_8Pin__Mapping__Setup.htm
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md13"></a> This guide explains how to configure basic I/O and peripheral functionality on STM32 microcontrollers using STM32CubeIDE.</p>
 <h1><a class="anchor" id="autotoc_md14"></a>
-A Set up a GPIO as a Digital Input or as Digital Output</h1>
+A. Set up a GPIO as a Digital Input or as Digital Output</h1>
 <ol type="1">
 <li>Open your <code>.ioc</code> file in STM32CubeIDE.</li>
 <li>In the <b>Pinout &amp; Configuration</b> tab, click on a GPIO pin.</li>
@@ -117,7 +117,7 @@ A Set up a GPIO as a Digital Input or as Digital Output</h1>
 </div><!-- fragment --></li>
 </ol>
 <h1><a class="anchor" id="autotoc_md15"></a>
-Analog Input</h1>
+B. Set up a GPIO as an analog Input</h1>
 <ol type="1">
 <li>Enable <b>ADC peripheral</b> under <b>Analog</b>.</li>
 <li>Pick the <b>Channel</b> you want. Note that you cannot reassign the pins of the Channels.</li>
@@ -141,7 +141,7 @@ Analog Input</h1>
 <div class="line">adc_val_channel2 = HAL_ADC_GetValue(&amp;hadc1);</div>
 <div class="line">HAL_ADC_Stop(&amp;hadc1);</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md16"></a>
-PWM Output</h1>
+C. Set up a GPIO as an PWM Output</h1>
 <p>To generate <b>PWM signals</b>, we need to use <b>Timers</b>. Pick a timer and configure it:</p><ul>
 <li>Clock Source: Choose your clock source. If you don't know what to pick, choose Internal Clock.</li>
 <li>Channel<code>x</code>: <b>PWM Generation <code>CHx</code></b>. <code>CHxN</code> means the same output as <code>CHx</code> but inversed. You can both <code>CHx</code> and <code>CHxN</code> to generate synchronised, opposite PWM signals by simply choosing <b>PWM Generation CHx CHxN</b>.</li>
@@ -153,7 +153,7 @@ PWM Output</h1>
 <p>To change the PWM's duty cycle programatically: </p><div class="fragment"><div class="line">TIMx-&gt;CCRy = duty_cycle;</div>
 </div><!-- fragment --><p> Where <code>x</code> is your Timer's number and <code>y</code> is the number of the Channel whose Duty Cycle you want to update.</p>
 <h1><a class="anchor" id="autotoc_md17"></a>
-Triggering an interrupt on an arbitrary pin</h1>
+D. Set up a GPIO as an Interrupt Capable Digital Input</h1>
 <ul>
 <li>Pick the pin you want to generate interrupts on. Note that not all pins have the ability to generate external interrupts.</li>
 <li>Configure the pin as <code>GPIO_EXTIx</code></li>
@@ -168,8 +168,9 @@ Triggering an interrupt on an arbitrary pin</h1>
 <div class="line">        <span class="comment">// Do whatever you need to do</span></div>
 <div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md18"></a>
-UART Communication</h1>
+</div><!-- fragment --><p> Tutorial for setting a timer interrupt <a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_TIM#TIM_with_interrupt">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_TIM#TIM_with_interrupt</a></p>
+<h1><a class="anchor" id="autotoc_md18"></a>
+E. Set up GPIOs for UART Communication</h1>
 <p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART</a></p>
 <blockquote class="doxtable">
 <p>&zwj;ℹ️ Some boards (Like the F411E Discovery) do not support VCP (Virtual COM Port), meaning you cannot use the ST-Link USB port as a serial communication port. If that is the case, you need to use the RX/TX pins themselves and use a USB to Serial converter to talk to the PC. </p>
@@ -178,14 +179,11 @@ UART Communication</h1>
 <p>&zwj;⚠️ Setting baud rate too high may result in lost bytes when receiving data in bulk without DMA </p>
 </blockquote>
 <h1><a class="anchor" id="autotoc_md19"></a>
-SPI Communication</h1>
+F. Set up GPIOs for SPI Communication</h1>
 <p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_SPI">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_SPI</a></p>
 <h1><a class="anchor" id="autotoc_md20"></a>
-I2C Communication</h1>
-<p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_I2C">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_I2C</a></p>
-<h1><a class="anchor" id="autotoc_md21"></a>
-Setting a timer interrupt</h1>
-<p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_TIM#TIM_with_interrupt">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_TIM#TIM_with_interrupt</a> </p>
+G. Set up GPIOs for I2C Communication</h1>
+<p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_I2C">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_I2C</a> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
