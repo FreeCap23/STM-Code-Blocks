@@ -40,15 +40,15 @@ var NAVTREE =
         [ "To make your global variables available to other source code files, the <tt>globals.h</tt> file must be included into that souce code file following these steps:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md12", null ]
       ] ]
     ] ],
-    [ "02. Device Configuration Setup Guide", "md_Guides_202_8Device__Configuration__Setup.html", [
-      [ "Digital Input / Output", "md_Guides_202_8Device__Configuration__Setup.html#autotoc_md14", null ],
-      [ "Analog Input", "md_Guides_202_8Device__Configuration__Setup.html#autotoc_md15", null ],
-      [ "PWM Output", "md_Guides_202_8Device__Configuration__Setup.html#autotoc_md16", null ],
-      [ "Triggering an interrupt on an arbitrary pin", "md_Guides_202_8Device__Configuration__Setup.html#autotoc_md17", null ],
-      [ "UART Communication", "md_Guides_202_8Device__Configuration__Setup.html#autotoc_md18", null ],
-      [ "SPI Communication", "md_Guides_202_8Device__Configuration__Setup.html#autotoc_md19", null ],
-      [ "I2C Communication", "md_Guides_202_8Device__Configuration__Setup.html#autotoc_md20", null ],
-      [ "Setting a timer interrupt", "md_Guides_202_8Device__Configuration__Setup.html#autotoc_md21", null ]
+    [ "02. Device Configuration Setup Guide", "md_Guides_202_8Pin__Mapping__Setup.html", [
+      [ "Digital Input / Output", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14", null ],
+      [ "Analog Input", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15", null ],
+      [ "PWM Output", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md16", null ],
+      [ "Triggering an interrupt on an arbitrary pin", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17", null ],
+      [ "UART Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md18", null ],
+      [ "SPI Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md19", null ],
+      [ "I2C Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md20", null ],
+      [ "Setting a timer interrupt", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md21", null ]
     ] ],
     [ "LCD With I2C", "md_Guides_2LCD__with__I2C.html", [
       [ "Installation", "md_Guides_2LCD__with__I2C.html#autotoc_md23", null ],
