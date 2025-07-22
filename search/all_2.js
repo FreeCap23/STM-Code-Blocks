@@ -1,12 +1,17 @@
 var searchData=
 [
-  ['clock_20guide_0',['Timer Clock Guide',['../md_Guides_2Timer__Clock.html',1,'']]],
-  ['clocks_1',['APBx Peripheral Clocks',['../md_Guides_2Timer__Clock.html#autotoc_md17',1,'']]],
-  ['code_2',['Step Through Code',['../md_Guides_2Using__the__Debugger.html#autotoc_md25',1,'']]],
-  ['code_20blocks_3',['STM Code Blocks',['../index.html',1,'']]],
-  ['code_20structure_4',['The STM32 Code Structure',['../md_Guides_201_8_01STM32__Code__Structure.html',1,'']]],
-  ['command_5fparser_2eh_5',['command_parser.h',['../command__parser_8h.html',1,'']]],
-  ['communication_6',['communication',['../md_Guides_2Peripheral__Setup.html#autotoc_md14',1,'I2C Communication'],['../md_Guides_2Peripheral__Setup.html#autotoc_md13',1,'SPI Communication'],['../md_Guides_2Peripheral__Setup.html#autotoc_md12',1,'UART Communication']]],
-  ['cs_5fpin_7',['CS_Pin',['../structSPI__Helper__t.html#a5cfa2757595b28a6e06b1e9c962d99b9',1,'SPI_Helper_t']]],
-  ['cs_5fport_8',['CS_Port',['../structSPI__Helper__t.html#a91aa4580c0dd324965e10fb12e2b147a',1,'SPI_Helper_t']]]
+  ['c_20global_20variables_20declaration_20definition_20and_20inclusion_20in_20the_20main_20source_20code_0',['C. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md4',1,'']]],
+  ['c_20tt_20file_20following_20these_20steps_3a_1',['c tt file following these steps:',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md10',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:'],['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md6',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:'],['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md11',1,'To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:'],['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md7',1,'To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:']]],
+  ['clock_20guide_2',['Timer Clock Guide',['../md_Guides_2Timer__Clock.html',1,'']]],
+  ['clocks_3',['APBx Peripheral Clocks',['../md_Guides_2Timer__Clock.html#autotoc_md27',1,'']]],
+  ['code_4',['code',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md4',1,'C. Global Variables - Declaration, definition and inclusion in the main source code'],['../md_Guides_2Using__the__Debugger.html#autotoc_md35',1,'Step Through Code']]],
+  ['code_20blocks_5',['STM Code Blocks',['../index.html',1,'']]],
+  ['code_20files_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20that_20souce_20code_20file_20following_20these_20steps_3a_6',['To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md12',1,'']]],
+  ['code_20structure_7',['The STM32 Code Structure',['../md_Guides_201_8_01STM32__Code__Structure.html',1,'']]],
+  ['code_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_8',['code the tt globals h tt file must be included into tt main c tt file following these steps:',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md7',1,'To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:'],['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md11',1,'To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:']]],
+  ['command_5fparser_2eh_9',['command_parser.h',['../command__parser_8h.html',1,'']]],
+  ['communication_10',['communication',['../md_Guides_2Peripheral__Setup.html#autotoc_md24',1,'I2C Communication'],['../md_Guides_2Peripheral__Setup.html#autotoc_md23',1,'SPI Communication'],['../md_Guides_2Peripheral__Setup.html#autotoc_md22',1,'UART Communication']]],
+  ['creating_20software_20module_20and_20its_20local_20variables_11',['D. Creating software module and its local variables',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md8',1,'']]],
+  ['cs_5fpin_12',['CS_Pin',['../structSPI__Helper__t.html#a5cfa2757595b28a6e06b1e9c962d99b9',1,'SPI_Helper_t']]],
+  ['cs_5fport_13',['CS_Port',['../structSPI__Helper__t.html#a91aa4580c0dd324965e10fb12e2b147a',1,'SPI_Helper_t']]]
 ];

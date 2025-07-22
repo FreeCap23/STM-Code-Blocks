@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['blocks_0',['STM Code Blocks',['../index.html',1,'']]],
-  ['breakpoints_1',['Set Breakpoints',['../md_Guides_2Using__the__Debugger.html#autotoc_md24',1,'']]],
-  ['build_20and_20flash_20the_20project_2',['Build and Flash the Project',['../md_Guides_2Using__the__Debugger.html#autotoc_md23',1,'']]]
+  ['b_20the_20stm32_20equivalent_20of_20setup_20and_20loop_20functions_20found_20in_20arduine_20ide_0',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md3',1,'']]],
+  ['be_20also_20defined_20assigned_20default_20values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_1',['be also defined assigned default values into a tt globals c tt file following these steps:',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md6',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:'],['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md10',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:']]],
+  ['be_20declared_20in_20a_20tt_20globals_20h_20tt_20file_20following_20these_20steps_3a_2',['Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md5',1,'']]],
+  ['be_20included_20into_20that_20souce_20code_20file_20following_20these_20steps_3a_3',['To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md12',1,'']]],
+  ['be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_4',['be included into tt main c tt file following these steps:',['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md7',1,'To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:'],['../md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md11',1,'To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:']]],
+  ['blocks_5',['STM Code Blocks',['../index.html',1,'']]],
+  ['breakpoints_6',['Set Breakpoints',['../md_Guides_2Using__the__Debugger.html#autotoc_md34',1,'']]],
+  ['build_20and_20flash_20the_20project_7',['Build and Flash the Project',['../md_Guides_2Using__the__Debugger.html#autotoc_md33',1,'']]]
 ];
