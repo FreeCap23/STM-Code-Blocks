@@ -2,8 +2,8 @@ var searchData=
 [
   ['d_20creating_20software_20module_20and_20its_20local_20variables_0',['D. Creating software module and its local variables',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md8',1,'']]],
   ['d_20set_20up_20a_20gpio_20as_20an_20interrupt_20capable_20digital_20input_1',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17',1,'']]],
-  ['debug_20mode_2',['Exit Debug Mode',['../md_Guides_2Using__the__Debugger.html#autotoc_md40',1,'']]],
-  ['debugging_20guide_3',['STM32CubeIDE Debugging Guide',['../md_Guides_2Using__the__Debugger.html',1,'']]],
+  ['debug_20mode_2',['Exit Debug Mode',['../md_Guides_205_8Debugger__Guide.html#autotoc_md36',1,'']]],
+  ['debugging_20guide_3',['STM32CubeIDE Debugging Guide',['../md_Guides_205_8Debugger__Guide.html',1,'']]],
   ['declaration_20definition_20and_20inclusion_20in_20the_20main_20source_20code_4',['C. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md4',1,'']]],
   ['declared_20in_20a_20tt_20globals_20h_20tt_20file_20following_20these_20steps_3a_5',['Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md5',1,'']]],
   ['declared_20in_20tt_20globals_20h_20tt_20must_20be_20also_20defined_20assigned_20default_20values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_6',['declared in tt globals h tt must be also defined assigned default values into a tt globals c tt file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:'],['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md10',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:']]],
@@ -13,7 +13,7 @@ var searchData=
   ['device_20configuration_20setup_20guide_10',['02. Device Configuration Setup Guide',['../md_Guides_202_8Pin__Mapping__Setup.html',1,'']]],
   ['digital_20input_11',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17',1,'']]],
   ['digital_20input_20or_20as_20digital_20output_12',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14',1,'']]],
-  ['displaying_20a_20formatted_20string_13',['Displaying a formatted string',['../md_Guides_2LCD__with__I2C.html#autotoc_md28',1,'']]],
-  ['dma_20mode_20effectively_14',['Using the ADC in DMA mode effectively',['../md_Guides_204_8Use__ADC__with__DMA.html',1,'']]],
-  ['do_20i_20find_20the_20address_15',['How do I find the address??',['../md_Guides_2LCD__with__I2C.html#autotoc_md29',1,'']]]
+  ['displaying_20a_20formatted_20string_13',['Displaying a formatted string',['../md_Guides_2LCD__with__I2C.html#autotoc_md39',1,'']]],
+  ['dma_20mode_20effectively_14',['Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]],
+  ['do_20i_20find_20the_20address_15',['How do I find the address??',['../md_Guides_2LCD__with__I2C.html#autotoc_md40',1,'']]]
 ];
