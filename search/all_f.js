@@ -33,7 +33,7 @@ var searchData=
   ['stm32_20code_20structure_30',['The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
   ['stm32_20equivalent_20of_20setup_20and_20loop_20functions_20found_20in_20arduine_20ide_31',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
   ['stm32cubeide_20debugging_20guide_32',['STM32CubeIDE Debugging Guide',['../md_Guides_2Using__the__Debugger.html',1,'']]],
-  ['string_33',['Displaying a formatted string',['../md_Guides_2LCD__with__I2C.html#autotoc_md23',1,'']]],
+  ['string_33',['Displaying a formatted string',['../md_Guides_2LCD__with__I2C.html#autotoc_md25',1,'']]],
   ['structure_34',['The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
   ['systemclock_5fconfig_35',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
 ];

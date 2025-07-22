@@ -49,13 +49,13 @@ var NAVTREE =
       [ "F. Set up GPIOs for SPI Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md19", null ],
       [ "G. Set up GPIOs for I2C Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md20", null ]
     ] ],
-    [ "LCD With I2C", "md_Guides_2LCD__with__I2C.html", [
-      [ "Installation", "md_Guides_2LCD__with__I2C.html#autotoc_md22", null ],
-      [ "Displaying a formatted string", "md_Guides_2LCD__with__I2C.html#autotoc_md23", null ],
-      [ "How do I find the address??", "md_Guides_2LCD__with__I2C.html#autotoc_md24", null ]
+    [ "Timer Clock Guide", "md_Guides_203_8Timer__Setup.html", [
+      [ "APBx Peripheral Clocks", "md_Guides_203_8Timer__Setup.html#autotoc_md22", null ]
     ] ],
-    [ "Timer Clock Guide", "md_Guides_2Timer__Clock.html", [
-      [ "APBx Peripheral Clocks", "md_Guides_2Timer__Clock.html#autotoc_md26", null ]
+    [ "LCD With I2C", "md_Guides_2LCD__with__I2C.html", [
+      [ "Installation", "md_Guides_2LCD__with__I2C.html#autotoc_md24", null ],
+      [ "Displaying a formatted string", "md_Guides_2LCD__with__I2C.html#autotoc_md25", null ],
+      [ "How do I find the address??", "md_Guides_2LCD__with__I2C.html#autotoc_md26", null ]
     ] ],
     [ "Using the ADC in DMA mode effectively", "md_Guides_2Using__the__ADC__with__DMA.html", [
       [ "Setup", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md28", null ],

@@ -18,5 +18,5 @@ var searchData=
   ['gpios_20for_20i2c_20communication_15',['G. Set up GPIOs for I2C Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md20',1,'']]],
   ['gpios_20for_20spi_20communication_16',['F. Set up GPIOs for SPI Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md19',1,'']]],
   ['gpios_20for_20uart_20communication_17',['E. Set up GPIOs for UART Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md18',1,'']]],
-  ['guide_18',['guide',['../md_Guides_202_8Pin__Mapping__Setup.html',1,'02. Device Configuration Setup Guide'],['../md_Guides_2Using__the__Debugger.html',1,'STM32CubeIDE Debugging Guide'],['../md_Guides_2Timer__Clock.html',1,'Timer Clock Guide']]]
+  ['guide_18',['guide',['../md_Guides_202_8Pin__Mapping__Setup.html',1,'02. Device Configuration Setup Guide'],['../md_Guides_2Using__the__Debugger.html',1,'STM32CubeIDE Debugging Guide'],['../md_Guides_203_8Timer__Setup.html',1,'Timer Clock Guide']]]
 ];

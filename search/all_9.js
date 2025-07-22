@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['i_20find_20the_20address_0',['How do I find the address??',['../md_Guides_2LCD__with__I2C.html#autotoc_md24',1,'']]],
+  ['i_20find_20the_20address_0',['How do I find the address??',['../md_Guides_2LCD__with__I2C.html#autotoc_md26',1,'']]],
   ['i2c_1',['LCD With I2C',['../md_Guides_2LCD__with__I2C.html',1,'']]],
   ['i2c_20communication_2',['G. Set up GPIOs for I2C Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md20',1,'']]],
   ['i2c_5flcd_5fhandletypedef_3',['I2C_LCD_HandleTypeDef',['../structI2C__LCD__HandleTypeDef.html',1,'']]],
@@ -17,7 +17,7 @@ var searchData=
   ['input_14',['input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15',1,'B. Set up a GPIO as an analog Input'],['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17',1,'D. Set up a GPIO as an Interrupt Capable Digital Input']]],
   ['input_20or_20as_20digital_20output_15',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14',1,'']]],
   ['inspect_20variables_16',['Inspect Variables',['../md_Guides_2Using__the__Debugger.html#autotoc_md36',1,'']]],
-  ['installation_17',['Installation',['../md_Guides_2LCD__with__I2C.html#autotoc_md22',1,'']]],
+  ['installation_17',['Installation',['../md_Guides_2LCD__with__I2C.html#autotoc_md24',1,'']]],
   ['interrupt_20capable_20digital_20input_18',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17',1,'']]],
   ['into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_19',['into a tt globals c tt file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md10',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:'],['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:']]],
   ['into_20that_20souce_20code_20file_20following_20these_20steps_3a_20',['To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md12',1,'']]],
