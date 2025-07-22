@@ -6,7 +6,7 @@ var searchData=
   ['capable_20digital_20input_3',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17',1,'']]],
   ['clock_20guide_4',['Timer Clock Guide',['../md_Guides_203_8Timer__Setup.html',1,'']]],
   ['clocks_5',['APBx Peripheral Clocks',['../md_Guides_203_8Timer__Setup.html#autotoc_md22',1,'']]],
-  ['code_6',['code',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md4',1,'C. Global Variables - Declaration, definition and inclusion in the main source code'],['../md_Guides_205_8Debugger__Guide.html#autotoc_md30',1,'Step Through Code']]],
+  ['code_6',['code',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md4',1,'C. Global Variables - Declaration, definition and inclusion in the main source code'],['../md_Guides_2Using__the__Debugger.html#autotoc_md34',1,'Step Through Code']]],
   ['code_20blocks_7',['STM Code Blocks',['../index.html',1,'']]],
   ['code_20files_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20that_20souce_20code_20file_20following_20these_20steps_3a_8',['To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md12',1,'']]],
   ['code_20structure_9',['The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],

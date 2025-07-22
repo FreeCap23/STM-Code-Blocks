@@ -7,6 +7,6 @@ var searchData=
   ['be_20included_20into_20that_20souce_20code_20file_20following_20these_20steps_3a_4',['To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md12',1,'']]],
   ['be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_5',['be included into tt main c tt file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:'],['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md11',1,'To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:']]],
   ['blocks_6',['STM Code Blocks',['../index.html',1,'']]],
-  ['breakpoints_7',['Set Breakpoints',['../md_Guides_205_8Debugger__Guide.html#autotoc_md29',1,'']]],
-  ['build_20and_20flash_20the_20project_8',['Build and Flash the Project',['../md_Guides_205_8Debugger__Guide.html#autotoc_md28',1,'']]]
+  ['breakpoints_7',['Set Breakpoints',['../md_Guides_2Using__the__Debugger.html#autotoc_md33',1,'']]],
+  ['build_20and_20flash_20the_20project_8',['Build and Flash the Project',['../md_Guides_2Using__the__Debugger.html#autotoc_md32',1,'']]]
 ];
