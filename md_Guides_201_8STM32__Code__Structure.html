@@ -106,10 +106,10 @@ A. General info</h1>
 <li>a source file contains also the values of the variables and the code of the functions mentioned in the header file with the same name. It has the same purpose as a the content of a book chapter. To link the content of the source file with the content of the header file, the header file must be included into the source file with the line <code>#include &lt;headerFileName.h&gt;</code></li>
 </ul>
 <blockquote class="doxtable">
-<p>&zwj;ℹ️ <b>Important</b>: To avoid defining a header file multiple types (and get compilation errors), a good practice is to always use "header guards" in header files. </p>
+<p>&zwj;ℹ️ <b>Important</b>: To avoid defining a header file multiple types by mistake (and get compilation errors), a good practice is to always use the so called "header guards" in header files. </p>
 </blockquote>
 <p>This means inside a header file you need to put your custom code as in the example bellow:</p>
-<p>Examples of a .h file that uses header guards: </p><div class="fragment"><div class="line"><span class="comment">/* === Your_Heade_Name.h === */</span></div>
+<p>Examples of a .h file that uses header guards: </p><div class="fragment"><div class="line"><span class="comment">/* === Your_Header_Name.h === */</span></div>
 <div class="line"><span class="preprocessor">#ifndef INC_YOUR_HEADER_NAME_H_</span></div>
 <div class="line"><span class="preprocessor">#define INC_YOUR_HEADER_NAME_H_</span></div>
 <div class="line"><span class="comment">//Put here your custom code</span></div>
