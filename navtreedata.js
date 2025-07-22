@@ -52,22 +52,22 @@ var NAVTREE =
     [ "Timer Clock Guide", "md_Guides_203_8Timer__Setup.html", [
       [ "APBx Peripheral Clocks", "md_Guides_203_8Timer__Setup.html#autotoc_md22", null ]
     ] ],
+    [ "Using the ADC in DMA mode effectively", "md_Guides_204_8Use__ADC__with__DMA.html", [
+      [ "Setup", "md_Guides_204_8Use__ADC__with__DMA.html#autotoc_md24", null ],
+      [ "Example usage", "md_Guides_204_8Use__ADC__with__DMA.html#autotoc_md25", null ]
+    ] ],
+    [ "STM32CubeIDE Debugging Guide", "md_Guides_205_8Debugger__Guide.html", [
+      [ "Build and Flash the Project", "md_Guides_205_8Debugger__Guide.html#autotoc_md28", null ],
+      [ "Set Breakpoints", "md_Guides_205_8Debugger__Guide.html#autotoc_md29", null ],
+      [ "Step Through Code", "md_Guides_205_8Debugger__Guide.html#autotoc_md30", null ],
+      [ "Inspect Variables", "md_Guides_205_8Debugger__Guide.html#autotoc_md32", null ],
+      [ "Memory and Registers", "md_Guides_205_8Debugger__Guide.html#autotoc_md34", null ],
+      [ "Exit Debug Mode", "md_Guides_205_8Debugger__Guide.html#autotoc_md36", null ]
+    ] ],
     [ "LCD With I2C", "md_Guides_2LCD__with__I2C.html", [
-      [ "Installation", "md_Guides_2LCD__with__I2C.html#autotoc_md24", null ],
-      [ "Displaying a formatted string", "md_Guides_2LCD__with__I2C.html#autotoc_md25", null ],
-      [ "How do I find the address??", "md_Guides_2LCD__with__I2C.html#autotoc_md26", null ]
-    ] ],
-    [ "Using the ADC in DMA mode effectively", "md_Guides_2Using__the__ADC__with__DMA.html", [
-      [ "Setup", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md28", null ],
-      [ "Example usage", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md29", null ]
-    ] ],
-    [ "STM32CubeIDE Debugging Guide", "md_Guides_2Using__the__Debugger.html", [
-      [ "Build and Flash the Project", "md_Guides_2Using__the__Debugger.html#autotoc_md32", null ],
-      [ "Set Breakpoints", "md_Guides_2Using__the__Debugger.html#autotoc_md33", null ],
-      [ "Step Through Code", "md_Guides_2Using__the__Debugger.html#autotoc_md34", null ],
-      [ "Inspect Variables", "md_Guides_2Using__the__Debugger.html#autotoc_md36", null ],
-      [ "Memory and Registers", "md_Guides_2Using__the__Debugger.html#autotoc_md38", null ],
-      [ "Exit Debug Mode", "md_Guides_2Using__the__Debugger.html#autotoc_md40", null ]
+      [ "Installation", "md_Guides_2LCD__with__I2C.html#autotoc_md38", null ],
+      [ "Displaying a formatted string", "md_Guides_2LCD__with__I2C.html#autotoc_md39", null ],
+      [ "How do I find the address??", "md_Guides_2LCD__with__I2C.html#autotoc_md40", null ]
     ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],

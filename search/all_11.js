@@ -8,6 +8,6 @@ var searchData=
   ['up_20gpios_20for_20i2c_20communication_5',['G. Set up GPIOs for I2C Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md20',1,'']]],
   ['up_20gpios_20for_20spi_20communication_6',['F. Set up GPIOs for SPI Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md19',1,'']]],
   ['up_20gpios_20for_20uart_20communication_7',['E. Set up GPIOs for UART Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md18',1,'']]],
-  ['usage_8',['Example usage',['../md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md29',1,'']]],
-  ['using_20the_20adc_20in_20dma_20mode_20effectively_9',['Using the ADC in DMA mode effectively',['../md_Guides_2Using__the__ADC__with__DMA.html',1,'']]]
+  ['usage_8',['Example usage',['../md_Guides_204_8Use__ADC__with__DMA.html#autotoc_md25',1,'']]],
+  ['using_20the_20adc_20in_20dma_20mode_20effectively_9',['Using the ADC in DMA mode effectively',['../md_Guides_204_8Use__ADC__with__DMA.html',1,'']]]
 ];
