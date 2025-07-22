@@ -1,4 +1,4 @@
-# Peripheral Setup Guide
+# 02. Device Configuration Setup Guide
 
 This guide explains how to configure basic I/O and peripheral functionality on STM32 microcontrollers using STM32CubeIDE.
 
