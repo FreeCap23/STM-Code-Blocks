@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['adc_20in_20dma_20mode_20effectively_0',['Using the ADC in DMA mode effectively',['../md_Guides_2Using__the__ADC__with__DMA.html',1,'']]]
+  ['02_20device_20configuration_20setup_20guide_0',['02. Device Configuration Setup Guide',['../md_Guides_202_8_01Peripheral__Setup.html',1,'']]]
 ];
