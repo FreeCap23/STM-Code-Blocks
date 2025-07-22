@@ -13,7 +13,7 @@ var searchData=
   ['device_20configuration_20setup_20guide_10',['02. Device Configuration Setup Guide',['../md_Guides_202_8Pin__Mapping__Setup.html',1,'']]],
   ['digital_20input_11',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17',1,'']]],
   ['digital_20input_20or_20as_20digital_20output_12',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14',1,'']]],
-  ['displaying_20a_20formatted_20string_13',['Displaying a formatted string',['../md_Guides_2LCD__with__I2C.html#autotoc_md39',1,'']]],
+  ['displaying_20a_20formatted_20string_13',['Displaying a formatted string',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md39',1,'']]],
   ['dma_20mode_20effectively_14',['Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]],
-  ['do_20i_20find_20the_20address_15',['How do I find the address??',['../md_Guides_2LCD__with__I2C.html#autotoc_md40',1,'']]]
+  ['do_20i_20find_20the_20address_15',['How do I find the address??',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md40',1,'']]]
 ];

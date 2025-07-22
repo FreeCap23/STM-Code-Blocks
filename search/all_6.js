@@ -5,7 +5,7 @@ var searchData=
   ['file_20must_20be_20included_20into_20that_20souce_20code_20file_20following_20these_20steps_3a_2',['To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md12',1,'']]],
   ['file_20must_20be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_3',['file must be included into tt main c tt file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md11',1,'To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:'],['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:']]],
   ['files_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20that_20souce_20code_20file_20following_20these_20steps_3a_4',['To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md12',1,'']]],
-  ['find_20the_20address_5',['How do I find the address??',['../md_Guides_2LCD__with__I2C.html#autotoc_md40',1,'']]],
+  ['find_20the_20address_5',['How do I find the address??',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md40',1,'']]],
   ['flash_20the_20project_6',['Build and Flash the Project',['../md_Guides_205_8Debugger__Guide.html#autotoc_md28',1,'']]],
   ['flash_5fbank_5fnumber_7',['FLASH_BANK_NUMBER',['../flash__helper__h7a3_8c.html#ae16649e63053b3591711f091d06072e4',1,'flash_helper_h7a3.c']]],
   ['flash_5fbase_5faddress_8',['FLASH_BASE_ADDRESS',['../flash__helper__h7a3_8c.html#abf7e9f0f2ffa9fb65654d7c8b072d1d4',1,'flash_helper_h7a3.c']]],
@@ -18,7 +18,7 @@ var searchData=
   ['for_20i2c_20communication_15',['G. Set up GPIOs for I2C Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md20',1,'']]],
   ['for_20spi_20communication_16',['F. Set up GPIOs for SPI Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md19',1,'']]],
   ['for_20uart_20communication_17',['E. Set up GPIOs for UART Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md18',1,'']]],
-  ['formatted_20string_18',['Displaying a formatted string',['../md_Guides_2LCD__with__I2C.html#autotoc_md39',1,'']]],
+  ['formatted_20string_18',['Displaying a formatted string',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md39',1,'']]],
   ['found_20in_20arduine_20ide_19',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
   ['functions_20found_20in_20arduine_20ide_20',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]]
 ];

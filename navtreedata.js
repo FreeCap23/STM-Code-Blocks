@@ -64,10 +64,10 @@ var NAVTREE =
       [ "Memory and Registers", "md_Guides_205_8Debugger__Guide.html#autotoc_md34", null ],
       [ "Exit Debug Mode", "md_Guides_205_8Debugger__Guide.html#autotoc_md36", null ]
     ] ],
-    [ "LCD With I2C", "md_Guides_2LCD__with__I2C.html", [
-      [ "Installation", "md_Guides_2LCD__with__I2C.html#autotoc_md38", null ],
-      [ "Displaying a formatted string", "md_Guides_2LCD__with__I2C.html#autotoc_md39", null ],
-      [ "How do I find the address??", "md_Guides_2LCD__with__I2C.html#autotoc_md40", null ]
+    [ "LCD With I2C", "md_Guides_206_8LCD__with__I2C__Module.html", [
+      [ "Installation", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md38", null ],
+      [ "Displaying a formatted string", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md39", null ],
+      [ "How do I find the address??", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md40", null ]
     ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],

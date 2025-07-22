@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a_20formatted_20string_0',['Displaying a formatted string',['../md_Guides_2LCD__with__I2C.html#autotoc_md39',1,'']]],
+  ['a_20formatted_20string_0',['Displaying a formatted string',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md39',1,'']]],
   ['a_20general_20info_1',['A. General info',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md2',1,'']]],
   ['a_20gpio_20as_20a_20digital_20input_20or_20as_20digital_20output_2',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14',1,'']]],
   ['a_20gpio_20as_20an_20analog_20input_3',['B. Set up a GPIO as an analog Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15',1,'']]],
@@ -10,7 +10,7 @@ var searchData=
   ['a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_7',['a tt globals c tt file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:'],['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md10',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:']]],
   ['a_20tt_20globals_20h_20tt_20file_20following_20these_20steps_3a_8',['Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md5',1,'']]],
   ['adc_20in_20dma_20mode_20effectively_9',['Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]],
-  ['address_10',['How do I find the address??',['../md_Guides_2LCD__with__I2C.html#autotoc_md40',1,'']]],
+  ['address_10',['How do I find the address??',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md40',1,'']]],
   ['also_20defined_20assigned_20default_20values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_11',['also defined assigned default values into a tt globals c tt file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md10',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:'],['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:']]],
   ['an_20analog_20input_12',['B. Set up a GPIO as an analog Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15',1,'']]],
   ['an_20interrupt_20capable_20digital_20input_13',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17',1,'']]],
