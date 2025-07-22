@@ -33,9 +33,9 @@ var NAVTREE =
         [ "The global variables you declared in <tt>globals.h</tt> must be also defined (assigned default values) into a <tt>globals.c</tt> file following these steps:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md6", null ],
         [ "To make your global variables available to the main code, the <tt>globals.h</tt> file must be included into <tt>main.c</tt> file following these steps:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md7", null ]
       ] ],
-      [ "D. Creating software module and its local variables", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md8", [
-        [ "Workflow:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md9", null ],
-        [ "The global variables you declared in <tt>globals.h</tt> must be also defined (assigned default values) into a <tt>globals.c</tt> file following these steps:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md10", null ],
+      [ "D. Creating a software module and its local variables", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md8", [
+        [ "Creade the header file of the software module:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md9", null ],
+        [ "Creade the source file of the software module:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md10", null ],
         [ "To make your global variables available to the main code, the <tt>globals.h</tt> file must be included into <tt>main.c</tt> file following these steps:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md11", null ],
         [ "To make your global variables available to other source code files, the <tt>globals.h</tt> file must be included into that souce code file following these steps:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md12", null ]
       ] ]

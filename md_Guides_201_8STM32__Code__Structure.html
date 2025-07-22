@@ -202,16 +202,16 @@ To make your global variables available to the main code, the &lt;tt&gt;globals.
 </div><!-- fragment --></li>
 </ul>
 <h1><a class="anchor" id="autotoc_md8"></a>
-D. Creating software module and its local variables</h1>
+D. Creating a software module and its local variables</h1>
 <p>From a pure technical point of view it's perfectly fine to have all the user code place in a single file (<a class="el" href="main_8c.html" title=": Main program body">main.c</a>). However, to make the use code more manageable it is more practical to organize it into multiple files (modules), each of them containing functions and local variables aimed for a single main functionality (e.g. "LCD_diplay_I2C" module, "Import_Export_NVRAM" module, "Background_Task_Scheduler" module. etc).</p>
 <h2><a class="anchor" id="autotoc_md9"></a>
-Workflow:</h2>
+Creade the header file of the software module:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Inc";</li>
 <li>right-click on "Inc" folder;</li>
 <li>choose "New / Header file";</li>
-<li>in the "New Header File" dialog window write "globals.h" in the "Header file:" field and choose "Default C header template" in "Template" field. Click "Finish".</li>
-<li><code>globals.h</code> file opens automatically with some predefined code in it. Place your global variables just before the <code>endif /* GLOBALS_H_ */</code> line.</li>
+<li>in the "New Header File" dialog fill the desire name for your file + ".h" suffix in the "Header file:" field and choose "Default C header template" in "Template" field. Click "Finish".</li>
+<li>your newly created header file opens automatically. If the file contains header guards or you add them manually, make sure you place your code just before the <code>endif</code> line.</li>
 <li>include also the stdbool.h and stdint.h libraries (to make the code able to use boolean and int type variables).</li>
 </ul>
 <blockquote class="doxtable">
@@ -231,7 +231,7 @@ Workflow:</h2>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#endif </span><span class="comment">/* GLOBALS_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --> <h2><a class="anchor" id="autotoc_md10"></a>
-The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:</h2>
+Creade the source file of the software module:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Src";</li>
 <li>right-click on "Src" folder;</li>
