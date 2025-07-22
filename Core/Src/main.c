@@ -22,6 +22,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "i2c_lcd.h"
+#include "flash_helper_h7a3.h"
+#include <stdio.h>
 #include <string.h>
 /* USER CODE END Includes */
 
@@ -104,16 +106,22 @@ int main(void)
   MX_USART3_UART_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  hlcd.hi2c = &hi2c1;
-  hlcd.address = 78;
-  lcd_init(&hlcd);
-  lcd_clear(&hlcd);
-  lcd_puts(&hlcd, "Hello there");
+  const char message[] = "Hello from FLASH memory";
+  uint8_t read_buffer[sizeof(message)] = {0};
+  uint32_t flash_address = 0x08020000; // Must be 16-byte aligned and in valid flash region
 
-  lcd_gotoxy(&hlcd, 0, 1);
-  sprintf(buffer, "Float (%%.3f): %.3f", 3.1415926535);
-  lcd_puts(&hlcd, buffer);
+  // Erase the sector before writing
+  if (Flash_Erase(flash_address) == HAL_OK) {
+      // Prepare a 16-byte aligned buffer (padded if needed)
+      uint8_t write_buffer[((sizeof(message) + 15) / 16) * 16] = {0xFF};
+      memcpy(write_buffer, message, sizeof(message));
 
+      // Write to Flash (length in bytes)
+      if (Flash_Write(flash_address, (uint64_t*)write_buffer, sizeof(write_buffer)) == HAL_OK) {
+          // Read back the data
+          Flash_Read(flash_address, read_buffer, sizeof(read_buffer));
+      }
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
