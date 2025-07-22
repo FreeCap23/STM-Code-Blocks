@@ -93,17 +93,17 @@ $(document).ready(function(){initNavTree('md_Guides_2LCD__with__I2C.html',''); i
   <div class="headertitle"><div class="title">LCD With I2C</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md22"></a> <a href="https://github.com/alixahedi/I2C-LCD-STM32">This library</a> allows us to easily use an LCD through I<sup>2</sup>C. It supports displays with sizes <b>16x2, 16x4, 20x2, 20x4</b>.</p>
-<h1><a class="anchor" id="autotoc_md23"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md13"></a> <a href="https://github.com/alixahedi/I2C-LCD-STM32">This library</a> allows us to easily use an LCD through I<sup>2</sup>C. It supports displays with sizes <b>16x2, 16x4, 20x2, 20x4</b>.</p>
+<h1><a class="anchor" id="autotoc_md14"></a>
 Installation</h1>
 <p>For installation instructions, <a href="https://github.com/alixahedi/I2C-LCD-STM32?tab=readme-ov-file#installation">see the README.md</a>.</p>
-<h1><a class="anchor" id="autotoc_md24"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Displaying a formatted string</h1>
 <p>In order to display a formatted string, we first need to build the string in a buffer: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> buffer[64];</div>
 <div class="line">sprintf(buffer, <span class="stringliteral">&quot;Pi: %.3f&quot;</span>, 3.1415926535);</div>
 <div class="line">lcd_puts(&amp;hlcd, buffer);</div>
 </div><!-- fragment --><p>This will display <code>Pi: 3.142</code>. Note how the number was automatically rounded. For more format specifiers, see <a href="https://cplusplus.com/reference/cstdio/printf/">the Parameters section of the printf documentation</a>.</p>
-<h1><a class="anchor" id="autotoc_md25"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 How do I find the address??</h1>
 <p>First, try addresses <code>0x20</code> and <code>0x4E</code>. If those don't work, try running this snippet of code:</p>
 <div class="fragment"><div class="line"><span class="comment">/* ----- &gt;8 snip ----- */</span></div>
