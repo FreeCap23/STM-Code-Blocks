@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "STM Code Blocks", "index.html", [
-    [ "The STM32 Code Strucrure", "md_Guides_201_8_01STM32__Code__Structure.html", [
+    [ "The STM32 Code Structure", "md_Guides_201_8_01STM32__Code__Structure.html", [
       [ "A. General info", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md2", null ],
       [ "B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md3", null ],
       [ "C. Global Variables - Declaration, definition and inclusion in the main source code", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md4", [
