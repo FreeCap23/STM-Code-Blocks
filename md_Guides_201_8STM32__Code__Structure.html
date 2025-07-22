@@ -239,19 +239,22 @@ Create the header file of the software module:</h2>
 Create the source file of the software module:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Src";</li>
-<li>right-click on "Src" folder;</li>
+<li>right-click on "Inc" folder;</li>
 <li>choose "New / Source file";</li>
-<li>in the "New Source File" dialog window write "globals.c" in the "Source file:" field and choose "Default C header template" in "Template" field. Click "Finish".</li>
-<li><code>globals.c</code> file opens automatically. Add the '#include "global_variables.h"' line and set the type and the default value of each of your global variables.</li>
+<li>in the "New Source File" dialog fill the desire name for your file + ".c" suffix in the "Source file:" field and choose "Default C header template" in "Template" field. Click "Finish".</li>
+<li>include the previously created header file, the <code><a class="el" href="main_8h.html" title=": Header for main.c file. This file contains the common defines of the application.">main.h</a></code> file, the .h file that contains the global variables and any other files with content that is usefull here.</li>
+<li>add your function definition.</li>
 </ul>
-<p>Example of how the content of <code>globals.c</code> content should look like: </p><div class="fragment"><div class="line"><span class="comment">/* === globals.c === */</span></div>
-<div class="line"><span class="preprocessor">#include &quot;global_variables.h&quot;</span></div>
+<p>Example of how the content of such a source file content should look like: </p><div class="fragment"><div class="line"><span class="comment">/* === your_software_module.c === */</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="main_8h.html">main.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;global_variables.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;your_software_module.h&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="comment">//START of declaring your variables</span></div>
-<div class="line"><span class="keywordtype">int</span> globalVariableName1 = 0;  <span class="comment">// Definition of the 1st variable</span></div>
-<div class="line"><span class="keywordtype">int</span> globalVariableName2 = 0;  <span class="comment">// Definition of the 2nd variable</span></div>
-<div class="line"><span class="keywordtype">int</span> globalVariableName3 = 0;  <span class="comment">// Definition of the 3rd variable</span></div>
-<div class="line"><span class="comment">//START of declaring your variables</span></div>
+<div class="line"><span class="comment">//START of defining and your functions</span></div>
+<div class="line"><span class="keywordtype">void</span> moduleFunction1(<span class="keywordtype">void</span>) { <span class="comment">//function content };</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">//END of defining and your functions</span></div>
+<div class="ttc" id="amain_8h_html"><div class="ttname"><a href="main_8h.html">main.h</a></div><div class="ttdoc">: Header for main.c file. This file contains the common defines of the application.</div></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
