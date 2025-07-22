@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "STM Code Blocks", "index.html", [
-    [ "The STM32 Code Strucrure", "md_Guides_201_8_01STM32__Code__Structure.html", [
+    [ "The STM32 Code Structure", "md_Guides_201_8_01STM32__Code__Structure.html", [
       [ "A. General info", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md2", null ],
       [ "B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md3", null ],
       [ "C. Global Variables - Declaration, definition and inclusion in the main source code", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md4", [
@@ -34,7 +34,7 @@ var NAVTREE =
         [ "To make your global variables available to the main code, the <tt>globals.h</tt> file must be included into <tt>main.c</tt> file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md7", null ]
       ] ],
       [ "D. Creating software module and its local variables", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md8", [
-        [ "Global variables should be declared in a <tt>globals.h</tt> file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md9", null ],
+        [ "Workflow:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md9", null ],
         [ "The global variables you declared in <tt>globals.h</tt> must be also defined (assigned default values) into a <tt>globals.c</tt> file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md10", null ],
         [ "To make your global variables available to the main code, the <tt>globals.h</tt> file must be included into <tt>main.c</tt> file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md11", null ],
         [ "To make your global variables available to other source code files, the <tt>globals.h</tt> file must be included into that souce code file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md12", null ]

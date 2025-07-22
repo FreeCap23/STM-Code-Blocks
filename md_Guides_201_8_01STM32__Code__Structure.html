@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>STM Code Blocks: The STM32 Code Strucrure</title>
+<title>STM Code Blocks: The STM32 Code Structure</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('md_Guides_201_8_01STM32__Code__Structu
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">The STM32 Code Strucrure</div></div>
+  <div class="headertitle"><div class="title">The STM32 Code Structure</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> </p>
@@ -196,9 +196,9 @@ To make your global variables available to the main code, the &lt;tt&gt;globals.
 </ul>
 <h1><a class="anchor" id="autotoc_md8"></a>
 D. Creating software module and its local variables</h1>
-<p>From a pute technical view there it;s perfectly fine to have all the user code place in a single file (<a class="el" href="main_8c.html" title=": Main program body">main.c</a>). However, for the same of make it more manageable it is more practical to organize it into multiple files (modules), each of them containing functions and local variables aimed for a single main functionality (e.g. "LCD_diplay_I2C" module, "Import_Export_NVRAM" module, "Background_Task_Scheduler" module. etc).</p>
+<p>From a pure technical point of view it's perfectly fine to have all the user code place in a single file (<a class="el" href="main_8c.html" title=": Main program body">main.c</a>). However, to make the use code more manageable it is more practical to organize it into multiple files (modules), each of them containing functions and local variables aimed for a single main functionality (e.g. "LCD_diplay_I2C" module, "Import_Export_NVRAM" module, "Background_Task_Scheduler" module. etc).</p>
 <h2><a class="anchor" id="autotoc_md9"></a>
-Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:</h2>
+Workflow:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Inc";</li>
 <li>right-click on "Inc" folder;</li>
