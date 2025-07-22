@@ -205,7 +205,7 @@ To make your global variables available to the main code, the &lt;tt&gt;globals.
 D. Creating a software module and its local variables</h1>
 <p>From a pure technical point of view it's perfectly fine to have all the user code place in a single file (<a class="el" href="main_8c.html" title=": Main program body">main.c</a>). However, to make the use code more manageable it is more practical to organize it into multiple files (modules), each of them containing functions and local variables aimed for a single main functionality (e.g. "LCD_diplay_I2C" module, "Import_Export_NVRAM" module, "Background_Task_Scheduler" module. etc).</p>
 <h2><a class="anchor" id="autotoc_md9"></a>
-Creade the header file of the software module:</h2>
+Create the header file of the software module:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Inc";</li>
 <li>right-click on "Inc" folder;</li>
@@ -231,7 +231,7 @@ Creade the header file of the software module:</h2>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#endif </span><span class="comment">/* GLOBALS_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --> <h2><a class="anchor" id="autotoc_md10"></a>
-Creade the source file of the software module:</h2>
+Create the source file of the software module:</h2>
 <ul>
 <li>navigate to "Project Explorer / YourProject / Core / Src";</li>
 <li>right-click on "Src" folder;</li>
@@ -247,27 +247,7 @@ Creade the source file of the software module:</h2>
 <div class="line"><span class="keywordtype">int</span> globalVariableName2 = 0;  <span class="comment">// Definition of the 2nd variable</span></div>
 <div class="line"><span class="keywordtype">int</span> globalVariableName3 = 0;  <span class="comment">// Definition of the 3rd variable</span></div>
 <div class="line"><span class="comment">//START of declaring your variables</span></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md11"></a>
-To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:</h2>
-<ul>
-<li>navigate to "Project Explorer / YourProject / Core / Src" and open the <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> file;</li>
-<li>search for the &lsquo;'Private includes&rsquo;<code>section and include your</code>globals.h` file as shown in the example below. <div class="fragment"><div class="line"><span class="comment">/* === main.c === */</span></div>
-<div class="line"> </div>
-<div class="line"><span class="comment">/* Private includes ----------------------------------------------------------*/</span></div>
-<div class="line"><span class="comment">/* USER CODE BEGIN Includes */</span></div>
-<div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
-<div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
-</div><!-- fragment --></li>
-</ul>
-<h2><a class="anchor" id="autotoc_md12"></a>
-To make your global variables available to other source code files, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into that souce code file following these steps:</h2>
-<div class="fragment"><div class="line"><span class="comment">/* === OtherThanGlobals.c === */</span></div>
-<div class="line"><span class="preprocessor">#include &quot;globals.h&quot;</span></div>
-<div class="line"><span class="keywordtype">int</span> localVariableName = globalVariableName;</div>
-</div><!-- fragment --><blockquote class="doxtable">
-<p>&zwj;⚠️ A global variable must always be defines only once, in the <code>globals.c</code> file. Otherwise you will get a compilation error. </p>
-</blockquote>
-</div></div><!-- contents -->
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

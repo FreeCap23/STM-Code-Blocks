@@ -34,40 +34,38 @@ var NAVTREE =
         [ "To make your global variables available to the main code, the <tt>globals.h</tt> file must be included into <tt>main.c</tt> file following these steps:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md7", null ]
       ] ],
       [ "D. Creating a software module and its local variables", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md8", [
-        [ "Creade the header file of the software module:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md9", null ],
-        [ "Creade the source file of the software module:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md10", null ],
-        [ "To make your global variables available to the main code, the <tt>globals.h</tt> file must be included into <tt>main.c</tt> file following these steps:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md11", null ],
-        [ "To make your global variables available to other source code files, the <tt>globals.h</tt> file must be included into that souce code file following these steps:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md12", null ]
+        [ "Create the header file of the software module:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md9", null ],
+        [ "Create the source file of the software module:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md10", null ]
       ] ]
     ] ],
     [ "02. Device Configuration Setup Guide", "md_Guides_202_8Pin__Mapping__Setup.html", [
-      [ "A. Set up a GPIO as a Digital Input or as Digital Output", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14", null ],
-      [ "B. Set up a GPIO as an analog Input", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15", null ],
-      [ "C. Set up a GPIO as an PWM Output", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md16", null ],
-      [ "D. Set up a GPIO as an Interrupt Capable Digital Input", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17", null ],
-      [ "E. Set up GPIOs for UART Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md18", null ],
-      [ "F. Set up GPIOs for SPI Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md19", null ],
-      [ "G. Set up GPIOs for I2C Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md20", null ]
+      [ "A. Set up a GPIO as a Digital Input or as Digital Output", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md12", null ],
+      [ "B. Set up a GPIO as an analog Input", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md13", null ],
+      [ "C. Set up a GPIO as an PWM Output", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14", null ],
+      [ "D. Set up a GPIO as an Interrupt Capable Digital Input", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15", null ],
+      [ "E. Set up GPIOs for UART Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md16", null ],
+      [ "F. Set up GPIOs for SPI Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17", null ],
+      [ "G. Set up GPIOs for I2C Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md18", null ]
     ] ],
     [ "Timer Clock Guide", "md_Guides_203_8Timer__Setup.html", [
-      [ "APBx Peripheral Clocks", "md_Guides_203_8Timer__Setup.html#autotoc_md22", null ]
+      [ "APBx Peripheral Clocks", "md_Guides_203_8Timer__Setup.html#autotoc_md20", null ]
     ] ],
     [ "Using the ADC in DMA mode effectively", "md_Guides_204_8ADC__with__DMA__Setup.html", [
-      [ "Setup", "md_Guides_204_8ADC__with__DMA__Setup.html#autotoc_md24", null ],
-      [ "Example usage", "md_Guides_204_8ADC__with__DMA__Setup.html#autotoc_md25", null ]
+      [ "Setup", "md_Guides_204_8ADC__with__DMA__Setup.html#autotoc_md22", null ],
+      [ "Example usage", "md_Guides_204_8ADC__with__DMA__Setup.html#autotoc_md23", null ]
     ] ],
     [ "STM32CubeIDE Debugging Guide", "md_Guides_205_8Debugger__Guide.html", [
-      [ "Build and Flash the Project", "md_Guides_205_8Debugger__Guide.html#autotoc_md28", null ],
-      [ "Set Breakpoints", "md_Guides_205_8Debugger__Guide.html#autotoc_md29", null ],
-      [ "Step Through Code", "md_Guides_205_8Debugger__Guide.html#autotoc_md30", null ],
-      [ "Inspect Variables", "md_Guides_205_8Debugger__Guide.html#autotoc_md32", null ],
-      [ "Memory and Registers", "md_Guides_205_8Debugger__Guide.html#autotoc_md34", null ],
-      [ "Exit Debug Mode", "md_Guides_205_8Debugger__Guide.html#autotoc_md36", null ]
+      [ "Build and Flash the Project", "md_Guides_205_8Debugger__Guide.html#autotoc_md26", null ],
+      [ "Set Breakpoints", "md_Guides_205_8Debugger__Guide.html#autotoc_md27", null ],
+      [ "Step Through Code", "md_Guides_205_8Debugger__Guide.html#autotoc_md28", null ],
+      [ "Inspect Variables", "md_Guides_205_8Debugger__Guide.html#autotoc_md30", null ],
+      [ "Memory and Registers", "md_Guides_205_8Debugger__Guide.html#autotoc_md32", null ],
+      [ "Exit Debug Mode", "md_Guides_205_8Debugger__Guide.html#autotoc_md34", null ]
     ] ],
     [ "LCD With I2C", "md_Guides_206_8LCD__with__I2C__Module.html", [
-      [ "Installation", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md38", null ],
-      [ "Displaying a formatted string", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md39", null ],
-      [ "How do I find the address??", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md40", null ]
+      [ "Installation", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md36", null ],
+      [ "Displaying a formatted string", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md37", null ],
+      [ "How do I find the address??", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md38", null ]
     ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
