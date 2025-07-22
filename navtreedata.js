@@ -26,49 +26,37 @@ var NAVTREE =
 [
   [ "STM Code Blocks", "index.html", [
     [ "The STM32 Code Structure", "md_Guides_201_8_01STM32__Code__Structure.html", [
-      [ "A. General info", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md2", null ],
-      [ "B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md3", null ],
-      [ "C. Global Variables - Declaration, definition and inclusion in the main source code", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md4", [
-        [ "Global variables should be declared in a <tt>globals.h</tt> file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md5", null ],
-        [ "The global variables you declared in <tt>globals.h</tt> must be also defined (assigned default values) into a <tt>globals.c</tt> file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md6", null ],
-        [ "To make your global variables available to the main code, the <tt>globals.h</tt> file must be included into <tt>main.c</tt> file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md7", null ]
-      ] ],
-      [ "D. Creating software module and its local variables", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md8", [
-        [ "Workflow:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md9", null ],
-        [ "The global variables you declared in <tt>globals.h</tt> must be also defined (assigned default values) into a <tt>globals.c</tt> file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md10", null ],
-        [ "To make your global variables available to the main code, the <tt>globals.h</tt> file must be included into <tt>main.c</tt> file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md11", null ],
-        [ "To make your global variables available to other source code files, the <tt>globals.h</tt> file must be included into that souce code file following these steps:", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md12", null ]
-      ] ]
+      [ "A. General info", "md_Guides_201_8_01STM32__Code__Structure.html#autotoc_md2", null ]
     ] ],
     [ "LCD With I2C", "md_Guides_2LCD__with__I2C.html", [
-      [ "Installation", "md_Guides_2LCD__with__I2C.html#autotoc_md14", null ],
-      [ "Displaying a formatted string", "md_Guides_2LCD__with__I2C.html#autotoc_md15", null ],
-      [ "How do I find the address??", "md_Guides_2LCD__with__I2C.html#autotoc_md16", null ]
+      [ "Installation", "md_Guides_2LCD__with__I2C.html#autotoc_md4", null ],
+      [ "Displaying a formatted string", "md_Guides_2LCD__with__I2C.html#autotoc_md5", null ],
+      [ "How do I find the address??", "md_Guides_2LCD__with__I2C.html#autotoc_md6", null ]
     ] ],
     [ "Peripheral Setup Guide", "md_Guides_2Peripheral__Setup.html", [
-      [ "Digital Input / Output", "md_Guides_2Peripheral__Setup.html#autotoc_md18", null ],
-      [ "Analog Input", "md_Guides_2Peripheral__Setup.html#autotoc_md19", null ],
-      [ "PWM Output", "md_Guides_2Peripheral__Setup.html#autotoc_md20", null ],
-      [ "Triggering an interrupt on an arbitrary pin", "md_Guides_2Peripheral__Setup.html#autotoc_md21", null ],
-      [ "UART Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md22", null ],
-      [ "SPI Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md23", null ],
-      [ "I2C Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md24", null ],
-      [ "Setting a timer interrupt", "md_Guides_2Peripheral__Setup.html#autotoc_md25", null ]
+      [ "Digital Input / Output", "md_Guides_2Peripheral__Setup.html#autotoc_md8", null ],
+      [ "Analog Input", "md_Guides_2Peripheral__Setup.html#autotoc_md9", null ],
+      [ "PWM Output", "md_Guides_2Peripheral__Setup.html#autotoc_md10", null ],
+      [ "Triggering an interrupt on an arbitrary pin", "md_Guides_2Peripheral__Setup.html#autotoc_md11", null ],
+      [ "UART Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md12", null ],
+      [ "SPI Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md13", null ],
+      [ "I2C Communication", "md_Guides_2Peripheral__Setup.html#autotoc_md14", null ],
+      [ "Setting a timer interrupt", "md_Guides_2Peripheral__Setup.html#autotoc_md15", null ]
     ] ],
     [ "Timer Clock Guide", "md_Guides_2Timer__Clock.html", [
-      [ "APBx Peripheral Clocks", "md_Guides_2Timer__Clock.html#autotoc_md27", null ]
+      [ "APBx Peripheral Clocks", "md_Guides_2Timer__Clock.html#autotoc_md17", null ]
     ] ],
     [ "Using the ADC in DMA mode effectively", "md_Guides_2Using__the__ADC__with__DMA.html", [
-      [ "Setup", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md29", null ],
-      [ "Example usage", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md30", null ]
+      [ "Setup", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md19", null ],
+      [ "Example usage", "md_Guides_2Using__the__ADC__with__DMA.html#autotoc_md20", null ]
     ] ],
     [ "STM32CubeIDE Debugging Guide", "md_Guides_2Using__the__Debugger.html", [
-      [ "Build and Flash the Project", "md_Guides_2Using__the__Debugger.html#autotoc_md33", null ],
-      [ "Set Breakpoints", "md_Guides_2Using__the__Debugger.html#autotoc_md34", null ],
-      [ "Step Through Code", "md_Guides_2Using__the__Debugger.html#autotoc_md35", null ],
-      [ "Inspect Variables", "md_Guides_2Using__the__Debugger.html#autotoc_md37", null ],
-      [ "Memory and Registers", "md_Guides_2Using__the__Debugger.html#autotoc_md39", null ],
-      [ "Exit Debug Mode", "md_Guides_2Using__the__Debugger.html#autotoc_md41", null ]
+      [ "Build and Flash the Project", "md_Guides_2Using__the__Debugger.html#autotoc_md23", null ],
+      [ "Set Breakpoints", "md_Guides_2Using__the__Debugger.html#autotoc_md24", null ],
+      [ "Step Through Code", "md_Guides_2Using__the__Debugger.html#autotoc_md25", null ],
+      [ "Inspect Variables", "md_Guides_2Using__the__Debugger.html#autotoc_md27", null ],
+      [ "Memory and Registers", "md_Guides_2Using__the__Debugger.html#autotoc_md29", null ],
+      [ "Exit Debug Mode", "md_Guides_2Using__the__Debugger.html#autotoc_md31", null ]
     ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
