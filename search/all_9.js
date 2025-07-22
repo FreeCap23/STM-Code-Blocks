@@ -15,7 +15,7 @@ var searchData=
   ['inclusion_20in_20the_20main_20source_20code_12',['C. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md4',1,'']]],
   ['info_13',['A. General info',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md2',1,'']]],
   ['input_14',['Analog Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15',1,'']]],
-  ['input_20output_15',['Digital Input / Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14',1,'']]],
+  ['input_20or_20as_20digital_20output_15',['A Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14',1,'']]],
   ['inspect_20variables_16',['Inspect Variables',['../md_Guides_2Using__the__Debugger.html#autotoc_md37',1,'']]],
   ['installation_17',['Installation',['../md_Guides_2LCD__with__I2C.html#autotoc_md23',1,'']]],
   ['interrupt_18',['Setting a timer interrupt',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md21',1,'']]],

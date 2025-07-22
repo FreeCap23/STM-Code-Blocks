@@ -41,7 +41,7 @@ var NAVTREE =
       ] ]
     ] ],
     [ "02. Device Configuration Setup Guide", "md_Guides_202_8Pin__Mapping__Setup.html", [
-      [ "Digital Input / Output", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14", null ],
+      [ "A Set up a GPIO as a Digital Input or as Digital Output", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14", null ],
       [ "Analog Input", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15", null ],
       [ "PWM Output", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md16", null ],
       [ "Triggering an interrupt on an arbitrary pin", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17", null ],
