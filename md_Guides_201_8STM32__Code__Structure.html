@@ -153,7 +153,7 @@ Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file fol
 <li>right-click on "Inc" folder;</li>
 <li>choose "New / Header file";</li>
 <li>in the "New Header File" dialog window write "globals.h" in the "Header file:" field and choose "Default C header template" in "Template" field. Click "Finish".</li>
-<li><code>globals.h</code> file opens automatically with some predefined code in it. Place your global variables just before the <code>endif /* GLOBALS_H_ */</code> line.</li>
+<li><code>globals.h</code> file opens automatically with some predefined code in it. Place your global variables just before the <code>endif</code> line.</li>
 <li>include also the stdbool.h and stdint.h libraries (to make the code able to use boolean and int type variables).</li>
 </ul>
 <blockquote class="doxtable">
@@ -213,23 +213,28 @@ Create the header file of the software module:</h2>
 <li>in the "New Header File" dialog fill the desire name for your file + ".h" suffix in the "Header file:" field and choose "Default C header template" in "Template" field. Click "Finish".</li>
 <li>your newly created header file opens automatically. If the file contains header guards or you add them manually, make sure you place your code just before the <code>endif</code> line.</li>
 <li>include also the stdbool.h and stdint.h libraries (to make the code able to use boolean and int type variables).</li>
+<li>add your local variables declarations and definitions;</li>
+<li>add your function declarations;</li>
 </ul>
-<blockquote class="doxtable">
-<p>&zwj;Examples of supported variables: <code>int</code>, <code>char</code>, <code>float</code>, <code>bool</code>, <code>uint8_t</code>, <code>int16_t</code> </p>
-</blockquote>
-<p>Example of how the content of <code>globals.h</code> content should look like: </p><div class="fragment"><div class="line"><span class="comment">/* === globals.h === */</span></div>
-<div class="line"><span class="preprocessor">#ifndef GLOBALS_H_</span></div>
-<div class="line"><span class="preprocessor">#define GLOBALS_H_</span></div>
+<p>Example of how the content of such a header file content should look like: </p><div class="fragment"><div class="line"><span class="comment">/* === your_software_module.h === */</span></div>
+<div class="line"><span class="preprocessor">#ifndef YOUR_SOFTWARE_MODULE_H_</span></div>
+<div class="line"><span class="preprocessor">#define YOUR_SOFTWARE_MODULE_H_</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//START of declaring your variables</span></div>
-<div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName1;  <span class="comment">// Declaration of a 1st variable</span></div>
-<div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName2;  <span class="comment">// Declaration of a 2nd variable</span></div>
-<div class="line"><span class="keyword">extern</span> <span class="keywordtype">int</span> globalVariableName3;  <span class="comment">// Declaration of a 3rd variable</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> localVariableName1 = 0;  <span class="comment">// Declaration of a 1st LOCAL variable</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> localVariableName2 = 0;  <span class="comment">// Declaration of a 2nd LOCAL variable</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> localVariableName3 = 0;  <span class="comment">// Declaration of a 3rd LOCAL variable</span></div>
 <div class="line"><span class="comment">//END of declaring your variables</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#endif </span><span class="comment">/* GLOBALS_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><span class="comment">//START of declaring your functions</span></div>
+<div class="line"><span class="keywordtype">void</span> moduleFunction1(<span class="keywordtype">void</span>);</div>
+<div class="line"><span class="keywordtype">void</span> moduleFunction2(<span class="keywordtype">void</span>);</div>
+<div class="line"><span class="keywordtype">void</span> moduleFunction3(<span class="keywordtype">void</span>);</div>
+<div class="line"><span class="comment">//END of declaring your functions</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#endif </span><span class="comment">/* YOUR_SOFTWARE_MODULE_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --> <h2><a class="anchor" id="autotoc_md10"></a>
 Create the source file of the software module:</h2>
 <ul>
