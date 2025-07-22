@@ -112,9 +112,7 @@ A. General info</h1>
 <p>Examples of a .h file that uses header guards: </p><div class="fragment"><div class="line"><span class="comment">/* === Your_Heade_Name.h === */</span></div>
 <div class="line"><span class="preprocessor">#ifndef INC_YOUR_HEADER_NAME_H_</span></div>
 <div class="line"><span class="preprocessor">#define INC_YOUR_HEADER_NAME_H_</span></div>
-<div class="line"> </div>
 <div class="line"><span class="comment">//Put here your custom code</span></div>
-<div class="line"> </div>
 <div class="line"><span class="preprocessor">#endif </span><span class="comment">/* INC_YOUR_HEADER_NAME_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --><p>Write your own code ONLY inside sections marked with comments like <code>/* USER CODE BEGIN x */</code> and <code>/* USER CODE END x */</code>. These regions are preserved when you regenerate code with STM32CubeMX. Anything outside these blocks may be deleted or overwritten.</p>
 <p>As mentioned before, in STM32CubeIDE the device configuration (pin mapping, peripheral and clock settings etc.) are done graphically and included/updated into proper regions of the ProjectName/Core/src/main.c file. As for the rest of the code, it is highly recommended to split it in modules designed for specific functionalities (e.g. analog sensing, background tasks, import/export to non-volatile memory etc.). Subsequently, these modules are to be linked together into ProjectName/Core/src/main.c file. into the region shown in the next chapter.</p>
