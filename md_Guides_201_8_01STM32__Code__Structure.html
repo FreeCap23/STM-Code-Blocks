@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('md_Guides_201_8_01STM32__Code__Structu
 <div class="textblock"><p><a class="anchor" id="autotoc_md1"></a> </p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 A. General info</h1>
-<p>A project created with STM32Cube MX is composed of the next files:</p><ul>
+<p>A project created with STM32Cube MX is composed of the next file types:</p><ul>
 <li>ProjectName.ioc . This file contains the device (MCU/Development Board) settings (pin mapping/custom labeling, clock settings for different blocks), settings for ADC, Timers, DMA etc). When opened, this file triggers a graphicall windows where user can update device settings. After saving those settings, they are automatically included/updated into proper regions of the ProjectName/Core/src/main.c file</li>
 <li>a collection of "header ".h" files" that contains lists of variable and functions of different software modules (files containing code for a specific functionality). This folder is ProjectName/Core/Inc.</li>
 <li>a collection of "source ".c" files" that contains lists of variable and functions of different software modules, together with their values and associated code. This folder is ProjectName/Core.Src.</li>
@@ -114,8 +114,10 @@ A. General info</h1>
 <div class="line"><span class="preprocessor">#define INC_YOUR_HEADER_NAME_H_</span></div>
 <div class="line"><span class="comment">//Put here your custom code</span></div>
 <div class="line"><span class="preprocessor">#endif </span><span class="comment">/* INC_YOUR_HEADER_NAME_H_ */</span><span class="preprocessor"></span></div>
-</div><!-- fragment --><p>Write your own code ONLY inside sections marked with comments like <code>/* USER CODE BEGIN x */</code> and <code>/* USER CODE END x */</code>. These regions are preserved when you regenerate code with STM32CubeMX. Anything outside these blocks may be deleted or overwritten.</p>
-<p>As mentioned before, in STM32CubeIDE the device configuration (pin mapping, peripheral and clock settings etc.) are done graphically and included/updated into proper regions of the ProjectName/Core/src/main.c file. As for the rest of the code, it is highly recommended to split it in modules designed for specific functionalities (e.g. analog sensing, background tasks, import/export to non-volatile memory etc.). Subsequently, these modules are to be linked together into ProjectName/Core/src/main.c file. into the region shown in the next chapter.</p>
+</div><!-- fragment --><p>In STM32CubeMX the most fundamental software module is the ProjectName/Core.Src/main.c file. This file contains both:</p><ul>
+<li>the device configuration settings. As mentioned before, these type of settings (pin mapping, peripheral and clock settings etc.) are done graphically and included/updated into proper regions of the ProjectName/Core/src/main.c file.</li>
+<li>the user code, which must be written ONLY inside sections marked with comments like <code>/* USER CODE BEGIN x */</code> and <code>/* USER CODE END x */</code>. These regions are the only ones that are 100% preserved when the device configuration settings are updated.</li>
+</ul>
 <h1><a class="anchor" id="autotoc_md3"></a>
 B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE</h1>
 <table class="markdownTable">
