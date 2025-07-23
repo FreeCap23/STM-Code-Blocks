@@ -2,7 +2,7 @@
 This guide will show you how to use a rotary encoder with CLK, DT and SW pins.
 
 ## Pin configuration
-For this example, I've connected **DT to PC2**, **CLK to PC13** and **SW to PD4**.
+For this example, I've connected **DT to PC2**, **CLK to PC13** and **SW to PD4**. At first I connected them in order, PC15-PC13 but I was having problems with that configuration. Use these pins instead.
 - SW is set as GPIO_EXTI (External interrupt) with **Pull-up** and **falling edge** trigger detection.
 - DT is set as GPIO_Input
 - CLK is set as GPIO_EXTI with **Rising and Falling edge** trigger dection.
