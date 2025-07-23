@@ -69,6 +69,10 @@ var NAVTREE =
     ] ],
     [ "FLASH Helper Functions", "md_Guides_2FLASH__Helper.html", null ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
+    [ "Using a Rotary Encoder", "md_Guides_2Using__a__Rotary__Encoder.html", [
+      [ "Pin configuration", "md_Guides_2Using__a__Rotary__Encoder.html#autotoc_md42", null ],
+      [ "Setting up the Interrupt Request Handlers", "md_Guides_2Using__a__Rotary__Encoder.html#autotoc_md43", null ]
+    ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],

@@ -17,7 +17,8 @@ var searchData=
   ['inspect_20variables_14',['Inspect Variables',['../md_Guides_205_8Debugger__Guide.html#autotoc_md30',1,'']]],
   ['installation_15',['Installation',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md36',1,'']]],
   ['interrupt_20capable_20digital_20input_16',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15',1,'']]],
-  ['into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_17',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]],
-  ['into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_18',['To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'']]],
-  ['its_20local_20variables_19',['D. Creating a software module and its local variables',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md8',1,'']]]
+  ['interrupt_20request_20handlers_17',['Setting up the Interrupt Request Handlers',['../md_Guides_2Using__a__Rotary__Encoder.html#autotoc_md43',1,'']]],
+  ['into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_18',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]],
+  ['into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_19',['To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'']]],
+  ['its_20local_20variables_20',['D. Creating a software module and its local variables',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md8',1,'']]]
 ];

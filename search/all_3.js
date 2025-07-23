@@ -12,10 +12,11 @@ var searchData=
   ['code_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_9',['To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'']]],
   ['command_5fparser_2eh_10',['command_parser.h',['../command__parser_8h.html',1,'']]],
   ['communication_11',['communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md16',1,'E. Set up GPIOs for UART Communication'],['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17',1,'F. Set up GPIOs for SPI Communication'],['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md18',1,'G. Set up GPIOs for I2C Communication']]],
-  ['configuration_20setup_20guide_12',['02. Device Configuration Setup Guide',['../md_Guides_202_8Pin__Mapping__Setup.html',1,'']]],
-  ['create_20the_20header_20file_20of_20the_20software_20module_3a_13',['Create the header file of the software module:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md9',1,'']]],
-  ['create_20the_20source_20file_20of_20the_20software_20module_3a_14',['Create the source file of the software module:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md10',1,'']]],
-  ['creating_20a_20software_20module_20and_20its_20local_20variables_15',['D. Creating a software module and its local variables',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md8',1,'']]],
-  ['cs_5fpin_16',['CS_Pin',['../structSPI__Helper__t.html#a5cfa2757595b28a6e06b1e9c962d99b9',1,'SPI_Helper_t']]],
-  ['cs_5fport_17',['CS_Port',['../structSPI__Helper__t.html#a91aa4580c0dd324965e10fb12e2b147a',1,'SPI_Helper_t']]]
+  ['configuration_12',['Pin configuration',['../md_Guides_2Using__a__Rotary__Encoder.html#autotoc_md42',1,'']]],
+  ['configuration_20setup_20guide_13',['02. Device Configuration Setup Guide',['../md_Guides_202_8Pin__Mapping__Setup.html',1,'']]],
+  ['create_20the_20header_20file_20of_20the_20software_20module_3a_14',['Create the header file of the software module:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md9',1,'']]],
+  ['create_20the_20source_20file_20of_20the_20software_20module_3a_15',['Create the source file of the software module:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md10',1,'']]],
+  ['creating_20a_20software_20module_20and_20its_20local_20variables_16',['D. Creating a software module and its local variables',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md8',1,'']]],
+  ['cs_5fpin_17',['CS_Pin',['../structSPI__Helper__t.html#a5cfa2757595b28a6e06b1e9c962d99b9',1,'SPI_Helper_t']]],
+  ['cs_5fport_18',['CS_Port',['../structSPI__Helper__t.html#a91aa4580c0dd324965e10fb12e2b147a',1,'SPI_Helper_t']]]
 ];
