@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['i2c_0',['LCD With I2C',['../md_Guides_206_8LCD__with__I2C__Module.html',1,'']]],
-  ['in_20dma_20mode_20effectively_1',['Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]]
+  ['guide_0',['guide',['../md_Guides_202_8Pin__Mapping__Setup.html',1,'02. Device Configuration Setup Guide'],['../md_Guides_205_8Debugger__Guide.html',1,'STM32CubeIDE Debugging Guide'],['../md_Guides_203_8Timer__Setup.html',1,'Timer Clock Guide']]]
 ];

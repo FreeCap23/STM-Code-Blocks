@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lcd_20with_20i2c_0',['LCD With I2C',['../md_Guides_206_8LCD__with__I2C__Module.html',1,'']]]
+  ['helper_20functions_0',['FLASH Helper Functions',['../md_Guides_2FLASH__Helper.html',1,'']]]
 ];
