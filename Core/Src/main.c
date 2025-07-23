@@ -55,7 +55,6 @@ UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
 I2C_LCD_HandleTypeDef hlcd;
-char buffer[64];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -63,8 +62,8 @@ void SystemClock_Config(void);
 static void MPU_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_SPI1_Init(void);
-static void MX_USART3_UART_Init(void);
 static void MX_I2C1_Init(void);
+static void MX_USART3_UART_Init(void);
 /* USER CODE BEGIN PFP */
 /* USER CODE END PFP */
 
@@ -106,8 +105,8 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_SPI1_Init();
-  MX_USART3_UART_Init();
   MX_I2C1_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
   SerialPrintLn(&huart3, "Ready.");
   // Read the initial state of CLK
@@ -118,9 +117,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	sprintf(buffer, "Tick: %lu", HAL_GetTick());
-	lcd_gotoxy(&hlcd, 0, 2);
-	lcd_puts(&hlcd, buffer);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -349,8 +345,8 @@ static void MX_GPIO_Init(void)
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(DRV8705_CS_GPIO_Port, DRV8705_CS_Pin, GPIO_PIN_RESET);
@@ -393,23 +389,29 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+#define DEBOUNCE_DELAY 100 // in ms
+#define CCW 0
+#define CW 1
 	static int counter;
+	static unsigned int lastInterruptTime;
 	bool direction = 0; // False = CCW; True = CW
-	if(GPIO_Pin == RotaryEncoder_CLK_Pin) {
+
+	if(GPIO_Pin == RotaryEncoder_CLK_Pin && (HAL_GetTick() - lastInterruptTime) > DEBOUNCE_DELAY) {
 	  bool currentState = HAL_GPIO_ReadPin(RotaryEncoder_CLK_GPIO_Port, RotaryEncoder_CLK_Pin);
 	  if (currentState != CLK_LastState) {
 		  // If the DT State is different than the CLK state then the encoder is rotating CCW
 		  if (HAL_GPIO_ReadPin(RotaryEncoder_DT_GPIO_Port, RotaryEncoder_DT_Pin) != currentState) {
 			  // Do what you need to do on a counter clockwise rotation of the encoder
-			  direction = false;
+			  direction = CCW;
 			  counter++;
 		  } else {
 			  // Do what you need to do on a clockwise rotation of the encoder
-			  direction = true;
+			  direction = CW;
 			  counter--;
 		  }
 	  }
 	  CLK_LastState = currentState;
+	  lastInterruptTime = HAL_GetTick();
 	  SerialPrintLn(&huart3, "Counter: %+.3d; Direction: %s", counter, direction ? " CW" : "CCW");
 	} else if (GPIO_Pin == RotaryEncoder_SW_Pin) {
 	  // Do what you need to do on an encoder press
