@@ -62,7 +62,7 @@ var NAVTREE =
       [ "Memory and Registers", "md_Guides_205_8Debugger__Guide.html#autotoc_md32", null ],
       [ "Exit Debug Mode", "md_Guides_205_8Debugger__Guide.html#autotoc_md34", null ]
     ] ],
-    [ "LCD With I2C", "md_Guides_206_8LCD__with__I2C__Module.html", [
+    [ "06.LCD_with_I2C_Module.md", "md_Guides_206_8LCD__with__I2C__Module.html", [
       [ "Installation", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md36", null ],
       [ "Displaying a formatted string", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md37", null ],
       [ "How do I find the address??", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md38", null ]
