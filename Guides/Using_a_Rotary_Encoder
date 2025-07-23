@@ -8,3 +8,39 @@ For this example, I've connected **DT to PC2**, **CLK to PC13** and **SW to PD4*
 - CLK is set as GPIO_EXTI with **Rising and Falling edge** trigger dection.
 
 ## Setting up the Interrupt Request Handlers
+```c
+/* USER CODE BEGIN 4 */
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+#define DEBOUNCE_DELAY_MS 5
+    static int counter;
+    static bool direction = true; // true = CW (clockwise), false = CCW (counter-clockwise)
+    static uint32_t last_interrupt_time = 0;
+
+    // Check if the interrupt is coming from the RotaryEncoder_CLK pin
+    if (GPIO_Pin == RotaryEncoder_CLK_Pin) {
+        uint32_t current_time = HAL_GetTick();
+
+        // Simple debounce check
+        if ((current_time - last_interrupt_time) < DEBOUNCE_DELAY_MS) {
+            return;
+        }
+        last_interrupt_time = current_time;
+
+        bool CLK = HAL_GPIO_ReadPin(RotaryEncoder_CLK_GPIO_Port, RotaryEncoder_CLK_Pin);
+        bool DT = HAL_GPIO_ReadPin(RotaryEncoder_DT_GPIO_Port, RotaryEncoder_DT_Pin);
+        // Determine direction based on DT relative to CLK
+        if (DT != CLK) {
+            counter++;
+            direction = true;  // Clockwise
+        } else {
+            counter--;
+            direction = false; // Counter-clockwise
+        }
+        SerialPrintLn(&huart3, "Debounced Counter: %+.3d | Direction: %s", counter, direction ? " CW" : "CCW");
+    } else if (GPIO_Pin == RotaryEncoder_SW_Pin && HAL_GetTick() - last_interrupt_time > DEBOUNCE_DELAY_MS) {
+    	last_interrupt_time = HAL_GetTick();
+    	SerialPrintLn(&huart3, "Press detected!");
+    }
+}
+/* USER CODE END 4 */
+```
