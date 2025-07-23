@@ -23,7 +23,6 @@
 /* USER CODE BEGIN Includes */
 #include "i2c_lcd.h"
 #include "flash_helper_h7a3.h"
-#include "rotary_encoder.h"
 #include "serial_helper.h"
 #include <stdio.h>
 #include <string.h>
@@ -109,8 +108,6 @@ int main(void)
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
   SerialPrintLn(&huart3, "Ready.");
-  // Read the initial state of CLK
-  CLK_LastState = HAL_GPIO_ReadPin(RotaryEncoder_CLK_GPIO_Port, RotaryEncoder_CLK_Pin);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -353,7 +350,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : RotaryEncoder_CLK_Pin */
   GPIO_InitStruct.Pin = RotaryEncoder_CLK_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(RotaryEncoder_CLK_GPIO_Port, &GPIO_InitStruct);
 
@@ -389,33 +386,36 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-#define DEBOUNCE_DELAY 100 // in ms
-#define CCW 0
-#define CW 1
-	static int counter;
-	static unsigned int lastInterruptTime;
-	bool direction = 0; // False = CCW; True = CW
+#define DEBOUNCE_DELAY_MS 5
+    static int counter;
+    static bool direction = true; // true = CW (clockwise), false = CCW (counter-clockwise)
+    static uint32_t last_interrupt_time = 0;
 
-	if(GPIO_Pin == RotaryEncoder_CLK_Pin && (HAL_GetTick() - lastInterruptTime) > DEBOUNCE_DELAY) {
-	  bool currentState = HAL_GPIO_ReadPin(RotaryEncoder_CLK_GPIO_Port, RotaryEncoder_CLK_Pin);
-	  if (currentState != CLK_LastState) {
-		  // If the DT State is different than the CLK state then the encoder is rotating CCW
-		  if (HAL_GPIO_ReadPin(RotaryEncoder_DT_GPIO_Port, RotaryEncoder_DT_Pin) != currentState) {
-			  // Do what you need to do on a counter clockwise rotation of the encoder
-			  direction = CCW;
-			  counter++;
-		  } else {
-			  // Do what you need to do on a clockwise rotation of the encoder
-			  direction = CW;
-			  counter--;
-		  }
-	  }
-	  CLK_LastState = currentState;
-	  lastInterruptTime = HAL_GetTick();
-	  SerialPrintLn(&huart3, "Counter: %+.3d; Direction: %s", counter, direction ? " CW" : "CCW");
-	} else if (GPIO_Pin == RotaryEncoder_SW_Pin) {
-	  // Do what you need to do on an encoder press
-	}
+    // Check if the interrupt is from the RotaryEncoder_CLK pin
+    if (GPIO_Pin == RotaryEncoder_CLK_Pin) {
+        uint32_t current_time = HAL_GetTick();
+
+        // Simple debounce check
+        if ((current_time - last_interrupt_time) < DEBOUNCE_DELAY_MS) {
+            return;
+        }
+        last_interrupt_time = current_time;
+
+        bool CLK = HAL_GPIO_ReadPin(RotaryEncoder_CLK_GPIO_Port, RotaryEncoder_CLK_Pin);
+        bool DT = HAL_GPIO_ReadPin(RotaryEncoder_DT_GPIO_Port, RotaryEncoder_DT_Pin);
+        // Determine direction based on DT relative to CLK
+        if (DT != CLK) {
+            counter++;
+            direction = true;  // Clockwise
+        } else {
+            counter--;
+            direction = false; // Counter-clockwise
+        }
+        SerialPrintLn(&huart3, "Debounced Counter: %+.3d | Direction: %s", counter, direction ? " CW" : "CCW");
+    } else if (GPIO_Pin == RotaryEncoder_SW_Pin && HAL_GetTick() - last_interrupt_time > DEBOUNCE_DELAY_MS) {
+    	last_interrupt_time = HAL_GetTick();
+    	SerialPrintLn(&huart3, "Press detected!");
+    }
 }
 /* USER CODE END 4 */
 

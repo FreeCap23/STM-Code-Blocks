@@ -60,7 +60,7 @@ void Error_Handler(void);
 #define RotaryEncoder_CLK_Pin GPIO_PIN_13
 #define RotaryEncoder_CLK_GPIO_Port GPIOC
 #define RotaryEncoder_CLK_EXTI_IRQn EXTI15_10_IRQn
-#define RotaryEncoder_DT_Pin GPIO_PIN_15
+#define RotaryEncoder_DT_Pin GPIO_PIN_2
 #define RotaryEncoder_DT_GPIO_Port GPIOC
 #define DRV8705_CS_Pin GPIO_PIN_4
 #define DRV8705_CS_GPIO_Port GPIOA
