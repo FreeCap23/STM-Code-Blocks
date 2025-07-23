@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['setup_20guide_0',['02. Device Configuration Setup Guide',['../md_Guides_202_8Pin__Mapping__Setup.html',1,'']]],
-  ['stm_20code_20blocks_1',['STM Code Blocks',['../index.html',1,'']]],
-  ['stm32_20code_20structure_2',['The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
-  ['stm32cubeide_20debugging_20guide_3',['STM32CubeIDE Debugging Guide',['../md_Guides_205_8Debugger__Guide.html',1,'']]],
-  ['structure_4',['The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]]
+  ['of_20helper_20functions_20and_20modules_0',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]]
 ];

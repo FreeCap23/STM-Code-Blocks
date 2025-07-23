@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['with_20i2c_0',['LCD With I2C',['../md_Guides_206_8LCD__with__I2C__Module.html',1,'']]]
+  ['using_20the_20adc_20in_20dma_20mode_20effectively_0',['Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]]
 ];

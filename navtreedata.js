@@ -68,6 +68,7 @@ var NAVTREE =
       [ "How do I find the address??", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md38", null ]
     ] ],
     [ "FLASH Helper Functions", "md_Guides_2FLASH__Helper.html", null ],
+    [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],

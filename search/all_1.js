@@ -23,13 +23,14 @@ var searchData=
   ['and_20inclusion_20in_20the_20main_20source_20code_20',['C. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md4',1,'']]],
   ['and_20its_20local_20variables_21',['D. Creating a software module and its local variables',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md8',1,'']]],
   ['and_20loop_20functions_20found_20in_20arduine_20ide_22',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
-  ['and_20registers_23',['Memory and Registers',['../md_Guides_205_8Debugger__Guide.html#autotoc_md32',1,'']]],
-  ['apbx_20peripheral_20clocks_24',['APBx Peripheral Clocks',['../md_Guides_203_8Timer__Setup.html#autotoc_md20',1,'']]],
-  ['arduine_20ide_25',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
-  ['as_20a_20digital_20input_20or_20as_20digital_20output_26',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md12',1,'']]],
-  ['as_20an_20analog_20input_27',['B. Set up a GPIO as an analog Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md13',1,'']]],
-  ['as_20an_20interrupt_20capable_20digital_20input_28',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15',1,'']]],
-  ['as_20an_20pwm_20output_29',['C. Set up a GPIO as an PWM Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14',1,'']]],
-  ['assigned_20default_20values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_30',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]],
-  ['available_20to_20the_20main_20code_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_31',['To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'']]]
+  ['and_20modules_23',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]],
+  ['and_20registers_24',['Memory and Registers',['../md_Guides_205_8Debugger__Guide.html#autotoc_md32',1,'']]],
+  ['apbx_20peripheral_20clocks_25',['APBx Peripheral Clocks',['../md_Guides_203_8Timer__Setup.html#autotoc_md20',1,'']]],
+  ['arduine_20ide_26',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
+  ['as_20a_20digital_20input_20or_20as_20digital_20output_27',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md12',1,'']]],
+  ['as_20an_20analog_20input_28',['B. Set up a GPIO as an analog Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md13',1,'']]],
+  ['as_20an_20interrupt_20capable_20digital_20input_29',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15',1,'']]],
+  ['as_20an_20pwm_20output_30',['C. Set up a GPIO as an PWM Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14',1,'']]],
+  ['assigned_20default_20values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_31',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]],
+  ['available_20to_20the_20main_20code_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_32',['To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'']]]
 ];
