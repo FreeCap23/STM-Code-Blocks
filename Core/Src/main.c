@@ -21,9 +21,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "i2c_lcd.h"
-#include "flash_helper_h7a3.h"
 #include "serial_helper.h"
+#include "adxl345_registers.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
@@ -53,7 +52,6 @@ SPI_HandleTypeDef hspi1;
 UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
-I2C_LCD_HandleTypeDef hlcd;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
