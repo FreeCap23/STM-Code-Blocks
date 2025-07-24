@@ -98,42 +98,50 @@ $(document).ready(function(){initNavTree('i2c__lcd_8h_source.html',''); initResi
   <div class="headertitle"><div class="title">i2c_lcd.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef I2C_LCD_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define I2C_LCD_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;stm32h7xx.h&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structI2C__LCD__HandleTypeDef.html">   14</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    I2C_HandleTypeDef *hi2c;     <span class="comment">// I2C handler for communication</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    uint8_t address;            <span class="comment">// I2C address of the LCD</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>} <a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a>;</div>
-</div>
+<a href="i2c__lcd_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef I2C_LCD_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define I2C_LCD_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;stm32h7xx.h&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> lcd_init(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">void</span> lcd_send_cmd(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd, <span class="keywordtype">char</span> cmd);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">void</span> lcd_send_data(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd, <span class="keywordtype">char</span> data);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keywordtype">void</span> lcd_putchar(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd, <span class="keywordtype">char</span> ch);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> lcd_puts(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd, <span class="keywordtype">char</span> *str);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">void</span> lcd_gotoxy(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd, <span class="keywordtype">int</span> col, <span class="keywordtype">int</span> row);</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structI2C__LCD__HandleTypeDef.html">   22</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    I2C_HandleTypeDef *hi2c;     <span class="comment">// I2C handler for communication</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    uint8_t address;            <span class="comment">// I2C address of the LCD</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>} <a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a>;</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__i2c__lcd.html#ga64eafe042d3730df357f35a1194898f6">lcd_init</a>(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__i2c__lcd.html#gae67b6b4b68959f193bb470545bf5984a">lcd_send_cmd</a>(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd, <span class="keywordtype">char</span> cmd);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__i2c__lcd.html#ga1e19de899d1578ad3137e4c11fa94b56">lcd_send_data</a>(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd, <span class="keywordtype">char</span> data);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__i2c__lcd.html#gad19f380a45119dc3ef785a5f6cc99371">lcd_putchar</a>(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd, <span class="keywordtype">char</span> ch);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">void</span> lcd_clear(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif </span><span class="comment">/* I2C_LCD_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructI2C__LCD__HandleTypeDef_html"><div class="ttname"><a href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a></div><div class="ttdoc">Includes the HAL driver present in the project.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8h_source.html#l00014">i2c_lcd.h:14</a></div></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a>(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd, <span class="keywordtype">char</span> *str);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__i2c__lcd.html#ga0693679db2dcb227dba8e4656f5215d1">lcd_gotoxy</a>(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd, <span class="keywordtype">int</span> col, <span class="keywordtype">int</span> row);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__i2c__lcd.html#gaa1d0651d9c99044ac36f8e2abb4370f6">lcd_clear</a>(<a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> *lcd);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#endif </span><span class="comment">/* I2C_LCD_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="agroup__i2c__lcd_html_ga0693679db2dcb227dba8e4656f5215d1"><div class="ttname"><a href="group__i2c__lcd.html#ga0693679db2dcb227dba8e4656f5215d1">lcd_gotoxy</a></div><div class="ttdeci">void lcd_gotoxy(I2C_LCD_HandleTypeDef *lcd, int col, int row)</div><div class="ttdoc">Moves the cursor to a specific position on the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00077">i2c_lcd.c:77</a></div></div>
+<div class="ttc" id="agroup__i2c__lcd_html_ga1e19de899d1578ad3137e4c11fa94b56"><div class="ttname"><a href="group__i2c__lcd.html#ga1e19de899d1578ad3137e4c11fa94b56">lcd_send_data</a></div><div class="ttdeci">void lcd_send_data(I2C_LCD_HandleTypeDef *lcd, char data)</div><div class="ttdoc">Sends data (character) to the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00036">i2c_lcd.c:36</a></div></div>
+<div class="ttc" id="agroup__i2c__lcd_html_ga51cc38e9b9b84710899c7a4b5819bb63"><div class="ttname"><a href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a></div><div class="ttdeci">void lcd_puts(I2C_LCD_HandleTypeDef *lcd, char *str)</div><div class="ttdoc">Sends a string to the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00128">i2c_lcd.c:128</a></div></div>
+<div class="ttc" id="agroup__i2c__lcd_html_ga64eafe042d3730df357f35a1194898f6"><div class="ttname"><a href="group__i2c__lcd.html#ga64eafe042d3730df357f35a1194898f6">lcd_init</a></div><div class="ttdeci">void lcd_init(I2C_LCD_HandleTypeDef *lcd)</div><div class="ttdoc">Initializes the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00098">i2c_lcd.c:98</a></div></div>
+<div class="ttc" id="agroup__i2c__lcd_html_gaa1d0651d9c99044ac36f8e2abb4370f6"><div class="ttname"><a href="group__i2c__lcd.html#gaa1d0651d9c99044ac36f8e2abb4370f6">lcd_clear</a></div><div class="ttdeci">void lcd_clear(I2C_LCD_HandleTypeDef *lcd)</div><div class="ttdoc">Clears the LCD display.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00057">i2c_lcd.c:57</a></div></div>
+<div class="ttc" id="agroup__i2c__lcd_html_gad19f380a45119dc3ef785a5f6cc99371"><div class="ttname"><a href="group__i2c__lcd.html#gad19f380a45119dc3ef785a5f6cc99371">lcd_putchar</a></div><div class="ttdeci">void lcd_putchar(I2C_LCD_HandleTypeDef *lcd, char ch)</div><div class="ttdoc">Sends a single character to the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00139">i2c_lcd.c:139</a></div></div>
+<div class="ttc" id="agroup__i2c__lcd_html_gae67b6b4b68959f193bb470545bf5984a"><div class="ttname"><a href="group__i2c__lcd.html#gae67b6b4b68959f193bb470545bf5984a">lcd_send_cmd</a></div><div class="ttdeci">void lcd_send_cmd(I2C_LCD_HandleTypeDef *lcd, char cmd)</div><div class="ttdoc">Sends a command to the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00014">i2c_lcd.c:14</a></div></div>
+<div class="ttc" id="astructI2C__LCD__HandleTypeDef_html"><div class="ttname"><a href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a></div><div class="ttdoc">Includes the HAL driver present in the project.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8h_source.html#l00022">i2c_lcd.h:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_e2489e887f17afa3cbc07a4ec152cdd2.html">Inc</a></li><li class="navelem"><b>i2c_lcd.h</b></li>
+    <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_e2489e887f17afa3cbc07a4ec152cdd2.html">Inc</a></li><li class="navelem"><a class="el" href="i2c__lcd_8h.html">i2c_lcd.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

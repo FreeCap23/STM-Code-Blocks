@@ -101,7 +101,8 @@ Installation</h1>
 Displaying a formatted string</h1>
 <p>In order to display a formatted string, we first need to build the string in a buffer: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> buffer[64];</div>
 <div class="line">sprintf(buffer, <span class="stringliteral">&quot;Pi: %.3f&quot;</span>, 3.1415926535);</div>
-<div class="line">lcd_puts(&amp;hlcd, buffer);</div>
+<div class="line"><a class="code hl_function" href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a>(&amp;hlcd, buffer);</div>
+<div class="ttc" id="agroup__i2c__lcd_html_ga51cc38e9b9b84710899c7a4b5819bb63"><div class="ttname"><a href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a></div><div class="ttdeci">void lcd_puts(I2C_LCD_HandleTypeDef *lcd, char *str)</div><div class="ttdoc">Sends a string to the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00128">i2c_lcd.c:128</a></div></div>
 </div><!-- fragment --><p>This will display <code>Pi: 3.142</code>. Note how the number was automatically rounded. For more format specifiers, see <a href="https://cplusplus.com/reference/cstdio/printf/">the Parameters section of the printf documentation</a>.</p>
 <h1><a class="anchor" id="autotoc_md38"></a>
 How do I find the address??</h1>
@@ -120,12 +121,14 @@ How do I find the address??</h1>
 <div class="line">  <span class="comment">// Convert the address to a string in hex format</span></div>
 <div class="line">  sprintf(buffer, <span class="stringliteral">&quot;Address: %#X&quot;</span>, address);</div>
 <div class="line">  hlcd.address = address;</div>
-<div class="line">  lcd_init(&amp;hlcd);</div>
-<div class="line">  lcd_clear(&amp;hlcd);</div>
-<div class="line">  lcd_puts(&amp;hlcd, buffer);</div>
+<div class="line">  <a class="code hl_function" href="group__i2c__lcd.html#ga64eafe042d3730df357f35a1194898f6">lcd_init</a>(&amp;hlcd);</div>
+<div class="line">  <a class="code hl_function" href="group__i2c__lcd.html#gaa1d0651d9c99044ac36f8e2abb4370f6">lcd_clear</a>(&amp;hlcd);</div>
+<div class="line">  <a class="code hl_function" href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a>(&amp;hlcd, buffer);</div>
 <div class="line">}</div>
 <div class="line"><span class="comment">/* ----- &gt;8 snip ----- */</span></div>
-<div class="ttc" id="astructI2C__LCD__HandleTypeDef_html"><div class="ttname"><a href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a></div><div class="ttdoc">Includes the HAL driver present in the project.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8h_source.html#l00014">i2c_lcd.h:14</a></div></div>
+<div class="ttc" id="agroup__i2c__lcd_html_ga64eafe042d3730df357f35a1194898f6"><div class="ttname"><a href="group__i2c__lcd.html#ga64eafe042d3730df357f35a1194898f6">lcd_init</a></div><div class="ttdeci">void lcd_init(I2C_LCD_HandleTypeDef *lcd)</div><div class="ttdoc">Initializes the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00098">i2c_lcd.c:98</a></div></div>
+<div class="ttc" id="agroup__i2c__lcd_html_gaa1d0651d9c99044ac36f8e2abb4370f6"><div class="ttname"><a href="group__i2c__lcd.html#gaa1d0651d9c99044ac36f8e2abb4370f6">lcd_clear</a></div><div class="ttdeci">void lcd_clear(I2C_LCD_HandleTypeDef *lcd)</div><div class="ttdoc">Clears the LCD display.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00057">i2c_lcd.c:57</a></div></div>
+<div class="ttc" id="astructI2C__LCD__HandleTypeDef_html"><div class="ttname"><a href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a></div><div class="ttdoc">Includes the HAL driver present in the project.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8h_source.html#l00022">i2c_lcd.h:22</a></div></div>
 </div><!-- fragment --><p> You should see the address printed on your display. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

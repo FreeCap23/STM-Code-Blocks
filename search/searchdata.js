@@ -2,11 +2,12 @@ var indexSectionsWithContent =
 {
   0: "0abcdefghilmoprstuvy",
   1: "is",
-  2: "cfmps",
-  3: "aefmps",
+  2: "cfimps",
+  3: "aeflmps",
   4: "chr",
   5: "f",
-  6: "0abcdefghilmorstu"
+  6: "acdfhilmoprst",
+  7: "0abcdefghilmorstu"
 };
 
 var indexSectionNames =
@@ -17,7 +18,8 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "defines",
-  6: "pages"
+  6: "groups",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -28,6 +30,7 @@ var indexSectionLabels =
   3: "Functions",
   4: "Variables",
   5: "Macros",
-  6: "Pages"
+  6: "Modules",
+  7: "Pages"
 };
 

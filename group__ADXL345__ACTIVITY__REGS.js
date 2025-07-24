@@ -1,0 +1,9 @@
+var group__ADXL345__ACTIVITY__REGS =
+[
+    [ "ADXL345_REG_ACT_INACT_CTL", "group__ADXL345__ACTIVITY__REGS.html#gaeade3a2907935b106ffce9c81aedee76", null ],
+    [ "ADXL345_REG_THRESH_ACT", "group__ADXL345__ACTIVITY__REGS.html#gaed83f0847d342ebbbe0c3eafeb12dda8", null ],
+    [ "ADXL345_REG_THRESH_FF", "group__ADXL345__ACTIVITY__REGS.html#ga0522945d2a7b9a37f7d76e2620234576", null ],
+    [ "ADXL345_REG_THRESH_INACT", "group__ADXL345__ACTIVITY__REGS.html#ga6bd7ad5b22116ad715dd655755d8c129", null ],
+    [ "ADXL345_REG_TIME_FF", "group__ADXL345__ACTIVITY__REGS.html#ga5abb839b3f7233cb3882e15899399d4c", null ],
+    [ "ADXL345_REG_TIME_INACT", "group__ADXL345__ACTIVITY__REGS.html#gace645cf273f2c8332d24bb37fea7f725", null ]
+];

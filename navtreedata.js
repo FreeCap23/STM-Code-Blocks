@@ -73,6 +73,7 @@ var NAVTREE =
       [ "Pin configuration", "md_Guides_2Using__a__Rotary__Encoder.html#autotoc_md42", null ],
       [ "Setting up the Interrupt Request Handlers", "md_Guides_2Using__a__Rotary__Encoder.html#autotoc_md43", null ]
     ] ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -94,7 +95,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"adxl345__registers_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

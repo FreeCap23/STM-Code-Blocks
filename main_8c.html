@@ -101,9 +101,8 @@ $(document).ready(function(){initNavTree('main_8c.html',''); initResizable(); })
 <p>: Main program body  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
-<code>#include &quot;i2c_lcd.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="flash__helper__h7a3_8h_source.html">flash_helper_h7a3.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="serial__helper_8h_source.html">serial_helper.h</a>&quot;</code><br />
+<code>#include &quot;adxl345_registers.h&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
@@ -138,8 +137,6 @@ Variables</h2></td></tr>
 <tr class="separator:a9c6222bae4d0328dd843ae099623b40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7c63c1b0f65db92b6a4ea19edf957e1" id="r_ab7c63c1b0f65db92b6a4ea19edf957e1"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ab7c63c1b0f65db92b6a4ea19edf957e1">huart3</a></td></tr>
 <tr class="separator:ab7c63c1b0f65db92b6a4ea19edf957e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62f647d030230dc3747762912afae9e8" id="r_a62f647d030230dc3747762912afae9e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a62f647d030230dc3747762912afae9e8">hlcd</a></td></tr>
-<tr class="separator:a62f647d030230dc3747762912afae9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>: Main program body </p>
@@ -173,7 +170,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00455">455</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00453">453</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -193,7 +190,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00388">388</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00386">386</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -221,7 +218,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00078">78</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00076">76</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -253,7 +250,7 @@ Variables</h2></td></tr>
 <p>Initializes the RCC Oscillators according to the specified parameters in the RCC_OscInitTypeDef structure.</p>
 <p>Initializes the CPU, AHB and APB buses clocks</p>
 
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00128">128</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00126">126</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -270,23 +267,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00049">49</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a id="a62f647d030230dc3747762912afae9e8" name="a62f647d030230dc3747762912afae9e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62f647d030230dc3747762912afae9e8">&#9670;&#160;</a></span>hlcd</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> hlcd</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00056">56</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00048">48</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -302,7 +283,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00051">51</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00050">50</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -318,7 +299,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00053">53</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8c_source.html#l00052">52</a> of file <a class="el" href="main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>

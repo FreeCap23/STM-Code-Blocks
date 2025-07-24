@@ -113,15 +113,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6f0b244b8cb362b2e9acb59f1f608bb9" id="r_a6f0b244b8cb362b2e9acb59f1f608bb9"><td class="memItemLeft" align="right" valign="top">HAL_StatusTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flash__helper__h7a3_8c.html#a6f0b244b8cb362b2e9acb59f1f608bb9">Flash_Erase</a> (uint32_t address)</td></tr>
-<tr class="memdesc:a6f0b244b8cb362b2e9acb59f1f608bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases the Flash sector that contains the specified address.  <br /></td></tr>
-<tr class="separator:a6f0b244b8cb362b2e9acb59f1f608bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9e3c08c5bc103bbdc9b2ac3f3e6ee07" id="r_ad9e3c08c5bc103bbdc9b2ac3f3e6ee07"><td class="memItemLeft" align="right" valign="top">HAL_StatusTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flash__helper__h7a3_8c.html#ad9e3c08c5bc103bbdc9b2ac3f3e6ee07">Flash_Write</a> (uint32_t address, uint64_t *data, size_t length_in_bytes)</td></tr>
-<tr class="memdesc:ad9e3c08c5bc103bbdc9b2ac3f3e6ee07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a buffer of 64-bit values to Flash memory.  <br /></td></tr>
-<tr class="separator:ad9e3c08c5bc103bbdc9b2ac3f3e6ee07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade6408680f22d4611324ab17844c9d48" id="r_ade6408680f22d4611324ab17844c9d48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flash__helper__h7a3_8c.html#ade6408680f22d4611324ab17844c9d48">Flash_Read</a> (uint32_t address, uint8_t *data, size_t length)</td></tr>
-<tr class="memdesc:ade6408680f22d4611324ab17844c9d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from Flash memory into a byte buffer.  <br /></td></tr>
-<tr class="separator:ade6408680f22d4611324ab17844c9d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f0b244b8cb362b2e9acb59f1f608bb9" id="r_ga6f0b244b8cb362b2e9acb59f1f608bb9"><td class="memItemLeft" align="right" valign="top">HAL_StatusTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flash__memory.html#ga6f0b244b8cb362b2e9acb59f1f608bb9">Flash_Erase</a> (uint32_t address)</td></tr>
+<tr class="memdesc:ga6f0b244b8cb362b2e9acb59f1f608bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases the Flash sector that contains the specified address.  <br /></td></tr>
+<tr class="separator:ga6f0b244b8cb362b2e9acb59f1f608bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79e267a7828f27852b8f83cf24293ef9" id="r_ga79e267a7828f27852b8f83cf24293ef9"><td class="memItemLeft" align="right" valign="top">HAL_StatusTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flash__memory.html#ga79e267a7828f27852b8f83cf24293ef9">Flash_Write</a> (uint32_t address, uint64_t *data, size_t length_in_bytes)</td></tr>
+<tr class="memdesc:ga79e267a7828f27852b8f83cf24293ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a buffer of 64-bit values to Flash memory.  <br /></td></tr>
+<tr class="separator:ga79e267a7828f27852b8f83cf24293ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade6408680f22d4611324ab17844c9d48" id="r_gade6408680f22d4611324ab17844c9d48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__flash__memory.html#gade6408680f22d4611324ab17844c9d48">Flash_Read</a> (uint32_t address, uint8_t *data, size_t length)</td></tr>
+<tr class="memdesc:gade6408680f22d4611324ab17844c9d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from Flash memory into a byte buffer.  <br /></td></tr>
+<tr class="separator:gade6408680f22d4611324ab17844c9d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of Flash memory utility functions for STM32H7A3 using HAL. </p>
@@ -161,131 +161,6 @@ Functions</h2></td></tr>
 <p>Start of Flash memory </p>
 
 <p class="definition">Definition at line <a class="el" href="flash__helper__h7a3_8c_source.html#l00011">11</a> of file <a class="el" href="flash__helper__h7a3_8c_source.html">flash_helper_h7a3.c</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a6f0b244b8cb362b2e9acb59f1f608bb9" name="a6f0b244b8cb362b2e9acb59f1f608bb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f0b244b8cb362b2e9acb59f1f608bb9">&#9670;&#160;</a></span>Flash_Erase()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">HAL_StatusTypeDef Flash_Erase </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>address</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Erases the Flash sector that contains the specified address. </p>
-<dl class="section note"><dt>Note</dt><dd>This erases the entire 128 KB sector.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">address</td><td>Address within the sector to erase </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>HAL_OK on success, otherwise HAL_ERROR or HAL_BUSY </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="flash__helper__h7a3_8c_source.html#l00024">24</a> of file <a class="el" href="flash__helper__h7a3_8c_source.html">flash_helper_h7a3.c</a>.</p>
-
-</div>
-</div>
-<a id="ade6408680f22d4611324ab17844c9d48" name="ade6408680f22d4611324ab17844c9d48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade6408680f22d4611324ab17844c9d48">&#9670;&#160;</a></span>Flash_Read()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Flash_Read </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reads data from Flash memory into a byte buffer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">address</td><td>Source Flash memory address </td></tr>
-    <tr><td class="paramname">data</td><td>Pointer to destination buffer </td></tr>
-    <tr><td class="paramname">length</td><td>Number of bytes to read </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="flash__helper__h7a3_8c_source.html#l00077">77</a> of file <a class="el" href="flash__helper__h7a3_8c_source.html">flash_helper_h7a3.c</a>.</p>
-
-</div>
-</div>
-<a id="ad9e3c08c5bc103bbdc9b2ac3f3e6ee07" name="ad9e3c08c5bc103bbdc9b2ac3f3e6ee07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9e3c08c5bc103bbdc9b2ac3f3e6ee07">&#9670;&#160;</a></span>Flash_Write()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">HAL_StatusTypeDef Flash_Write </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes a buffer of 64-bit values to Flash memory. </p>
-<dl class="section note"><dt>Note</dt><dd>The address must be 8-byte aligned, and Flash must be previously erased.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">address</td><td>Destination Flash memory address (must be 8-byte aligned) </td></tr>
-    <tr><td class="paramname">data</td><td>Pointer to the 64-bit data buffer </td></tr>
-    <tr><td class="paramname">length</td><td>Number of 64-bit values to write </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>HAL_OK on success, otherwise HAL_ERROR or HAL_BUSY </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="flash__helper__h7a3_8c_source.html#l00043">43</a> of file <a class="el" href="flash__helper__h7a3_8c_source.html">flash_helper_h7a3.c</a>.</p>
 
 </div>
 </div>

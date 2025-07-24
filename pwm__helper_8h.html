@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('pwm__helper_8h.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 
-<p>TODO: Write a brief description of this file.  
+<p>Helper functions for generating PWM signals.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 </div>
@@ -104,132 +104,20 @@ $(document).ready(function(){initNavTree('pwm__helper_8h.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af1dae7be96dd1f02d2bbdd6caa495ade" id="r_af1dae7be96dd1f02d2bbdd6caa495ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pwm__helper_8h.html#af1dae7be96dd1f02d2bbdd6caa495ade">analogWrite</a> (TIM_HandleTypeDef *htim, uint32_t channel, uint16_t compare_value)</td></tr>
-<tr class="memdesc:af1dae7be96dd1f02d2bbdd6caa495ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a raw PWM compare value to the selected timer channel.  <br /></td></tr>
-<tr class="separator:af1dae7be96dd1f02d2bbdd6caa495ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f8cb0886f2512a418b26cd41cd2dfe6" id="r_a6f8cb0886f2512a418b26cd41cd2dfe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pwm__helper_8h.html#a6f8cb0886f2512a418b26cd41cd2dfe6">analogWritePercent</a> (TIM_HandleTypeDef *htim, uint32_t channel, uint8_t duty_cycle)</td></tr>
-<tr class="memdesc:a6f8cb0886f2512a418b26cd41cd2dfe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a PWM duty cycle percentage to the selected timer channel.  <br /></td></tr>
-<tr class="separator:a6f8cb0886f2512a418b26cd41cd2dfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1dae7be96dd1f02d2bbdd6caa495ade" id="r_gaf1dae7be96dd1f02d2bbdd6caa495ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PWM.html#gaf1dae7be96dd1f02d2bbdd6caa495ade">analogWrite</a> (TIM_HandleTypeDef *htim, uint32_t channel, uint16_t compare_value)</td></tr>
+<tr class="memdesc:gaf1dae7be96dd1f02d2bbdd6caa495ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a raw PWM compare value to the selected timer channel.  <br /></td></tr>
+<tr class="separator:gaf1dae7be96dd1f02d2bbdd6caa495ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f8cb0886f2512a418b26cd41cd2dfe6" id="r_ga6f8cb0886f2512a418b26cd41cd2dfe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PWM.html#ga6f8cb0886f2512a418b26cd41cd2dfe6">analogWritePercent</a> (TIM_HandleTypeDef *htim, uint32_t channel, uint8_t duty_cycle)</td></tr>
+<tr class="memdesc:ga6f8cb0886f2512a418b26cd41cd2dfe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a PWM duty cycle percentage to the selected timer channel.  <br /></td></tr>
+<tr class="separator:ga6f8cb0886f2512a418b26cd41cd2dfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>TODO: Write a brief description of this file. </p>
-<p>TODO: Write a detailed description of this file</p>
+<div class="textblock"><p>Helper functions for generating PWM signals. </p>
 <dl class="section date"><dt>Date</dt><dd>Created on: Jul 16, 2025 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Dionisie Stratulat </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="pwm__helper_8h_source.html">pwm_helper.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="af1dae7be96dd1f02d2bbdd6caa495ade" name="af1dae7be96dd1f02d2bbdd6caa495ade"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1dae7be96dd1f02d2bbdd6caa495ade">&#9670;&#160;</a></span>analogWrite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void analogWrite </td>
-          <td>(</td>
-          <td class="paramtype">TIM_HandleTypeDef *&#160;</td>
-          <td class="paramname"><em>htim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>channel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>compare_value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Writes a raw PWM compare value to the selected timer channel. </p>
-<p>This function limits the compare value to the auto-reload register (ARR) value and writes it to the appropriate CCR register to control the PWM duty cycle.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">htim</td><td>Pointer to a TIM_HandleTypeDef structure. </td></tr>
-    <tr><td class="paramname">channel</td><td>Timer channel identifier (e.g., TIM_CHANNEL_1). </td></tr>
-    <tr><td class="paramname">compare_value</td><td>Raw PWM compare value (clipped to ARR). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="pwm__helper_8h_source.html#l00051">51</a> of file <a class="el" href="pwm__helper_8h_source.html">pwm_helper.h</a>.</p>
-
-</div>
-</div>
-<a id="a6f8cb0886f2512a418b26cd41cd2dfe6" name="a6f8cb0886f2512a418b26cd41cd2dfe6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f8cb0886f2512a418b26cd41cd2dfe6">&#9670;&#160;</a></span>analogWritePercent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void analogWritePercent </td>
-          <td>(</td>
-          <td class="paramtype">TIM_HandleTypeDef *&#160;</td>
-          <td class="paramname"><em>htim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>channel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>duty_cycle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Writes a PWM duty cycle percentage to the selected timer channel. </p>
-<p>Converts a percentage value (0–100%) into a raw compare value based on the current auto-reload register (ARR) and writes it to the corresponding CCR register.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">htim</td><td>Pointer to a TIM_HandleTypeDef structure. </td></tr>
-    <tr><td class="paramname">channel</td><td>Timer channel identifier (e.g., TIM_CHANNEL_1). </td></tr>
-    <tr><td class="paramname">duty_cycle</td><td>Duty cycle in percent (0–100); values above 100 are clamped to 100. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="pwm__helper_8h_source.html#l00069">69</a> of file <a class="el" href="pwm__helper_8h_source.html">pwm_helper.h</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

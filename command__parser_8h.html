@@ -107,9 +107,9 @@ $(document).ready(function(){initNavTree('command__parser_8h.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aeb06d139d2067118b03b3f2972fc67ef" id="r_aeb06d139d2067118b03b3f2972fc67ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command__parser_8h.html#aeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a> (const char *command, char *name, int *arg_int, float *arg_float)</td></tr>
-<tr class="memdesc:aeb06d139d2067118b03b3f2972fc67ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a command and stores the name and arguments in the given pointers' locations.  <br /></td></tr>
-<tr class="separator:aeb06d139d2067118b03b3f2972fc67ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb06d139d2067118b03b3f2972fc67ef" id="r_gaeb06d139d2067118b03b3f2972fc67ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a> (const char *command, char *name, int *arg_int, float *arg_float)</td></tr>
+<tr class="memdesc:gaeb06d139d2067118b03b3f2972fc67ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a command and stores the name and arguments in the given pointers' locations.  <br /></td></tr>
+<tr class="separator:gaeb06d139d2067118b03b3f2972fc67ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TODO: Write a brief description of this file. </p>
@@ -118,76 +118,7 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Dionisie Stratulat </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="command__parser_8h_source.html">command_parser.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="aeb06d139d2067118b03b3f2972fc67ef" name="aeb06d139d2067118b03b3f2972fc67ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb06d139d2067118b03b3f2972fc67ef">&#9670;&#160;</a></span>ParseCommand()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ParseCommand </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>command</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>arg_int</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>arg_float</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parses a command and stores the name and arguments in the given pointers' locations. </p>
-<p>This function works with the following formats: &lt;NAME, INT, FLOAT&gt; &lt;NAME, INT&gt; &lt;NAME&gt;</p>
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> name[16];</div>
-<div class="line"><span class="keywordtype">int</span> my_int;</div>
-<div class="line"><span class="keywordtype">float</span> my_float;</div>
-<div class="line"><span class="keywordtype">int</span> status = <a class="code hl_function" href="command__parser_8h.html#aeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a>(<span class="stringliteral">&quot;&lt;MOVE, 10, 3.14&gt;&quot;</span>, name, &amp;my_int, &amp;my_float);</div>
-<div class="line"><span class="comment">// status == 3</span></div>
-<div class="ttc" id="acommand__parser_8h_html_aeb06d139d2067118b03b3f2972fc67ef"><div class="ttname"><a href="command__parser_8h.html#aeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, char *name, int *arg_int, float *arg_float)</div><div class="ttdoc">Parses a command and stores the name and arguments in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="command__parser_8h_source.html#l00048">command_parser.h:48</a></div></div>
-</div><!-- fragment --><p>In the case that some arguments are missing, such as no INT or FLOAT, the corresponding output pointers will remain unset or defaulted (0 or 0.0f).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">command</td><td>Pointer to the command buffer </td></tr>
-    <tr><td class="paramname">name</td><td>Pointer to where the parsed name should be stored (must be preallocated) </td></tr>
-    <tr><td class="paramname">arg_int</td><td>Pointer to where the parsed int argument should be stored (optional) </td></tr>
-    <tr><td class="paramname">arg_float</td><td>Pointer to where the parsed float argument should be stored (optional) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int Status code:<ul>
-<li>0 = Parsing failed</li>
-<li>1 = Only name parsed</li>
-<li>2 = Name and int parsed</li>
-<li>3 = Name, int, and float parsed </li>
-</ul>
-</dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="command__parser_8h_source.html#l00048">48</a> of file <a class="el" href="command__parser_8h_source.html">command_parser.h</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

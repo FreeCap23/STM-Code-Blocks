@@ -108,12 +108,12 @@ $(document).ready(function(){initNavTree('serial__helper_8c.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a126c9b4716b7253d5187778b23b84284" id="r_a126c9b4716b7253d5187778b23b84284"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__helper_8c.html#a126c9b4716b7253d5187778b23b84284">SerialPrint</a> (UART_HandleTypeDef *huart, const char *format,...)</td></tr>
-<tr class="memdesc:a126c9b4716b7253d5187778b23b84284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a formatted message over USART (e.g., USB-to-Serial).  <br /></td></tr>
-<tr class="separator:a126c9b4716b7253d5187778b23b84284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fc9820bc2a74c73e056baa14285b3dc" id="r_a5fc9820bc2a74c73e056baa14285b3dc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__helper_8c.html#a5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a> (UART_HandleTypeDef *huart, const char *format,...)</td></tr>
-<tr class="memdesc:a5fc9820bc2a74c73e056baa14285b3dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a formatted message over USART (e.g., USB-to-Serial), appending a new line and carriage return.  <br /></td></tr>
-<tr class="separator:a5fc9820bc2a74c73e056baa14285b3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga126c9b4716b7253d5187778b23b84284" id="r_ga126c9b4716b7253d5187778b23b84284"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial__interface.html#ga126c9b4716b7253d5187778b23b84284">SerialPrint</a> (UART_HandleTypeDef *huart, const char *format,...)</td></tr>
+<tr class="memdesc:ga126c9b4716b7253d5187778b23b84284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a formatted message over USART (e.g., USB-to-Serial).  <br /></td></tr>
+<tr class="separator:ga126c9b4716b7253d5187778b23b84284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fc9820bc2a74c73e056baa14285b3dc" id="r_ga5fc9820bc2a74c73e056baa14285b3dc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a> (UART_HandleTypeDef *huart, const char *format,...)</td></tr>
+<tr class="memdesc:ga5fc9820bc2a74c73e056baa14285b3dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a formatted message over USART (e.g., USB-to-Serial), appending a new line and carriage return.  <br /></td></tr>
+<tr class="separator:ga5fc9820bc2a74c73e056baa14285b3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TODO: Write a brief description of this file. </p>
@@ -122,106 +122,7 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Dionisie Stratulat </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="serial__helper_8c_source.html">serial_helper.c</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a126c9b4716b7253d5187778b23b84284" name="a126c9b4716b7253d5187778b23b84284"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a126c9b4716b7253d5187778b23b84284">&#9670;&#160;</a></span>SerialPrint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t SerialPrint </td>
-          <td>(</td>
-          <td class="paramtype">UART_HandleTypeDef *&#160;</td>
-          <td class="paramname"><em>huart</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sends a formatted message over USART (e.g., USB-to-Serial). </p>
-<p>This function behaves like <code>printf</code> and supports format specifiers such as <code>s</code>, <code>d</code>, etc. The formatted string is transmitted in blocking mode using <code>HAL_UART_Transmit</code> via the given huart handle.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">huart</td><td>Handle to the UART/USART module to use. </td></tr>
-    <tr><td class="paramname">format</td><td>Format string, similar to printf. </td></tr>
-    <tr><td class="paramname">...</td><td>Additional arguments to format into the string.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, 1 on error.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Ensure that <code>huart</code> is initialized before calling this function. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="serial__helper_8c_source.html#l00017">17</a> of file <a class="el" href="serial__helper_8c_source.html">serial_helper.c</a>.</p>
-
-</div>
-</div>
-<a id="a5fc9820bc2a74c73e056baa14285b3dc" name="a5fc9820bc2a74c73e056baa14285b3dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fc9820bc2a74c73e056baa14285b3dc">&#9670;&#160;</a></span>SerialPrintLn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t SerialPrintLn </td>
-          <td>(</td>
-          <td class="paramtype">UART_HandleTypeDef *&#160;</td>
-          <td class="paramname"><em>huart</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sends a formatted message over USART (e.g., USB-to-Serial), appending a new line and carriage return. </p>
-<p>This function behaves like <code>printf</code> and supports format specifiers such as <code>s</code>, <code>d</code>, etc. The formatted string is transmitted in blocking mode using <code>HAL_UART_Transmit</code> via the given huart handle.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">huart</td><td>Handle to the UART/USART module to use. </td></tr>
-    <tr><td class="paramname">format</td><td>Format string, similar to printf. </td></tr>
-    <tr><td class="paramname">...</td><td>Additional arguments to format into the string.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, 1 on error.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Ensure that <code>huart</code> is initialized before calling this function. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="serial__helper_8c_source.html#l00041">41</a> of file <a class="el" href="serial__helper_8c_source.html">serial_helper.c</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
