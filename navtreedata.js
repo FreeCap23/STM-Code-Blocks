@@ -64,23 +64,28 @@ var NAVTREE =
     ] ],
     [ "06. LCD with I2C Module.md", "md_Guides_206_8LCD__with__I2C__Module.html", [
       [ "Installation", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md36", null ],
-      [ "Displaying a formatted string", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md37", null ],
-      [ "How do I find the address??", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md38", null ]
+      [ "How to Configure It", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md37", [
+        [ "1. Configure I²C Peripheral", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md38", null ],
+        [ "2. Define and Initialize the LCD Handle", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md39", null ]
+      ] ],
+      [ "Displaying a formatted string", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md41", null ],
+      [ "Example usage", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md42", null ],
+      [ "How do I find the address??", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md43", null ]
     ] ],
     [ "07. FLASH Helper Functions", "md_Guides_207_8FLASH__Helper.html", null ],
     [ "08. Using a Rotary Encoder", "md_Guides_208_8Using__a__Rotary__Encoder.html", [
-      [ "Pin configuration", "md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md41", null ],
-      [ "Setting up the Interrupt Request Handlers", "md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md42", null ]
+      [ "Pin configuration", "md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md46", null ],
+      [ "Setting up the Interrupt Request Handlers", "md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md47", null ]
     ] ],
     [ "09. Parsing Commands", "md_Guides_209_8Parsing__commands.html", [
-      [ "How to Install It", "md_Guides_209_8Parsing__commands.html#autotoc_md45", null ],
-      [ "How to Configure It", "md_Guides_209_8Parsing__commands.html#autotoc_md47", null ],
-      [ "How to Use It", "md_Guides_209_8Parsing__commands.html#autotoc_md49", null ],
-      [ "Use Examples", "md_Guides_209_8Parsing__commands.html#autotoc_md51", [
-        [ "Example 1 – Full Command", "md_Guides_209_8Parsing__commands.html#autotoc_md52", null ],
-        [ "Example 2 – Name and Int Only", "md_Guides_209_8Parsing__commands.html#autotoc_md53", null ],
-        [ "Example 3 – Name Only", "md_Guides_209_8Parsing__commands.html#autotoc_md54", null ],
-        [ "Example 4 – Invalid Format", "md_Guides_209_8Parsing__commands.html#autotoc_md55", null ]
+      [ "How to Install It", "md_Guides_209_8Parsing__commands.html#autotoc_md50", null ],
+      [ "How to Configure It", "md_Guides_209_8Parsing__commands.html#autotoc_md52", null ],
+      [ "How to Use It", "md_Guides_209_8Parsing__commands.html#autotoc_md54", null ],
+      [ "Use Examples", "md_Guides_209_8Parsing__commands.html#autotoc_md56", [
+        [ "Example 1 – Full Command", "md_Guides_209_8Parsing__commands.html#autotoc_md57", null ],
+        [ "Example 2 – Name and Int Only", "md_Guides_209_8Parsing__commands.html#autotoc_md58", null ],
+        [ "Example 3 – Name Only", "md_Guides_209_8Parsing__commands.html#autotoc_md59", null ],
+        [ "Example 4 – Invalid Format", "md_Guides_209_8Parsing__commands.html#autotoc_md60", null ]
       ] ]
     ] ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],

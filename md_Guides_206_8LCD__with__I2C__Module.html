@@ -98,15 +98,74 @@ $(document).ready(function(){initNavTree('md_Guides_206_8LCD__with__I2C__Module.
 Installation</h1>
 <p>For installation instructions, <a href="https://github.com/alixahedi/I2C-LCD-STM32?tab=readme-ov-file#installation">see the README.md</a>.</p>
 <h1><a class="anchor" id="autotoc_md37"></a>
+How to Configure It</h1>
+<p>Before using the LCD functions, you must configure the <code><a class="el" href="structI2C__LCD__HandleTypeDef.html" title="Includes the HAL driver present in the project.">I2C_LCD_HandleTypeDef</a></code> structure with the appropriate I²C handle and LCD address.</p>
+<h2><a class="anchor" id="autotoc_md38"></a>
+1. Configure I²C Peripheral</h2>
+<p>Ensure I²C is initialized using STM32CubeMX or manually in your code:</p>
+<div class="fragment"><div class="line">I2C_HandleTypeDef hi2c1;  <span class="comment">// This should match your CubeMX configuration</span></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md39"></a>
+2. Define and Initialize the LCD Handle</h2>
+<div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN Includes *</span></div>
+<div class="line"><span class="comment">#include &quot;i2c_lcd.h&quot;</span></div>
+<div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/* USER CODE BEGIN PV */</span></div>
+<div class="line"><a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> lcd;</div>
+<div class="line"><span class="comment">/* USER CODE END PV */</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/* USER CODE BEGIN 2 */</span></div>
+<div class="line">lcd.hi2c = &amp;hi2c1;     <span class="comment">// I2C peripheral used (e.g., I2C1)</span></div>
+<div class="line">lcd.address = 0x4E;    <span class="comment">// I²C address of your LCD (usually 0x4E or 0x27, see below how to find it if not)</span></div>
+<div class="line"><span class="comment">/* USER CODE END 2 */</span></div>
+<div class="ttc" id="astructI2C__LCD__HandleTypeDef_html"><div class="ttname"><a href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a></div><div class="ttdoc">Includes the HAL driver present in the project.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8h_source.html#l00022">i2c_lcd.h:22</a></div></div>
+</div><!-- fragment --><ul>
+<li>**<code>hi2c</code>**: Pointer to the <code>I2C_HandleTypeDef</code> of your configured I²C peripheral</li>
+<li>**<code>address</code>**: I²C address of the LCD (left-shifted 7-bit address, e.g., <code>0x27 &lt;&lt; 1 = 0x4E</code>)</li>
+</ul>
+<hr  />
+<h1><a class="anchor" id="autotoc_md41"></a>
 Displaying a formatted string</h1>
 <p>In order to display a formatted string, we first need to build the string in a buffer: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> buffer[64];</div>
+<div class="line"><span class="comment">// This function takes your format string &quot;Pi: %.3f&quot; and stores the resulting</span></div>
+<div class="line"><span class="comment">// string in the buffer</span></div>
 <div class="line">sprintf(buffer, <span class="stringliteral">&quot;Pi: %.3f&quot;</span>, 3.1415926535);</div>
 <div class="line"><a class="code hl_function" href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a>(&amp;hlcd, buffer);</div>
 <div class="ttc" id="agroup__i2c__lcd_html_ga51cc38e9b9b84710899c7a4b5819bb63"><div class="ttname"><a href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a></div><div class="ttdeci">void lcd_puts(I2C_LCD_HandleTypeDef *lcd, char *str)</div><div class="ttdoc">Sends a string to the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00128">i2c_lcd.c:128</a></div></div>
-</div><!-- fragment --><p>This will display <code>Pi: 3.142</code>. Note how the number was automatically rounded. For more format specifiers, see <a href="https://cplusplus.com/reference/cstdio/printf/">the Parameters section of the printf documentation</a>.</p>
-<h1><a class="anchor" id="autotoc_md38"></a>
+</div><!-- fragment --><p> This will display <code>Pi: 3.142</code>. Note how the number was automatically rounded. For more format specifiers, see <a href="https://cplusplus.com/reference/cstdio/printf/">the Parameters section of the printf documentation</a>.</p>
+<h1><a class="anchor" id="autotoc_md42"></a>
+Example usage</h1>
+<p>This example works on any size display, but it will only look right on a 20x4 </p><div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN 2 */</span></div>
+<div class="line">hlcd.hi2c = &amp;hi2c1;</div>
+<div class="line">hlcd.address = 78;</div>
+<div class="line"><a class="code hl_function" href="group__i2c__lcd.html#ga64eafe042d3730df357f35a1194898f6">lcd_init</a>(&amp;hlcd);</div>
+<div class="line"><a class="code hl_function" href="group__i2c__lcd.html#gaa1d0651d9c99044ac36f8e2abb4370f6">lcd_clear</a>(&amp;hlcd);</div>
+<div class="line"><a class="code hl_function" href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a>(&amp;hlcd, <span class="stringliteral">&quot;Hello there&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_function" href="group__i2c__lcd.html#ga0693679db2dcb227dba8e4656f5215d1">lcd_gotoxy</a>(&amp;hlcd, 0, 1);</div>
+<div class="line">sprintf(buffer, <span class="stringliteral">&quot;Float (%%.3f): %.3f&quot;</span>, 3.1415926535);</div>
+<div class="line"><a class="code hl_function" href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a>(&amp;hlcd, buffer);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/* USER CODE END 2 */</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/* Infinite loop */</span></div>
+<div class="line"><span class="comment">/* USER CODE BEGIN WHILE */</span></div>
+<div class="line"><span class="keywordflow">while</span> (1)</div>
+<div class="line">{</div>
+<div class="line">  sprintf(buffer, <span class="stringliteral">&quot;Tick: %lu&quot;</span>, HAL_GetTick());</div>
+<div class="line">  <a class="code hl_function" href="group__i2c__lcd.html#ga0693679db2dcb227dba8e4656f5215d1">lcd_gotoxy</a>(&amp;hlcd, 0, 2);</div>
+<div class="line">  <a class="code hl_function" href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a>(&amp;hlcd, buffer);</div>
+<div class="line">  <span class="comment">/* USER CODE END WHILE */</span></div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">/* USER CODE BEGIN 3 */</span></div>
+<div class="line">}</div>
+<div class="line"><span class="comment">/* USER CODE END 3 */</span></div>
+<div class="ttc" id="agroup__i2c__lcd_html_ga0693679db2dcb227dba8e4656f5215d1"><div class="ttname"><a href="group__i2c__lcd.html#ga0693679db2dcb227dba8e4656f5215d1">lcd_gotoxy</a></div><div class="ttdeci">void lcd_gotoxy(I2C_LCD_HandleTypeDef *lcd, int col, int row)</div><div class="ttdoc">Moves the cursor to a specific position on the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00077">i2c_lcd.c:77</a></div></div>
+<div class="ttc" id="agroup__i2c__lcd_html_ga64eafe042d3730df357f35a1194898f6"><div class="ttname"><a href="group__i2c__lcd.html#ga64eafe042d3730df357f35a1194898f6">lcd_init</a></div><div class="ttdeci">void lcd_init(I2C_LCD_HandleTypeDef *lcd)</div><div class="ttdoc">Initializes the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00098">i2c_lcd.c:98</a></div></div>
+<div class="ttc" id="agroup__i2c__lcd_html_gaa1d0651d9c99044ac36f8e2abb4370f6"><div class="ttname"><a href="group__i2c__lcd.html#gaa1d0651d9c99044ac36f8e2abb4370f6">lcd_clear</a></div><div class="ttdeci">void lcd_clear(I2C_LCD_HandleTypeDef *lcd)</div><div class="ttdoc">Clears the LCD display.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00057">i2c_lcd.c:57</a></div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md43"></a>
 How do I find the address??</h1>
-<p>First, try addresses <code>0x20</code> and <code>0x4E</code>. If those don't work, try running this snippet of code:</p>
+<p>First, try addresses <code>0x20</code>, <code>0x27</code> and <code>0x4E</code>. If those don't work, try running this snippet of code:</p>
 <div class="fragment"><div class="line"><span class="comment">/* ----- &gt;8 snip ----- */</span></div>
 <div class="line"><span class="comment">/* USER CODE BEGIN PV */</span></div>
 <div class="line"><a class="code hl_struct" href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a> hlcd;</div>
@@ -119,16 +178,13 @@ How do I find the address??</h1>
 <div class="line"><span class="keywordtype">char</span> buffer[64];</div>
 <div class="line"><span class="keywordflow">for</span> (int8_t address = 0; address &lt; 128; address++) {</div>
 <div class="line">  <span class="comment">// Convert the address to a string in hex format</span></div>
-<div class="line">  sprintf(buffer, <span class="stringliteral">&quot;Address: %#X&quot;</span>, address);</div>
+<div class="line">  sprintf(buffer, <span class="stringliteral">&quot;Address: %#X&quot;</span>, address-1);</div>
 <div class="line">  hlcd.address = address;</div>
 <div class="line">  <a class="code hl_function" href="group__i2c__lcd.html#ga64eafe042d3730df357f35a1194898f6">lcd_init</a>(&amp;hlcd);</div>
 <div class="line">  <a class="code hl_function" href="group__i2c__lcd.html#gaa1d0651d9c99044ac36f8e2abb4370f6">lcd_clear</a>(&amp;hlcd);</div>
 <div class="line">  <a class="code hl_function" href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a>(&amp;hlcd, buffer);</div>
 <div class="line">}</div>
 <div class="line"><span class="comment">/* ----- &gt;8 snip ----- */</span></div>
-<div class="ttc" id="agroup__i2c__lcd_html_ga64eafe042d3730df357f35a1194898f6"><div class="ttname"><a href="group__i2c__lcd.html#ga64eafe042d3730df357f35a1194898f6">lcd_init</a></div><div class="ttdeci">void lcd_init(I2C_LCD_HandleTypeDef *lcd)</div><div class="ttdoc">Initializes the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00098">i2c_lcd.c:98</a></div></div>
-<div class="ttc" id="agroup__i2c__lcd_html_gaa1d0651d9c99044ac36f8e2abb4370f6"><div class="ttname"><a href="group__i2c__lcd.html#gaa1d0651d9c99044ac36f8e2abb4370f6">lcd_clear</a></div><div class="ttdeci">void lcd_clear(I2C_LCD_HandleTypeDef *lcd)</div><div class="ttdoc">Clears the LCD display.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00057">i2c_lcd.c:57</a></div></div>
-<div class="ttc" id="astructI2C__LCD__HandleTypeDef_html"><div class="ttname"><a href="structI2C__LCD__HandleTypeDef.html">I2C_LCD_HandleTypeDef</a></div><div class="ttdoc">Includes the HAL driver present in the project.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8h_source.html#l00022">i2c_lcd.h:22</a></div></div>
 </div><!-- fragment --><p> You should see the address printed on your display. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
