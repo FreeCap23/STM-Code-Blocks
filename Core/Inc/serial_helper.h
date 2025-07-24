@@ -22,8 +22,6 @@
 /**
  * @addtogroup helper_functions
  * @{
- */
-/**
  * @defgroup serial_interface Serial Interface
  * @{
  */
@@ -61,8 +59,6 @@ uint8_t SerialPrintLn(UART_HandleTypeDef *huart, const char *format, ...);
 
 /**
  * @}
- */
-/**
  * @}
  */
 #endif /* INC_SERIAL_HELPER_H_ */

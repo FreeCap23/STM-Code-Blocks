@@ -1,8 +1,6 @@
 /**
  * @file pwm_helper.h
- * @brief TODO: Write a brief description of this file
- *
- * TODO: Write a detailed description of this file
+ * @brief Helper functions for generating PWM signals
  *
  * @date Created on: Jul 16, 2025
  * @author Dionisie Stratulat
@@ -15,8 +13,6 @@
 /**
  * @addtogroup helper_functions
  * @{
- */
-/**
  * @defgroup PWM
  * @{
  */
@@ -84,8 +80,6 @@ inline void analogWritePercent(TIM_HandleTypeDef *htim, uint32_t channel, uint8_
 
 /**
  * @}
- */
-/**
  * @}
  */
 

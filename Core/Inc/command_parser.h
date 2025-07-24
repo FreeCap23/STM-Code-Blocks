@@ -17,6 +17,9 @@
 
 /**
  * @defgroup helper_functions Helper Functions
+ * @brief Easy to use helper functions for working with various interfaces and devices
+ * @{
+ * @addtogroup command_parser Command Parser
  * @{
  */
 /**
@@ -103,6 +106,9 @@ int ParseCommand(const char *command, char *name, int *arg_int, float *arg_float
 
     return parsed;
 }
-/** @} */
+/**
+ * @}
+ * @}
+ */
 
 #endif /* INC_COMMAND_PARSER_H_ */

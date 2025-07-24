@@ -1,3 +1,11 @@
+/**
+ * @file i2c_lcd.h
+ * @brief Helper functions for LCDs with I2C.
+ *
+ * @date Created on: Jul 21, 2025
+ * @author Dionisie Stratulat
+ */
+
 #ifndef I2C_LCD_H
 #define I2C_LCD_H
 
@@ -19,9 +27,8 @@ typedef struct {
 /**
  * @addtogroup helper_functions
  * @{
- */
-/**
  * @defgroup i2c_lcd I2C LCD
+ * @see 06.LCD_with_I2C_Module.md for a guide on using this library
  * @{
  */
 /**
@@ -74,8 +81,6 @@ void lcd_clear(I2C_LCD_HandleTypeDef *lcd);
 
 /**
  * @}
- */
-/**
  * @}
  */
 

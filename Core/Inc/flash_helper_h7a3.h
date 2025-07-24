@@ -47,9 +47,8 @@ extern "C" {
 /**
  * @addtogroup helper_functions
  * @{
- */
-/**
  * @defgroup flash_memory FLASH Memory
+ * @brief @see flash_helper_h7a3.h for example usage.
  * @{
  */
 /**
@@ -85,8 +84,6 @@ HAL_StatusTypeDef Flash_Erase(uint32_t address);
 
 /**
  * @}
- */
-/**
  * @}
  */
 
