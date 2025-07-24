@@ -16,6 +16,10 @@
 #include <ctype.h>
 
 /**
+ * @defgroup helper_functions Helper Functions
+ * @{
+ */
+/**
  * @brief Parses a command and stores the name and arguments in the given pointers' locations.
  *
  * This function works with the following formats:
@@ -99,5 +103,6 @@ int ParseCommand(const char *command, char *name, int *arg_int, float *arg_float
 
     return parsed;
 }
+/** @} */
 
 #endif /* INC_COMMAND_PARSER_H_ */

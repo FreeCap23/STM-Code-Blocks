@@ -17,6 +17,14 @@ typedef struct {
 } I2C_LCD_HandleTypeDef;
 
 /**
+ * @addtogroup helper_functions
+ * @{
+ */
+/**
+ * @defgroup i2c_lcd I2C LCD
+ * @{
+ */
+/**
  * @brief Initializes the LCD.
  * @param lcd: Pointer to the LCD handle
  */
@@ -63,5 +71,12 @@ void lcd_gotoxy(I2C_LCD_HandleTypeDef *lcd, int col, int row);
  * @param lcd: Pointer to the LCD handle
  */
 void lcd_clear(I2C_LCD_HandleTypeDef *lcd);
+
+/**
+ * @}
+ */
+/**
+ * @}
+ */
 
 #endif /* I2C_LCD_H */

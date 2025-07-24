@@ -13,6 +13,14 @@
 #include <stdint.h>
 
 /**
+ * @addtogroup helper_functions
+ * @{
+ */
+/**
+ * @defgroup PWM
+ * @{
+ */
+/**
  * @brief Selects the correct Capture/Compare Register (CCR) pointer based on the timer channel.
  *
  * Given a timer handle and a specific channel (TIM_CHANNEL_1 to TIM_CHANNEL_4),
@@ -73,5 +81,12 @@ inline void analogWritePercent(TIM_HandleTypeDef *htim, uint32_t channel, uint8_
   volatile uint32_t* CCR = _chooseCCR(htim, channel);
   *CCR = ((float)duty_cycle / 100.0f) * htim->Instance->ARR;
 }
+
+/**
+ * @}
+ */
+/**
+ * @}
+ */
 
 #endif /* INC_PWM_HELPER_H_ */

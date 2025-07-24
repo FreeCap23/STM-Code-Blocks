@@ -20,6 +20,14 @@
 #define INC_SERIAL_HELPER_H_
 
 /**
+ * @addtogroup helper_functions
+ * @{
+ */
+/**
+ * @defgroup serial_interface Serial Interface
+ * @{
+ */
+/**
  * @brief Sends a formatted message over USART (e.g., USB-to-Serial).
  *
  * This function behaves like `printf` and supports format specifiers such as `%s`, `%d`, etc.
@@ -51,4 +59,10 @@ uint8_t SerialPrint(UART_HandleTypeDef *huart, const char *format, ...);
  */
 uint8_t SerialPrintLn(UART_HandleTypeDef *huart, const char *format, ...);
 
+/**
+ * @}
+ */
+/**
+ * @}
+ */
 #endif /* INC_SERIAL_HELPER_H_ */

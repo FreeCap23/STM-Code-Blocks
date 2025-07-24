@@ -45,6 +45,14 @@ extern "C" {
 #endif
 
 /**
+ * @addtogroup helper_functions
+ * @{
+ */
+/**
+ * @defgroup flash_memory FLASH Memory
+ * @{
+ */
+/**
  * @brief Writes a buffer of 64-bit values to Flash memory.
  *
  * @note The address must be 8-byte aligned, and Flash must be previously erased.
@@ -74,6 +82,13 @@ void Flash_Read(uint32_t address, uint8_t* data, size_t length);
  * @return HAL_OK on success, otherwise HAL_ERROR or HAL_BUSY
  */
 HAL_StatusTypeDef Flash_Erase(uint32_t address);
+
+/**
+ * @}
+ */
+/**
+ * @}
+ */
 
 #ifdef __cplusplus
 }

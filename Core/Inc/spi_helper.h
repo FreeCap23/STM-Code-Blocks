@@ -25,6 +25,12 @@ typedef struct {
 } SPI_Helper_t;
 
 /**
+ * @addtogroup helper_functions
+ * @{
+ * @defgroup spi_interface SPI Interface
+ * @{
+ */
+/**
  * @brief Initializes the SPI helper configuration.
  *
  * @param helper Pointer to SPI_Helper_t structure to initialize.
@@ -55,4 +61,8 @@ uint8_t spi_helper_read_register(SPI_Helper_t *helper, uint8_t reg_address);
  */
 int spi_helper_write_register(SPI_Helper_t *helper, uint8_t reg_address, uint8_t data);
 
+/**
+ * @}
+ * @}
+ */
 #endif /* INC_SPI_HELPER_H_ */
