@@ -38,14 +38,14 @@ var NAVTREE =
         [ "Create the source file of the software module:", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md10", null ]
       ] ]
     ] ],
-    [ "02. Device Configuration Setup Guide", "md_Guides_202_8Pin__Mapping__Setup.html", [
-      [ "A. Set up a GPIO as a Digital Input or as Digital Output", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md12", null ],
-      [ "B. Set up a GPIO as an analog Input", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md13", null ],
-      [ "C. Set up a GPIO as an PWM Output", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14", null ],
-      [ "D. Set up a GPIO as an Interrupt Capable Digital Input", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15", null ],
-      [ "E. Set up GPIOs for UART Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md16", null ],
-      [ "F. Set up GPIOs for SPI Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17", null ],
-      [ "G. Set up GPIOs for I2C Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md18", null ]
+    [ "02. Device Configuration Setup Guide", "md_Guides_202_8Device__Configuration.html", [
+      [ "A. Set up a GPIO as a Digital Input or as Digital Output", "md_Guides_202_8Device__Configuration.html#autotoc_md12", null ],
+      [ "B. Set up a GPIO as an analog Input", "md_Guides_202_8Device__Configuration.html#autotoc_md13", null ],
+      [ "C. Set up a GPIO as an PWM Output", "md_Guides_202_8Device__Configuration.html#autotoc_md14", null ],
+      [ "D. Set up a GPIO as an Interrupt Capable Digital Input", "md_Guides_202_8Device__Configuration.html#autotoc_md15", null ],
+      [ "E. Set up GPIOs for UART Communication", "md_Guides_202_8Device__Configuration.html#autotoc_md16", null ],
+      [ "F. Set up GPIOs for SPI Communication", "md_Guides_202_8Device__Configuration.html#autotoc_md17", null ],
+      [ "G. Set up GPIOs for I2C Communication", "md_Guides_202_8Device__Configuration.html#autotoc_md18", null ]
     ] ],
     [ "03. Timer Clock Guide", "md_Guides_203_8Timer__Setup.html", [
       [ "APBx Peripheral Clocks", "md_Guides_203_8Timer__Setup.html#autotoc_md20", null ]
@@ -71,6 +71,17 @@ var NAVTREE =
     [ "08. Using a Rotary Encoder", "md_Guides_208_8Using__a__Rotary__Encoder.html", [
       [ "Pin configuration", "md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md41", null ],
       [ "Setting up the Interrupt Request Handlers", "md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md42", null ]
+    ] ],
+    [ "09. Parsing Commands", "md_Guides_209_8Parsing__commands.html", [
+      [ "How to Install It", "md_Guides_209_8Parsing__commands.html#autotoc_md45", null ],
+      [ "How to Configure It", "md_Guides_209_8Parsing__commands.html#autotoc_md47", null ],
+      [ "How to Use It", "md_Guides_209_8Parsing__commands.html#autotoc_md49", null ],
+      [ "Use Examples", "md_Guides_209_8Parsing__commands.html#autotoc_md51", [
+        [ "Example 1 – Full Command", "md_Guides_209_8Parsing__commands.html#autotoc_md52", null ],
+        [ "Example 2 – Name and Int Only", "md_Guides_209_8Parsing__commands.html#autotoc_md53", null ],
+        [ "Example 3 – Name Only", "md_Guides_209_8Parsing__commands.html#autotoc_md54", null ],
+        [ "Example 4 – Invalid Format", "md_Guides_209_8Parsing__commands.html#autotoc_md55", null ]
+      ] ]
     ] ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
     [ "Topics", "topics.html", "topics" ],

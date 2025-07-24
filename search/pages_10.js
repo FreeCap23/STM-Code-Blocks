@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['using_20a_20rotary_20encoder_0',['08. Using a Rotary Encoder',['../md_Guides_208_8Using__a__Rotary__Encoder.html',1,'']]],
-  ['using_20the_20adc_20in_20dma_20mode_20effectively_1',['04. Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]]
+  ['the_20adc_20in_20dma_20mode_20effectively_0',['04. Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]],
+  ['the_20stm32_20code_20structure_1',['01. The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
+  ['timer_20clock_20guide_2',['03. Timer Clock Guide',['../md_Guides_203_8Timer__Setup.html',1,'']]]
 ];

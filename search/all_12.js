@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_0',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]],
-  ['variables_1',['variables',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md8',1,'D. Creating a software module and its local variables'],['../md_Guides_205_8Debugger__Guide.html#autotoc_md30',1,'Inspect Variables']]],
-  ['variables_20available_20to_20the_20main_20code_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_2',['To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'']]],
-  ['variables_20declaration_20definition_20and_20inclusion_20in_20the_20main_20source_20code_3',['C. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md4',1,'']]],
-  ['variables_20should_20be_20declared_20in_20a_20tt_20globals_20h_20tt_20file_20following_20these_20steps_3a_4',['Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md5',1,'']]],
-  ['variables_20you_20declared_20in_20tt_20globals_20h_20tt_20must_20be_20also_20defined_20assigned_20default_20values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_5',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]]
+  ['parsecommand_0',['ParseCommand',['../group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef',1,'command_parser.h']]],
+  ['parser_1',['Command Parser',['../group__command__parser.html',1,'']]],
+  ['parsing_20commands_2',['09. Parsing Commands',['../md_Guides_209_8Parsing__commands.html',1,'']]],
+  ['peripheral_20clocks_3',['APBx Peripheral Clocks',['../md_Guides_203_8Timer__Setup.html#autotoc_md20',1,'']]],
+  ['pin_20configuration_4',['Pin configuration',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md41',1,'']]],
+  ['power_20and_20data_20rate_5',['Power and Data Rate',['../group__ADXL345__POWER__REGS.html',1,'']]],
+  ['project_6',['Build and Flash the Project',['../md_Guides_205_8Debugger__Guide.html#autotoc_md26',1,'']]],
+  ['pwm_7',['PWM',['../group__PWM.html',1,'']]],
+  ['pwm_20output_8',['C. Set up a GPIO as an PWM Output',['../md_Guides_202_8Device__Configuration.html#autotoc_md14',1,'']]],
+  ['pwm_5fhelper_2eh_9',['pwm_helper.h',['../pwm__helper_8h.html',1,'']]]
 ];

@@ -1,10 +1,15 @@
 var searchData=
 [
-  ['of_20helper_20functions_20and_20modules_0',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]],
-  ['of_20setup_20and_20loop_20functions_20found_20in_20arduine_20ide_1',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
-  ['of_20the_20software_20module_3a_2',['of the software module:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md9',1,'Create the header file of the software module:'],['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md10',1,'Create the source file of the software module:']]],
-  ['offset_20calibration_3',['Offset Calibration',['../group__ADXL345__OFFSET__REGS.html',1,'']]],
-  ['or_20as_20digital_20output_4',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md12',1,'']]],
-  ['output_5',['output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md12',1,'A. Set up a GPIO as a Digital Input or as Digital Output'],['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14',1,'C. Set up a GPIO as an PWM Output']]],
-  ['output_20data_20registers_6',['Output Data Registers',['../group__ADXL345__OUTPUT__REGS.html',1,'']]]
+  ['h_20tt_20file_20following_20these_20steps_3a_0',['Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md5',1,'']]],
+  ['h_20tt_20file_20must_20be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_1',['To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'']]],
+  ['h_20tt_20must_20be_20also_20defined_20assigned_20default_20values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_2',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]],
+  ['handlers_3',['Setting up the Interrupt Request Handlers',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md42',1,'']]],
+  ['header_20file_20of_20the_20software_20module_3a_4',['Create the header file of the software module:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md9',1,'']]],
+  ['helper_20functions_5',['helper functions',['../md_Guides_207_8FLASH__Helper.html',1,'07. FLASH Helper Functions'],['../group__helper__functions.html',1,'Helper Functions']]],
+  ['helper_20functions_20and_20modules_6',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]],
+  ['how_20do_20i_20find_20the_20address_7',['How do I find the address??',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md38',1,'']]],
+  ['how_20to_20configure_20it_8',['How to Configure It',['../md_Guides_209_8Parsing__commands.html#autotoc_md47',1,'']]],
+  ['how_20to_20install_20it_9',['How to Install It',['../md_Guides_209_8Parsing__commands.html#autotoc_md45',1,'']]],
+  ['how_20to_20use_20it_10',['How to Use It',['../md_Guides_209_8Parsing__commands.html#autotoc_md49',1,'']]],
+  ['hspi_11',['hspi',['../structSPI__Helper__t.html#ae03192d606132621274b74c75f8799c4',1,'SPI_Helper_t']]]
 ];

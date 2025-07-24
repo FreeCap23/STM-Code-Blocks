@@ -1,15 +1,11 @@
 var searchData=
 [
-  ['uart_20communication_0',['E. Set up GPIOs for UART Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md16',1,'']]],
-  ['up_20a_20gpio_20as_20a_20digital_20input_20or_20as_20digital_20output_1',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md12',1,'']]],
-  ['up_20a_20gpio_20as_20an_20analog_20input_2',['B. Set up a GPIO as an analog Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md13',1,'']]],
-  ['up_20a_20gpio_20as_20an_20interrupt_20capable_20digital_20input_3',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md15',1,'']]],
-  ['up_20a_20gpio_20as_20an_20pwm_20output_4',['C. Set up a GPIO as an PWM Output',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md14',1,'']]],
-  ['up_20gpios_20for_20i2c_20communication_5',['G. Set up GPIOs for I2C Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md18',1,'']]],
-  ['up_20gpios_20for_20spi_20communication_6',['F. Set up GPIOs for SPI Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17',1,'']]],
-  ['up_20gpios_20for_20uart_20communication_7',['E. Set up GPIOs for UART Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md16',1,'']]],
-  ['up_20the_20interrupt_20request_20handlers_8',['Setting up the Interrupt Request Handlers',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md42',1,'']]],
-  ['usage_9',['Example usage',['../md_Guides_204_8ADC__with__DMA__Setup.html#autotoc_md23',1,'']]],
-  ['using_20a_20rotary_20encoder_10',['08. Using a Rotary Encoder',['../md_Guides_208_8Using__a__Rotary__Encoder.html',1,'']]],
-  ['using_20the_20adc_20in_20dma_20mode_20effectively_11',['04. Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]]
+  ['of_20helper_20functions_20and_20modules_0',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]],
+  ['of_20setup_20and_20loop_20functions_20found_20in_20arduine_20ide_1',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
+  ['of_20the_20software_20module_3a_2',['of the software module:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md9',1,'Create the header file of the software module:'],['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md10',1,'Create the source file of the software module:']]],
+  ['offset_20calibration_3',['Offset Calibration',['../group__ADXL345__OFFSET__REGS.html',1,'']]],
+  ['only_4',['only',['../md_Guides_209_8Parsing__commands.html#autotoc_md53',1,'Example 2 – Name and Int Only'],['../md_Guides_209_8Parsing__commands.html#autotoc_md54',1,'Example 3 – Name Only']]],
+  ['or_20as_20digital_20output_5',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Device__Configuration.html#autotoc_md12',1,'']]],
+  ['output_6',['output',['../md_Guides_202_8Device__Configuration.html#autotoc_md12',1,'A. Set up a GPIO as a Digital Input or as Digital Output'],['../md_Guides_202_8Device__Configuration.html#autotoc_md14',1,'C. Set up a GPIO as an PWM Output']]],
+  ['output_20data_20registers_7',['Output Data Registers',['../group__ADXL345__OUTPUT__REGS.html',1,'']]]
 ];
