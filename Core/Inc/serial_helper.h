@@ -23,6 +23,7 @@
  * @addtogroup helper_functions
  * @{
  * @defgroup serial_interface Serial Interface
+ * @brief Functions for writing data to a serial interface over USART
  * @{
  */
 /**

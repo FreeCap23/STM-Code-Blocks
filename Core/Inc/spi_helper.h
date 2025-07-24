@@ -28,6 +28,7 @@ typedef struct {
  * @addtogroup helper_functions
  * @{
  * @defgroup spi_interface SPI Interface
+ * @brief Functions for communicating with SPI peripherals
  * @{
  */
 /**

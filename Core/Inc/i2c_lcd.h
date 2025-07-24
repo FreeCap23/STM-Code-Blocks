@@ -28,6 +28,7 @@ typedef struct {
  * @addtogroup helper_functions
  * @{
  * @defgroup i2c_lcd I2C LCD
+ * @brief Functions for printing stuff to an LCD through the I<sup>2</sup>C interface.
  * @see 06.LCD_with_I2C_Module.md for a guide on using this library
  * @{
  */

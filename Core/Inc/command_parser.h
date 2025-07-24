@@ -20,6 +20,7 @@
  * @brief Easy to use helper functions for working with various interfaces and devices
  * @{
  * @addtogroup command_parser Command Parser
+ * @brief Parses commands and stores the name and arguments of the commands in the given pointers' locations
  * @{
  */
 /**

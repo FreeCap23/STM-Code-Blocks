@@ -14,6 +14,7 @@
  * @addtogroup helper_functions
  * @{
  * @defgroup PWM
+ * @brief Functions for generating PWM signals
  * @{
  */
 /**
