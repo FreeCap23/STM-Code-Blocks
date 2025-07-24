@@ -6,7 +6,7 @@ var searchData=
   ['file_20must_20be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_3',['To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'']]],
   ['file_20of_20the_20software_20module_3a_4',['file of the software module:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md9',1,'Create the header file of the software module:'],['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md10',1,'Create the source file of the software module:']]],
   ['find_20the_20address_5',['How do I find the address??',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md38',1,'']]],
-  ['flash_20helper_20functions_6',['FLASH Helper Functions',['../md_Guides_2FLASH__Helper.html',1,'']]],
+  ['flash_20helper_20functions_6',['07. FLASH Helper Functions',['../md_Guides_207_8FLASH__Helper.html',1,'']]],
   ['flash_20memory_7',['FLASH Memory',['../group__flash__memory.html',1,'']]],
   ['flash_20the_20project_8',['Build and Flash the Project',['../md_Guides_205_8Debugger__Guide.html#autotoc_md26',1,'']]],
   ['flash_5fbank_5fnumber_9',['FLASH_BANK_NUMBER',['../flash__helper__h7a3_8c.html#ae16649e63053b3591711f091d06072e4',1,'flash_helper_h7a3.c']]],
@@ -22,7 +22,7 @@ var searchData=
   ['for_20uart_20communication_19',['E. Set up GPIOs for UART Communication',['../md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md16',1,'']]],
   ['formatted_20string_20',['Displaying a formatted string',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md37',1,'']]],
   ['found_20in_20arduine_20ide_21',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
-  ['functions_22',['functions',['../md_Guides_2FLASH__Helper.html',1,'FLASH Helper Functions'],['../group__helper__functions.html',1,'Helper Functions']]],
+  ['functions_22',['functions',['../md_Guides_207_8FLASH__Helper.html',1,'07. FLASH Helper Functions'],['../group__helper__functions.html',1,'Helper Functions']]],
   ['functions_20and_20modules_23',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]],
   ['functions_20found_20in_20arduine_20ide_24',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]]
 ];

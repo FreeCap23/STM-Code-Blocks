@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "STM Code Blocks", "index.html", [
-    [ "The STM32 Code Structure", "md_Guides_201_8STM32__Code__Structure.html", [
+    [ "01. The STM32 Code Structure", "md_Guides_201_8STM32__Code__Structure.html", [
       [ "A. General info", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md2", null ],
       [ "B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md3", null ],
       [ "C. Global Variables - Declaration, definition and inclusion in the main source code", "md_Guides_201_8STM32__Code__Structure.html#autotoc_md4", [
@@ -47,14 +47,14 @@ var NAVTREE =
       [ "F. Set up GPIOs for SPI Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md17", null ],
       [ "G. Set up GPIOs for I2C Communication", "md_Guides_202_8Pin__Mapping__Setup.html#autotoc_md18", null ]
     ] ],
-    [ "Timer Clock Guide", "md_Guides_203_8Timer__Setup.html", [
+    [ "03. Timer Clock Guide", "md_Guides_203_8Timer__Setup.html", [
       [ "APBx Peripheral Clocks", "md_Guides_203_8Timer__Setup.html#autotoc_md20", null ]
     ] ],
-    [ "Using the ADC in DMA mode effectively", "md_Guides_204_8ADC__with__DMA__Setup.html", [
+    [ "04. Using the ADC in DMA mode effectively", "md_Guides_204_8ADC__with__DMA__Setup.html", [
       [ "Setup", "md_Guides_204_8ADC__with__DMA__Setup.html#autotoc_md22", null ],
       [ "Example usage", "md_Guides_204_8ADC__with__DMA__Setup.html#autotoc_md23", null ]
     ] ],
-    [ "STM32CubeIDE Debugging Guide", "md_Guides_205_8Debugger__Guide.html", [
+    [ "05. STM32CubeIDE Debugging Guide", "md_Guides_205_8Debugger__Guide.html", [
       [ "Build and Flash the Project", "md_Guides_205_8Debugger__Guide.html#autotoc_md26", null ],
       [ "Set Breakpoints", "md_Guides_205_8Debugger__Guide.html#autotoc_md27", null ],
       [ "Step Through Code", "md_Guides_205_8Debugger__Guide.html#autotoc_md28", null ],
@@ -62,17 +62,17 @@ var NAVTREE =
       [ "Memory and Registers", "md_Guides_205_8Debugger__Guide.html#autotoc_md32", null ],
       [ "Exit Debug Mode", "md_Guides_205_8Debugger__Guide.html#autotoc_md34", null ]
     ] ],
-    [ "06.LCD_with_I2C_Module.md", "md_Guides_206_8LCD__with__I2C__Module.html", [
+    [ "06. LCD with I2C Module.md", "md_Guides_206_8LCD__with__I2C__Module.html", [
       [ "Installation", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md36", null ],
       [ "Displaying a formatted string", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md37", null ],
       [ "How do I find the address??", "md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md38", null ]
     ] ],
-    [ "FLASH Helper Functions", "md_Guides_2FLASH__Helper.html", null ],
-    [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
-    [ "Using a Rotary Encoder", "md_Guides_2Using__a__Rotary__Encoder.html", [
-      [ "Pin configuration", "md_Guides_2Using__a__Rotary__Encoder.html#autotoc_md42", null ],
-      [ "Setting up the Interrupt Request Handlers", "md_Guides_2Using__a__Rotary__Encoder.html#autotoc_md43", null ]
+    [ "07. FLASH Helper Functions", "md_Guides_207_8FLASH__Helper.html", null ],
+    [ "08. Using a Rotary Encoder", "md_Guides_208_8Using__a__Rotary__Encoder.html", [
+      [ "Pin configuration", "md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md41", null ],
+      [ "Setting up the Interrupt Request Handlers", "md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md42", null ]
     ] ],
+    [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
