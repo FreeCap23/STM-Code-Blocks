@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a_20formatted_20string_0',['Displaying a formatted string',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md41',1,'']]],
+  ['a_20formatted_20string_0',['Displaying a formatted string',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md42',1,'']]],
   ['a_20general_20info_1',['A. General info',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md2',1,'']]],
   ['a_20gpio_20as_20a_20digital_20input_20or_20as_20digital_20output_2',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Device__Configuration.html#autotoc_md12',1,'']]],
   ['a_20gpio_20as_20an_20analog_20input_3',['B. Set up a GPIO as an analog Input',['../md_Guides_202_8Device__Configuration.html#autotoc_md13',1,'']]],
@@ -14,7 +14,7 @@ var searchData=
   ['accelerometer_11',['ADXL345 Accelerometer',['../group__ADXL345.html',1,'']]],
   ['activity_20inactivity_20detection_12',['Activity/Inactivity Detection',['../group__ADXL345__ACTIVITY__REGS.html',1,'']]],
   ['adc_20in_20dma_20mode_20effectively_13',['04. Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]],
-  ['address_14',['How do I find the address??',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md43',1,'']]],
+  ['address_14',['How do I find the address??',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md44',1,'']]],
   ['adxl345_20accelerometer_15',['ADXL345 Accelerometer',['../group__ADXL345.html',1,'']]],
   ['adxl345_5freg_5fact_5finact_5fctl_16',['ADXL345_REG_ACT_INACT_CTL',['../group__ADXL345__ACTIVITY__REGS.html#gaeade3a2907935b106ffce9c81aedee76',1,'adxl345_registers.h']]],
   ['adxl345_5freg_5fact_5ftap_5fstatus_17',['ADXL345_REG_ACT_TAP_STATUS',['../group__ADXL345__TAP__REGS.html#ga10336666b8b1228d08d4e634817832cc',1,'adxl345_registers.h']]],
@@ -56,8 +56,8 @@ var searchData=
   ['and_20data_20rate_53',['Power and Data Rate',['../group__ADXL345__POWER__REGS.html',1,'']]],
   ['and_20flash_20the_20project_54',['Build and Flash the Project',['../md_Guides_205_8Debugger__Guide.html#autotoc_md26',1,'']]],
   ['and_20inclusion_20in_20the_20main_20source_20code_55',['C. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md4',1,'']]],
-  ['and_20initialize_20the_20lcd_20handle_56',['2. Define and Initialize the LCD Handle',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md39',1,'']]],
-  ['and_20int_20only_57',['Example 2 – Name and Int Only',['../md_Guides_209_8Parsing__commands.html#autotoc_md58',1,'']]],
+  ['and_20initialize_20the_20lcd_20handle_56',['2. Define and Initialize the LCD Handle',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md40',1,'']]],
+  ['and_20int_20only_57',['Example 2 – Name and Int Only',['../md_Guides_209_8Parsing__commands.html#autotoc_md59',1,'']]],
   ['and_20its_20local_20variables_58',['D. Creating a software module and its local variables',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md8',1,'']]],
   ['and_20loop_20functions_20found_20in_20arduine_20ide_59',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
   ['and_20modules_60',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]],

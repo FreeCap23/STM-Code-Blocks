@@ -1,7 +1,7 @@
 var searchData=
 [
   ['lcd_0',['I2C LCD',['../group__i2c__lcd.html',1,'']]],
-  ['lcd_20handle_1',['2. Define and Initialize the LCD Handle',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md39',1,'']]],
+  ['lcd_20handle_1',['2. Define and Initialize the LCD Handle',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md40',1,'']]],
   ['lcd_20with_20i2c_20module_20md_2',['06. LCD with I2C Module.md',['../md_Guides_206_8LCD__with__I2C__Module.html',1,'']]],
   ['lcd_5fclear_3',['lcd_clear',['../group__i2c__lcd.html#gaa1d0651d9c99044ac36f8e2abb4370f6',1,'lcd_clear(I2C_LCD_HandleTypeDef *lcd):&#160;i2c_lcd.c'],['../group__i2c__lcd.html#gaa1d0651d9c99044ac36f8e2abb4370f6',1,'lcd_clear(I2C_LCD_HandleTypeDef *lcd):&#160;i2c_lcd.c']]],
   ['lcd_5fgotoxy_4',['lcd_gotoxy',['../group__i2c__lcd.html#ga0693679db2dcb227dba8e4656f5215d1',1,'lcd_gotoxy(I2C_LCD_HandleTypeDef *lcd, int col, int row):&#160;i2c_lcd.c'],['../group__i2c__lcd.html#ga0693679db2dcb227dba8e4656f5215d1',1,'lcd_gotoxy(I2C_LCD_HandleTypeDef *lcd, int col, int row):&#160;i2c_lcd.c']]],

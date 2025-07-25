@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('md_Guides_209_8Parsing__commands.html'
   <div class="headertitle"><div class="title">09. Parsing Commands</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md48"></a> The <code>command_parser</code> module allows structured parsing of incoming string commands, making it easy to extract:</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md49"></a> The <code>command_parser</code> module allows structured parsing of incoming string commands, making it easy to extract:</p>
 <ul>
 <li>A <b>command name</b> (string)</li>
 <li>An optional <b>integer argument</b></li>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('md_Guides_209_8Parsing__commands.html'
 <li>Tokens are separated by commas, optional spaces allowed</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md50"></a>
+<h1><a class="anchor" id="autotoc_md51"></a>
 How to Install It</h1>
 <ol type="1">
 <li><b>Download or copy the following files:</b><ul>
@@ -137,7 +137,7 @@ How to Install It</h1>
 <li>**No source (<code>.c</code>) file is needed.** The implementation is in the header and can be included directly.</li>
 </ol>
 <hr  />
-<h1><a class="anchor" id="autotoc_md52"></a>
+<h1><a class="anchor" id="autotoc_md53"></a>
 How to Configure It</h1>
 <p>The module does not require configuration or define any macros, constants, or variables for user customization.</p>
 <p>However, you <b>must provide</b>:</p>
@@ -152,13 +152,13 @@ How to Configure It</h1>
 <li>Arguments default to <code>0</code> and <code>0.0f</code> if not provided or not present</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md54"></a>
+<h1><a class="anchor" id="autotoc_md55"></a>
 How to Use It</h1>
 <p>See <code><a class="el" href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef" title="Parses a command and stores the name and arguments in the given pointers&#39; locations.">ParseCommand()</a></code></p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md56"></a>
+<h1><a class="anchor" id="autotoc_md57"></a>
 Use Examples</h1>
-<h2><a class="anchor" id="autotoc_md57"></a>
+<h2><a class="anchor" id="autotoc_md58"></a>
 Example 1 – Full Command</h2>
 <div class="fragment"><div class="line"><span class="keywordtype">char</span> name[16];</div>
 <div class="line"><span class="keywordtype">int</span> steps;</div>
@@ -170,7 +170,7 @@ Example 1 – Full Command</h2>
 <div class="line"><span class="comment">// steps = 100</span></div>
 <div class="line"><span class="comment">// speed = 1.5f</span></div>
 <div class="ttc" id="agroup__command__parser_html_gaeb06d139d2067118b03b3f2972fc67ef"><div class="ttname"><a href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, char *name, int *arg_int, float *arg_float)</div><div class="ttdoc">Parses a command and stores the name and arguments in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="command__parser_8h_source.html#l00056">command_parser.h:56</a></div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md58"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md59"></a>
 Example 2 – Name and Int Only</h2>
 <div class="fragment"><div class="line"><span class="keywordtype">char</span> name[16];</div>
 <div class="line"><span class="keywordtype">int</span> target;</div>
@@ -179,14 +179,14 @@ Example 2 – Name and Int Only</h2>
 <div class="line"><span class="comment">// result == 2</span></div>
 <div class="line"><span class="comment">// name = &quot;SET&quot;</span></div>
 <div class="line"><span class="comment">// target = 42</span></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md59"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md60"></a>
 Example 3 – Name Only</h2>
 <div class="fragment"><div class="line"><span class="keywordtype">char</span> name[16];</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a>(<span class="stringliteral">&quot;&lt;START&gt;&quot;</span>, name, NULL, NULL);</div>
 <div class="line"><span class="comment">// result == 1</span></div>
 <div class="line"><span class="comment">// name = &quot;START&quot;</span></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md60"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md61"></a>
 Example 4 – Invalid Format</h2>
 <div class="fragment"><div class="line"><span class="keywordtype">char</span> name[16];</div>
 <div class="line"> </div>

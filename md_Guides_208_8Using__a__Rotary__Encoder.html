@@ -93,15 +93,15 @@ $(document).ready(function(){initNavTree('md_Guides_208_8Using__a__Rotary__Encod
   <div class="headertitle"><div class="title">08. Using a Rotary Encoder</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md45"></a>This guide will show you how to use a rotary encoder with CLK, DT and SW pins.</p>
-<h1><a class="anchor" id="autotoc_md46"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md46"></a>This guide will show you how to use a rotary encoder with CLK, DT and SW pins.</p>
+<h1><a class="anchor" id="autotoc_md47"></a>
 Pin configuration</h1>
 <p>For this example, I've connected <b>DT to PC2</b>, <b>CLK to PC13</b> and <b>SW to PD4</b>. At first I connected them in order, PC15-PC13 but I was having problems with that configuration. Use these pins instead.</p><ul>
 <li>SW is set as GPIO_EXTI (External interrupt) with <b>Pull-up</b> and <b>falling edge</b> trigger detection.</li>
 <li>DT is set as GPIO_Input</li>
 <li>CLK is set as GPIO_EXTI with <b>Rising and Falling edge</b> trigger dection.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md47"></a>
+<h1><a class="anchor" id="autotoc_md48"></a>
 Setting up the Interrupt Request Handlers</h1>
 <div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN 4 */</span></div>
 <div class="line"><span class="keywordtype">void</span> HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {</div>

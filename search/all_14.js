@@ -13,7 +13,7 @@ var searchData=
   ['set_20up_20gpios_20for_20i2c_20communication_10',['G. Set up GPIOs for I2C Communication',['../md_Guides_202_8Device__Configuration.html#autotoc_md18',1,'']]],
   ['set_20up_20gpios_20for_20spi_20communication_11',['F. Set up GPIOs for SPI Communication',['../md_Guides_202_8Device__Configuration.html#autotoc_md17',1,'']]],
   ['set_20up_20gpios_20for_20uart_20communication_12',['E. Set up GPIOs for UART Communication',['../md_Guides_202_8Device__Configuration.html#autotoc_md16',1,'']]],
-  ['setting_20up_20the_20interrupt_20request_20handlers_13',['Setting up the Interrupt Request Handlers',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md47',1,'']]],
+  ['setting_20up_20the_20interrupt_20request_20handlers_13',['Setting up the Interrupt Request Handlers',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md48',1,'']]],
   ['setup_14',['Setup',['../md_Guides_204_8ADC__with__DMA__Setup.html#autotoc_md22',1,'']]],
   ['setup_20and_20loop_20functions_20found_20in_20arduine_20ide_15',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
   ['setup_20guide_16',['02. Device Configuration Setup Guide',['../md_Guides_202_8Device__Configuration.html',1,'']]],
@@ -37,7 +37,7 @@ var searchData=
   ['stm32_20code_20structure_34',['01. The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
   ['stm32_20equivalent_20of_20setup_20and_20loop_20functions_20found_20in_20arduine_20ide_35',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
   ['stm32cubeide_20debugging_20guide_36',['05. STM32CubeIDE Debugging Guide',['../md_Guides_205_8Debugger__Guide.html',1,'']]],
-  ['string_37',['Displaying a formatted string',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md41',1,'']]],
+  ['string_37',['Displaying a formatted string',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md42',1,'']]],
   ['structure_38',['01. The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
   ['systemclock_5fconfig_39',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
 ];
