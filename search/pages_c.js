@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['of_20helper_20functions_20and_20modules_0',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]]
+  ['md_0',['06. LCD with I2C Module.md',['../md_Guides_206_8LCD__with__I2C__Module.html',1,'']]],
+  ['mode_20effectively_1',['04. Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]],
+  ['module_20md_2',['06. LCD with I2C Module.md',['../md_Guides_206_8LCD__with__I2C__Module.html',1,'']]],
+  ['modules_3',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]]
 ];

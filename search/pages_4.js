@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['debugging_20guide_0',['05. STM32CubeIDE Debugging Guide',['../md_Guides_205_8Debugger__Guide.html',1,'']]],
-  ['device_20configuration_20setup_20guide_1',['02. Device Configuration Setup Guide',['../md_Guides_202_8Device__Configuration.html',1,'']]],
-  ['dma_20mode_20effectively_2',['04. Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]]
+  ['clock_20guide_0',['03. Timer Clock Guide',['../md_Guides_203_8Timer__Setup.html',1,'']]],
+  ['code_20blocks_1',['STM Code Blocks',['../index.html',1,'']]],
+  ['code_20structure_2',['01. The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
+  ['commands_3',['09. Parsing Commands',['../md_Guides_209_8Parsing__commands.html',1,'']]],
+  ['configuration_20setup_20guide_4',['02. Device Configuration Setup Guide',['../md_Guides_202_8Device__Configuration.html',1,'']]]
 ];

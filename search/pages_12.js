@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['with_20i2c_20module_20md_0',['06. LCD with I2C Module.md',['../md_Guides_206_8LCD__with__I2C__Module.html',1,'']]]
+  ['using_20a_20rotary_20encoder_0',['08. Using a Rotary Encoder',['../md_Guides_208_8Using__a__Rotary__Encoder.html',1,'']]],
+  ['using_20the_20adc_20in_20dma_20mode_20effectively_1',['04. Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]]
 ];

@@ -91,6 +91,7 @@ var NAVTREE =
         [ "Example 4 – Invalid Format", "md_Guides_209_8Parsing__commands.html#autotoc_md63", null ]
       ] ]
     ] ],
+    [ "10. Send_Receive_Serial_Data_Module", "md_Guides_210_8_01Send__Receive__Serial__Data__Module.html", null ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
