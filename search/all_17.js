@@ -1,9 +1,18 @@
 var searchData=
 [
-  ['values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_0',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]],
-  ['variables_1',['variables',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md8',1,'D. Creating a software module and its local variables'],['../md_Guides_205_8Debugger__Guide.html#autotoc_md30',1,'Inspect Variables']]],
-  ['variables_20available_20to_20the_20main_20code_20the_20tt_20globals_20h_20tt_20file_20must_20be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_2',['To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'']]],
-  ['variables_20declaration_20definition_20and_20inclusion_20in_20the_20main_20source_20code_3',['C. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md4',1,'']]],
-  ['variables_20should_20be_20declared_20in_20a_20tt_20globals_20h_20tt_20file_20following_20these_20steps_3a_4',['Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md5',1,'']]],
-  ['variables_20you_20declared_20in_20tt_20globals_20h_20tt_20must_20be_20also_20defined_20assigned_20default_20values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_5',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]]
+  ['uart_20communication_0',['E. Set up GPIOs for UART Communication',['../md_Guides_202_8Device__Configuration.html#autotoc_md16',1,'']]],
+  ['up_20a_20gpio_20as_20a_20digital_20input_20or_20as_20digital_20output_1',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Device__Configuration.html#autotoc_md12',1,'']]],
+  ['up_20a_20gpio_20as_20an_20analog_20input_2',['B. Set up a GPIO as an analog Input',['../md_Guides_202_8Device__Configuration.html#autotoc_md13',1,'']]],
+  ['up_20a_20gpio_20as_20an_20interrupt_20capable_20digital_20input_3',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Device__Configuration.html#autotoc_md15',1,'']]],
+  ['up_20a_20gpio_20as_20an_20pwm_20output_4',['C. Set up a GPIO as an PWM Output',['../md_Guides_202_8Device__Configuration.html#autotoc_md14',1,'']]],
+  ['up_20gpios_20for_20i2c_20communication_5',['G. Set up GPIOs for I2C Communication',['../md_Guides_202_8Device__Configuration.html#autotoc_md18',1,'']]],
+  ['up_20gpios_20for_20spi_20communication_6',['F. Set up GPIOs for SPI Communication',['../md_Guides_202_8Device__Configuration.html#autotoc_md17',1,'']]],
+  ['up_20gpios_20for_20uart_20communication_7',['E. Set up GPIOs for UART Communication',['../md_Guides_202_8Device__Configuration.html#autotoc_md16',1,'']]],
+  ['up_20the_20interrupt_20request_20handlers_8',['Setting up the Interrupt Request Handlers',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md50',1,'']]],
+  ['usage_9',['usage',['../md_Guides_204_8ADC__with__DMA__Setup.html#autotoc_md23',1,'Example usage'],['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md44',1,'Example usage']]],
+  ['use_20examples_10',['Use Examples',['../md_Guides_209_8Parsing__commands.html#autotoc_md59',1,'']]],
+  ['use_20examples_20optional_11',['E. Other Use Examples (Optional)',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md46',1,'']]],
+  ['use_20it_12',['use it',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md42',1,'D. How to Use It'],['../md_Guides_209_8Parsing__commands.html#autotoc_md57',1,'How to Use It']]],
+  ['using_20a_20rotary_20encoder_13',['08. Using a Rotary Encoder',['../md_Guides_208_8Using__a__Rotary__Encoder.html',1,'']]],
+  ['using_20the_20adc_20in_20dma_20mode_20effectively_14',['04. Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]]
 ];

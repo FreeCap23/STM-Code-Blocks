@@ -92,6 +92,7 @@ var NAVTREE =
       ] ]
     ] ],
     [ "10. Send_Receive_Serial_Data_Module", "md_Guides_210_8_01Send__Receive__Serial__Data__Module.html", null ],
+    [ "99.Wishlist", "md_Guides_299_8Wishlist.html", null ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [

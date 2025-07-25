@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['rate_0',['Power and Data Rate',['../group__ADXL345__POWER__REGS.html',1,'']]],
-  ['register_20map_1',['Register Map',['../group__ADXL345__REGISTERS.html',1,'']]],
-  ['registers_2',['registers',['../md_Guides_205_8Debugger__Guide.html#autotoc_md32',1,'Memory and Registers'],['../group__ADXL345__OUTPUT__REGS.html',1,'Output Data Registers']]],
-  ['request_20handlers_3',['Setting up the Interrupt Request Handlers',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md50',1,'']]],
-  ['rotary_20encoder_4',['08. Using a Rotary Encoder',['../md_Guides_208_8Using__a__Rotary__Encoder.html',1,'']]],
-  ['rw_5fbit_5fpos_5',['RW_Bit_Pos',['../structSPI__Helper__t.html#a47f154210ed6a64273b954c117a42234',1,'SPI_Helper_t']]]
+  ['parsecommand_0',['ParseCommand',['../group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef',1,'command_parser.h']]],
+  ['parser_1',['Command Parser',['../group__command__parser.html',1,'']]],
+  ['parsing_20commands_2',['09. Parsing Commands',['../md_Guides_209_8Parsing__commands.html',1,'']]],
+  ['peripheral_3',['1. Configure I²C Peripheral',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md39',1,'']]],
+  ['peripheral_20clocks_4',['APBx Peripheral Clocks',['../md_Guides_203_8Timer__Setup.html#autotoc_md20',1,'']]],
+  ['pin_20configuration_5',['Pin configuration',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md49',1,'']]],
+  ['power_20and_20data_20rate_6',['Power and Data Rate',['../group__ADXL345__POWER__REGS.html',1,'']]],
+  ['project_7',['Build and Flash the Project',['../md_Guides_205_8Debugger__Guide.html#autotoc_md26',1,'']]],
+  ['pwm_8',['PWM',['../group__PWM.html',1,'']]],
+  ['pwm_20output_9',['C. Set up a GPIO as an PWM Output',['../md_Guides_202_8Device__Configuration.html#autotoc_md14',1,'']]],
+  ['pwm_5fhelper_2eh_10',['pwm_helper.h',['../pwm__helper_8h.html',1,'']]]
 ];

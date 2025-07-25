@@ -1,14 +1,13 @@
 var searchData=
 [
-  ['parsecommand_0',['ParseCommand',['../group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef',1,'command_parser.h']]],
-  ['parser_1',['Command Parser',['../group__command__parser.html',1,'']]],
-  ['parsing_20commands_2',['09. Parsing Commands',['../md_Guides_209_8Parsing__commands.html',1,'']]],
-  ['peripheral_3',['1. Configure I²C Peripheral',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md39',1,'']]],
-  ['peripheral_20clocks_4',['APBx Peripheral Clocks',['../md_Guides_203_8Timer__Setup.html#autotoc_md20',1,'']]],
-  ['pin_20configuration_5',['Pin configuration',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md49',1,'']]],
-  ['power_20and_20data_20rate_6',['Power and Data Rate',['../group__ADXL345__POWER__REGS.html',1,'']]],
-  ['project_7',['Build and Flash the Project',['../md_Guides_205_8Debugger__Guide.html#autotoc_md26',1,'']]],
-  ['pwm_8',['PWM',['../group__PWM.html',1,'']]],
-  ['pwm_20output_9',['C. Set up a GPIO as an PWM Output',['../md_Guides_202_8Device__Configuration.html#autotoc_md14',1,'']]],
-  ['pwm_5fhelper_2eh_10',['pwm_helper.h',['../pwm__helper_8h.html',1,'']]]
+  ['of_20helper_20functions_20and_20modules_0',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]],
+  ['of_20setup_20and_20loop_20functions_20found_20in_20arduine_20ide_1',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
+  ['of_20the_20software_20module_3a_2',['of the software module:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md9',1,'Create the header file of the software module:'],['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md10',1,'Create the source file of the software module:']]],
+  ['offset_20calibration_3',['Offset Calibration',['../group__ADXL345__OFFSET__REGS.html',1,'']]],
+  ['only_4',['only',['../md_Guides_209_8Parsing__commands.html#autotoc_md61',1,'Example 2 – Name and Int Only'],['../md_Guides_209_8Parsing__commands.html#autotoc_md62',1,'Example 3 – Name Only']]],
+  ['optional_5',['E. Other Use Examples (Optional)',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md46',1,'']]],
+  ['or_20as_20digital_20output_6',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Device__Configuration.html#autotoc_md12',1,'']]],
+  ['other_20use_20examples_20optional_7',['E. Other Use Examples (Optional)',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md46',1,'']]],
+  ['output_8',['output',['../md_Guides_202_8Device__Configuration.html#autotoc_md12',1,'A. Set up a GPIO as a Digital Input or as Digital Output'],['../md_Guides_202_8Device__Configuration.html#autotoc_md14',1,'C. Set up a GPIO as an PWM Output']]],
+  ['output_20data_20registers_9',['Output Data Registers',['../group__ADXL345__OUTPUT__REGS.html',1,'']]]
 ];
