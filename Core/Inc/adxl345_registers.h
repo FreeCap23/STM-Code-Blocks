@@ -18,13 +18,10 @@ extern "C" {
 /**
  *  @defgroup ADXL345 ADXL345 Accelerometer
  *  @{
- */
-/** @defgroup ADXL345_REGISTERS Register Map
+ *  @defgroup ADXL345_REGISTERS Register Map
  *  @brief Register addresses for the ADXL345
  *  @{
- */
-
-/** @defgroup ADXL345_ID_REG Device Identification
+ *  @defgroup ADXL345_ID_REG Device Identification
  *  @brief Device ID and reserved space
  *  @{
  */
