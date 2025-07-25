@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i²c_20peripheral_0',['1. Configure I²C Peripheral',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md39',1,'']]],
-  ['i_20find_20the_20address_1',['How do I find the address??',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md44',1,'']]],
+  ['i_20find_20the_20address_1',['How do I find the address??',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md45',1,'']]],
   ['i2c_20communication_2',['G. Set up GPIOs for I2C Communication',['../md_Guides_202_8Device__Configuration.html#autotoc_md18',1,'']]],
   ['i2c_20lcd_3',['I2C LCD',['../group__i2c__lcd.html',1,'']]],
   ['i2c_20module_20md_4',['06. LCD with I2C Module.md',['../md_Guides_206_8LCD__with__I2C__Module.html',1,'']]],
@@ -22,15 +22,15 @@ var searchData=
   ['input_19',['input',['../md_Guides_202_8Device__Configuration.html#autotoc_md13',1,'B. Set up a GPIO as an analog Input'],['../md_Guides_202_8Device__Configuration.html#autotoc_md15',1,'D. Set up a GPIO as an Interrupt Capable Digital Input']]],
   ['input_20or_20as_20digital_20output_20',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Device__Configuration.html#autotoc_md12',1,'']]],
   ['inspect_20variables_21',['Inspect Variables',['../md_Guides_205_8Debugger__Guide.html#autotoc_md30',1,'']]],
-  ['install_20it_22',['install it',['../md_Guides_209_8Parsing__commands.html#autotoc_md51',1,'How to Install It'],['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md37',1,'How to Install It']]],
-  ['int_20only_23',['Example 2 – Name and Int Only',['../md_Guides_209_8Parsing__commands.html#autotoc_md59',1,'']]],
+  ['install_20it_22',['install it',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md37',1,'B. How to Install It'],['../md_Guides_209_8Parsing__commands.html#autotoc_md53',1,'How to Install It']]],
+  ['int_20only_23',['Example 2 – Name and Int Only',['../md_Guides_209_8Parsing__commands.html#autotoc_md61',1,'']]],
   ['interface_24',['interface',['../group__serial__interface.html',1,'Serial Interface'],['../group__spi__interface.html',1,'SPI Interface']]],
   ['interrupt_20capable_20digital_20input_25',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Device__Configuration.html#autotoc_md15',1,'']]],
   ['interrupt_20control_20and_20status_26',['Interrupt Control and Status',['../group__ADXL345__INT__REGS.html',1,'']]],
-  ['interrupt_20request_20handlers_27',['Setting up the Interrupt Request Handlers',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md48',1,'']]],
+  ['interrupt_20request_20handlers_27',['Setting up the Interrupt Request Handlers',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md50',1,'']]],
   ['into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_28',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]],
   ['into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_29',['To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'']]],
-  ['invalid_20format_30',['Example 4 – Invalid Format',['../md_Guides_209_8Parsing__commands.html#autotoc_md61',1,'']]],
-  ['it_31',['it',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md38',1,'How to Configure It'],['../md_Guides_209_8Parsing__commands.html#autotoc_md53',1,'How to Configure It'],['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md37',1,'How to Install It'],['../md_Guides_209_8Parsing__commands.html#autotoc_md51',1,'How to Install It'],['../md_Guides_209_8Parsing__commands.html#autotoc_md55',1,'How to Use It'],['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md36',1,'What you can do with it']]],
+  ['invalid_20format_30',['Example 4 – Invalid Format',['../md_Guides_209_8Parsing__commands.html#autotoc_md63',1,'']]],
+  ['it_31',['it',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md36',1,'A. What you can do with it'],['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md37',1,'B. How to Install It'],['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md38',1,'C. How to Configure It'],['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md42',1,'D. How to Use It'],['../md_Guides_209_8Parsing__commands.html#autotoc_md55',1,'How to Configure It'],['../md_Guides_209_8Parsing__commands.html#autotoc_md53',1,'How to Install It'],['../md_Guides_209_8Parsing__commands.html#autotoc_md57',1,'How to Use It']]],
   ['its_20local_20variables_32',['D. Creating a software module and its local variables',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md8',1,'']]]
 ];

@@ -5,7 +5,7 @@ var searchData=
   ['parsing_20commands_2',['09. Parsing Commands',['../md_Guides_209_8Parsing__commands.html',1,'']]],
   ['peripheral_3',['1. Configure I²C Peripheral',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md39',1,'']]],
   ['peripheral_20clocks_4',['APBx Peripheral Clocks',['../md_Guides_203_8Timer__Setup.html#autotoc_md20',1,'']]],
-  ['pin_20configuration_5',['Pin configuration',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md47',1,'']]],
+  ['pin_20configuration_5',['Pin configuration',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md49',1,'']]],
   ['power_20and_20data_20rate_6',['Power and Data Rate',['../group__ADXL345__POWER__REGS.html',1,'']]],
   ['project_7',['Build and Flash the Project',['../md_Guides_205_8Debugger__Guide.html#autotoc_md26',1,'']]],
   ['pwm_8',['PWM',['../group__PWM.html',1,'']]],
