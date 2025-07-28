@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>STM Code Blocks: Core/Inc/serial_helper.h Source File</title>
+<title>STM Code Blocks: 10.Send Receive Serial Data Module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -52,11 +52,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function() { init_codefold(0); });
-/* @license-end */
-</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -70,7 +65,7 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('serial__helper_8h_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md_Guides_210_8Send__Receive__Serial__Data__Module.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -95,27 +90,57 @@ $(document).ready(function(){initNavTree('serial__helper_8h_source.html',''); in
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">serial_helper.h</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">10.Send Receive Serial Data Module</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="serial__helper_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef INC_SERIAL_HELPER_H_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define INC_SERIAL_HELPER_H_</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>uint8_t <a class="code hl_function" href="group__serial__interface.html#ga126c9b4716b7253d5187778b23b84284">SerialPrint</a>(UART_HandleTypeDef *huart, <span class="keyword">const</span> <span class="keywordtype">char</span> *format, ...);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>uint8_t <a class="code hl_function" href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a>(UART_HandleTypeDef *huart, <span class="keyword">const</span> <span class="keywordtype">char</span> *format, ...);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#endif </span><span class="comment">/* INC_SERIAL_HELPER_H_ */</span><span class="preprocessor"></span></div>
+<div class="textblock"><p><a class="anchor" id="autotoc_md64"></a> This file will only cover sending serial data with the functions in <code><a class="el" href="serial__helper_8h.html" title="Helper functions for serial (UART) communication.">serial_helper.h</a></code>. Receiving serial data isn't covered here. See <code>02.Device_Configuration.md</code>, UART section for receiving.</p>
+<h1><a class="anchor" id="autotoc_md65"></a>
+What You Can Do With It</h1>
+<p>These functions allow you to send formatted debug or status messages from your STM32 microcontroller over a UART interface (such as a USB-to-Serial connection).</p>
+<ul>
+<li><code><a class="el" href="group__serial__interface.html#ga126c9b4716b7253d5187778b23b84284" title="Sends a formatted message over USART (e.g., USB-to-Serial).">SerialPrint()</a></code> behaves like <code>printf</code>, sending formatted text.</li>
+<li><code><a class="el" href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc" title="Sends a formatted message over USART (e.g., USB-to-Serial), appending a new line and carriage return.">SerialPrintLn()</a></code> does the same, but automatically appends <code>\r\n</code> (carriage return and line feed).</li>
+</ul>
+<p><b>Use cases include:</b></p>
+<ul>
+<li>Debugging firmware via serial terminal (e.g., PuTTY).</li>
+<li>Displaying sensor values, status messages, or errors.</li>
+<li>Logging data for analysis.</li>
+</ul>
+<hr  />
+<h1><a class="anchor" id="autotoc_md67"></a>
+How to Install It</h1>
+<p>Just copy <code><a class="el" href="serial__helper_8h.html" title="Helper functions for serial (UART) communication.">serial_helper.h</a></code> and <code><a class="el" href="serial__helper_8c.html" title="TODO: Write a brief description of this file.">serial_helper.c</a></code> to your project's <code>Inc</code> and <code>Src</code> folders respectively</p>
+<hr  />
+<h1><a class="anchor" id="autotoc_md69"></a>
+How to Configure It</h1>
+<p>Make sure a USART module is enabled and configured. See <code>02.Device_Configuration.md</code></p>
+<hr  />
+<h1><a class="anchor" id="autotoc_md71"></a>
+How to Use It</h1>
+<h2><a class="anchor" id="autotoc_md72"></a>
+a. Basic Usage:</h2>
+<div class="fragment"><div class="line"><a class="code hl_function" href="group__serial__interface.html#ga126c9b4716b7253d5187778b23b84284">SerialPrint</a>(&amp;huart2, <span class="stringliteral">&quot;Temperature: %d C&quot;</span>, temperature);</div>
+<div class="line"><a class="code hl_function" href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a>(&amp;huart2, <span class="stringliteral">&quot;System started.&quot;</span>);</div>
 <div class="ttc" id="agroup__serial__interface_html_ga126c9b4716b7253d5187778b23b84284"><div class="ttname"><a href="group__serial__interface.html#ga126c9b4716b7253d5187778b23b84284">SerialPrint</a></div><div class="ttdeci">uint8_t SerialPrint(UART_HandleTypeDef *huart, const char *format,...)</div><div class="ttdoc">Sends a formatted message over USART (e.g., USB-to-Serial).</div><div class="ttdef"><b>Definition</b> <a href="serial__helper_8c_source.html#l00017">serial_helper.c:17</a></div></div>
 <div class="ttc" id="agroup__serial__interface_html_ga5fc9820bc2a74c73e056baa14285b3dc"><div class="ttname"><a href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a></div><div class="ttdeci">uint8_t SerialPrintLn(UART_HandleTypeDef *huart, const char *format,...)</div><div class="ttdoc">Sends a formatted message over USART (e.g., USB-to-Serial), appending a new line and carriage return.</div><div class="ttdef"><b>Definition</b> <a href="serial__helper_8c_source.html#l00041">serial_helper.c:41</a></div></div>
-</div><!-- fragment --></div><!-- contents -->
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md73"></a>
+b. Output:</h2>
+<p>If connected via USB-to-Serial and monitored with a terminal, you will see:</p>
+<div class="fragment"><div class="line">Temperature: 25 C</div>
+<div class="line">System started.</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md74"></a>
+c. Notes:</h2>
+<ul>
+<li>See <code>printf</code>'s documentation for a full table of format specifiers <a href="https://cplusplus.com/reference/cstdio/printf/">here</a>. </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_e2489e887f17afa3cbc07a4ec152cdd2.html">Inc</a></li><li class="navelem"><a class="el" href="serial__helper_8h.html">serial_helper.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

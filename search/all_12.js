@@ -9,5 +9,6 @@ var searchData=
   ['or_20as_20digital_20output_6',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Device__Configuration.html#autotoc_md12',1,'']]],
   ['other_20use_20examples_20optional_7',['E. Other Use Examples (Optional)',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md46',1,'']]],
   ['output_8',['output',['../md_Guides_202_8Device__Configuration.html#autotoc_md12',1,'A. Set up a GPIO as a Digital Input or as Digital Output'],['../md_Guides_202_8Device__Configuration.html#autotoc_md14',1,'C. Set up a GPIO as an PWM Output']]],
-  ['output_20data_20registers_9',['Output Data Registers',['../group__ADXL345__OUTPUT__REGS.html',1,'']]]
+  ['output_20data_20registers_9',['Output Data Registers',['../group__ADXL345__OUTPUT__REGS.html',1,'']]],
+  ['output_3a_10',['b. Output:',['../md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md73',1,'']]]
 ];

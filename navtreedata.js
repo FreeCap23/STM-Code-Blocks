@@ -91,7 +91,16 @@ var NAVTREE =
         [ "Example 4 – Invalid Format", "md_Guides_209_8Parsing__commands.html#autotoc_md63", null ]
       ] ]
     ] ],
-    [ "10. Send_Receive_Serial_Data_Module", "md_Guides_210_8_01Send__Receive__Serial__Data__Module.html", null ],
+    [ "10.Send Receive Serial Data Module", "md_Guides_210_8Send__Receive__Serial__Data__Module.html", [
+      [ "What You Can Do With It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md65", null ],
+      [ "How to Install It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md67", null ],
+      [ "How to Configure It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md69", null ],
+      [ "How to Use It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md71", [
+        [ "a. Basic Usage:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md72", null ],
+        [ "b. Output:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md73", null ],
+        [ "c. Notes:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md74", null ]
+      ] ]
+    ] ],
     [ "99.Wishlist", "md_Guides_299_8Wishlist.html", null ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
     [ "Topics", "topics.html", "topics" ],
