@@ -10,5 +10,6 @@ var searchData=
   ['be_20included_20into_20tt_20main_20c_20tt_20file_20following_20these_20steps_3a_7',['To make your global variables available to the main code, the &lt;tt&gt;globals.h&lt;/tt&gt; file must be included into &lt;tt&gt;main.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md7',1,'']]],
   ['blocks_8',['STM Code Blocks',['../index.html',1,'']]],
   ['breakpoints_9',['Set Breakpoints',['../md_Guides_205_8Debugger__Guide.html#autotoc_md27',1,'']]],
-  ['build_20and_20flash_20the_20project_10',['Build and Flash the Project',['../md_Guides_205_8Debugger__Guide.html#autotoc_md26',1,'']]]
+  ['buffer_10',['buffer',['../structCircularBuffer.html#a33a02ef90462f7506814e8547eee69e5',1,'CircularBuffer']]],
+  ['build_20and_20flash_20the_20project_11',['Build and Flash the Project',['../md_Guides_205_8Debugger__Guide.html#autotoc_md26',1,'']]]
 ];

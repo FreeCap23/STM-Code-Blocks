@@ -101,6 +101,11 @@ var NAVTREE =
         [ "c. Notes:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md74", null ]
       ] ]
     ] ],
+    [ "11.Using the ADXL345 Accelerometer", "md_Guides_211_8Using__the__ADXL345__driver.html", [
+      [ "Installation", "md_Guides_211_8Using__the__ADXL345__driver.html#autotoc_md76", null ],
+      [ "Configuration", "md_Guides_211_8Using__the__ADXL345__driver.html#autotoc_md78", null ],
+      [ "Usage", "md_Guides_211_8Using__the__ADXL345__driver.html#autotoc_md87", null ]
+    ] ],
     [ "99.Wishlist", "md_Guides_299_8Wishlist.html", null ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
     [ "Topics", "topics.html", "topics" ],
@@ -125,7 +130,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"adxl345__registers_8h_source.html"
+"adxl345_8c.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

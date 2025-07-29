@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spi_5fhelper_5ft_0',['SPI_Helper_t',['../structSPI__Helper__t.html',1,'']]]
+  ['i2c_5flcd_5fhandletypedef_0',['I2C_LCD_HandleTypeDef',['../structI2C__LCD__HandleTypeDef.html',1,'']]]
 ];
