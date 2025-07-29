@@ -64,6 +64,10 @@ void Error_Handler(void);
 #define RotaryEncoder_DT_GPIO_Port GPIOC
 #define DRV8705_CS_Pin GPIO_PIN_4
 #define DRV8705_CS_GPIO_Port GPIOA
+#define INT1_ADXL345_Pin GPIO_PIN_2
+#define INT1_ADXL345_GPIO_Port GPIOB
+#define CS_ADXL345_Pin GPIO_PIN_7
+#define CS_ADXL345_GPIO_Port GPIOC
 #define RotaryEncoder_SW_Pin GPIO_PIN_4
 #define RotaryEncoder_SW_GPIO_Port GPIOD
 #define RotaryEncoder_SW_EXTI_IRQn EXTI4_IRQn
