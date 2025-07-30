@@ -153,13 +153,14 @@ D. How to Use It</h2>
 </ul>
 <h2><a class="anchor" id="autotoc_md44"></a>
 Displaying a formatted string</h2>
-<p>In order to display a formatted string, we first need to build the string in a buffer: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> buffer[64];</div>
+<p>In order to display a formatted string, we first need to build the string in a buffer: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> buffer[80];</div>
 <div class="line"><span class="comment">// This function takes your format string &quot;Pi: %.3f&quot; and stores the resulting</span></div>
 <div class="line"><span class="comment">// string in the buffer</span></div>
 <div class="line">sprintf(buffer, <span class="stringliteral">&quot;Pi: %.3f&quot;</span>, 3.1415926535);</div>
 <div class="line"><a class="code hl_function" href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a>(&amp;hlcd, buffer);</div>
 <div class="ttc" id="agroup__i2c__lcd_html_ga51cc38e9b9b84710899c7a4b5819bb63"><div class="ttname"><a href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a></div><div class="ttdeci">void lcd_puts(I2C_LCD_HandleTypeDef *lcd, char *str)</div><div class="ttdoc">Sends a string to the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00128">i2c_lcd.c:128</a></div></div>
 </div><!-- fragment --><p> This will display <code>Pi: 3.142</code>. Note how the number was automatically rounded. For more format specifiers, see <a href="https://cplusplus.com/reference/cstdio/printf/">the Parameters section of the printf documentation</a>.</p>
+<p><em><b>Put the above code behing specific functions (each made for a single purpose mentioned at point D).</b></em></p>
 <h2><a class="anchor" id="autotoc_md45"></a>
 Example usage</h2>
 <p>This example works on any size display, but it will only look right on a 20x4 </p><div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN 2 */</span></div>
