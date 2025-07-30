@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>STM Code Blocks: 06. LCD with I2C Module.md</title>
+<title>STM Code Blocks: 06. LCD Drivers.md</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md_Guides_206_8LCD__with__I2C__Module.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md_Guides_206_8LCD.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -91,16 +91,18 @@ $(document).ready(function(){initNavTree('md_Guides_206_8LCD__with__I2C__Module.
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">06. LCD with I2C Module.md</div></div>
+  <div class="headertitle"><div class="title">06. LCD Drivers.md</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md35"></a> </p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md35"></a>There's two ways to use an LCD: In parallel mode, or with an I<sup>2</sup>C module.</p>
 <h1><a class="anchor" id="autotoc_md36"></a>
-A. What you can do with it</h1>
-<p>Allows you to display text, numbers and special characters on alphanumeric LCDs displays through an I2C connection./ It supports displays with sizes <b>16x2, 16x4, 20x2, 20x4</b>.</p>
-<p>This modules is based on this library: <a href="https://github.com/alixahedi/I2C-LCD-STM32">https://github.com/alixahedi/I2C-LCD-STM32</a>.</p>
-<h1><a class="anchor" id="autotoc_md37"></a>
-B. How to Install It</h1>
+I2C</h1>
+<h2><a class="anchor" id="autotoc_md37"></a>
+A. What you can do with it</h2>
+<p>Allows you to display text, numbers and special characters on alphanumeric LCDs displays through an I2C connection. It supports displays with sizes <b>16x2, 16x4, 20x2, 20x4</b>.</p>
+<p>This module is based on this library: <a href="https://github.com/alixahedi/I2C-LCD-STM32">https://github.com/alixahedi/I2C-LCD-STM32</a>.</p>
+<h2><a class="anchor" id="autotoc_md38"></a>
+B. How to Install It</h2>
 <p>For installation instructions, <a href="https://github.com/alixahedi/I2C-LCD-STM32?tab=readme-ov-file#installation">see the README.md</a>.</p>
 <p><em><b>Alternative explanation:</b></em></p><ul>
 <li>go to <a href="https://github.com/alixahedi/I2C-LCD-STM32?tab=readme-ov-file#installation">https://github.com/alixahedi/I2C-LCD-STM32?tab=readme-ov-file#installation</a></li>
@@ -110,16 +112,16 @@ B. How to Install It</h1>
 <li>"i2c_lcd.h" file in YourProjectName / Core / Inc</li>
 <li>"i2c_lcd.c" file in YourProjectName / Core / Src</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md38"></a>
-C. How to Configure It</h1>
-<p>Before using the LCD functions, you must configure the <code><a class="el" href="structI2C__LCD__HandleTypeDef.html" title="Includes the HAL driver present in the project.">I2C_LCD_HandleTypeDef</a></code> structure with the appropriate I²C handle and LCD address.</p>
 <h2><a class="anchor" id="autotoc_md39"></a>
-1. Configure I²C Peripheral</h2>
+C. How to Configure It</h2>
+<p>Before using the LCD functions, you must configure the <code><a class="el" href="structI2C__LCD__HandleTypeDef.html" title="Includes the HAL driver present in the project.">I2C_LCD_HandleTypeDef</a></code> structure with the appropriate I²C handle and LCD address.</p>
+<h3><a class="anchor" id="autotoc_md40"></a>
+1. Configure I²C Peripheral</h3>
 <p>Ensure I²C is initialized using STM32CubeMX or manually in your code:</p>
 <div class="fragment"><div class="line">I2C_HandleTypeDef hi2c1;  <span class="comment">// This should match your CubeMX configuration</span></div>
-</div><!-- fragment --><p> <em><b>I STOPPED HERE</b></em> <em><b>I don't see any instructions about the CubeMX configuration.</b></em></p>
-<h2><a class="anchor" id="autotoc_md40"></a>
-2. Define and Initialize the LCD Handle</h2>
+</div><!-- fragment --><p> <em><b>I STOPPED HERE becasue I don't see any instructions about the CubeMX configuration.</b></em></p>
+<h3><a class="anchor" id="autotoc_md41"></a>
+2. Define and Initialize the LCD Handle</h3>
 <p><em><b>Where you guide me to put those piece of code?</b></em> <em><b>Suggestion: use the following workflow: take THIS piece-of-code or file and place it HERE (if necessary, modify it in THIS way)</b></em></p>
 <div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN Includes *</span></div>
 <div class="line"><span class="comment">#include &quot;i2c_lcd.h&quot;</span></div>
@@ -139,8 +141,8 @@ C. How to Configure It</h1>
 <li>**<code>address</code>**: I²C address of the LCD (left-shifted 7-bit address, e.g., <code>0x27 &lt;&lt; 1 = 0x4E</code>)</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md42"></a>
-D. How to Use It</h1>
+<h2><a class="anchor" id="autotoc_md43"></a>
+D. How to Use It</h2>
 <p>For a full list of functions, see <code><a class="el" href="i2c__lcd_8h.html" title="Helper functions for LCDs with I2C.">i2c_lcd.h</a></code></p>
 <p><em><b>I don't want to go somewhere else to find basic info. I want to find it here, formulated in simple terms.</b></em> <em><b>In this chapte, by basic info mean what steps I need to follow / what function I need to use to :</b></em></p><ul>
 <li><em><b>clear the display</b></em>;</li>
@@ -149,8 +151,8 @@ D. How to Use It</h1>
 <li><em><b>display an INTEGER number</b></em>;</li>
 <li><em><b>display an FLOAT number</b></em></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md43"></a>
-Displaying a formatted string</h1>
+<h2><a class="anchor" id="autotoc_md44"></a>
+Displaying a formatted string</h2>
 <p>In order to display a formatted string, we first need to build the string in a buffer: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> buffer[64];</div>
 <div class="line"><span class="comment">// This function takes your format string &quot;Pi: %.3f&quot; and stores the resulting</span></div>
 <div class="line"><span class="comment">// string in the buffer</span></div>
@@ -158,8 +160,8 @@ Displaying a formatted string</h1>
 <div class="line"><a class="code hl_function" href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a>(&amp;hlcd, buffer);</div>
 <div class="ttc" id="agroup__i2c__lcd_html_ga51cc38e9b9b84710899c7a4b5819bb63"><div class="ttname"><a href="group__i2c__lcd.html#ga51cc38e9b9b84710899c7a4b5819bb63">lcd_puts</a></div><div class="ttdeci">void lcd_puts(I2C_LCD_HandleTypeDef *lcd, char *str)</div><div class="ttdoc">Sends a string to the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00128">i2c_lcd.c:128</a></div></div>
 </div><!-- fragment --><p> This will display <code>Pi: 3.142</code>. Note how the number was automatically rounded. For more format specifiers, see <a href="https://cplusplus.com/reference/cstdio/printf/">the Parameters section of the printf documentation</a>.</p>
-<h1><a class="anchor" id="autotoc_md44"></a>
-Example usage</h1>
+<h2><a class="anchor" id="autotoc_md45"></a>
+Example usage</h2>
 <p>This example works on any size display, but it will only look right on a 20x4 </p><div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN 2 */</span></div>
 <div class="line">hlcd.hi2c = &amp;hi2c1;</div>
 <div class="line">hlcd.address = 78;</div>
@@ -188,8 +190,8 @@ Example usage</h1>
 <div class="ttc" id="agroup__i2c__lcd_html_ga0693679db2dcb227dba8e4656f5215d1"><div class="ttname"><a href="group__i2c__lcd.html#ga0693679db2dcb227dba8e4656f5215d1">lcd_gotoxy</a></div><div class="ttdeci">void lcd_gotoxy(I2C_LCD_HandleTypeDef *lcd, int col, int row)</div><div class="ttdoc">Moves the cursor to a specific position on the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00077">i2c_lcd.c:77</a></div></div>
 <div class="ttc" id="agroup__i2c__lcd_html_ga64eafe042d3730df357f35a1194898f6"><div class="ttname"><a href="group__i2c__lcd.html#ga64eafe042d3730df357f35a1194898f6">lcd_init</a></div><div class="ttdeci">void lcd_init(I2C_LCD_HandleTypeDef *lcd)</div><div class="ttdoc">Initializes the LCD.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00098">i2c_lcd.c:98</a></div></div>
 <div class="ttc" id="agroup__i2c__lcd_html_gaa1d0651d9c99044ac36f8e2abb4370f6"><div class="ttname"><a href="group__i2c__lcd.html#gaa1d0651d9c99044ac36f8e2abb4370f6">lcd_clear</a></div><div class="ttdeci">void lcd_clear(I2C_LCD_HandleTypeDef *lcd)</div><div class="ttdoc">Clears the LCD display.</div><div class="ttdef"><b>Definition</b> <a href="i2c__lcd_8c_source.html#l00057">i2c_lcd.c:57</a></div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md45"></a>
-How do I find the address??</h1>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md46"></a>
+How do I find the address??</h2>
 <p>First, try addresses <code>0x20</code>, <code>0x27</code> and <code>0x4E</code>. If those don't work, try running this snippet of code:</p>
 <div class="fragment"><div class="line"><span class="comment">/* ----- &gt;8 snip ----- */</span></div>
 <div class="line"><span class="comment">/* USER CODE BEGIN PV */</span></div>
@@ -211,9 +213,60 @@ How do I find the address??</h1>
 <div class="line">}</div>
 <div class="line"><span class="comment">/* ----- &gt;8 snip ----- */</span></div>
 </div><!-- fragment --><p> You should see the address printed on your display.</p>
-<p><em><b>Where you guide me to put those piece of code?</b></em> <em><b>Suggestion: use the following workflow: take THIS piece-of-code or file and place it HERE (if necessary, modify it in THIS way)</b></em></p>
-<h1><a class="anchor" id="autotoc_md46"></a>
-E. Other Use Examples (Optional)</h1>
+<h1><a class="anchor" id="autotoc_md47"></a>
+Parallel</h1>
+<h2><a class="anchor" id="autotoc_md48"></a>
+A. What you can do with it</h2>
+<p>Allows you to display text, numbers and special characters on alphanumeric LCDs. It supports displays with sizes <b>16x2, 16x4, 20x2, 20x4</b> and communication with <b>4 pins</b> and <b>8 pins</b>.</p>
+<p>This module is based on this library: <a href="https://github.com/SayidHosseini/STM32LiquidCrystal">https://github.com/SayidHosseini/STM32LiquidCrystal</a>.</p>
+<h2><a class="anchor" id="autotoc_md49"></a>
+B. How to install it</h2>
+<p>Download <code>LiquidCrystal.h</code> and <code>LiquidCrystal.c</code> from here <a href="https://github.com/SayidHosseini/STM32LiquidCrystal">https://github.com/SayidHosseini/STM32LiquidCrystal</a> and place them in <code>Core/Inc</code> and <code>Core/Src</code> respectively.</p>
+<h2><a class="anchor" id="autotoc_md50"></a>
+C. How to configure it</h2>
+<h3><a class="anchor" id="autotoc_md51"></a>
+Peripheral configuration</h3>
+<p>Connect pins <b>RS, RW, E, D0-D7</b> to your STM32 board, set them as <b>Outputs</b> and optionally add Labels.</p>
+<p>In the following examples I will use 8 bit mode, so I will have 8 Data pins defined and labeled in CubeMX along the RS, RW, E pin labels.</p>
+<h3><a class="anchor" id="autotoc_md52"></a>
+Code configuration</h3>
+<p>In <code>LiquidCrystal.h</code>, change <code>EIGHT_BIT_MODE</code> according to how many pins you want to use (4 or 8) like so: </p><div class="fragment"><div class="line"><span class="comment">// 1 = Eight bit, 0 = Four bit</span></div>
+<div class="line"><span class="preprocessor">#define EIGHT_BIT_MODE 1</span></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md53"></a>
+D. How to use it</h2>
+<p>in <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code></p>
+<h3><a class="anchor" id="autotoc_md54"></a>
+Include the driver</h3>
+<div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN Includes */</span></div>
+<div class="line"><span class="preprocessor">#include &quot;LiquidCrystal.h&quot;</span></div>
+<div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md55"></a>
+Initialise the display and print something</h3>
+<div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN 2 */</span></div>
+<div class="line"><span class="comment">// If you&#39;re using the display in 4 bit mode, then you can replace</span></div>
+<div class="line"><span class="comment">// LCD_D0..D3_GPIO_Port and _Pin with 0s</span></div>
+<div class="line">LiquidCrystal(</div>
+<div class="line">    LCD_RS_GPIO_Port, LCD_RS_Pin,</div>
+<div class="line">    LCD_RW_GPIO_Port, LCD_RW_Pin,</div>
+<div class="line">    LCD_E_GPIO_Port, LCD_E_Pin,</div>
+<div class="line">    LCD_D0_GPIO_Port, LCD_D0_Pin,</div>
+<div class="line">    LCD_D1_GPIO_Port, LCD_D1_Pin,</div>
+<div class="line">    LCD_D2_GPIO_Port, LCD_D2_Pin,</div>
+<div class="line">    LCD_D3_GPIO_Port, LCD_D3_Pin,</div>
+<div class="line">    LCD_D4_GPIO_Port, LCD_D4_Pin,</div>
+<div class="line">    LCD_D5_GPIO_Port, LCD_D5_Pin,</div>
+<div class="line">    LCD_D6_GPIO_Port, LCD_D6_Pin,</div>
+<div class="line">    LCD_D7_GPIO_Port, LCD_D7_Pin,</div>
+<div class="line">    4, 16</div>
+<div class="line">);</div>
+<div class="line">print(<span class="stringliteral">&quot;Hello world!&quot;</span>);</div>
+<div class="line"><span class="comment">/* USER CODE END 2 */</span></div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md56"></a>
+Printing a formatted string</h3>
+<p>Before calling the <code>print()</code> function, we first need to generate the formatted string using <code>sprintf()</code> from the <code>stdio.h</code> library. </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> buffer[32];</div>
+<div class="line">sprintf(buffer, <span class="stringliteral">&quot;Temp: %.2f C&quot;</span>, temperature);</div>
+<div class="line">print(buffer);</div>
+</div><!-- fragment --><p> This will print, for example: <code>Temp: 23.45 C</code>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

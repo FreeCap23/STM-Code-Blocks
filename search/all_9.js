@@ -1,7 +1,7 @@
 var searchData=
 [
   ['d_20creating_20a_20software_20module_20and_20its_20local_20variables_0',['D. Creating a software module and its local variables',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md8',1,'']]],
-  ['d_20how_20to_20use_20it_1',['D. How to Use It',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md42',1,'']]],
+  ['d_20how_20to_20use_20it_1',['d how to use it',['../md_Guides_206_8LCD.html#autotoc_md53',1,'D. How to use it'],['../md_Guides_206_8LCD.html#autotoc_md43',1,'D. How to Use It']]],
   ['d_20set_20up_20a_20gpio_20as_20an_20interrupt_20capable_20digital_20input_2',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Device__Configuration.html#autotoc_md15',1,'']]],
   ['data_20module_3',['10.Send Receive Serial Data Module',['../md_Guides_210_8Send__Receive__Serial__Data__Module.html',1,'']]],
   ['data_20rate_4',['Power and Data Rate',['../group__ADXL345__POWER__REGS.html',1,'']]],
@@ -12,7 +12,7 @@ var searchData=
   ['declared_20in_20a_20tt_20globals_20h_20tt_20file_20following_20these_20steps_3a_9',['Global variables should be declared in a &lt;tt&gt;globals.h&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md5',1,'']]],
   ['declared_20in_20tt_20globals_20h_20tt_20must_20be_20also_20defined_20assigned_20default_20values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_10',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]],
   ['default_20values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_11',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]],
-  ['define_20and_20initialize_20the_20lcd_20handle_12',['2. Define and Initialize the LCD Handle',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md40',1,'']]],
+  ['define_20and_20initialize_20the_20lcd_20handle_12',['2. Define and Initialize the LCD Handle',['../md_Guides_206_8LCD.html#autotoc_md41',1,'']]],
   ['defined_20assigned_20default_20values_20into_20a_20tt_20globals_20c_20tt_20file_20following_20these_20steps_3a_13',['The global variables you declared in &lt;tt&gt;globals.h&lt;/tt&gt; must be also defined (assigned default values) into a &lt;tt&gt;globals.c&lt;/tt&gt; file following these steps:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md6',1,'']]],
   ['definition_20and_20inclusion_20in_20the_20main_20source_20code_14',['C. Global Variables - Declaration, definition and inclusion in the main source code',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md4',1,'']]],
   ['detection_15',['Activity/Inactivity Detection',['../group__ADXL345__ACTIVITY__REGS.html',1,'']]],
@@ -21,8 +21,11 @@ var searchData=
   ['device_20identification_18',['Device Identification',['../group__ADXL345__ID__REG.html',1,'']]],
   ['digital_20input_19',['D. Set up a GPIO as an Interrupt Capable Digital Input',['../md_Guides_202_8Device__Configuration.html#autotoc_md15',1,'']]],
   ['digital_20input_20or_20as_20digital_20output_20',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Device__Configuration.html#autotoc_md12',1,'']]],
-  ['displaying_20a_20formatted_20string_21',['Displaying a formatted string',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md43',1,'']]],
-  ['dma_20mode_20effectively_22',['04. Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]],
-  ['do_20i_20find_20the_20address_23',['How do I find the address??',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md45',1,'']]],
-  ['do_20with_20it_24',['do with it',['../md_Guides_206_8LCD__with__I2C__Module.html#autotoc_md36',1,'A. What you can do with it'],['../md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md65',1,'What You Can Do With It']]]
+  ['display_20and_20print_20something_21',['Initialise the display and print something',['../md_Guides_206_8LCD.html#autotoc_md55',1,'']]],
+  ['displaying_20a_20formatted_20string_22',['Displaying a formatted string',['../md_Guides_206_8LCD.html#autotoc_md44',1,'']]],
+  ['dma_20mode_20effectively_23',['04. Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]],
+  ['do_20i_20find_20the_20address_24',['How do I find the address??',['../md_Guides_206_8LCD.html#autotoc_md46',1,'']]],
+  ['do_20with_20it_25',['do with it',['../md_Guides_206_8LCD.html#autotoc_md37',1,'A. What you can do with it'],['../md_Guides_206_8LCD.html#autotoc_md48',1,'A. What you can do with it'],['../md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md75',1,'What You Can Do With It']]],
+  ['driver_26',['Include the driver',['../md_Guides_206_8LCD.html#autotoc_md54',1,'']]],
+  ['drivers_20md_27',['06. LCD Drivers.md',['../md_Guides_206_8LCD.html',1,'']]]
 ];
