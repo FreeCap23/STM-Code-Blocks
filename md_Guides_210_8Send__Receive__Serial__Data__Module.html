@@ -103,6 +103,12 @@ What You Can Do With It</h1>
 <li><code><a class="el" href="group__serial__interface.html#ga126c9b4716b7253d5187778b23b84284" title="Sends a formatted message over USART (e.g., USB-to-Serial).">SerialPrint()</a></code> behaves like <code>printf</code>, sending formatted text.</li>
 <li><code><a class="el" href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc" title="Sends a formatted message over USART (e.g., USB-to-Serial), appending a new line and carriage return.">SerialPrintLn()</a></code> does the same, but automatically appends <code>\r\n</code> (carriage return and line feed).</li>
 </ul>
+<p><em><b>We need to use a single USART connection (so no reason to make the USART number as function argument), and we need specific function only for:</b></em></p><ul>
+<li>send a TEXT (with the option of sending the NewLine code);</li>
+<li>send a INT (with the option of sending the NewLine code);</li>
+<li>send a FLOAT (with the option of sending the NewLine code);</li>
+<li>send a message composed of two INT number following this format: &lt;INT1,INT2&gt; (with the option of sending the NewLine code);</li>
+</ul>
 <p><b>Use cases include:</b></p>
 <ul>
 <li>Debugging firmware via serial terminal (e.g., PuTTY).</li>
@@ -112,8 +118,9 @@ What You Can Do With It</h1>
 <hr  />
 <h1><a class="anchor" id="autotoc_md77"></a>
 How to Install It</h1>
-<p>Just copy <code><a class="el" href="serial__helper_8h.html" title="Helper functions for serial (UART) communication.">serial_helper.h</a></code> and <code><a class="el" href="serial__helper_8c.html" title="TODO: Write a brief description of this file.">serial_helper.c</a></code> to your project's <code>Inc</code> and <code>Src</code> folders respectively</p>
-<hr  />
+<p>Just copy <code><a class="el" href="serial__helper_8h.html" title="Helper functions for serial (UART) communication.">serial_helper.h</a></code> and <code><a class="el" href="serial__helper_8c.html" title="TODO: Write a brief description of this file.">serial_helper.c</a></code> to your project's <code>Inc</code> and <code>Src</code> folders respectively </p>
+<h1><a class="anchor" id="autotoc_md78"></a>
+***Copy from where."</h1>
 <h1><a class="anchor" id="autotoc_md79"></a>
 How to Configure It</h1>
 <p>Make sure a USART module is enabled and configured. See <code>02.Device_Configuration.md</code> <em><b>Here you are sending me to a different page, and there you send me again to a different page, which is confusing.</b></em> <em><b>I suggest to move the USART relevant info from <code>02.Device_Configuration.md</code> to here, because only here is needed.</b></em></p>

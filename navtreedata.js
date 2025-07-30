@@ -108,6 +108,7 @@ var NAVTREE =
     [ "10.Send Receive Serial Data Module", "md_Guides_210_8Send__Receive__Serial__Data__Module.html", [
       [ "What You Can Do With It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md75", null ],
       [ "How to Install It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md77", null ],
+      [ "***Copy from where.\"", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md78", null ],
       [ "How to Configure It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md79", null ],
       [ "How to Use It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md81", [
         [ "a. Basic Usage:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md82", null ],

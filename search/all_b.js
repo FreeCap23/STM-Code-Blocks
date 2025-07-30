@@ -23,8 +23,9 @@ var searchData=
   ['format_20',['Example 4 – Invalid Format',['../md_Guides_209_8Parsing__commands.html#autotoc_md73',1,'']]],
   ['formatted_20string_21',['formatted string',['../md_Guides_206_8LCD.html#autotoc_md44',1,'Displaying a formatted string'],['../md_Guides_206_8LCD.html#autotoc_md56',1,'Printing a formatted string']]],
   ['found_20in_20arduine_20ide_22',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
-  ['full_20command_23',['Example 1 – Full Command',['../md_Guides_209_8Parsing__commands.html#autotoc_md70',1,'']]],
-  ['functions_24',['functions',['../md_Guides_207_8FLASH__Helper.html',1,'07. FLASH Helper Functions'],['../group__helper__functions.html',1,'Helper Functions']]],
-  ['functions_20and_20modules_25',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]],
-  ['functions_20found_20in_20arduine_20ide_26',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]]
+  ['from_20where_23',['***Copy from where.&quot;',['../md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md78',1,'']]],
+  ['full_20command_24',['Example 1 – Full Command',['../md_Guides_209_8Parsing__commands.html#autotoc_md70',1,'']]],
+  ['functions_25',['functions',['../md_Guides_207_8FLASH__Helper.html',1,'07. FLASH Helper Functions'],['../group__helper__functions.html',1,'Helper Functions']]],
+  ['functions_20and_20modules_26',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]],
+  ['functions_20found_20in_20arduine_20ide_27',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]]
 ];
