@@ -117,10 +117,10 @@ C. How to Configure It</h1>
 1. Configure I²C Peripheral</h2>
 <p>Ensure I²C is initialized using STM32CubeMX or manually in your code:</p>
 <div class="fragment"><div class="line">I2C_HandleTypeDef hi2c1;  <span class="comment">// This should match your CubeMX configuration</span></div>
-</div><!-- fragment --><p>***No guideline is given for the CubeMX configuration. ***</p>
+</div><!-- fragment --><p> <em><b>I STOPPED HERE becasue I don't see any instructions about the CubeMX configuration.</b></em></p>
 <h2><a class="anchor" id="autotoc_md40"></a>
 2. Define and Initialize the LCD Handle</h2>
-<p>***Where you guide me to put those piece of code? ***</p>
+<p><em><b>Where you guide me to put those piece of code?</b></em> <em><b>Suggestion: use the following workflow: take THIS piece-of-code or file and place it HERE (if necessary, modify it in THIS way)</b></em></p>
 <div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN Includes *</span></div>
 <div class="line"><span class="comment">#include &quot;i2c_lcd.h&quot;</span></div>
 <div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
@@ -142,6 +142,13 @@ C. How to Configure It</h1>
 <h1><a class="anchor" id="autotoc_md42"></a>
 D. How to Use It</h1>
 <p>For a full list of functions, see <code><a class="el" href="i2c__lcd_8h.html" title="Helper functions for LCDs with I2C.">i2c_lcd.h</a></code></p>
+<p><em><b>I don't want to go somewhere else to find basic info. I want to find it here, formulated in simple terms.</b></em> <em><b>In this chapte, by basic info mean what steps I need to follow / what function I need to use to :</b></em></p><ul>
+<li><em><b>clear the display</b></em>;</li>
+<li><em><b>set the display cursor position</b></em>;</li>
+<li><em><b>display a text</b></em>;</li>
+<li><em><b>display an INTEGER number</b></em>;</li>
+<li><em><b>display an FLOAT number</b></em></li>
+</ul>
 <h1><a class="anchor" id="autotoc_md43"></a>
 Displaying a formatted string</h1>
 <p>In order to display a formatted string, we first need to build the string in a buffer: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> buffer[64];</div>
@@ -204,6 +211,7 @@ How do I find the address??</h1>
 <div class="line">}</div>
 <div class="line"><span class="comment">/* ----- &gt;8 snip ----- */</span></div>
 </div><!-- fragment --><p> You should see the address printed on your display.</p>
+<p><em><b>Where you guide me to put those piece of code?</b></em> <em><b>Suggestion: use the following workflow: take THIS piece-of-code or file and place it HERE (if necessary, modify it in THIS way)</b></em></p>
 <h1><a class="anchor" id="autotoc_md46"></a>
 E. Other Use Examples (Optional)</h1>
 </div></div><!-- contents -->
