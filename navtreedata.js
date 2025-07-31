@@ -70,56 +70,59 @@ var NAVTREE =
           [ "1. Configure I²C Peripheral", "md_Guides_206_8LCD.html#autotoc_md40", null ],
           [ "2. Define and Initialize the LCD Handle", "md_Guides_206_8LCD.html#autotoc_md41", null ]
         ] ],
-        [ "D. How to Use It", "md_Guides_206_8LCD.html#autotoc_md43", null ],
-        [ "Displaying a formatted string", "md_Guides_206_8LCD.html#autotoc_md44", null ],
-        [ "Example usage", "md_Guides_206_8LCD.html#autotoc_md45", null ],
-        [ "How do I find the address??", "md_Guides_206_8LCD.html#autotoc_md46", null ]
+        [ "How do I find the address??", "md_Guides_206_8LCD.html#autotoc_md42", null ],
+        [ "D. How to Use It", "md_Guides_206_8LCD.html#autotoc_md44", [
+          [ "Clear the display", "md_Guides_206_8LCD.html#autotoc_md46", null ],
+          [ "Set the display cursor position", "md_Guides_206_8LCD.html#autotoc_md48", null ],
+          [ "Display text", "md_Guides_206_8LCD.html#autotoc_md50", null ],
+          [ "Display an int or float", "md_Guides_206_8LCD.html#autotoc_md52", null ]
+        ] ]
       ] ],
-      [ "Parallel", "md_Guides_206_8LCD.html#autotoc_md47", [
-        [ "A. What you can do with it", "md_Guides_206_8LCD.html#autotoc_md48", null ],
-        [ "B. How to install it", "md_Guides_206_8LCD.html#autotoc_md49", null ],
-        [ "C. How to configure it", "md_Guides_206_8LCD.html#autotoc_md50", [
-          [ "Peripheral configuration", "md_Guides_206_8LCD.html#autotoc_md51", null ],
-          [ "Code configuration", "md_Guides_206_8LCD.html#autotoc_md52", null ]
+      [ "Parallel", "md_Guides_206_8LCD.html#autotoc_md54", [
+        [ "A. What you can do with it", "md_Guides_206_8LCD.html#autotoc_md55", null ],
+        [ "B. How to install it", "md_Guides_206_8LCD.html#autotoc_md56", null ],
+        [ "C. How to configure it", "md_Guides_206_8LCD.html#autotoc_md57", [
+          [ "Peripheral configuration", "md_Guides_206_8LCD.html#autotoc_md58", null ],
+          [ "Code configuration", "md_Guides_206_8LCD.html#autotoc_md59", null ]
         ] ],
-        [ "D. How to use it", "md_Guides_206_8LCD.html#autotoc_md53", [
-          [ "Include the driver", "md_Guides_206_8LCD.html#autotoc_md54", null ],
-          [ "Initialise the display and print something", "md_Guides_206_8LCD.html#autotoc_md55", null ],
-          [ "Printing a formatted string", "md_Guides_206_8LCD.html#autotoc_md56", null ]
+        [ "D. How to use it", "md_Guides_206_8LCD.html#autotoc_md60", [
+          [ "Include the driver", "md_Guides_206_8LCD.html#autotoc_md61", null ],
+          [ "Initialise the display and print something", "md_Guides_206_8LCD.html#autotoc_md62", null ],
+          [ "Printing an int or float", "md_Guides_206_8LCD.html#autotoc_md63", null ]
         ] ]
       ] ]
     ] ],
     [ "07. FLASH Helper Functions", "md_Guides_207_8FLASH__Helper.html", null ],
     [ "08. Using a Rotary Encoder", "md_Guides_208_8Using__a__Rotary__Encoder.html", [
-      [ "Pin configuration", "md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md59", null ],
-      [ "Setting up the Interrupt Request Handlers", "md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md60", null ]
+      [ "Pin configuration", "md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md66", null ],
+      [ "Setting up the Interrupt Request Handlers", "md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md67", null ]
     ] ],
     [ "09. Parsing Commands", "md_Guides_209_8Parsing__commands.html", [
-      [ "How to Install It", "md_Guides_209_8Parsing__commands.html#autotoc_md63", null ],
-      [ "How to Configure It", "md_Guides_209_8Parsing__commands.html#autotoc_md65", null ],
-      [ "How to Use It", "md_Guides_209_8Parsing__commands.html#autotoc_md67", null ],
-      [ "Use Examples", "md_Guides_209_8Parsing__commands.html#autotoc_md69", [
-        [ "Example 1 – Full Command", "md_Guides_209_8Parsing__commands.html#autotoc_md70", null ],
-        [ "Example 2 – Name and Int Only", "md_Guides_209_8Parsing__commands.html#autotoc_md71", null ],
-        [ "Example 3 – Name Only", "md_Guides_209_8Parsing__commands.html#autotoc_md72", null ],
-        [ "Example 4 – Invalid Format", "md_Guides_209_8Parsing__commands.html#autotoc_md73", null ]
+      [ "How to Install It", "md_Guides_209_8Parsing__commands.html#autotoc_md70", null ],
+      [ "How to Configure It", "md_Guides_209_8Parsing__commands.html#autotoc_md72", null ],
+      [ "How to Use It", "md_Guides_209_8Parsing__commands.html#autotoc_md74", null ],
+      [ "Use Examples", "md_Guides_209_8Parsing__commands.html#autotoc_md76", [
+        [ "Example 1 – Full Command", "md_Guides_209_8Parsing__commands.html#autotoc_md77", null ],
+        [ "Example 2 – Name and Int Only", "md_Guides_209_8Parsing__commands.html#autotoc_md78", null ],
+        [ "Example 3 – Name Only", "md_Guides_209_8Parsing__commands.html#autotoc_md79", null ],
+        [ "Example 4 – Invalid Format", "md_Guides_209_8Parsing__commands.html#autotoc_md80", null ]
       ] ]
     ] ],
     [ "10.Send Receive Serial Data Module", "md_Guides_210_8Send__Receive__Serial__Data__Module.html", [
-      [ "What You Can Do With It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md75", null ],
-      [ "How to Install It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md77", null ],
-      [ "***Copy from where.\"", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md78", null ],
-      [ "How to Configure It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md79", null ],
-      [ "How to Use It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md81", [
-        [ "a. Basic Usage:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md82", null ],
-        [ "b. Output:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md83", null ],
-        [ "c. Notes:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md84", null ]
+      [ "What You Can Do With It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md82", null ],
+      [ "How to Install It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md84", null ],
+      [ "***Copy from where.\"", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md85", null ],
+      [ "How to Configure It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md86", null ],
+      [ "How to Use It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md88", [
+        [ "a. Basic Usage:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md89", null ],
+        [ "b. Output:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md90", null ],
+        [ "c. Notes:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md91", null ]
       ] ]
     ] ],
     [ "11.Using the ADXL345 Accelerometer", "md_Guides_211_8Using__the__ADXL345__driver.html", [
-      [ "Installation", "md_Guides_211_8Using__the__ADXL345__driver.html#autotoc_md86", null ],
-      [ "Configuration", "md_Guides_211_8Using__the__ADXL345__driver.html#autotoc_md88", null ],
-      [ "Usage", "md_Guides_211_8Using__the__ADXL345__driver.html#autotoc_md97", null ]
+      [ "Installation", "md_Guides_211_8Using__the__ADXL345__driver.html#autotoc_md93", null ],
+      [ "Configuration", "md_Guides_211_8Using__the__ADXL345__driver.html#autotoc_md95", null ],
+      [ "Usage", "md_Guides_211_8Using__the__ADXL345__driver.html#autotoc_md104", null ]
     ] ],
     [ "99.Wishlist", "md_Guides_299_8Wishlist.html", null ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
