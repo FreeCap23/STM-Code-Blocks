@@ -261,13 +261,13 @@ Initialise the display and print something</h3>
 <div class="line"><span class="comment">/* USER CODE END 2 */</span></div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md63"></a>
 Printing an int or float</h3>
-<p>Add the following functions to <code>LiquidCrystal.h</code> </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> lcd_put_int(<span class="keywordtype">int</span> num) {</div>
+<p>Add the following functions to <code>LiquidCrystal.h</code> </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> print_int(<span class="keywordtype">int</span> num) {</div>
 <div class="line">    <span class="keywordtype">char</span> buf[16];</div>
 <div class="line">    sprintf(buf, <span class="stringliteral">&quot;%d&quot;</span>, num);</div>
 <div class="line">    print(buf);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> lcd_put_float(<span class="keywordtype">float</span> num) {</div>
+<div class="line"><span class="keywordtype">void</span> print_float(<span class="keywordtype">float</span> num) {</div>
 <div class="line">    <span class="keywordtype">char</span> buf[16];</div>
 <div class="line">    sprintf(buf, <span class="stringliteral">&quot;%.2f&quot;</span>, num);</div>
 <div class="line">    print(buf);</div>
