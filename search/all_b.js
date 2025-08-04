@@ -23,7 +23,7 @@ var searchData=
   ['for_20uart_20communication_20',['E. Set up GPIOs for UART Communication',['../md_Guides_202_8Device__Configuration.html#autotoc_md16',1,'']]],
   ['format_21',['Example 4 – Invalid Format',['../md_Guides_209_8Parsing__commands.html#autotoc_md80',1,'']]],
   ['found_20in_20arduine_20ide_22',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
-  ['from_20where_23',['***Copy from where.&quot;',['../md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md85',1,'']]],
+  ['from_20where_23',['***Copy from where.&quot;',['../md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md85',1,'']]],
   ['full_20command_24',['Example 1 – Full Command',['../md_Guides_209_8Parsing__commands.html#autotoc_md77',1,'']]],
   ['functions_25',['functions',['../md_Guides_207_8FLASH__Helper.html',1,'07. FLASH Helper Functions'],['../group__helper__functions.html',1,'Helper Functions']]],
   ['functions_20and_20modules_26',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]],

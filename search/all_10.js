@@ -12,7 +12,7 @@ var searchData=
   ['memory_20and_20registers_9',['Memory and Registers',['../md_Guides_205_8Debugger__Guide.html#autotoc_md32',1,'']]],
   ['mode_10',['Exit Debug Mode',['../md_Guides_205_8Debugger__Guide.html#autotoc_md34',1,'']]],
   ['mode_20effectively_11',['04. Using the ADC in DMA mode effectively',['../md_Guides_204_8ADC__with__DMA__Setup.html',1,'']]],
-  ['module_12',['10.Send Receive Serial Data Module',['../md_Guides_210_8Send__Receive__Serial__Data__Module.html',1,'']]],
+  ['module_12',['10.Send Serial Data Module',['../md_Guides_210_8Send__Serial__Data__Module.html',1,'']]],
   ['module_20and_20its_20local_20variables_13',['D. Creating a software module and its local variables',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md8',1,'']]],
   ['module_3a_14',['module:',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md9',1,'Create the header file of the software module:'],['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md10',1,'Create the source file of the software module:']]],
   ['modules_15',['List of helper functions and modules',['../md_Guides_2List__of__helper__functions__and__modules.html',1,'']]],

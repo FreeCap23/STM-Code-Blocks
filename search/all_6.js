@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a_20basic_20usage_3a_0',['a. Basic Usage:',['../md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md89',1,'']]],
+  ['a_20basic_20usage_3a_0',['a. Basic Usage:',['../md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md89',1,'']]],
   ['a_20general_20info_1',['A. General info',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md2',1,'']]],
   ['a_20gpio_20as_20a_20digital_20input_20or_20as_20digital_20output_2',['A. Set up a GPIO as a Digital Input or as Digital Output',['../md_Guides_202_8Device__Configuration.html#autotoc_md12',1,'']]],
   ['a_20gpio_20as_20an_20analog_20input_3',['B. Set up a GPIO as an analog Input',['../md_Guides_202_8Device__Configuration.html#autotoc_md13',1,'']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['what_20you_20can_20do_20with_20it_0',['what you can do with it',['../md_Guides_206_8LCD.html#autotoc_md37',1,'A. What you can do with it'],['../md_Guides_206_8LCD.html#autotoc_md55',1,'A. What you can do with it'],['../md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md82',1,'What You Can Do With It']]],
-  ['where_1',['***Copy from where.&quot;',['../md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md85',1,'']]],
+  ['what_20you_20can_20do_20with_20it_0',['what you can do with it',['../md_Guides_206_8LCD.html#autotoc_md37',1,'A. What you can do with it'],['../md_Guides_206_8LCD.html#autotoc_md55',1,'A. What you can do with it'],['../md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md82',1,'What You Can Do With It']]],
+  ['where_1',['***Copy from where.&quot;',['../md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md85',1,'']]],
   ['wishlist_2',['99.Wishlist',['../md_Guides_299_8Wishlist.html',1,'']]],
-  ['with_20it_3',['with it',['../md_Guides_206_8LCD.html#autotoc_md37',1,'A. What you can do with it'],['../md_Guides_206_8LCD.html#autotoc_md55',1,'A. What you can do with it'],['../md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md82',1,'What You Can Do With It']]]
+  ['with_20it_3',['with it',['../md_Guides_206_8LCD.html#autotoc_md37',1,'A. What you can do with it'],['../md_Guides_206_8LCD.html#autotoc_md55',1,'A. What you can do with it'],['../md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md82',1,'What You Can Do With It']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['send_20receive_20serial_20data_20module_0',['10.Send Receive Serial Data Module',['../md_Guides_210_8Send__Receive__Serial__Data__Module.html',1,'']]],
-  ['serial_20data_20module_1',['10.Send Receive Serial Data Module',['../md_Guides_210_8Send__Receive__Serial__Data__Module.html',1,'']]],
+  ['send_20serial_20data_20module_0',['10.Send Serial Data Module',['../md_Guides_210_8Send__Serial__Data__Module.html',1,'']]],
+  ['serial_20data_20module_1',['10.Send Serial Data Module',['../md_Guides_210_8Send__Serial__Data__Module.html',1,'']]],
   ['serial_20interface_2',['Serial Interface',['../group__serial__interface.html',1,'']]],
   ['serial_5fhelper_2ec_3',['serial_helper.c',['../serial__helper_8c.html',1,'']]],
   ['serial_5fhelper_2eh_4',['serial_helper.h',['../serial__helper_8h.html',1,'']]],
@@ -42,7 +42,9 @@ var searchData=
   ['stm32_20code_20structure_39',['01. The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
   ['stm32_20equivalent_20of_20setup_20and_20loop_20functions_20found_20in_20arduine_20ide_40',['B. The STM32 equivalent of setup() and loop() functions found in Arduine IDE',['../md_Guides_201_8STM32__Code__Structure.html#autotoc_md3',1,'']]],
   ['stm32cubeide_20debugging_20guide_41',['05. STM32CubeIDE Debugging Guide',['../md_Guides_205_8Debugger__Guide.html',1,'']]],
-  ['structure_42',['01. The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
-  ['sum_43',['sum',['../structCircularBuffer.html#a1f7f9198696ae3a9c7ace6d9117ce610',1,'CircularBuffer']]],
-  ['systemclock_5fconfig_44',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
+  ['stm32cubemx_42',['Configuration – STM32CubeMX',['../md_Guides_212_8us__resolution__timer.html#autotoc_md110',1,'']]],
+  ['stm32h7a3_20nucleo_43',['Usage Test (VALIDATED ON STM32H7A3 NUCLEO)',['../md_Guides_212_8us__resolution__timer.html#autotoc_md114',1,'']]],
+  ['structure_44',['01. The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
+  ['sum_45',['sum',['../structCircularBuffer.html#a1f7f9198696ae3a9c7ace6d9117ce610',1,'CircularBuffer']]],
+  ['systemclock_5fconfig_46',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
 ];

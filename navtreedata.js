@@ -108,21 +108,28 @@ var NAVTREE =
         [ "Example 4 – Invalid Format", "md_Guides_209_8Parsing__commands.html#autotoc_md80", null ]
       ] ]
     ] ],
-    [ "10.Send Receive Serial Data Module", "md_Guides_210_8Send__Receive__Serial__Data__Module.html", [
-      [ "What You Can Do With It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md82", null ],
-      [ "How to Install It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md84", null ],
-      [ "***Copy from where.\"", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md85", null ],
-      [ "How to Configure It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md86", null ],
-      [ "How to Use It", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md88", [
-        [ "a. Basic Usage:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md89", null ],
-        [ "b. Output:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md90", null ],
-        [ "c. Notes:", "md_Guides_210_8Send__Receive__Serial__Data__Module.html#autotoc_md91", null ]
+    [ "10.Send Serial Data Module", "md_Guides_210_8Send__Serial__Data__Module.html", [
+      [ "What You Can Do With It", "md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md82", null ],
+      [ "How to Install It", "md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md84", null ],
+      [ "***Copy from where.\"", "md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md85", null ],
+      [ "How to Configure It", "md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md86", null ],
+      [ "How to Use It", "md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md88", [
+        [ "a. Basic Usage:", "md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md89", null ],
+        [ "b. Output:", "md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md90", null ],
+        [ "c. Notes:", "md_Guides_210_8Send__Serial__Data__Module.html#autotoc_md91", null ]
       ] ]
     ] ],
     [ "11.Using the ADXL345 Accelerometer", "md_Guides_211_8Using__the__ADXL345__driver.html", [
       [ "Installation", "md_Guides_211_8Using__the__ADXL345__driver.html#autotoc_md93", null ],
       [ "Configuration", "md_Guides_211_8Using__the__ADXL345__driver.html#autotoc_md95", null ],
       [ "Usage", "md_Guides_211_8Using__the__ADXL345__driver.html#autotoc_md104", null ]
+    ] ],
+    [ "12.us Resolution Timer (get_tick_us & delay_us)", "md_Guides_212_8us__resolution__timer.html", [
+      [ "Description", "md_Guides_212_8us__resolution__timer.html#autotoc_md106", null ],
+      [ "Installation", "md_Guides_212_8us__resolution__timer.html#autotoc_md108", null ],
+      [ "Configuration – STM32CubeMX", "md_Guides_212_8us__resolution__timer.html#autotoc_md110", null ],
+      [ "Usage", "md_Guides_212_8us__resolution__timer.html#autotoc_md112", null ],
+      [ "Usage Test (VALIDATED ON STM32H7A3 NUCLEO)", "md_Guides_212_8us__resolution__timer.html#autotoc_md114", null ]
     ] ],
     [ "99.Wishlist", "md_Guides_299_8Wishlist.html", null ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],

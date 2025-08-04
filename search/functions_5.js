@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]]
+  ['get_5ftick_5fus_0',['get_tick_us',['../us__timer_8h.html#a1550bd46e85de64f405bb1939c9af319',1,'get_tick_us(TIM_HandleTypeDef *htim):&#160;us_timer.c'],['../us__timer_8c.html#a1550bd46e85de64f405bb1939c9af319',1,'get_tick_us(TIM_HandleTypeDef *htim):&#160;us_timer.c']]]
 ];

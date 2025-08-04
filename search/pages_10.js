@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['receive_20serial_20data_20module_0',['10.Send Receive Serial Data Module',['../md_Guides_210_8Send__Receive__Serial__Data__Module.html',1,'']]],
+  ['resolution_20timer_20get_5ftick_5fus_20delay_5fus_0',['12.us Resolution Timer (get_tick_us &amp; delay_us)',['../md_Guides_212_8us__resolution__timer.html',1,'']]],
   ['rotary_20encoder_1',['08. Using a Rotary Encoder',['../md_Guides_208_8Using__a__Rotary__Encoder.html',1,'']]]
 ];
