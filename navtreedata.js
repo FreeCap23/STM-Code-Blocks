@@ -131,6 +131,7 @@ var NAVTREE =
       [ "Usage", "md_Guides_212_8us__resolution__timer.html#autotoc_md112", null ],
       [ "Usage Test (VALIDATED ON STM32H7A3 NUCLEO)", "md_Guides_212_8us__resolution__timer.html#autotoc_md114", null ]
     ] ],
+    [ "13.Receive serial data", "md_Guides_213_8Receive__Serial__data.html", null ],
     [ "99.Wishlist", "md_Guides_299_8Wishlist.html", null ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
     [ "Topics", "topics.html", "topics" ],
