@@ -36,7 +36,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define RX_BUFFER_SIZE 20
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -70,7 +70,7 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+uint8_t rx_buff[RX_BUFFER_SIZE];
 /* USER CODE END 0 */
 
 /**
@@ -112,6 +112,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   SerialPrintLn(&huart3, "Ready.");
   HAL_TIM_Base_Start(&htim2);
+  HAL_UART_Receive_IT(&huart3, rx_buff, RX_BUFFER_SIZE);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -495,6 +496,18 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
     	SerialPrintLn(&huart3, "Press detected!");
     }
 }
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+	static uint8_t idx;
+	if (++idx >= RX_BUFFER_SIZE)
+		idx = 0;
+	__NOP();
+
+	// At this point the USART peripheral won't receive any more bytes, so we
+	// need to call this function again.
+	HAL_UART_Receive_IT(&huart3, rx_buff, RX_BUFFER_SIZE);
+}
+
 /* USER CODE END 4 */
 
  /* MPU Configuration */
