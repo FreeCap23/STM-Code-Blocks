@@ -15,6 +15,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <stdbool.h>
+#include <stdint.h>
 
 #define COMMAND_BUFFER_SIZE 8 // Make this larger if needed
 
@@ -36,14 +37,14 @@ extern uint8_t command_buff[COMMAND_BUFFER_SIZE];
  * @brief Parses a command and stores the command ID and argument in the given pointers' locations.
  *
  * This function works with the following format:
- * <COMMAND_ID;COMMAND_ARGUMENT>
+ * <COMMAND_ID:COMMAND_ARGUMENT>
  * Both COMMAND_ID and COMMAND_ARGUMENT are integers.
  *
  * Example usage:
  * @code
  *     int command_id;
  *     int command_arg;
- *     int status = ParseCommand("<10;42>", &command_id, &command_arg);
+ *     int status = ParseCommand("<10:42>", &command_id, &command_arg);
  *     // status == 2 (both values parsed)
  * @endcode
  *

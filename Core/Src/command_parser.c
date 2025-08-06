@@ -40,7 +40,7 @@ int ParseCommand(const char *command, int *command_id, int *command_arg) {
     int parsed = 0;
 
     // Extract the first token (command ID)
-    char *token = strtok(buffer, ";");
+    char *token = strtok(buffer, ":");
     if (!token) return 0;
 
     // Trim leading spaces and parse command ID
@@ -51,7 +51,7 @@ int ParseCommand(const char *command, int *command_id, int *command_arg) {
     }
 
     // Try to parse the second token (command argument)
-    token = strtok(NULL, ";");
+    token = strtok(NULL, ":");
     if (token && command_arg) {
         while (isspace((unsigned char)*token)) token++;
         *command_arg = atoi(token);
