@@ -131,7 +131,15 @@ var NAVTREE =
       [ "Usage", "md_Guides_212_8us__resolution__timer.html#autotoc_md112", null ],
       [ "Usage Test (VALIDATED ON STM32H7A3 NUCLEO)", "md_Guides_212_8us__resolution__timer.html#autotoc_md114", null ]
     ] ],
-    [ "13.Receive serial data", "md_Guides_213_8Receive__Serial__data.html", null ],
+    [ "13.Receive serial commands", "md_Guides_213_8Receive__Serial__commands.html", [
+      [ "Description", "md_Guides_213_8Receive__Serial__commands.html#autotoc_md116", null ],
+      [ "Installation", "md_Guides_213_8Receive__Serial__commands.html#autotoc_md117", null ],
+      [ "Configuring", "md_Guides_213_8Receive__Serial__commands.html#autotoc_md118", [
+        [ "In CubeMX:", "md_Guides_213_8Receive__Serial__commands.html#autotoc_md119", null ],
+        [ "In code:", "md_Guides_213_8Receive__Serial__commands.html#autotoc_md120", null ]
+      ] ],
+      [ "Usage", "md_Guides_213_8Receive__Serial__commands.html#autotoc_md121", null ]
+    ] ],
     [ "99.Wishlist", "md_Guides_299_8Wishlist.html", null ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
     [ "Topics", "topics.html", "topics" ],

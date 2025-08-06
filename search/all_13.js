@@ -1,7 +1,7 @@
 var searchData=
 [
   ['parallel_0',['Parallel',['../md_Guides_206_8LCD.html#autotoc_md54',1,'']]],
-  ['parsecommand_1',['ParseCommand',['../group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef',1,'command_parser.h']]],
+  ['parsecommand_1',['parsecommand',['../group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842',1,'ParseCommand(const char *command, int *command_id, int *command_arg):&#160;command_parser.c'],['../group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842',1,'ParseCommand(const char *command, int *command_id, int *command_arg):&#160;command_parser.c']]],
   ['parser_2',['Command Parser',['../group__command__parser.html',1,'']]],
   ['parsing_20commands_3',['09. Parsing Commands',['../md_Guides_209_8Parsing__commands.html',1,'']]],
   ['peripheral_4',['1. Configure I²C Peripheral',['../md_Guides_206_8LCD.html#autotoc_md40',1,'']]],

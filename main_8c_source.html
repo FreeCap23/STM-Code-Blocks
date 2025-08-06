@@ -109,19 +109,19 @@ $(document).ready(function(){initNavTree('main_8c_source.html',''); initResizabl
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="serial__helper_8h.html">serial_helper.h</a>&quot;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;adxl345_registers.h&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="us__timer_8h.html">us_timer.h</a>&quot;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/* USER CODE END Includes */</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/* Private typedef -----------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/* USER CODE BEGIN PTD */</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">/* USER CODE END PTD */</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">/* Private define ------------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">/* USER CODE BEGIN PD */</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="command__parser_8h.html">command_parser.h</a>&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/* USER CODE END Includes */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/* Private typedef -----------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">/* USER CODE BEGIN PTD */</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/* USER CODE END PTD */</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">/* Private define ------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">/* USER CODE BEGIN PD */</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">/* USER CODE END PD */</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">/* Private macro -------------------------------------------------------------*/</span></div>
@@ -155,45 +155,45 @@ $(document).ready(function(){initNavTree('main_8c_source.html',''); initResizabl
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">/* Private user code ---------------------------------------------------------*/</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">/* USER CODE BEGIN 0 */</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">/* USER CODE END 0 */</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">   80</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>{</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="comment">/* USER CODE BEGIN 1 */</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="comment">/* USER CODE END 1 */</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="comment">/* MPU Configuration--------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  MPU_Config();</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="comment">/* MCU Configuration--------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="comment">/* Reset of all peripherals, Initializes the Flash interface and the Systick. */</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  HAL_Init();</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="comment">/* USER CODE BEGIN Init */</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="comment">/* USER CODE END Init */</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="comment">/* Configure the system clock */</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <a class="code hl_function" href="main_8c.html#a70af21c671abfcc773614a9a4f63d920">SystemClock_Config</a>();</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="comment">/* USER CODE BEGIN SysInit */</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="comment">/* USER CODE END SysInit */</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="comment">/* Initialize all configured peripherals */</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  MX_GPIO_Init();</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  MX_SPI1_Init();</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  MX_I2C1_Init();</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  MX_USART3_UART_Init();</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  MX_TIM2_Init();</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="comment">/* USER CODE BEGIN 2 */</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <a class="code hl_function" href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a>(&amp;huart3, <span class="stringliteral">&quot;Ready.&quot;</span>);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  HAL_TIM_Base_Start(&amp;htim2);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">/* USER CODE END 0 */</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">   79</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>{</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="comment">/* USER CODE BEGIN 1 */</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="comment">/* USER CODE END 1 */</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="comment">/* MPU Configuration--------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  MPU_Config();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="comment">/* MCU Configuration--------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="comment">/* Reset of all peripherals, Initializes the Flash interface and the Systick. */</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  HAL_Init();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="comment">/* USER CODE BEGIN Init */</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="comment">/* USER CODE END Init */</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="comment">/* Configure the system clock */</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <a class="code hl_function" href="main_8c.html#a70af21c671abfcc773614a9a4f63d920">SystemClock_Config</a>();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="comment">/* USER CODE BEGIN SysInit */</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="comment">/* USER CODE END SysInit */</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="comment">/* Initialize all configured peripherals */</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  MX_GPIO_Init();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  MX_SPI1_Init();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  MX_I2C1_Init();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  MX_USART3_UART_Init();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  MX_TIM2_Init();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="comment">/* USER CODE BEGIN 2 */</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <a class="code hl_function" href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a>(&amp;huart3, <span class="stringliteral">&quot;Ready.&quot;</span>);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  HAL_TIM_Base_Start(&amp;htim2);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  HAL_UART_Receive_IT(&amp;huart3, command_buff, 1);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="comment">/* USER CODE END 2 */</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="comment">/* Infinite loop */</span></div>
@@ -538,60 +538,80 @@ $(document).ready(function(){initNavTree('main_8c_source.html',''); initResizabl
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>      <a class="code hl_function" href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a>(&amp;huart3, <span class="stringliteral">&quot;Press detected!&quot;</span>);</div>
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    }</div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>}</div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span><span class="comment">/* USER CODE END 4 */</span></div>
-<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span> </div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span> <span class="comment">/* MPU Configuration */</span></div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span> </div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span><span class="keywordtype">void</span> MPU_Config(<span class="keywordtype">void</span>)</div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>{</div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>  MPU_Region_InitTypeDef MPU_InitStruct = {0};</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span> </div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span><span class="keywordtype">void</span> HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>  <span class="keyword">static</span> uint8_t next_character_idx;</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>  uint8_t current_character_idx = next_character_idx++;</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>  <span class="keywordflow">if</span> (next_character_idx &gt;= COMMAND_BUFFER_SIZE) {</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>    next_character_idx = 0;</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>  }</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span> </div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>  <span class="comment">/* Disables the MPU */</span></div>
-<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>  HAL_MPU_Disable();</div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span> </div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>  MPU_InitStruct.Enable = MPU_REGION_ENABLE;</div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>  MPU_InitStruct.Number = MPU_REGION_NUMBER0;</div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>  MPU_InitStruct.BaseAddress = 0x0;</div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>  MPU_InitStruct.Size = MPU_REGION_SIZE_4GB;</div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>  MPU_InitStruct.SubRegionDisable = 0x87;</div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>  MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;</div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>  MPU_InitStruct.AccessPermission = MPU_REGION_NO_ACCESS;</div>
-<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>  MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_DISABLE;</div>
-<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>  MPU_InitStruct.IsShareable = MPU_ACCESS_SHAREABLE;</div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>  MPU_InitStruct.IsCacheable = MPU_ACCESS_NOT_CACHEABLE;</div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>  MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;</div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span> </div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>  HAL_MPU_ConfigRegion(&amp;MPU_InitStruct);</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>  <span class="comment">/* Enables the MPU */</span></div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>  HAL_MPU_Enable(MPU_PRIVILEGED_DEFAULT);</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>}</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span> </div>
-<div class="foldopen" id="foldopen00533" data-start="{" data-end="}">
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno"><a class="line" href="main_8h.html#a1730ffe1e560465665eb47d9264826f9">  533</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="main_8c.html#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>{</div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>  <span class="comment">/* USER CODE BEGIN Error_Handler_Debug */</span></div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>  <span class="comment">/* User can add his own implementation to report the HAL error return state */</span></div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>  __disable_irq();</div>
-<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>  <span class="keywordflow">while</span> (1)</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>  {</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>  }</div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>  <span class="comment">/* USER CODE END Error_Handler_Debug */</span></div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>}</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>  <span class="keywordflow">if</span> (command_buff[current_character_idx] == <span class="charliteral">&#39;&gt;&#39;</span>) {</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>    command_ready_to_be_processed = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    command_ready_to_be_processed = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>  }</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span> </div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>  <span class="comment">// At this point the USART peripheral won&#39;t receive any more bytes, so we</span></div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>  <span class="comment">// need to call this function again.</span></div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>  HAL_UART_Receive_IT(&amp;huart3, &amp;command_buff[next_character_idx], 1);</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>}</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="comment">/* USER CODE END 4 */</span></div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span> </div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span> <span class="comment">/* MPU Configuration */</span></div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span> </div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span><span class="keywordtype">void</span> MPU_Config(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>{</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>  MPU_Region_InitTypeDef MPU_InitStruct = {0};</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>  <span class="comment">/* Disables the MPU */</span></div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>  HAL_MPU_Disable();</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span> </div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>  MPU_InitStruct.Enable = MPU_REGION_ENABLE;</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>  MPU_InitStruct.Number = MPU_REGION_NUMBER0;</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>  MPU_InitStruct.BaseAddress = 0x0;</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>  MPU_InitStruct.Size = MPU_REGION_SIZE_4GB;</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>  MPU_InitStruct.SubRegionDisable = 0x87;</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>  MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>  MPU_InitStruct.AccessPermission = MPU_REGION_NO_ACCESS;</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>  MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_DISABLE;</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>  MPU_InitStruct.IsShareable = MPU_ACCESS_SHAREABLE;</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>  MPU_InitStruct.IsCacheable = MPU_ACCESS_NOT_CACHEABLE;</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>  MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span> </div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>  HAL_MPU_ConfigRegion(&amp;MPU_InitStruct);</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>  <span class="comment">/* Enables the MPU */</span></div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>  HAL_MPU_Enable(MPU_PRIVILEGED_DEFAULT);</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span> </div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>}</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
+<div class="foldopen" id="foldopen00552" data-start="{" data-end="}">
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno"><a class="line" href="main_8h.html#a1730ffe1e560465665eb47d9264826f9">  552</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="main_8c.html#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>{</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>  <span class="comment">/* USER CODE BEGIN Error_Handler_Debug */</span></div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>  <span class="comment">/* User can add his own implementation to report the HAL error return state */</span></div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>  __disable_irq();</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>  <span class="keywordflow">while</span> (1)</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>  {</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>  }</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>  <span class="comment">/* USER CODE END Error_Handler_Debug */</span></div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>}</div>
 </div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span><span class="preprocessor">#ifdef USE_FULL_ASSERT</span></div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span><span class="keywordtype">void</span> assert_failed(uint8_t *file, uint32_t line)</div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>{</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>  <span class="comment">/* USER CODE BEGIN 6 */</span></div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>  <span class="comment">/* User can add his own implementation to report the file name and line number,</span></div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span><span class="comment">     ex: printf(&quot;Wrong parameters value: file %s on line %d\r\n&quot;, file, line) */</span></div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>  <span class="comment">/* USER CODE END 6 */</span></div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>}</div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span><span class="preprocessor">#endif </span><span class="comment">/* USE_FULL_ASSERT */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span><span class="preprocessor">#ifdef USE_FULL_ASSERT</span></div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span><span class="keywordtype">void</span> assert_failed(uint8_t *file, uint32_t line)</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>{</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>  <span class="comment">/* USER CODE BEGIN 6 */</span></div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>  <span class="comment">/* User can add his own implementation to report the file name and line number,</span></div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span><span class="comment">     ex: printf(&quot;Wrong parameters value: file %s on line %d\r\n&quot;, file, line) */</span></div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>  <span class="comment">/* USER CODE END 6 */</span></div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>}</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span><span class="preprocessor">#endif </span><span class="comment">/* USE_FULL_ASSERT */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="acommand__parser_8h_html"><div class="ttname"><a href="command__parser_8h.html">command_parser.h</a></div><div class="ttdoc">TODO: Write a brief description of this file.</div></div>
 <div class="ttc" id="agroup__serial__interface_html_ga5fc9820bc2a74c73e056baa14285b3dc"><div class="ttname"><a href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a></div><div class="ttdeci">uint8_t SerialPrintLn(UART_HandleTypeDef *huart, const char *format,...)</div><div class="ttdoc">Sends a formatted message over USART (e.g., USB-to-Serial), appending a new line and carriage return.</div><div class="ttdef"><b>Definition</b> <a href="serial__helper_8c_source.html#l00041">serial_helper.c:41</a></div></div>
-<div class="ttc" id="amain_8c_html_a1730ffe1e560465665eb47d9264826f9"><div class="ttname"><a href="main_8c.html#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a></div><div class="ttdeci">void Error_Handler(void)</div><div class="ttdoc">This function is executed in case of error occurrence.</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00533">main.c:533</a></div></div>
+<div class="ttc" id="amain_8c_html_a1730ffe1e560465665eb47d9264826f9"><div class="ttname"><a href="main_8c.html#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a></div><div class="ttdeci">void Error_Handler(void)</div><div class="ttdoc">This function is executed in case of error occurrence.</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00552">main.c:552</a></div></div>
 <div class="ttc" id="amain_8c_html_a70af21c671abfcc773614a9a4f63d920"><div class="ttname"><a href="main_8c.html#a70af21c671abfcc773614a9a4f63d920">SystemClock_Config</a></div><div class="ttdeci">void SystemClock_Config(void)</div><div class="ttdoc">System Clock Configuration.</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00132">main.c:132</a></div></div>
-<div class="ttc" id="amain_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdoc">The application entry point.</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00080">main.c:80</a></div></div>
+<div class="ttc" id="amain_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdoc">The application entry point.</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00079">main.c:79</a></div></div>
 <div class="ttc" id="amain_8h_html"><div class="ttname"><a href="main_8h.html">main.h</a></div><div class="ttdoc">: Header for main.c file. This file contains the common defines of the application.</div></div>
 <div class="ttc" id="aserial__helper_8h_html"><div class="ttname"><a href="serial__helper_8h.html">serial_helper.h</a></div><div class="ttdoc">Helper functions for serial (UART) communication.</div></div>
 <div class="ttc" id="aus__timer_8h_html"><div class="ttname"><a href="us__timer_8h.html">us_timer.h</a></div><div class="ttdoc">TODO: Write a brief description of this file.</div></div>

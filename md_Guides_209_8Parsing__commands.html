@@ -155,7 +155,7 @@ How to Configure It</h1>
 <hr  />
 <h1><a class="anchor" id="autotoc_md74"></a>
 How to Use It</h1>
-<p>See <code><a class="el" href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef" title="Parses a command and stores the name and arguments in the given pointers&#39; locations.">ParseCommand()</a></code></p>
+<p>See <code><a class="el" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842" title="Parses a command and stores the command ID and argument in the given pointers&#39; locations.">ParseCommand()</a></code></p>
 <hr  />
 <h1><a class="anchor" id="autotoc_md76"></a>
 Use Examples</h1>
@@ -165,18 +165,18 @@ Example 1 – Full Command</h2>
 <div class="line"><span class="keywordtype">int</span> steps;</div>
 <div class="line"><span class="keywordtype">float</span> speed;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a>(<span class="stringliteral">&quot;&lt;MOVE, 100, 1.5&gt;&quot;</span>, name, &amp;steps, &amp;speed);</div>
+<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;&lt;MOVE, 100, 1.5&gt;&quot;</span>, name, &amp;steps, &amp;speed);</div>
 <div class="line"><span class="comment">// result == 3</span></div>
 <div class="line"><span class="comment">// name = &quot;MOVE&quot;</span></div>
 <div class="line"><span class="comment">// steps = 100</span></div>
 <div class="line"><span class="comment">// speed = 1.5f</span></div>
-<div class="ttc" id="agroup__command__parser_html_gaeb06d139d2067118b03b3f2972fc67ef"><div class="ttname"><a href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, char *name, int *arg_int, float *arg_float)</div><div class="ttdoc">Parses a command and stores the name and arguments in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="command__parser_8h_source.html#l00056">command_parser.h:56</a></div></div>
+<div class="ttc" id="agroup__command__parser_html_gaaa712b14ef1af977e3a75202bf8d6842"><div class="ttname"><a href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, int *command_id, int *command_arg)</div><div class="ttdoc">Parses a command and stores the command ID and argument in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="command__parser_8c_source.html#l00016">command_parser.c:16</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md78"></a>
 Example 2 – Name and Int Only</h2>
 <div class="fragment"><div class="line"><span class="keywordtype">char</span> name[16];</div>
 <div class="line"><span class="keywordtype">int</span> target;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a>(<span class="stringliteral">&quot;&lt;SET, 42&gt;&quot;</span>, name, &amp;target, NULL);</div>
+<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;&lt;SET, 42&gt;&quot;</span>, name, &amp;target, NULL);</div>
 <div class="line"><span class="comment">// result == 2</span></div>
 <div class="line"><span class="comment">// name = &quot;SET&quot;</span></div>
 <div class="line"><span class="comment">// target = 42</span></div>
@@ -184,14 +184,14 @@ Example 2 – Name and Int Only</h2>
 Example 3 – Name Only</h2>
 <div class="fragment"><div class="line"><span class="keywordtype">char</span> name[16];</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a>(<span class="stringliteral">&quot;&lt;START&gt;&quot;</span>, name, NULL, NULL);</div>
+<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;&lt;START&gt;&quot;</span>, name, NULL, NULL);</div>
 <div class="line"><span class="comment">// result == 1</span></div>
 <div class="line"><span class="comment">// name = &quot;START&quot;</span></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md80"></a>
 Example 4 – Invalid Format</h2>
 <div class="fragment"><div class="line"><span class="keywordtype">char</span> name[16];</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a>(<span class="stringliteral">&quot;MOVE, 100, 1.5&quot;</span>, name, NULL, NULL);</div>
+<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;MOVE, 100, 1.5&quot;</span>, name, NULL, NULL);</div>
 <div class="line"><span class="comment">// result == 0 (no angle brackets)</span></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->

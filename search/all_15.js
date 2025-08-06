@@ -1,7 +1,7 @@
 var searchData=
 [
   ['send_20serial_20data_20module_0',['10.Send Serial Data Module',['../md_Guides_210_8Send__Serial__Data__Module.html',1,'']]],
-  ['serial_20data_1',['13.Receive serial data',['../md_Guides_213_8Receive__Serial__data.html',1,'']]],
+  ['serial_20commands_1',['13.Receive serial commands',['../md_Guides_213_8Receive__Serial__commands.html',1,'']]],
   ['serial_20data_20module_2',['10.Send Serial Data Module',['../md_Guides_210_8Send__Serial__Data__Module.html',1,'']]],
   ['serial_20interface_3',['Serial Interface',['../group__serial__interface.html',1,'']]],
   ['serial_5fhelper_2ec_4',['serial_helper.c',['../serial__helper_8c.html',1,'']]],

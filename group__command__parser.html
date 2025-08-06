@@ -102,15 +102,15 @@ $(document).ready(function(){initNavTree('group__command__parser.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaeb06d139d2067118b03b3f2972fc67ef" id="r_gaeb06d139d2067118b03b3f2972fc67ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a> (const char *command, char *name, int *arg_int, float *arg_float)</td></tr>
-<tr class="memdesc:gaeb06d139d2067118b03b3f2972fc67ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a command and stores the name and arguments in the given pointers' locations.  <br /></td></tr>
-<tr class="separator:gaeb06d139d2067118b03b3f2972fc67ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa712b14ef1af977e3a75202bf8d6842" id="r_gaaa712b14ef1af977e3a75202bf8d6842"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a> (const char *command, int *command_id, int *command_arg)</td></tr>
+<tr class="memdesc:gaaa712b14ef1af977e3a75202bf8d6842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a command and stores the command ID and argument in the given pointers' locations.  <br /></td></tr>
+<tr class="separator:gaaa712b14ef1af977e3a75202bf8d6842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Parses commands and stores the name and arguments of the commands in the given pointers' locations. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaeb06d139d2067118b03b3f2972fc67ef" name="gaeb06d139d2067118b03b3f2972fc67ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeb06d139d2067118b03b3f2972fc67ef">&#9670;&#160;</a></span>ParseCommand()</h2>
+<a id="gaaa712b14ef1af977e3a75202bf8d6842" name="gaaa712b14ef1af977e3a75202bf8d6842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa712b14ef1af977e3a75202bf8d6842">&#9670;&#160;</a></span>ParseCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -124,20 +124,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>command_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>arg_int</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>arg_float</em>&#160;</td>
+          <td class="paramname"><em>command_arg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -147,33 +141,30 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Parses a command and stores the name and arguments in the given pointers' locations. </p>
-<p>This function works with the following formats: &lt;NAME, INT, FLOAT&gt; &lt;NAME, INT&gt; &lt;NAME&gt;</p>
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> name[16];</div>
-<div class="line"><span class="keywordtype">int</span> my_int;</div>
-<div class="line"><span class="keywordtype">float</span> my_float;</div>
-<div class="line"><span class="keywordtype">int</span> status = <a class="code hl_function" href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a>(<span class="stringliteral">&quot;&lt;MOVE, 10, 3.14&gt;&quot;</span>, name, &amp;my_int, &amp;my_float);</div>
-<div class="line"><span class="comment">// status == 3</span></div>
-<div class="ttc" id="agroup__command__parser_html_gaeb06d139d2067118b03b3f2972fc67ef"><div class="ttname"><a href="group__command__parser.html#gaeb06d139d2067118b03b3f2972fc67ef">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, char *name, int *arg_int, float *arg_float)</div><div class="ttdoc">Parses a command and stores the name and arguments in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="command__parser_8h_source.html#l00056">command_parser.h:56</a></div></div>
-</div><!-- fragment --><p>In the case that some arguments are missing, such as no INT or FLOAT, the corresponding output pointers will remain unset or defaulted (0 or 0.0f).</p>
+<p>Parses a command and stores the command ID and argument in the given pointers' locations. </p>
+<p>This function works with the following format: &lt;COMMAND_ID;COMMAND_ARGUMENT&gt; Both COMMAND_ID and COMMAND_ARGUMENT are integers.</p>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> command_id;</div>
+<div class="line"><span class="keywordtype">int</span> command_arg;</div>
+<div class="line"><span class="keywordtype">int</span> status = <a class="code hl_function" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;&lt;10;42&gt;&quot;</span>, &amp;command_id, &amp;command_arg);</div>
+<div class="line"><span class="comment">// status == 2 (both values parsed)</span></div>
+<div class="ttc" id="agroup__command__parser_html_gaaa712b14ef1af977e3a75202bf8d6842"><div class="ttname"><a href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, int *command_id, int *command_arg)</div><div class="ttdoc">Parses a command and stores the command ID and argument in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="command__parser_8c_source.html#l00016">command_parser.c:16</a></div></div>
+</div><!-- fragment --><p>In the case that the argument is missing, the corresponding output pointer will remain unset (0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">command</td><td>Pointer to the command buffer </td></tr>
-    <tr><td class="paramname">name</td><td>Pointer to where the parsed name should be stored (must be preallocated) </td></tr>
-    <tr><td class="paramname">arg_int</td><td>Pointer to where the parsed int argument should be stored (optional) </td></tr>
-    <tr><td class="paramname">arg_float</td><td>Pointer to where the parsed float argument should be stored (optional) </td></tr>
+    <tr><td class="paramname">command_id</td><td>Pointer to where the parsed command ID should be stored (optional) </td></tr>
+    <tr><td class="paramname">command_arg</td><td>Pointer to where the parsed command argument should be stored (optional) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int Status code:<ul>
 <li>0 = Parsing failed</li>
-<li>1 = Only name parsed</li>
-<li>2 = Name and int parsed</li>
-<li>3 = Name, int, and float parsed </li>
+<li>1 = Only command ID parsed</li>
+<li>2 = Both command ID and argument parsed </li>
 </ul>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__parser_8h_source.html#l00056">56</a> of file <a class="el" href="command__parser_8h_source.html">command_parser.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__parser_8c_source.html#l00016">16</a> of file <a class="el" href="command__parser_8c_source.html">command_parser.c</a>.</p>
 
 </div>
 </div>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['rate_0',['Power and Data Rate',['../group__ADXL345__POWER__REGS.html',1,'']]],
-  ['receive_20serial_20data_1',['13.Receive serial data',['../md_Guides_213_8Receive__Serial__data.html',1,'']]],
+  ['receive_20serial_20commands_1',['13.Receive serial commands',['../md_Guides_213_8Receive__Serial__commands.html',1,'']]],
   ['register_20map_2',['Register Map',['../group__ADXL345__REGISTERS.html',1,'']]],
   ['registers_3',['registers',['../md_Guides_205_8Debugger__Guide.html#autotoc_md32',1,'Memory and Registers'],['../group__ADXL345__OUTPUT__REGS.html',1,'Output Data Registers']]],
   ['request_20handlers_4',['Setting up the Interrupt Request Handlers',['../md_Guides_208_8Using__a__Rotary__Encoder.html#autotoc_md67',1,'']]],
