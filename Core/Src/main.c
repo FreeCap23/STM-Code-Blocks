@@ -24,6 +24,7 @@
 #include "serial_helper.h"
 #include "adxl345_registers.h"
 #include "us_timer.h"
+#include "command_parser.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
@@ -36,7 +37,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define RX_BUFFER_SIZE 20
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -70,7 +70,6 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t rx_buff[RX_BUFFER_SIZE];
 /* USER CODE END 0 */
 
 /**
@@ -112,7 +111,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   SerialPrintLn(&huart3, "Ready.");
   HAL_TIM_Base_Start(&htim2);
-  HAL_UART_Receive_IT(&huart3, rx_buff, RX_BUFFER_SIZE);
+  HAL_UART_Receive_IT(&huart3, command_buff, 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -498,14 +497,21 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
-	static uint8_t idx;
-	if (++idx >= RX_BUFFER_SIZE)
-		idx = 0;
-	__NOP();
+	static uint8_t next_character_idx;
+	uint8_t current_character_idx = next_character_idx++;
+	if (next_character_idx >= COMMAND_BUFFER_SIZE) {
+		next_character_idx = 0;
+	}
+
+	if (command_buff[current_character_idx] == '>') {
+		command_ready_to_be_processed = true;
+	} else {
+		command_ready_to_be_processed = false;
+	}
 
 	// At this point the USART peripheral won't receive any more bytes, so we
 	// need to call this function again.
-	HAL_UART_Receive_IT(&huart3, rx_buff, RX_BUFFER_SIZE);
+	HAL_UART_Receive_IT(&huart3, &command_buff[next_character_idx], 1);
 }
 
 /* USER CODE END 4 */

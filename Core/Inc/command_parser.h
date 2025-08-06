@@ -14,99 +14,50 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <stdbool.h>
+
+#define COMMAND_BUFFER_SIZE 8 // Make this larger if needed
+
+// Declared here, defined in command_parser.c
+extern bool command_ready_to_be_processed;
+extern uint8_t command_buff[COMMAND_BUFFER_SIZE];
 
 /**
  * @defgroup helper_functions Helper Functions
  * @brief Easy to use helper functions for working with various interfaces and devices
  * @{
+ *
  * @addtogroup command_parser Command Parser
  * @brief Parses commands and stores the name and arguments of the commands in the given pointers' locations
  * @{
  */
+
 /**
- * @brief Parses a command and stores the name and arguments in the given pointers' locations.
+ * @brief Parses a command and stores the command ID and argument in the given pointers' locations.
  *
- * This function works with the following formats:
- * <NAME, INT, FLOAT>
- * <NAME, INT>
- * <NAME>
+ * This function works with the following format:
+ * <COMMAND_ID;COMMAND_ARGUMENT>
+ * Both COMMAND_ID and COMMAND_ARGUMENT are integers.
  *
  * Example usage:
  * @code
- *     char name[16];
- *     int my_int;
- *     float my_float;
- *     int status = ParseCommand("<MOVE, 10, 3.14>", name, &my_int, &my_float);
- *     // status == 3
+ *     int command_id;
+ *     int command_arg;
+ *     int status = ParseCommand("<10;42>", &command_id, &command_arg);
+ *     // status == 2 (both values parsed)
  * @endcode
  *
- * In the case that some arguments are missing, such as no INT or FLOAT, the corresponding
- * output pointers will remain unset or defaulted (0 or 0.0f).
+ * In the case that the argument is missing, the corresponding output pointer will remain unset (0).
  *
- * @param command   Pointer to the command buffer
- * @param name      Pointer to where the parsed name should be stored (must be preallocated)
- * @param arg_int   Pointer to where the parsed int argument should be stored (optional)
- * @param arg_float Pointer to where the parsed float argument should be stored (optional)
+ * @param command       Pointer to the command buffer
+ * @param command_id    Pointer to where the parsed command ID should be stored (optional)
+ * @param command_arg   Pointer to where the parsed command argument should be stored (optional)
  * @returns int Status code:
  *          - 0 = Parsing failed
- *          - 1 = Only name parsed
- *          - 2 = Name and int parsed
- *          - 3 = Name, int, and float parsed
+ *          - 1 = Only command ID parsed
+ *          - 2 = Both command ID and argument parsed
  */
-int ParseCommand(const char *command, char *name, int *arg_int, float *arg_float) {
-    // Validate required inputs
-    if (!command || !name) return 0;
-
-    // Initialize outputs to default values
-    if (arg_int) *arg_int = 0;
-    if (arg_float) *arg_float = 0.0f;
-
-    // Locate the start of the angle-bracketed section
-    const char *start = strchr(command, '<');
-    if (!start) return 0;
-    start++;
-
-    // Locate the closing bracket
-    const char *end = strchr(start, '>');
-    if (!end || end <= start) return 0;
-
-    // Copy the contents between < and > into a temporary buffer
-    char buffer[64];
-    size_t len = (size_t)(end - start);
-    if (len >= sizeof(buffer)) len = sizeof(buffer) - 1;
-    strncpy(buffer, start, len);
-    buffer[len] = '\0';
-
-    int parsed = 0;
-
-    // Extract the first token (name)
-    char *token = strtok(buffer, ",");
-    if (!token) return 0;
-
-    // Trim leading spaces and copy the name
-    while (isspace((unsigned char)*token)) token++;
-    strncpy(name, token, 16);
-    name[15] = '\0';  // Ensure null-termination
-    parsed = 1;
-
-    // Try to parse the second token (int argument)
-    token = strtok(NULL, ",");
-    if (token && arg_int) {
-        while (isspace((unsigned char)*token)) token++;
-        *arg_int = atoi(token);
-        parsed = 2;
-    }
-
-    // Try to parse the third token (float argument)
-    token = strtok(NULL, ",");
-    if (token && arg_float) {
-        while (isspace((unsigned char)*token)) token++;
-        *arg_float = strtof(token, NULL);
-        parsed = 3;
-    }
-
-    return parsed;
-}
+int ParseCommand(const char *command, int *command_id, int *command_arg);
 /**
  * @}
  * @}
