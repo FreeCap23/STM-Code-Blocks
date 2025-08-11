@@ -159,11 +159,11 @@ Usage</h1>
 <div class="line"><span class="comment">/* USER CODE END 2 */</span></div>
 </div><!-- fragment --></li>
 <li><p class="startli"><b>Get current timestamp in microseconds:</b></p>
-<div class="fragment"><div class="line">uint32_t current_time_us = us_timer_get();</div>
+<div class="fragment"><div class="line">uint32_t current_time_us = us_timer_get(&amp;htim2);</div>
 </div><!-- fragment --></li>
-<li><b>Measure elapsed time and delay in us:</b> <div class="fragment"><div class="line">uint32_t start = <a class="code hl_function" href="us__timer_8h.html#a1550bd46e85de64f405bb1939c9af319">get_tick_us</a>();</div>
-<div class="line"><a class="code hl_function" href="us__timer_8h.html#a140ff71bdaf18424ab27ef36fe16abf7">delay_us</a>(42);</div>
-<div class="line">uint32_t end = <a class="code hl_function" href="us__timer_8h.html#a1550bd46e85de64f405bb1939c9af319">get_tick_us</a>();</div>
+<li><b>Measure elapsed time and delay in us:</b> <div class="fragment"><div class="line">uint32_t start = <a class="code hl_function" href="us__timer_8h.html#a1550bd46e85de64f405bb1939c9af319">get_tick_us</a>(&amp;htim2);</div>
+<div class="line"><a class="code hl_function" href="us__timer_8h.html#a140ff71bdaf18424ab27ef36fe16abf7">delay_us</a>(&amp;htim2, 42);</div>
+<div class="line">uint32_t end = <a class="code hl_function" href="us__timer_8h.html#a1550bd46e85de64f405bb1939c9af319">get_tick_us</a>(&amp;htim2);</div>
 <div class="line">uint32_t elapsed_us = end - start;</div>
 <div class="line"><span class="comment">// 99.6% of the time elapsed_us will be 42. The rest of the time, it will be 42 +- 1. This is a limitation of the MCU.</span></div>
 <div class="ttc" id="aus__timer_8h_html_a140ff71bdaf18424ab27ef36fe16abf7"><div class="ttname"><a href="us__timer_8h.html#a140ff71bdaf18424ab27ef36fe16abf7">delay_us</a></div><div class="ttdeci">void delay_us(TIM_HandleTypeDef *htim, uint32_t delay)</div><div class="ttdoc">Delays code execution by the given value in us.</div><div class="ttdef"><b>Definition</b> <a href="us__timer_8c_source.html#l00017">us_timer.c:17</a></div></div>
