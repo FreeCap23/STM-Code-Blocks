@@ -1,6 +1,9 @@
 /**
- * @file serial_helper.c
+ * @file serial_print.c
  * @brief TODO: Write a brief description of this file
+ *
+ * If you're looking for the GUIDE on using this file, it's called
+ * 10. Send Serial Data Module
  *
  * TODO: Write a detailed description of this file
  *

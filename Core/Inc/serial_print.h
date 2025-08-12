@@ -1,6 +1,9 @@
 /**
- * @file serial_helper.h
+ * @file serial_print.h
  * @brief Helper functions for serial (UART) communication.
+ *
+ * If you're looking for the GUIDE on using this file, it's called
+ * 10. Send Serial Data Module
  *
  * This header provides declarations for utility functions to assist with
  * serial communication, typically over UART (Universal Asynchronous Receiver/Transmitter).
@@ -16,8 +19,8 @@
  * @author Dionisie Stratulat
  */
 
-#ifndef INC_SERIAL_HELPER_H_
-#define INC_SERIAL_HELPER_H_
+#ifndef INC_SERIAL_PRINT_H_
+#define INC_SERIAL_PRINT_H_
 
 /**
  * @addtogroup helper_functions
@@ -62,4 +65,4 @@ uint8_t SerialPrintLn(UART_HandleTypeDef *huart, const char *format, ...);
  * @}
  * @}
  */
-#endif /* INC_SERIAL_HELPER_H_ */
+#endif /* INC_SERIAL_PRINT_H_ */

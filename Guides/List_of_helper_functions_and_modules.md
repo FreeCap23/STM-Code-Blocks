@@ -3,7 +3,7 @@ This is a list of all the helper functions and modules. The header files (`.h`) 
 
 - flash_helper_h7a3.h contains `Flash_Write()`, `Flash_Read()` and `Flash_Erase()`
 - pwm_helper.h contains `analogWrite()` and `analogWritePercent()`
-- serial_helper.h contains `SerialPrint()` and `SerialPrintLn()`
+- serial_print.h contains `SerialPrint()` and `SerialPrintLn()`
 - command_parser.h contains `ParseCommand()`
 
 For more information on these functions, see their documentation.
