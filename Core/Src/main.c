@@ -17,6 +17,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <receive_serial_commands.h>
 #include <serial_print.h>
 #include "main.h"
 
@@ -24,7 +25,6 @@
 /* USER CODE BEGIN Includes */
 #include "adxl345_registers.h"
 #include "us_timer.h"
-#include "command_parser.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
@@ -495,25 +495,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
     	SerialPrintLn(&huart3, "Press detected!");
     }
 }
-
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
-	static uint8_t next_character_idx;
-	uint8_t current_character_idx = next_character_idx++;
-	if (next_character_idx >= COMMAND_BUFFER_SIZE) {
-		next_character_idx = 0;
-	}
-
-	if (command_buff[current_character_idx] == '>') {
-		command_ready_to_be_processed = true;
-	} else {
-		command_ready_to_be_processed = false;
-	}
-
-	// At this point the USART peripheral won't receive any more bytes, so we
-	// need to call this function again.
-	HAL_UART_Receive_IT(&huart3, &command_buff[next_character_idx], 1);
-}
-
 /* USER CODE END 4 */
 
  /* MPU Configuration */

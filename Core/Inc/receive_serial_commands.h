@@ -1,5 +1,5 @@
 /**
- * @file command_parser.h
+ * @file receive_serial_commands.h
  * @brief TODO: Write a brief description of this file
  *
  * TODO: Write a detailed description of this file
@@ -7,8 +7,8 @@
  * @date Created on: Jul 16, 2025
  * @author Dionisie Stratulat
  */
-#ifndef INC_COMMAND_PARSER_H_
-#define INC_COMMAND_PARSER_H_
+#ifndef INC_RECEIVE_SERIAL_COMMANDS_H_
+#define INC_RECEIVE_SERIAL_COMMANDS_H_
 
 #include <stdio.h>
 #include <string.h>
@@ -19,7 +19,7 @@
 
 #define COMMAND_BUFFER_SIZE 8 // Make this larger if needed
 
-// Declared here, defined in command_parser.c
+// Declared here, defined in receive_serial_commands.c
 extern bool command_ready_to_be_processed;
 extern uint8_t command_buff[COMMAND_BUFFER_SIZE];
 
@@ -28,7 +28,7 @@ extern uint8_t command_buff[COMMAND_BUFFER_SIZE];
  * @brief Easy to use helper functions for working with various interfaces and devices
  * @{
  *
- * @addtogroup command_parser Command Parser
+ * @addtogroup receive_serial_commands Command Parser
  * @brief Parses commands and stores the name and arguments of the commands in the given pointers' locations
  * @{
  */
@@ -64,4 +64,4 @@ int ParseCommand(const char *command, int *command_id, int *command_arg);
  * @}
  */
 
-#endif /* INC_COMMAND_PARSER_H_ */
+#endif /* INC_RECEIVE_SERIAL_COMMANDS_H_ */

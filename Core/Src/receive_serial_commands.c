@@ -1,5 +1,5 @@
 /**
- * @file command_parser.c
+ * @file receive_serial_commands.c
  * @brief TODO: Write a brief description of this file
  *
  * TODO: Write a detailed description of this file
@@ -8,7 +8,7 @@
  * @author Dionisie Stratulat
  */
 
-#include "command_parser.h"
+#include <receive_serial_commands.h>
 
 bool command_ready_to_be_processed = false;
 uint8_t command_buff[COMMAND_BUFFER_SIZE] = {0};
@@ -60,3 +60,22 @@ int ParseCommand(const char *command, int *command_id, int *command_arg) {
 
     return parsed;
 }
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+	static uint8_t next_character_idx;
+	uint8_t current_character_idx = next_character_idx++;
+	if (next_character_idx >= COMMAND_BUFFER_SIZE) {
+		next_character_idx = 0;
+	}
+
+	if (command_buff[current_character_idx] == '>') {
+		command_ready_to_be_processed = true;
+	} else {
+		command_ready_to_be_processed = false;
+	}
+
+	// At this point the USART peripheral won't receive any more bytes, so we
+	// need to call this function again.
+	HAL_UART_Receive_IT(&huart3, &command_buff[next_character_idx], 1);
+}
+
