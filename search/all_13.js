@@ -1,8 +1,8 @@
 var searchData=
 [
   ['parallel_0',['Parallel',['../md_Guides_206_8LCD.html#autotoc_md54',1,'']]],
-  ['parsecommand_1',['parsecommand',['../group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842',1,'ParseCommand(const char *command, int *command_id, int *command_arg):&#160;command_parser.c'],['../group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842',1,'ParseCommand(const char *command, int *command_id, int *command_arg):&#160;command_parser.c']]],
-  ['parser_2',['Command Parser',['../group__command__parser.html',1,'']]],
+  ['parsecommand_1',['parsecommand',['../group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842',1,'ParseCommand(const char *command, int *command_id, int *command_arg):&#160;receive_serial_commands.c'],['../group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842',1,'ParseCommand(const char *command, int *command_id, int *command_arg):&#160;receive_serial_commands.c']]],
+  ['parser_2',['Command Parser',['../group__receive__serial__commands.html',1,'']]],
   ['parsing_20commands_3',['09. Parsing Commands',['../md_Guides_209_8Parsing__commands.html',1,'']]],
   ['peripheral_4',['1. Configure I²C Peripheral',['../md_Guides_206_8LCD.html#autotoc_md40',1,'']]],
   ['peripheral_20clocks_5',['APBx Peripheral Clocks',['../md_Guides_203_8Timer__Setup.html#autotoc_md20',1,'']]],

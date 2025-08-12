@@ -5,5 +5,5 @@ var group__helper__functions =
     [ "PWM", "group__PWM.html", "group__PWM" ],
     [ "Serial Interface", "group__serial__interface.html", "group__serial__interface" ],
     [ "SPI Interface", "group__spi__interface.html", "group__spi__interface" ],
-    [ "Command Parser", "group__command__parser.html", "group__command__parser" ]
+    [ "Command Parser", "group__receive__serial__commands.html", "group__receive__serial__commands" ]
 ];

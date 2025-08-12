@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>STM Code Blocks: Core/Inc/command_parser.h File Reference</title>
+<title>STM Code Blocks: Core/Src/receive_serial_commands.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('command__parser_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('receive__serial__commands_8c.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -92,63 +92,58 @@ $(document).ready(function(){initNavTree('command__parser_8h.html',''); initResi
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
-  <div class="headertitle"><div class="title">command_parser.h File Reference</div></div>
+  <div class="headertitle"><div class="title">receive_serial_commands.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>TODO: Write a brief description of this file.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;ctype.h&gt;</code><br />
-<code>#include &lt;stdbool.h&gt;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="receive__serial__commands_8h_source.html">receive_serial_commands.h</a>&gt;</code><br />
 </div>
-<p><a href="command__parser_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="receive__serial__commands_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:acf5b4949b2bcaa055cc03fa33274f6d9" id="r_acf5b4949b2bcaa055cc03fa33274f6d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command__parser_8h.html#acf5b4949b2bcaa055cc03fa33274f6d9">COMMAND_BUFFER_SIZE</a>&#160;&#160;&#160;8</td></tr>
-<tr class="separator:acf5b4949b2bcaa055cc03fa33274f6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaaa712b14ef1af977e3a75202bf8d6842" id="r_gaaa712b14ef1af977e3a75202bf8d6842"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a> (const char *command, int *command_id, int *command_arg)</td></tr>
+<tr class="memitem:gaaa712b14ef1af977e3a75202bf8d6842" id="r_gaaa712b14ef1af977e3a75202bf8d6842"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a> (const char *command, int *command_id, int *command_arg)</td></tr>
 <tr class="memdesc:gaaa712b14ef1af977e3a75202bf8d6842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a command and stores the command ID and argument in the given pointers' locations.  <br /></td></tr>
 <tr class="separator:gaaa712b14ef1af977e3a75202bf8d6842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae494a9643f29b87d6d81e5264e60e57b" id="r_ae494a9643f29b87d6d81e5264e60e57b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="receive__serial__commands_8c.html#ae494a9643f29b87d6d81e5264e60e57b">HAL_UART_RxCpltCallback</a> (UART_HandleTypeDef *huart)</td></tr>
+<tr class="separator:ae494a9643f29b87d6d81e5264e60e57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:af097ae30ab4dc4ac3a26e1279d2bd188" id="r_af097ae30ab4dc4ac3a26e1279d2bd188"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command__parser_8h.html#af097ae30ab4dc4ac3a26e1279d2bd188">command_ready_to_be_processed</a></td></tr>
+<tr class="memitem:af097ae30ab4dc4ac3a26e1279d2bd188" id="r_af097ae30ab4dc4ac3a26e1279d2bd188"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="receive__serial__commands_8c.html#af097ae30ab4dc4ac3a26e1279d2bd188">command_ready_to_be_processed</a> = false</td></tr>
 <tr class="separator:af097ae30ab4dc4ac3a26e1279d2bd188"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35d441255d58a1ee0190a6600eb37dfd" id="r_a35d441255d58a1ee0190a6600eb37dfd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="command__parser_8h.html#a35d441255d58a1ee0190a6600eb37dfd">command_buff</a> [COMMAND_BUFFER_SIZE]</td></tr>
+<tr class="memitem:a35d441255d58a1ee0190a6600eb37dfd" id="r_a35d441255d58a1ee0190a6600eb37dfd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="receive__serial__commands_8c.html#a35d441255d58a1ee0190a6600eb37dfd">command_buff</a> [COMMAND_BUFFER_SIZE] = {0}</td></tr>
 <tr class="separator:a35d441255d58a1ee0190a6600eb37dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TODO: Write a brief description of this file. </p>
 <p>TODO: Write a detailed description of this file</p>
-<dl class="section date"><dt>Date</dt><dd>Created on: Jul 16, 2025 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Created on: Aug 6, 2025 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Dionisie Stratulat </dd></dl>
 
-<p class="definition">Definition in file <a class="el" href="command__parser_8h_source.html">command_parser.h</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="acf5b4949b2bcaa055cc03fa33274f6d9" name="acf5b4949b2bcaa055cc03fa33274f6d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf5b4949b2bcaa055cc03fa33274f6d9">&#9670;&#160;</a></span>COMMAND_BUFFER_SIZE</h2>
+<p class="definition">Definition in file <a class="el" href="receive__serial__commands_8c_source.html">receive_serial_commands.c</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ae494a9643f29b87d6d81e5264e60e57b" name="ae494a9643f29b87d6d81e5264e60e57b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae494a9643f29b87d6d81e5264e60e57b">&#9670;&#160;</a></span>HAL_UART_RxCpltCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COMMAND_BUFFER_SIZE&#160;&#160;&#160;8</td>
+          <td class="memname">void HAL_UART_RxCpltCallback </td>
+          <td>(</td>
+          <td class="paramtype">UART_HandleTypeDef *&#160;</td>
+          <td class="paramname"><em>huart</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="command__parser_8h_source.html#l00020">20</a> of file <a class="el" href="command__parser_8h_source.html">command_parser.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="receive__serial__commands_8c_source.html#l00064">64</a> of file <a class="el" href="receive__serial__commands_8c_source.html">receive_serial_commands.c</a>.</p>
 
 </div>
 </div>
@@ -158,22 +153,14 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t command_buff[COMMAND_BUFFER_SIZE]</td>
+          <td class="memname">uint8_t command_buff[COMMAND_BUFFER_SIZE] = {0}</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="command__parser_8c_source.html#l00014">14</a> of file <a class="el" href="command__parser_8c_source.html">command_parser.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="receive__serial__commands_8c_source.html#l00014">14</a> of file <a class="el" href="receive__serial__commands_8c_source.html">receive_serial_commands.c</a>.</p>
 
 </div>
 </div>
@@ -182,22 +169,14 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool command_ready_to_be_processed</td>
+          <td class="memname">bool command_ready_to_be_processed = false</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="command__parser_8c_source.html#l00013">13</a> of file <a class="el" href="command__parser_8c_source.html">command_parser.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="receive__serial__commands_8c_source.html#l00013">13</a> of file <a class="el" href="receive__serial__commands_8c_source.html">receive_serial_commands.c</a>.</p>
 
 </div>
 </div>
@@ -206,7 +185,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_e2489e887f17afa3cbc07a4ec152cdd2.html">Inc</a></li><li class="navelem"><a class="el" href="command__parser_8h.html">command_parser.h</a></li>
+    <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_b596f468b52957496e4f78b80e029268.html">Src</a></li><li class="navelem"><a class="el" href="receive__serial__commands_8c.html">receive_serial_commands.c</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

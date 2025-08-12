@@ -100,10 +100,10 @@ Description</h1>
 <p>This module documents how to setup serial communication on your STM32 board so you can receive commands in the <code>&lt;command_id:command_argument&gt;</code> format.</p>
 <h1><a class="anchor" id="autotoc_md117"></a>
 Installation</h1>
-<p>Simply copy <code><a class="el" href="command__parser_8h.html" title="TODO: Write a brief description of this file.">Core/Inc/command_parser.h</a></code> and <code><a class="el" href="command__parser_8c.html" title="TODO: Write a brief description of this file.">Core/Src/command_parser.c</a></code> to your project's <code>Core/Inc</code> and <code>Core/Src</code> folders respectively.</p>
+<p>Simply copy <code><a class="el" href="receive__serial__commands_8h.html" title="TODO: Write a brief description of this file.">Core/Inc/receive_serial_commands.h</a></code> and <code><a class="el" href="receive__serial__commands_8c.html" title="TODO: Write a brief description of this file.">Core/Src/receive_serial_commands.c</a></code> to your project's <code>Core/Inc</code> and <code>Core/Src</code> folders respectively.</p>
 <h1><a class="anchor" id="autotoc_md118"></a>
 Configuring</h1>
-<p>In order for the <code>command_parser</code> library to work, you need to configure a USART peripheral in CubeMX. If you have a VCP (Virtual COM Port) connected to a peripheral, use that. If not, any will do.</p>
+<p>In order for the <code>receive_serial_commands</code> library to work, you need to configure a USART peripheral in CubeMX. If you have a VCP (Virtual COM Port) connected to a peripheral, use that. If not, any will do.</p>
 <h2><a class="anchor" id="autotoc_md119"></a>
 In CubeMX:</h2>
 <p>USARTx:</p><ul>
@@ -117,43 +117,23 @@ In CubeMX:</h2>
 <h2><a class="anchor" id="autotoc_md120"></a>
 In code:</h2>
 <p>Put all these snippets in <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code> unless instructed otherwise. Replace <code>huart1</code> with your uart handle.</p>
-<p>0. Include <a class="el" href="command__parser_8h.html" title="TODO: Write a brief description of this file.">command_parser.h</a>: </p><div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN Includes */</span></div>
-<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="command__parser_8h.html">command_parser.h</a>&quot;</span></div>
+<p>0. Include <a class="el" href="receive__serial__commands_8h.html" title="TODO: Write a brief description of this file.">receive_serial_commands.h</a>: </p><div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN Includes */</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="receive__serial__commands_8h.html">receive_serial_commands.h</a>&quot;</span></div>
 <div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
-<div class="ttc" id="acommand__parser_8h_html"><div class="ttname"><a href="command__parser_8h.html">command_parser.h</a></div><div class="ttdoc">TODO: Write a brief description of this file.</div></div>
+<div class="ttc" id="areceive__serial__commands_8h_html"><div class="ttname"><a href="receive__serial__commands_8h.html">receive_serial_commands.h</a></div><div class="ttdoc">TODO: Write a brief description of this file.</div></div>
 </div><!-- fragment --><ol type="1">
-<li>Change the command buffer size (optional): <div class="fragment"><div class="line"><span class="comment">// Find this in command_parser.h. You do not need to add it, it&#39;s already there</span></div>
+<li>Change the command buffer size (optional): <div class="fragment"><div class="line"><span class="comment">// Find this in receive_serial_commands.h. You do not need to add it, it&#39;s already there</span></div>
 <div class="line"><span class="preprocessor">#define COMMAND_BUFFER_SIZE 8 </span><span class="comment">// Make this larger if needed</span></div>
 </div><!-- fragment --></li>
 <li>Start reception: <div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN 2 */</span></div>
 <div class="line">HAL_UART_Receive_IT(&amp;huart3, command_buff, 1);</div>
 <div class="line"><span class="comment">/* USER CODE END 2 */</span></div>
 </div><!-- fragment --></li>
-<li>Define a reception completed callback: <div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN 4 */</span></div>
-<div class="line"><span class="keywordtype">void</span> HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {</div>
-<div class="line">  <span class="keyword">static</span> uint8_t next_character_idx;</div>
-<div class="line">  uint8_t current_character_idx = next_character_idx++;</div>
-<div class="line">  <span class="keywordflow">if</span> (next_character_idx &gt;= COMMAND_BUFFER_SIZE) {</div>
-<div class="line">    next_character_idx = 0;</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (command_buff[current_character_idx] == <span class="charliteral">&#39;&gt;&#39;</span>) {</div>
-<div class="line">    command_ready_to_be_processed = <span class="keyword">true</span>;</div>
-<div class="line">  } <span class="keywordflow">else</span> {</div>
-<div class="line">    command_ready_to_be_processed = <span class="keyword">false</span>;</div>
-<div class="line">  }</div>
-<div class="line"> </div>
-<div class="line">  <span class="comment">// At this point the USART peripheral won&#39;t receive any more bytes, so we</span></div>
-<div class="line">  <span class="comment">// need to call this function again.</span></div>
-<div class="line">  HAL_UART_Receive_IT(&amp;huart3, &amp;command_buff[next_character_idx], 1);</div>
-<div class="line">}</div>
-<div class="line"><span class="comment">/* USER CODE END 4 */</span></div>
-</div><!-- fragment --></li>
 </ol>
 <h1><a class="anchor" id="autotoc_md121"></a>
 Usage</h1>
 <p>Assuming you have some task that runs periodically that processes commands, it might look like this: </p><div class="fragment"><div class="line"><span class="comment">// background_tasks.c</span></div>
-<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="command__parser_8h.html">command_parser.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="receive__serial__commands_8h.html">receive_serial_commands.h</a>&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> process_command() {</div>
 <div class="line">  <span class="keywordtype">int</span> command_id, command_arg;</div>
@@ -162,14 +142,14 @@ Usage</h1>
 <div class="line">    <span class="keywordflow">return</span>; <span class="comment">// Early return because there&#39;s no command to process yet</span></div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">int</span> status = <a class="code hl_function" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(command_buff, &amp;command_id, &amp;command_arg);</div>
+<div class="line">  <span class="keywordtype">int</span> status = <a class="code hl_function" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(command_buff, &amp;command_id, &amp;command_arg);</div>
 <div class="line">  <span class="keywordflow">if</span> (status != 2) {</div>
 <div class="line">    <span class="keywordflow">return</span>; <span class="comment">// Early return because parsing failed</span></div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Parsing succeeded, now you can do whatever you need to do with the command.</span></div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__command__parser_html_gaaa712b14ef1af977e3a75202bf8d6842"><div class="ttname"><a href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, int *command_id, int *command_arg)</div><div class="ttdoc">Parses a command and stores the command ID and argument in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="command__parser_8c_source.html#l00016">command_parser.c:16</a></div></div>
+<div class="ttc" id="agroup__receive__serial__commands_html_gaaa712b14ef1af977e3a75202bf8d6842"><div class="ttname"><a href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, int *command_id, int *command_arg)</div><div class="ttdoc">Parses a command and stores the command ID and argument in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="receive__serial__commands_8c_source.html#l00016">receive_serial_commands.c:16</a></div></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

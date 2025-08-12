@@ -65,7 +65,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('group__command__parser.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('group__receive__serial__commands.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('group__command__parser.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaaa712b14ef1af977e3a75202bf8d6842" id="r_gaaa712b14ef1af977e3a75202bf8d6842"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a> (const char *command, int *command_id, int *command_arg)</td></tr>
+<tr class="memitem:gaaa712b14ef1af977e3a75202bf8d6842" id="r_gaaa712b14ef1af977e3a75202bf8d6842"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a> (const char *command, int *command_id, int *command_arg)</td></tr>
 <tr class="memdesc:gaaa712b14ef1af977e3a75202bf8d6842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a command and stores the command ID and argument in the given pointers' locations.  <br /></td></tr>
 <tr class="separator:gaaa712b14ef1af977e3a75202bf8d6842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -145,9 +145,9 @@ Functions</h2></td></tr>
 <p>This function works with the following format: &lt;COMMAND_ID:COMMAND_ARGUMENT&gt; Both COMMAND_ID and COMMAND_ARGUMENT are integers.</p>
 <p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> command_id;</div>
 <div class="line"><span class="keywordtype">int</span> command_arg;</div>
-<div class="line"><span class="keywordtype">int</span> status = <a class="code hl_function" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;&lt;10:42&gt;&quot;</span>, &amp;command_id, &amp;command_arg);</div>
+<div class="line"><span class="keywordtype">int</span> status = <a class="code hl_function" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;&lt;10:42&gt;&quot;</span>, &amp;command_id, &amp;command_arg);</div>
 <div class="line"><span class="comment">// status == 2 (both values parsed)</span></div>
-<div class="ttc" id="agroup__command__parser_html_gaaa712b14ef1af977e3a75202bf8d6842"><div class="ttname"><a href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, int *command_id, int *command_arg)</div><div class="ttdoc">Parses a command and stores the command ID and argument in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="command__parser_8c_source.html#l00016">command_parser.c:16</a></div></div>
+<div class="ttc" id="agroup__receive__serial__commands_html_gaaa712b14ef1af977e3a75202bf8d6842"><div class="ttname"><a href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, int *command_id, int *command_arg)</div><div class="ttdoc">Parses a command and stores the command ID and argument in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="receive__serial__commands_8c_source.html#l00016">receive_serial_commands.c:16</a></div></div>
 </div><!-- fragment --><p>In the case that the argument is missing, the corresponding output pointer will remain unset (0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -164,7 +164,7 @@ Functions</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__parser_8c_source.html#l00016">16</a> of file <a class="el" href="command__parser_8c_source.html">command_parser.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="receive__serial__commands_8c_source.html#l00016">16</a> of file <a class="el" href="receive__serial__commands_8c_source.html">receive_serial_commands.c</a>.</p>
 
 </div>
 </div>

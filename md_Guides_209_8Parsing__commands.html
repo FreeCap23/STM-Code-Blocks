@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('md_Guides_209_8Parsing__commands.html'
   <div class="headertitle"><div class="title">09. Parsing Commands</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md68"></a> The <code>command_parser</code> module allows structured parsing of incoming string commands, making it easy to extract:</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md68"></a> The <code>receive_serial_commands</code> module allows structured parsing of incoming string commands, making it easy to extract:</p>
 <ul>
 <li>A <b>command name</b> (string)</li>
 <li>An optional <b>integer argument</b></li>
@@ -124,14 +124,14 @@ $(document).ready(function(){initNavTree('md_Guides_209_8Parsing__commands.html'
 How to Install It</h1>
 <ol type="1">
 <li><b>Download or copy the following files:</b><ul>
-<li><code><a class="el" href="command__parser_8h.html" title="TODO: Write a brief description of this file.">command_parser.h</a></code></li>
+<li><code><a class="el" href="receive__serial__commands_8h.html" title="TODO: Write a brief description of this file.">receive_serial_commands.h</a></code></li>
 </ul>
 </li>
 <li><b>Add to your project:</b><ul>
 <li>Place the file in your <code>Inc/</code> or <code>include/</code> folder</li>
 <li><p class="startli">Include the header in your source files:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="command__parser_8h.html">command_parser.h</a>&quot;</span></div>
-<div class="ttc" id="acommand__parser_8h_html"><div class="ttname"><a href="command__parser_8h.html">command_parser.h</a></div><div class="ttdoc">TODO: Write a brief description of this file.</div></div>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="receive__serial__commands_8h.html">receive_serial_commands.h</a>&quot;</span></div>
+<div class="ttc" id="areceive__serial__commands_8h_html"><div class="ttname"><a href="receive__serial__commands_8h.html">receive_serial_commands.h</a></div><div class="ttdoc">TODO: Write a brief description of this file.</div></div>
 </div><!-- fragment --></li>
 </ul>
 </li>
@@ -155,7 +155,7 @@ How to Configure It</h1>
 <hr  />
 <h1><a class="anchor" id="autotoc_md74"></a>
 How to Use It</h1>
-<p>See <code><a class="el" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842" title="Parses a command and stores the command ID and argument in the given pointers&#39; locations.">ParseCommand()</a></code></p>
+<p>See <code><a class="el" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842" title="Parses a command and stores the command ID and argument in the given pointers&#39; locations.">ParseCommand()</a></code></p>
 <hr  />
 <h1><a class="anchor" id="autotoc_md76"></a>
 Use Examples</h1>
@@ -165,18 +165,18 @@ Example 1 – Full Command</h2>
 <div class="line"><span class="keywordtype">int</span> steps;</div>
 <div class="line"><span class="keywordtype">float</span> speed;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;&lt;MOVE, 100, 1.5&gt;&quot;</span>, name, &amp;steps, &amp;speed);</div>
+<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;&lt;MOVE, 100, 1.5&gt;&quot;</span>, name, &amp;steps, &amp;speed);</div>
 <div class="line"><span class="comment">// result == 3</span></div>
 <div class="line"><span class="comment">// name = &quot;MOVE&quot;</span></div>
 <div class="line"><span class="comment">// steps = 100</span></div>
 <div class="line"><span class="comment">// speed = 1.5f</span></div>
-<div class="ttc" id="agroup__command__parser_html_gaaa712b14ef1af977e3a75202bf8d6842"><div class="ttname"><a href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, int *command_id, int *command_arg)</div><div class="ttdoc">Parses a command and stores the command ID and argument in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="command__parser_8c_source.html#l00016">command_parser.c:16</a></div></div>
+<div class="ttc" id="agroup__receive__serial__commands_html_gaaa712b14ef1af977e3a75202bf8d6842"><div class="ttname"><a href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, int *command_id, int *command_arg)</div><div class="ttdoc">Parses a command and stores the command ID and argument in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="receive__serial__commands_8c_source.html#l00016">receive_serial_commands.c:16</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md78"></a>
 Example 2 – Name and Int Only</h2>
 <div class="fragment"><div class="line"><span class="keywordtype">char</span> name[16];</div>
 <div class="line"><span class="keywordtype">int</span> target;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;&lt;SET, 42&gt;&quot;</span>, name, &amp;target, NULL);</div>
+<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;&lt;SET, 42&gt;&quot;</span>, name, &amp;target, NULL);</div>
 <div class="line"><span class="comment">// result == 2</span></div>
 <div class="line"><span class="comment">// name = &quot;SET&quot;</span></div>
 <div class="line"><span class="comment">// target = 42</span></div>
@@ -184,14 +184,14 @@ Example 2 – Name and Int Only</h2>
 Example 3 – Name Only</h2>
 <div class="fragment"><div class="line"><span class="keywordtype">char</span> name[16];</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;&lt;START&gt;&quot;</span>, name, NULL, NULL);</div>
+<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;&lt;START&gt;&quot;</span>, name, NULL, NULL);</div>
 <div class="line"><span class="comment">// result == 1</span></div>
 <div class="line"><span class="comment">// name = &quot;START&quot;</span></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md80"></a>
 Example 4 – Invalid Format</h2>
 <div class="fragment"><div class="line"><span class="keywordtype">char</span> name[16];</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;MOVE, 100, 1.5&quot;</span>, name, NULL, NULL);</div>
+<div class="line"><span class="keywordtype">int</span> result = <a class="code hl_function" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="stringliteral">&quot;MOVE, 100, 1.5&quot;</span>, name, NULL, NULL);</div>
 <div class="line"><span class="comment">// result == 0 (no angle brackets)</span></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['serial_5fprint_2ec_0',['serial_print.c',['../serial__print_8c.html',1,'']]],
-  ['serial_5fprint_2eh_1',['serial_print.h',['../serial__print_8h.html',1,'']]],
-  ['spi_5fhelper_2ec_2',['spi_helper.c',['../spi__helper_8c.html',1,'']]],
-  ['spi_5fhelper_2eh_3',['spi_helper.h',['../spi__helper_8h.html',1,'']]]
+  ['receive_5fserial_5fcommands_2ec_0',['receive_serial_commands.c',['../receive__serial__commands_8c.html',1,'']]],
+  ['receive_5fserial_5fcommands_2eh_1',['receive_serial_commands.h',['../receive__serial__commands_8h.html',1,'']]]
 ];

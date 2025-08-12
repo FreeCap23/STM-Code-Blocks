@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>STM Code Blocks: Core/Src/command_parser.c Source File</title>
+<title>STM Code Blocks: Core/Src/receive_serial_commands.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('command__parser_8c_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('receive__serial__commands_8c_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -96,17 +96,17 @@ $(document).ready(function(){initNavTree('command__parser_8c_source.html',''); i
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">command_parser.c</div></div>
+  <div class="headertitle"><div class="title">receive_serial_commands.c</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="command__parser_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="command__parser_8h.html">command_parser.h</a>&quot;</span></div>
+<a href="receive__serial__commands_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="receive__serial__commands_8h.html">receive_serial_commands.h</a>&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">bool</span> command_ready_to_be_processed = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>uint8_t command_buff[COMMAND_BUFFER_SIZE] = {0};</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">   16</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *command, <span class="keywordtype">int</span> *command_id, <span class="keywordtype">int</span> *command_arg) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">   16</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *command, <span class="keywordtype">int</span> *command_id, <span class="keywordtype">int</span> *command_arg) {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">// Validate required input</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">if</span> (!command) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
@@ -154,14 +154,33 @@ $(document).ready(function(){initNavTree('command__parser_8c_source.html',''); i
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> parsed;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
 </div>
-<div class="ttc" id="acommand__parser_8h_html"><div class="ttname"><a href="command__parser_8h.html">command_parser.h</a></div><div class="ttdoc">TODO: Write a brief description of this file.</div></div>
-<div class="ttc" id="agroup__command__parser_html_gaaa712b14ef1af977e3a75202bf8d6842"><div class="ttname"><a href="group__command__parser.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, int *command_id, int *command_arg)</div><div class="ttdoc">Parses a command and stores the command ID and argument in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="command__parser_8c_source.html#l00016">command_parser.c:16</a></div></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span> HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">static</span> uint8_t next_character_idx;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  uint8_t current_character_idx = next_character_idx++;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">if</span> (next_character_idx &gt;= COMMAND_BUFFER_SIZE) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    next_character_idx = 0;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">if</span> (command_buff[current_character_idx] == <span class="charliteral">&#39;&gt;&#39;</span>) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    command_ready_to_be_processed = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    command_ready_to_be_processed = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="comment">// At this point the USART peripheral won&#39;t receive any more bytes, so we</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="comment">// need to call this function again.</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  HAL_UART_Receive_IT(&amp;huart3, &amp;command_buff[next_character_idx], 1);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="ttc" id="agroup__receive__serial__commands_html_gaaa712b14ef1af977e3a75202bf8d6842"><div class="ttname"><a href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, int *command_id, int *command_arg)</div><div class="ttdoc">Parses a command and stores the command ID and argument in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="receive__serial__commands_8c_source.html#l00016">receive_serial_commands.c:16</a></div></div>
+<div class="ttc" id="areceive__serial__commands_8h_html"><div class="ttname"><a href="receive__serial__commands_8h.html">receive_serial_commands.h</a></div><div class="ttdoc">TODO: Write a brief description of this file.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_b596f468b52957496e4f78b80e029268.html">Src</a></li><li class="navelem"><a class="el" href="command__parser_8c.html">command_parser.c</a></li>
+    <li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_b596f468b52957496e4f78b80e029268.html">Src</a></li><li class="navelem"><a class="el" href="receive__serial__commands_8c.html">receive_serial_commands.c</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
