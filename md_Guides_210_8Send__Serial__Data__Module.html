@@ -94,19 +94,13 @@ $(document).ready(function(){initNavTree('md_Guides_210_8Send__Serial__Data__Mod
   <div class="headertitle"><div class="title">10.Send Serial Data Module</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md81"></a> This file will only cover sending serial data with the functions in <code><a class="el" href="serial__helper_8h.html" title="Helper functions for serial (UART) communication.">serial_helper.h</a></code>. Receiving serial data isn't covered here. See <code>02.Device_Configuration.md</code>, UART section for receiving.</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md81"></a> This file will only cover sending serial data with the functions in <code><a class="el" href="serial__print_8h.html" title="Helper functions for serial (UART) communication.">serial_print.h</a></code>. Receiving serial data isn't covered here. See <code>02.Device_Configuration.md</code>, UART section for receiving.</p>
 <h1><a class="anchor" id="autotoc_md82"></a>
 What You Can Do With It</h1>
 <p>These functions allow you to send formatted debug or status messages from your STM32 microcontroller over a UART interface (such as a USB-to-Serial connection).</p>
 <ul>
 <li><code><a class="el" href="group__serial__interface.html#ga126c9b4716b7253d5187778b23b84284" title="Sends a formatted message over USART (e.g., USB-to-Serial).">SerialPrint()</a></code> behaves like <code>printf</code>, sending formatted text.</li>
 <li><code><a class="el" href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc" title="Sends a formatted message over USART (e.g., USB-to-Serial), appending a new line and carriage return.">SerialPrintLn()</a></code> does the same, but automatically appends <code>\r\n</code> (carriage return and line feed).</li>
-</ul>
-<p><em><b>We need to use a single USART connection (so no reason to make the USART number as function argument), and we need specific function only for:</b></em></p><ul>
-<li>send a TEXT (with the option of sending the NewLine code);</li>
-<li>send a INT (with the option of sending the NewLine code);</li>
-<li>send a FLOAT (with the option of sending the NewLine code);</li>
-<li>send a message composed of two INT number following this format: &lt;INT1,INT2&gt; (with the option of sending the NewLine code);</li>
 </ul>
 <p><b>Use cases include:</b></p>
 <ul>
@@ -117,13 +111,13 @@ What You Can Do With It</h1>
 <hr  />
 <h1><a class="anchor" id="autotoc_md84"></a>
 How to Install It</h1>
-<p>Just copy <code><a class="el" href="serial__helper_8h.html" title="Helper functions for serial (UART) communication.">serial_helper.h</a></code> and <code><a class="el" href="serial__helper_8c.html" title="TODO: Write a brief description of this file.">serial_helper.c</a></code> to your project's <code>Inc</code> and <code>Src</code> folders respectively </p>
+<p>Just copy <code><a class="el" href="serial__print_8h.html" title="Helper functions for serial (UART) communication.">serial_print.h</a></code> and <code><a class="el" href="serial__print_8c.html" title="TODO: Write a brief description of this file.">serial_print.c</a></code> to your project's <code>Inc</code> and <code>Src</code> folders respectively </p>
 <h1><a class="anchor" id="autotoc_md85"></a>
 ***Copy from where."</h1>
 <h1><a class="anchor" id="autotoc_md86"></a>
 How to Configure It</h1>
 <p><a href="https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART">https://wiki.st.com/stm32mcu/wiki/Getting_started_with_UART</a></p>
-<p>See <a class="el" href="serial__helper_8h.html" title="Helper functions for serial (UART) communication.">serial_helper.h</a> for functions for easily printing information (text, integers, or any other data type) through UART with the same syntax as <code>printf()</code> from the C <code>stdio.h</code> library.</p>
+<p>See <a class="el" href="serial__print_8h.html" title="Helper functions for serial (UART) communication.">serial_print.h</a> for functions for easily printing information (text, integers, or any other data type) through UART with the same syntax as <code>printf()</code> from the C <code>stdio.h</code> library.</p>
 <blockquote class="doxtable">
 <p>&zwj;ℹ️ Some boards (Like the F411E Discovery) do not support VCP (Virtual COM Port), meaning you cannot use the ST-Link USB port as a serial communication port. If that is the case, you need to use the RX/TX pins themselves and use a USB to Serial converter to talk to the PC. </p>
 </blockquote>
@@ -137,8 +131,8 @@ How to Use It</h1>
 a. Basic Usage:</h2>
 <div class="fragment"><div class="line"><a class="code hl_function" href="group__serial__interface.html#ga126c9b4716b7253d5187778b23b84284">SerialPrint</a>(&amp;huart2, <span class="stringliteral">&quot;Temperature: %d C&quot;</span>, temperature);</div>
 <div class="line"><a class="code hl_function" href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a>(&amp;huart2, <span class="stringliteral">&quot;System started.&quot;</span>);</div>
-<div class="ttc" id="agroup__serial__interface_html_ga126c9b4716b7253d5187778b23b84284"><div class="ttname"><a href="group__serial__interface.html#ga126c9b4716b7253d5187778b23b84284">SerialPrint</a></div><div class="ttdeci">uint8_t SerialPrint(UART_HandleTypeDef *huart, const char *format,...)</div><div class="ttdoc">Sends a formatted message over USART (e.g., USB-to-Serial).</div><div class="ttdef"><b>Definition</b> <a href="serial__helper_8c_source.html#l00017">serial_helper.c:17</a></div></div>
-<div class="ttc" id="agroup__serial__interface_html_ga5fc9820bc2a74c73e056baa14285b3dc"><div class="ttname"><a href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a></div><div class="ttdeci">uint8_t SerialPrintLn(UART_HandleTypeDef *huart, const char *format,...)</div><div class="ttdoc">Sends a formatted message over USART (e.g., USB-to-Serial), appending a new line and carriage return.</div><div class="ttdef"><b>Definition</b> <a href="serial__helper_8c_source.html#l00041">serial_helper.c:41</a></div></div>
+<div class="ttc" id="agroup__serial__interface_html_ga126c9b4716b7253d5187778b23b84284"><div class="ttname"><a href="group__serial__interface.html#ga126c9b4716b7253d5187778b23b84284">SerialPrint</a></div><div class="ttdeci">uint8_t SerialPrint(UART_HandleTypeDef *huart, const char *format,...)</div><div class="ttdoc">Sends a formatted message over USART (e.g., USB-to-Serial).</div><div class="ttdef"><b>Definition</b> <a href="serial__print_8c_source.html#l00020">serial_print.c:20</a></div></div>
+<div class="ttc" id="agroup__serial__interface_html_ga5fc9820bc2a74c73e056baa14285b3dc"><div class="ttname"><a href="group__serial__interface.html#ga5fc9820bc2a74c73e056baa14285b3dc">SerialPrintLn</a></div><div class="ttdeci">uint8_t SerialPrintLn(UART_HandleTypeDef *huart, const char *format,...)</div><div class="ttdoc">Sends a formatted message over USART (e.g., USB-to-Serial), appending a new line and carriage return.</div><div class="ttdef"><b>Definition</b> <a href="serial__print_8c_source.html#l00044">serial_print.c:44</a></div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md90"></a>
 b. Output:</h2>
 <p>If connected via USB-to-Serial and monitored with a terminal, you will see:</p>
