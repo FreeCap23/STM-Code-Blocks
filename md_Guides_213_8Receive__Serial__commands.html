@@ -148,6 +148,30 @@ Usage</h1>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Parsing succeeded, now you can do whatever you need to do with the command.</span></div>
+<div class="line">  <span class="comment">// For example, we&#39;ll use an enum and a switch case to decide what to do</span></div>
+<div class="line">  <span class="keyword">enum</span> {</div>
+<div class="line">    CONNECTION_OK = 0,</div>
+<div class="line">    VBATT_BUTTON,</div>
+<div class="line">    VBOOST_BUTTON,</div>
+<div class="line">    TOGGLE_LED = 999</div>
+<div class="line">  };</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">switch</span> (command_id) {</div>
+<div class="line">  <span class="keywordflow">case</span> CONNECTION_OK:</div>
+<div class="line">    <span class="comment">// Do something</span></div>
+<div class="line">    <span class="keywordflow">break</span>;</div>
+<div class="line">  <span class="keywordflow">case</span> VBATT_BUTTON:</div>
+<div class="line">    <span class="comment">// Do something</span></div>
+<div class="line">    <span class="keywordflow">break</span>;</div>
+<div class="line">  <span class="keywordflow">case</span> VBOOST_BUTTON:</div>
+<div class="line">    <span class="comment">// Do something</span></div>
+<div class="line">    <span class="keywordflow">break</span>;</div>
+<div class="line">  <span class="keywordflow">case</span> TOGGLE_LED:</div>
+<div class="line">    <span class="comment">// Do something</span></div>
+<div class="line">    <span class="keywordflow">break</span>;</div>
+<div class="line">  <span class="keywordflow">default</span>: <span class="comment">// Code in this casea will be executed if command_id doesn&#39;t match any other cases</span></div>
+<div class="line">    <span class="keywordflow">break</span>;</div>
+<div class="line">  }</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__receive__serial__commands_html_gaaa712b14ef1af977e3a75202bf8d6842"><div class="ttname"><a href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, int *command_id, int *command_arg)</div><div class="ttdoc">Parses a command and stores the command ID and argument in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="receive__serial__commands_8c_source.html#l00016">receive_serial_commands.c:16</a></div></div>
 </div><!-- fragment --> </div></div><!-- contents -->
