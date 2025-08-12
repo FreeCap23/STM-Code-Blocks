@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('md_Guides_214_8Writing__a__task__sched
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md122"></a> </p>
 <h1><a class="anchor" id="autotoc_md123"></a>
-&lt;strong&gt;Description&lt;/strong&gt;</h1>
+Description</h1>
 <p>A <b>task scheduler</b> is like a manager for your code. It decides <b>when</b> each piece of work (called a <em>task</em>) should run, without stopping other work from happening.</p>
 <p>Instead of writing code that just waits (using <code>HAL_Delay()</code>), the scheduler keeps checking if it’s time for a task to run, and runs it at the right moment.</p>
 <p>Example:</p>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('md_Guides_214_8Writing__a__task__sched
 <p>The scheduler keeps track of time using <code>HAL_GetTick()</code> (a function from STM32 HAL that counts milliseconds since startup).</p>
 <hr  />
 <h1><a class="anchor" id="autotoc_md125"></a>
-&lt;strong&gt;Installation&lt;/strong&gt;</h1>
+Installation</h1>
 <ol type="1">
 <li><b>Create two files</b> in your project:<ul>
 <li><code>Core/Inc/task_scheduler.h</code></li>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('md_Guides_214_8Writing__a__task__sched
 <div class="line">}</div>
 </div><!-- fragment --><hr  />
 <h1><a class="anchor" id="autotoc_md127"></a>
-&lt;strong&gt;Configuration&lt;/strong&gt;</h1>
+Configuration</h1>
 <p>You can change these things in <code>task_scheduler.h</code>:</p>
 <ul>
 <li>**<code>desired_periods[]</code>** → how often each task runs (in milliseconds) Example: <code>{200, 50, 10, 113}</code> means:<ul>
@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('md_Guides_214_8Writing__a__task__sched
 </ul>
 <hr  />
 <h1><a class="anchor" id="autotoc_md129"></a>
-&lt;strong&gt;Usage&lt;/strong&gt;</h1>
+Usage</h1>
 <ol type="1">
 <li><b>Include the scheduler in <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code></b>:</li>
 </ol>

@@ -46,11 +46,7 @@ var searchData=
   ['stm32cubeide_20debugging_20guide_43',['05. STM32CubeIDE Debugging Guide',['../md_Guides_205_8Debugger__Guide.html',1,'']]],
   ['stm32cubemx_44',['Configuration – STM32CubeMX',['../md_Guides_212_8us__resolution__timer.html#autotoc_md110',1,'']]],
   ['stm32h7a3_20nucleo_45',['Usage Test (VALIDATED ON STM32H7A3 NUCLEO)',['../md_Guides_212_8us__resolution__timer.html#autotoc_md114',1,'']]],
-  ['strong_20configuration_20strong_46',['&lt;strong&gt;Configuration&lt;/strong&gt;',['../md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md127',1,'']]],
-  ['strong_20description_20strong_47',['&lt;strong&gt;Description&lt;/strong&gt;',['../md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md123',1,'']]],
-  ['strong_20installation_20strong_48',['&lt;strong&gt;Installation&lt;/strong&gt;',['../md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md125',1,'']]],
-  ['strong_20usage_20strong_49',['&lt;strong&gt;Usage&lt;/strong&gt;',['../md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md129',1,'']]],
-  ['structure_50',['01. The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
-  ['sum_51',['sum',['../structCircularBuffer.html#a1f7f9198696ae3a9c7ace6d9117ce610',1,'CircularBuffer']]],
-  ['systemclock_5fconfig_52',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
+  ['structure_46',['01. The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
+  ['sum_47',['sum',['../structCircularBuffer.html#a1f7f9198696ae3a9c7ace6d9117ce610',1,'CircularBuffer']]],
+  ['systemclock_5fconfig_48',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
 ];
