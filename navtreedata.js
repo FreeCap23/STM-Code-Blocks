@@ -140,6 +140,12 @@ var NAVTREE =
       ] ],
       [ "Usage", "md_Guides_213_8Receive__Serial__commands.html#autotoc_md121", null ]
     ] ],
+    [ "14.Writing a task scheduler", "md_Guides_214_8Writing__a__task__scheduler.html", [
+      [ "<strong>Description</strong>", "md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md123", null ],
+      [ "<strong>Installation</strong>", "md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md125", null ],
+      [ "<strong>Configuration</strong>", "md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md127", null ],
+      [ "<strong>Usage</strong>", "md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md129", null ]
+    ] ],
     [ "99.Wishlist", "md_Guides_299_8Wishlist.html", null ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
     [ "Topics", "topics.html", "topics" ],
