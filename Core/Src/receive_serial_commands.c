@@ -9,6 +9,7 @@
  */
 
 #include <receive_serial_commands.h>
+#include "main.h" // Include main.h instead of board-specific HAL library, for example stm32h7xx_hal.h
 
 bool command_ready_to_be_processed = false;
 uint8_t command_buff[COMMAND_BUFFER_SIZE] = {0};
@@ -76,6 +77,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 
 	// At this point the USART peripheral won't receive any more bytes, so we
 	// need to call this function again.
-	HAL_UART_Receive_IT(&huart3, &command_buff[next_character_idx], 1);
+	HAL_UART_Receive_IT(huart, &command_buff[next_character_idx], 1);
 }
 

@@ -22,6 +22,8 @@
 #ifndef INC_SERIAL_PRINT_H_
 #define INC_SERIAL_PRINT_H_
 
+#include "main.h" // Include main.h instead of board-specific HAL library, for example stm32h7xx_hal.h
+
 /**
  * @addtogroup helper_functions
  * @{
