@@ -144,7 +144,7 @@ var NAVTREE =
       [ "Description", "md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md123", null ],
       [ "Installation", "md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md125", null ],
       [ "Configuration", "md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md127", null ],
-      [ "Usage", "md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md129", null ]
+      [ "Usage", "md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md130", null ]
     ] ],
     [ "99.Wishlist", "md_Guides_299_8Wishlist.html", null ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],

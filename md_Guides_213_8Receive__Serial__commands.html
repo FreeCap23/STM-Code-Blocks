@@ -136,25 +136,20 @@ Usage</h1>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="receive__serial__commands_8h.html">receive_serial_commands.h</a>&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> process_command() {</div>
+<div class="line">  <span class="comment">// Define variables where the output will go</span></div>
 <div class="line">  <span class="keywordtype">int</span> command_id, command_arg;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (!command_ready_to_be_processed) {</div>
-<div class="line">    <span class="keywordflow">return</span>; <span class="comment">// Early return because there&#39;s no command to process yet</span></div>
-<div class="line">  }</div>
-<div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> status = <a class="code hl_function" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(command_buff, &amp;command_id, &amp;command_arg);</div>
-<div class="line">  <span class="keywordflow">if</span> (status != 2) {</div>
+<div class="line">  <span class="keywordflow">if</span> (status != PARSE_COMMAND_SUCCESS) {</div>
 <div class="line">    <span class="keywordflow">return</span>; <span class="comment">// Early return because parsing failed</span></div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Parsing succeeded, now you can do whatever you need to do with the command.</span></div>
-<div class="line">  <span class="comment">// For example, we&#39;ll use an enum and a switch case to decide what to do</span></div>
-<div class="line">  <span class="keyword">enum</span> {</div>
-<div class="line">    CONNECTION_OK = 0,</div>
-<div class="line">    VBATT_BUTTON,</div>
-<div class="line">    VBOOST_BUTTON,</div>
-<div class="line">    TOGGLE_LED = 999</div>
-<div class="line">  };</div>
+<div class="line">  <span class="comment">// For example, we&#39;ll use defines and a switch case to decide what to do</span></div>
+<div class="line"><span class="preprocessor">  #define CONNECTION_OK 0</span></div>
+<div class="line"><span class="preprocessor">  #define VBATT_BUTTON  1</span></div>
+<div class="line"><span class="preprocessor">  #define VBOOST_BUTTON 2</span></div>
+<div class="line"><span class="preprocessor">  #define TOGGLE_LED    999</span></div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">switch</span> (command_id) {</div>
 <div class="line">  <span class="keywordflow">case</span> CONNECTION_OK:</div>
@@ -169,7 +164,7 @@ Usage</h1>
 <div class="line">  <span class="keywordflow">case</span> TOGGLE_LED:</div>
 <div class="line">    <span class="comment">// Do something</span></div>
 <div class="line">    <span class="keywordflow">break</span>;</div>
-<div class="line">  <span class="keywordflow">default</span>: <span class="comment">// Code in this casea will be executed if command_id doesn&#39;t match any other cases</span></div>
+<div class="line">  <span class="keywordflow">default</span>: <span class="comment">// Code in this case will be executed if command_id doesn&#39;t match any other cases</span></div>
 <div class="line">    <span class="keywordflow">break</span>;</div>
 <div class="line">  }</div>
 <div class="line">}</div>

@@ -195,7 +195,22 @@ Installation</h1>
 </div><!-- fragment --><hr  />
 <h1><a class="anchor" id="autotoc_md127"></a>
 Configuration</h1>
-<p>You can change these things in **<code>task_scheduler.c</code>**:</p>
+<ol type="1">
+<li><b>Include the scheduler in <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code></b>:</li>
+</ol>
+<div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN Includes */</span></div>
+<div class="line"><span class="preprocessor">#include &quot;task_scheduler.h&quot;</span></div>
+<div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
+</div><!-- fragment --><ol type="1">
+<li><b>Call the scheduler in your main loop</b>:</li>
+</ol>
+<div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN WHILE */</span></div>
+<div class="line"><span class="keywordflow">while</span> (1) {</div>
+<div class="line">    run_scheduled_tasks();</div>
+<div class="line">    <span class="comment">// Other non-blocking code here</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><hr  />
+<p>Optionally, you can change these things in **<code>task_scheduler.c</code>**:</p>
 <ul>
 <li><p class="startli"><b>Task periods</b> → Each task has a <code>#define TASKx_PERIOD_MS</code> placed right above its function. Example:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define TASK2_PERIOD_MS 50</span></div>
@@ -239,25 +254,9 @@ Configuration</h1>
 </div><!-- fragment --></li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md129"></a>
+<h1><a class="anchor" id="autotoc_md130"></a>
 Usage</h1>
-<ol type="1">
-<li><b>Include the scheduler in <code><a class="el" href="main_8c.html" title=": Main program body">main.c</a></code></b>:</li>
-</ol>
-<div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN Includes */</span></div>
-<div class="line"><span class="preprocessor">#include &quot;task_scheduler.h&quot;</span></div>
-<div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
-</div><!-- fragment --><ol type="1">
-<li><b>Call the scheduler in your main loop</b>:</li>
-</ol>
-<div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN WHILE */</span></div>
-<div class="line"><span class="keywordflow">while</span> (1) {</div>
-<div class="line">    run_scheduled_tasks();</div>
-<div class="line">    <span class="comment">// Other non-blocking code here</span></div>
-<div class="line">}</div>
-</div><!-- fragment --><ol type="1">
-<li><b>Write your task code</b> inside <code>task1()</code>, <code>task2()</code>, etc. in <code>task_scheduler.c</code>.</li>
-</ol>
+<p><b>Write your task code</b> inside <code>task1()</code>, <code>task2()</code>, etc. in <code>task_scheduler.c</code>.</p>
 <p>Example:</p>
 <div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task1() {</div>
 <div class="line">    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); <span class="comment">// Blink LED every 200 ms</span></div>
