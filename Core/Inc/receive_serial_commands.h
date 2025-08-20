@@ -33,6 +33,12 @@ extern uint8_t command_buff[COMMAND_BUFFER_SIZE];
  * @{
  */
 
+#define PARSE_COMMAND_POINTER_ERROR 				-2
+#define PARSE_COMMAND_NO_VALID_COMMAND_IN_BUFFER	-1
+#define PARSE_COMMAND_FAIL							0
+#define PARSE_COMMAND_ID_SUCCESS					1
+#define PARSE_COMMAND_SUCCESS						2
+
 /**
  * @brief Parses a command and stores the command ID and argument in the given pointers' locations.
  *
@@ -54,6 +60,8 @@ extern uint8_t command_buff[COMMAND_BUFFER_SIZE];
  * @param command_id    Pointer to where the parsed command ID should be stored (optional)
  * @param command_arg   Pointer to where the parsed command argument should be stored (optional)
  * @returns int Status code:
+ * 			- -2 = One of, or both, pointers are NULL
+ * 			- -1 = No valid command in buffer yet (probably incomplete reception)
  *          - 0 = Parsing failed
  *          - 1 = Only command ID parsed
  *          - 2 = Both command ID and argument parsed

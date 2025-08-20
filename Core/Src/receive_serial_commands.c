@@ -15,21 +15,29 @@ bool command_ready_to_be_processed = false;
 uint8_t command_buff[COMMAND_BUFFER_SIZE] = {0};
 
 int ParseCommand(const char *command, int *command_id, int *command_arg) {
-    // Validate required input
-    if (!command) return 0;
+	// Check that the pointers are valid
+	if (command_id == NULL || command_arg == NULL) {
+		return PARSE_COMMAND_POINTER_ERROR;
+	}
 
-    // Initialize outputs to default values
-    if (command_id) *command_id = 0;
-    if (command_arg) *command_arg = 0;
+	// Initialize outputs to default values
+	*command_id = -1;
+	*command_arg = -1;
+	if (!command_ready_to_be_processed) {
+		return PARSE_COMMAND_NO_VALID_COMMAND_IN_BUFFER; // Early return because there's no command to process yet
+	}
+
+    // Validate required input
+    if (!command) return PARSE_COMMAND_FAIL;
 
     // Locate the start of the angle-bracketed section
     const char *start = strchr(command, '<');
-    if (!start) return 0;
+    if (!start) return PARSE_COMMAND_FAIL;
     start++;
 
     // Locate the closing bracket
     const char *end = strchr(start, '>');
-    if (!end || end <= start) return 0;
+    if (!end || end <= start) return PARSE_COMMAND_FAIL;
 
     // Copy the contents between < and > into a temporary buffer
     char buffer[64];
@@ -42,13 +50,13 @@ int ParseCommand(const char *command, int *command_id, int *command_arg) {
 
     // Extract the first token (command ID)
     char *token = strtok(buffer, ":");
-    if (!token) return 0;
+    if (!token) return PARSE_COMMAND_FAIL;
 
     // Trim leading spaces and parse command ID
     while (isspace((unsigned char)*token)) token++;
     if (command_id) {
         *command_id = atoi(token);
-        parsed = 1;
+        parsed = PARSE_COMMAND_ID_SUCCESS;
     }
 
     // Try to parse the second token (command argument)
@@ -56,7 +64,7 @@ int ParseCommand(const char *command, int *command_id, int *command_arg) {
     if (token && command_arg) {
         while (isspace((unsigned char)*token)) token++;
         *command_arg = atoi(token);
-        parsed = 2;
+        parsed = PARSE_COMMAND_SUCCESS;
     }
 
     return parsed;
