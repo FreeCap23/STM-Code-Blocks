@@ -97,16 +97,16 @@ $(document).ready(function(){initNavTree('md_Guides_214_8Writing__a__task__sched
 <div class="textblock"><p><a class="anchor" id="autotoc_md122"></a> </p>
 <h1><a class="anchor" id="autotoc_md123"></a>
 Description</h1>
-<p>A <b>task scheduler</b> is like a manager for your code. It decides <b>when</b> each piece of work (called a <em>task</em>) should run, without stopping other work from happening.</p>
-<p>Instead of writing code that just waits (using <code>HAL_Delay()</code>), the scheduler keeps checking if it’s time for a task to run, and runs it at the right moment.</p>
+<p>A <b>task scheduler</b> manages when each piece of work (<em>task</em>) runs, so your code doesn’t need to wait using <code>HAL_Delay()</code>. <br  />
+ It checks if it’s time for a task to run (using <code>HAL_GetTick()</code>), and runs it if enabled.</p>
 <p>Example:</p>
 <ul>
-<li>Task 1 runs every 200 milliseconds</li>
-<li>Task 2 runs every 50 milliseconds</li>
-<li>Task 3 runs every 10 milliseconds</li>
-<li>Task 4 runs every 113 milliseconds</li>
+<li>Task 1 runs every 200 ms</li>
+<li>Task 2 runs every 50 ms</li>
+<li>Task 3 runs every 10 ms</li>
+<li>Task 4 runs every 113 ms</li>
+<li>...up to Task 10</li>
 </ul>
-<p>The scheduler keeps track of time using <code>HAL_GetTick()</code> (a function from STM32 HAL that counts milliseconds since startup).</p>
 <hr  />
 <h1><a class="anchor" id="autotoc_md125"></a>
 Installation</h1>
@@ -118,65 +118,94 @@ Installation</h1>
 </li>
 <li><b>Copy the code</b> below into the files.</li>
 </ol>
-<p><b>task_scheduler.h</b></p>
-<div class="fragment"><div class="line"><span class="preprocessor">#ifndef __TASK_SCHEDULER_H</span></div>
+<p><b>task_scheduler.h</b> </p><div class="fragment"><div class="line"><span class="preprocessor">#ifndef __TASK_SCHEDULER_H</span></div>
 <div class="line"><span class="preprocessor">#define __TASK_SCHEDULER_H</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> run_scheduled_tasks();</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-</div><!-- fragment --><p><b>task_scheduler.c</b></p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;task_scheduler.h&quot;</span></div>
+</div><!-- fragment --><p><b>task_scheduler.c</b> </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;task_scheduler.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;stm32h7xx_hal.h&quot;</span>  <span class="comment">// Change this if needed</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Example tasks</span></div>
 <div class="line"><span class="preprocessor">#define TASK1_PERIOD_MS 200</span></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task1() {</div>
-<div class="line">    <span class="comment">// Put code for task 1 here</span></div>
-<div class="line">}</div>
+<div class="line"><span class="preprocessor">#define TASK1_ENABLED 1</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task1() { <span class="comment">/* ... */</span> }</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define TASK2_PERIOD_MS 50</span></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task2() {</div>
-<div class="line">    <span class="comment">// Put code for task 2 here</span></div>
-<div class="line">}</div>
+<div class="line"><span class="preprocessor">#define TASK2_ENABLED 1</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task2() { <span class="comment">/* ... */</span> }</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define TASK3_PERIOD_MS 10</span></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task3() {</div>
-<div class="line">    <span class="comment">// Put code for task 3 here</span></div>
-<div class="line">}</div>
+<div class="line"><span class="preprocessor">#define TASK3_ENABLED 1</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task3() { <span class="comment">/* ... */</span> }</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define TASK4_PERIOD_MS 113</span></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task4() {</div>
-<div class="line">    <span class="comment">// Put code for task 4 here</span></div>
-<div class="line">}</div>
+<div class="line"><span class="preprocessor">#define TASK4_ENABLED 1</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task4() { <span class="comment">/* ... */</span> }</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">/*</span></div>
-<div class="line"><span class="comment"> * Scheduler Book-keeping</span></div>
-<div class="line"><span class="comment"> */</span></div>
-<div class="line"><span class="comment">// Total number of tasks</span></div>
-<div class="line"><span class="preprocessor">#define NUMBER_OF_TASKS (sizeof(desired_periods)/sizeof(desired_periods[0]))</span></div>
+<div class="line"><span class="preprocessor">#define TASK5_PERIOD_MS 50</span></div>
+<div class="line"><span class="preprocessor">#define TASK5_ENABLED 1</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task5() { <span class="comment">/* ... */</span> }</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">static</span> uint8_t sequencer = 0; <span class="comment">// Start with the first task</span></div>
+<div class="line"><span class="preprocessor">#define TASK6_PERIOD_MS 50</span></div>
+<div class="line"><span class="preprocessor">#define TASK6_ENABLED 1</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task6() { <span class="comment">/* ... */</span> }</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Periods defined before each task function</span></div>
+<div class="line"><span class="preprocessor">#define TASK7_PERIOD_MS 50</span></div>
+<div class="line"><span class="preprocessor">#define TASK7_ENABLED 1</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task7() { <span class="comment">/* ... */</span> }</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#define TASK8_PERIOD_MS 50</span></div>
+<div class="line"><span class="preprocessor">#define TASK8_ENABLED 1</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task8() { <span class="comment">/* ... */</span> }</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#define TASK9_PERIOD_MS 50</span></div>
+<div class="line"><span class="preprocessor">#define TASK9_ENABLED 1</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task9() { <span class="comment">/* ... */</span> }</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#define TASK10_PERIOD_MS 50</span></div>
+<div class="line"><span class="preprocessor">#define TASK10_ENABLED 1</span></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task10() { <span class="comment">/* ... */</span> }</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Book-keeping</span></div>
 <div class="line"><span class="keyword">static</span> uint32_t desired_periods[] = {</div>
 <div class="line">    TASK1_PERIOD_MS,</div>
 <div class="line">    TASK2_PERIOD_MS,</div>
 <div class="line">    TASK3_PERIOD_MS,</div>
-<div class="line">    TASK4_PERIOD_MS</div>
+<div class="line">    TASK4_PERIOD_MS,</div>
+<div class="line">    TASK5_PERIOD_MS,</div>
+<div class="line">    TASK6_PERIOD_MS,</div>
+<div class="line">    TASK7_PERIOD_MS,</div>
+<div class="line">    TASK8_PERIOD_MS,</div>
+<div class="line">    TASK9_PERIOD_MS,</div>
+<div class="line">    TASK10_PERIOD_MS,</div>
 <div class="line">};</div>
+<div class="line"><span class="preprocessor">#define NUMBER_OF_TASKS (sizeof(desired_periods)/sizeof(desired_periods[0]))</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Enable/disable flags</span></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">bool</span> task_enabled[NUMBER_OF_TASKS] = {1, 1, 1, 1};</div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">bool</span> task_enabled[NUMBER_OF_TASKS] = {</div>
+<div class="line">    TASK1_ENABLED,</div>
+<div class="line">    TASK2_ENABLED,</div>
+<div class="line">    TASK3_ENABLED,</div>
+<div class="line">    TASK4_ENABLED,</div>
+<div class="line">    TASK5_ENABLED,</div>
+<div class="line">    TASK6_ENABLED,</div>
+<div class="line">    TASK7_ENABLED,</div>
+<div class="line">    TASK8_ENABLED,</div>
+<div class="line">    TASK9_ENABLED,</div>
+<div class="line">    TASK10_ENABLED,</div>
+<div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Next time to run each task. You don&#39;t need to change this manually</span></div>
 <div class="line"><span class="keyword">static</span> uint32_t time_to_update[NUMBER_OF_TASKS] = {0};</div>
+<div class="line"><span class="keyword">static</span> uint8_t sequencer = 0;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> run_scheduled_tasks() {</div>
 <div class="line">    <span class="comment">// Array of functions to call for each task</span></div>
-<div class="line">    void (*tasks[])(void) = { task1, task2, task3, task4 };</div>
+<div class="line">    void (*tasks[])(void) = { task1, task2, task3, task4, task5, task6, task7, task8, task9, task10 };</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Check if it’s time to run the current task and if it’s enabled</span></div>
 <div class="line">    <span class="keywordflow">if</span> (HAL_GetTick() &gt;= time_to_update[sequencer] &amp;&amp; task_enabled[sequencer]) {</div>
@@ -209,56 +238,21 @@ Configuration</h1>
 <div class="line">    run_scheduled_tasks();</div>
 <div class="line">    <span class="comment">// Other non-blocking code here</span></div>
 <div class="line">}</div>
-</div><!-- fragment --><hr  />
-<p>Optionally, you can change these things in **<code>task_scheduler.c</code>**:</p>
-<ul>
-<li><p class="startli"><b>Task periods</b> → Each task has a <code>#define TASKx_PERIOD_MS</code> placed right above its function. Example:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#define TASK2_PERIOD_MS 50</span></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task2() {</div>
-<div class="line">    <span class="comment">// Code for task 2</span></div>
-<div class="line">}</div>
-</div><!-- fragment --></li>
-<li><p class="startli">**<code>task_enabled[]</code>** → turn tasks on or off. Example (Task 2 disabled):</p>
-<div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">bool</span> task_enabled[NUMBER_OF_TASKS] = {1, 0, 1, 1};</div>
-</div><!-- fragment --></li>
-<li><b>Task functions</b> → change <code>task1()</code>, <code>task2()</code>, etc. to hold the code you want for each task.</li>
-<li><p class="startli"><b>Write new tasks</b> →</p><ol type="1">
+</div><!-- fragment --><p><b>To change task periods or enable/disable tasks:</b> <br  />
+ Edit the <code>#define TASKx_PERIOD_MS</code> and <code>#define TASKx_ENABLED</code> above each task function.</p>
+<p><b>To add a new task:</b></p><ol type="1">
 <li>Write a new <code>taskX()</code> static function.</li>
-<li>Define its <code>TASKX_PERIOD_MS</code> right above the function.</li>
-<li>Add the new task to the <code>desired_periods[]</code> initializer list.</li>
-<li>Add it to the <code>tasks[]</code> function pointer array in <code>run_scheduled_tasks()</code>.</li>
-<li>Add a value for it in <code>task_enabled[]</code> and <code>time_to_update[]</code>.</li>
-<li><code>NUMBER_OF_TASKS</code> will automatically update, since it is computed from <code>desired_periods[]</code>.</li>
+<li>Define its <code>TASKX_PERIOD_MS</code> and <code>TASKX_ENABLED</code> above the function.</li>
+<li>Add <code>TASKX_PERIOD_MS</code> to <code>desired_periods[]</code>.</li>
+<li>Add <code>TASKX_ENABLED</code> to <code>task_enabled[]</code>.</li>
+<li>Add <code>taskX</code> to the <code>tasks[]</code> array in <code>run_scheduled_tasks()</code>.</li>
+<li><code>NUMBER_OF_TASKS</code> updates automatically.</li>
 </ol>
-<p class="startli">Example (adding Task 5):</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#define TASK5_PERIOD_MS 42</span></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task5() {</div>
-<div class="line">    <span class="comment">// Code for task 5</span></div>
-<div class="line">}</div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// Add to desired_periods</span></div>
-<div class="line"><span class="keyword">static</span> uint32_t desired_periods[] = {</div>
-<div class="line">    TASK1_PERIOD_MS,</div>
-<div class="line">    TASK2_PERIOD_MS,</div>
-<div class="line">    TASK3_PERIOD_MS,</div>
-<div class="line">    TASK4_PERIOD_MS,</div>
-<div class="line">    TASK5_PERIOD_MS</div>
-<div class="line">};</div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// Add to tasks[]</span></div>
-<div class="line">void (*tasks[])(void) = { task1, task2, task3, task4, task5 };</div>
-<div class="line"> </div>
-<div class="line"><span class="comment">// Update arrays</span></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">bool</span> task_enabled[NUMBER_OF_TASKS] = {1, 1, 1, 1, 1};</div>
-<div class="line"><span class="keyword">static</span> uint32_t time_to_update[NUMBER_OF_TASKS] = {0};</div>
-</div><!-- fragment --></li>
-</ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md130"></a>
+<h1><a class="anchor" id="autotoc_md129"></a>
 Usage</h1>
-<p><b>Write your task code</b> inside <code>task1()</code>, <code>task2()</code>, etc. in <code>task_scheduler.c</code>.</p>
-<p>Example:</p>
-<div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task1() {</div>
+<p>Write your task code inside <code>task1()</code>, <code>task2()</code>, etc. in <code>task_scheduler.c</code>.</p>
+<p>Example: </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> task1() {</div>
 <div class="line">    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); <span class="comment">// Blink LED every 200 ms</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> </div></div><!-- contents -->
