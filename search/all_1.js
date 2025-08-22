@@ -6,5 +6,6 @@ var searchData=
   ['11_20using_20the_20adxl345_20accelerometer_3',['11.Using the ADXL345 Accelerometer',['../md_Guides_211_8Using__the__ADXL345__driver.html',1,'']]],
   ['12_20us_20resolution_20timer_20get_5ftick_5fus_20delay_5fus_4',['12.us Resolution Timer (get_tick_us &amp; delay_us)',['../md_Guides_212_8us__resolution__timer.html',1,'']]],
   ['13_20receive_20serial_20commands_5',['13.Receive serial commands',['../md_Guides_213_8Receive__Serial__commands.html',1,'']]],
-  ['14_20writing_20a_20task_20scheduler_6',['14.Writing a task scheduler',['../md_Guides_214_8Writing__a__task__scheduler.html',1,'']]]
+  ['14_20writing_20a_20task_20scheduler_6',['14.Writing a task scheduler',['../md_Guides_214_8Writing__a__task__scheduler.html',1,'']]],
+  ['15_20button_20input_20system_7',['15.Button Input System',['../md_Guides_215_8Button__input__system.html',1,'']]]
 ];

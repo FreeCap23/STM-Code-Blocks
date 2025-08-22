@@ -48,5 +48,6 @@ var searchData=
   ['stm32h7a3_20nucleo_45',['Usage Test (VALIDATED ON STM32H7A3 NUCLEO)',['../md_Guides_212_8us__resolution__timer.html#autotoc_md114',1,'']]],
   ['structure_46',['01. The STM32 Code Structure',['../md_Guides_201_8STM32__Code__Structure.html',1,'']]],
   ['sum_47',['sum',['../structCircularBuffer.html#a1f7f9198696ae3a9c7ace6d9117ce610',1,'CircularBuffer']]],
-  ['systemclock_5fconfig_48',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
+  ['system_48',['15.Button Input System',['../md_Guides_215_8Button__input__system.html',1,'']]],
+  ['systemclock_5fconfig_49',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
 ];

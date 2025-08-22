@@ -2,6 +2,7 @@ var dir_e2489e887f17afa3cbc07a4ec152cdd2 =
 [
     [ "adxl345.h", "adxl345_8h.html", null ],
     [ "adxl345_registers.h", "adxl345__registers_8h_source.html", null ],
+    [ "button_input.h", "button__input_8h_source.html", null ],
     [ "circular_buffer.h", "circular__buffer_8h.html", "circular__buffer_8h" ],
     [ "flash_helper_h7a3.h", "flash__helper__h7a3_8h.html", "flash__helper__h7a3_8h" ],
     [ "i2c_lcd.h", "i2c__lcd_8h.html", "i2c__lcd_8h" ],

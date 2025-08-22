@@ -146,6 +146,12 @@ var NAVTREE =
       [ "Configuration", "md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md127", null ],
       [ "Usage", "md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md129", null ]
     ] ],
+    [ "15.Button Input System", "md_Guides_215_8Button__input__system.html", [
+      [ "Description", "md_Guides_215_8Button__input__system.html#autotoc_md131", null ],
+      [ "Installation", "md_Guides_215_8Button__input__system.html#autotoc_md132", null ],
+      [ "Configuration", "md_Guides_215_8Button__input__system.html#autotoc_md133", null ],
+      [ "Usage", "md_Guides_215_8Button__input__system.html#autotoc_md134", null ]
+    ] ],
     [ "99.Wishlist", "md_Guides_299_8Wishlist.html", null ],
     [ "List of helper functions and modules", "md_Guides_2List__of__helper__functions__and__modules.html", null ],
     [ "Topics", "topics.html", "topics" ],
@@ -170,7 +176,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"adxl345_8c.html"
+"adxl345_8c.html",
+"us__timer_8c.html#a1550bd46e85de64f405bb1939c9af319"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
