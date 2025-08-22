@@ -146,7 +146,7 @@ Usage</h1>
 <div class="line"><span class="comment">/* USER CODE END 4 */</span></div>
 </div><!-- fragment --></li>
 <li><b>Periodic update</b> <br  />
- Call <code>button_update(now_ms)</code> every 1 ms. In practice, this should be placed in a <b>task scheduled at 1 ms period</b> . Example: <div class="fragment"><div class="line"><span class="comment">// task_scheduler.c</span></div>
+ Call <code>button_update(now_ms)</code> every 1 ms. In practice, this should be placed in a <b>task scheduled at 1 ms period</b> . If you don't have a task scheduler, skip this step and call <code>button_update(HAL_GetTick())</code> in your main loop. You'll see an example in the next step. Example: <div class="fragment"><div class="line"><span class="comment">// task_scheduler.c</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define TASK1_PERIOD_MS 1</span></div>
 <div class="line"><span class="preprocessor">#define TASK1_ENABLED 1</span></div>
@@ -157,6 +157,7 @@ Usage</h1>
 <li><b>Event handling</b> <br  />
  Retrieve events from the queue inside your main loop <b>or in another scheduled task</b>. If using a scheduled task, running it every <b>5–10 ms</b> is generally sufficient, since human button presses do not change faster than this. Example: <div class="fragment"><div class="line"><span class="comment">// In main loop</span></div>
 <div class="line"><span class="keywordflow">while</span> (1) {</div>
+<div class="line">  button_update(HAL_GetTick());</div>
 <div class="line">  <a class="code hl_struct" href="structButtonEvent.html">ButtonEvent</a> ev;</div>
 <div class="line">  <span class="keywordflow">while</span> (button_pop_event(&amp;ev)) {</div>
 <div class="line">      <span class="keywordflow">switch</span> (ev.button_id) {</div>
