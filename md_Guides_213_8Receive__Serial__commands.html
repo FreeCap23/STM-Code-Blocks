@@ -131,17 +131,17 @@ In code:</h2>
 </div><!-- fragment --></li>
 </ol>
 <h1><a class="anchor" id="autotoc_md121"></a>
-Usage</h1>
-<p>Assuming you have some task that runs periodically that processes commands, it might look like this: </p><div class="fragment"><div class="line"><span class="comment">// main.c</span></div>
+Usage example</h1>
+<div class="fragment"><div class="line"><span class="comment">// main.c</span></div>
 <div class="line"><span class="comment">/* USER CODE BEGIN Includes */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="receive__serial__commands_8h.html">receive_serial_commands.h</a>&quot;</span></div>
 <div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/* USER CODE BEGIN WHILE */</span></div>
-<div class="line"><span class="comment">// Define variables where the output will go</span></div>
-<div class="line"><span class="keywordtype">int</span> command_id, command_arg;</div>
-<div class="line"> </div>
 <div class="line"><span class="keywordflow">while</span> (1) {</div>
+<div class="line">  <span class="comment">// Define variables where the output will go</span></div>
+<div class="line">  <span class="keywordtype">int</span> command_id, command_arg;</div>
+<div class="line"> </div>
 <div class="line">  <span class="comment">// ParseCommand() comes from receive_serial_commands.h</span></div>
 <div class="line">  <span class="comment">// This extracts the command ID and the command Argument from the received data</span></div>
 <div class="line">  <span class="comment">// from Serial and puts them into command_id and command_arg</span></div>
