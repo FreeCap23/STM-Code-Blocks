@@ -140,6 +140,8 @@ Usage</h1>
 <div class="line">  <span class="keywordtype">int</span> command_id, command_arg;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// ParseCommand() comes from receive_serial_commands.h</span></div>
+<div class="line">  <span class="comment">// This extracts the command ID and the command Argument from the received data</span></div>
+<div class="line">  <span class="comment">// from Serial and puts them into command_id and command_arg</span></div>
 <div class="line">  <span class="keywordtype">int</span> status = <a class="code hl_function" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(command_buff, &amp;command_id, &amp;command_arg);</div>
 <div class="line">  <span class="keywordflow">if</span> (status != PARSE_COMMAND_SUCCESS) {</div>
 <div class="line">    <span class="keywordflow">return</span>; <span class="comment">// Early return because parsing failed</span></div>
