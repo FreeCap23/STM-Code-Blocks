@@ -131,29 +131,32 @@ In code:</h2>
 </div><!-- fragment --></li>
 </ol>
 <h1><a class="anchor" id="autotoc_md121"></a>
-Usage</h1>
-<p>Assuming you have some task that runs periodically that processes commands, it might look like this: </p><div class="fragment"><div class="line"><span class="comment">// background_tasks.c</span></div>
+Usage example</h1>
+<div class="fragment"><div class="line"><span class="comment">// main.c</span></div>
+<div class="line"><span class="comment">/* USER CODE BEGIN Includes */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="receive__serial__commands_8h.html">receive_serial_commands.h</a>&quot;</span></div>
+<div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> process_command() {</div>
-<div class="line">  <span class="comment">// Define variables where the output will go</span></div>
-<div class="line">  <span class="keywordtype">int</span> command_id, command_arg;</div>
+<div class="line"><span class="comment">/* USER CODE BEGIN WHILE */</span></div>
+<div class="line"><span class="comment">// Define variables where the output will go</span></div>
+<div class="line"><span class="keywordtype">int</span> command_id, command_arg;</div>
 <div class="line"> </div>
+<div class="line"><span class="keywordflow">while</span> (1) {</div>
 <div class="line">  <span class="comment">// ParseCommand() comes from receive_serial_commands.h</span></div>
 <div class="line">  <span class="comment">// This extracts the command ID and the command Argument from the received data</span></div>
 <div class="line">  <span class="comment">// from Serial and puts them into command_id and command_arg</span></div>
 <div class="line">  <span class="keywordtype">int</span> status = <a class="code hl_function" href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a>(command_buff, &amp;command_id, &amp;command_arg);</div>
 <div class="line">  <span class="keywordflow">if</span> (status != PARSE_COMMAND_SUCCESS) {</div>
-<div class="line">    <span class="keywordflow">return</span>; <span class="comment">// Early return because parsing failed</span></div>
+<div class="line">    <span class="keywordflow">continue</span>; <span class="comment">// Skip this iteration as there is no command to execute</span></div>
 <div class="line">  }</div>
-<div class="line"> </div>
+<div class="line">  </div>
 <div class="line">  <span class="comment">// Parsing succeeded, now you can do whatever you need to do with the command.</span></div>
 <div class="line">  <span class="comment">// For example, we&#39;ll use defines and a switch case to decide what to do</span></div>
 <div class="line"><span class="preprocessor">  #define CONNECTION_OK 0</span></div>
 <div class="line"><span class="preprocessor">  #define VBATT_BUTTON  1</span></div>
 <div class="line"><span class="preprocessor">  #define VBOOST_BUTTON 2</span></div>
 <div class="line"><span class="preprocessor">  #define TOGGLE_LED    999</span></div>
-<div class="line"> </div>
+<div class="line">  </div>
 <div class="line">  <span class="keywordflow">switch</span> (command_id) {</div>
 <div class="line">  <span class="keywordflow">case</span> CONNECTION_OK:</div>
 <div class="line">    <span class="comment">// Do something</span></div>
@@ -169,8 +172,12 @@ Usage</h1>
 <div class="line">    <span class="keywordflow">break</span>;</div>
 <div class="line">  <span class="keywordflow">default</span>: <span class="comment">// Code in this case will be executed if command_id doesn&#39;t match any other cases</span></div>
 <div class="line">    <span class="keywordflow">break</span>;</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">/* USER CODE END WHILE */</span></div>
+<div class="line">    <span class="comment">/* USER CODE BEGIN 3 */</span></div>
 <div class="line">  }</div>
-<div class="line">}</div>
+<div class="line">  <span class="comment">/* USER CODE END 3 *</span></div>
+<div class="line"><span class="comment">}</span></div>
 <div class="ttc" id="agroup__receive__serial__commands_html_gaaa712b14ef1af977e3a75202bf8d6842"><div class="ttname"><a href="group__receive__serial__commands.html#gaaa712b14ef1af977e3a75202bf8d6842">ParseCommand</a></div><div class="ttdeci">int ParseCommand(const char *command, int *command_id, int *command_arg)</div><div class="ttdoc">Parses a command and stores the command ID and argument in the given pointers' locations.</div><div class="ttdef"><b>Definition</b> <a href="receive__serial__commands_8c_source.html#l00017">receive_serial_commands.c:17</a></div></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->

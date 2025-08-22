@@ -138,7 +138,7 @@ var NAVTREE =
         [ "In CubeMX:", "md_Guides_213_8Receive__Serial__commands.html#autotoc_md119", null ],
         [ "In code:", "md_Guides_213_8Receive__Serial__commands.html#autotoc_md120", null ]
       ] ],
-      [ "Usage", "md_Guides_213_8Receive__Serial__commands.html#autotoc_md121", null ]
+      [ "Usage example", "md_Guides_213_8Receive__Serial__commands.html#autotoc_md121", null ]
     ] ],
     [ "14.Writing a task scheduler", "md_Guides_214_8Writing__a__task__scheduler.html", [
       [ "Description", "md_Guides_214_8Writing__a__task__scheduler.html#autotoc_md123", null ],
